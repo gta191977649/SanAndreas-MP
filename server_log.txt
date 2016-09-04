@@ -1,0 +1,620 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:15:44] 
+[16:15:44] Server Plugins
+[16:15:44] --------------
+[16:15:44]  Loading plugin: mysql
+[16:15:44]   Failed.
+[16:15:44]  Loading plugin: sscanf
+[16:15:44]   Failed.
+[16:15:44]  Loading plugin: socket
+[16:15:44]   Failed.
+[16:15:44]  Loading plugin: NPatcher
+[16:15:44]   Failed.
+[16:15:44]  Loading plugin: streamer
+[16:15:44]   Failed.
+[16:15:44]  Loaded 0 plugins.
+
+[16:15:44] 
+[16:15:44] Filterscripts
+[16:15:44] ---------------
+[16:15:44]   Loading filterscript 'Mlogin.amx'...
+[16:15:44]   Unable to load filterscript 'Mlogin.amx'.
+[16:15:44]   Loaded 0 filterscripts.
+
+[16:15:44] 
+---------------------------------------
+[16:15:44]  SA WORLD Main Frame Work
+
+[16:15:44]  By Liberty_Episodes
+
+[16:15:44] ---------------------------------------
+
+[16:15:44] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:16:00] filterscripts = ""  (string)
+[16:16:00] 
+[16:16:00] Server Plugins
+[16:16:00] --------------
+[16:16:00]  Loading plugin: mysql
+[16:16:00]   Failed.
+[16:16:00]  Loading plugin: sscanf
+[16:16:00]   Failed.
+[16:16:00]  Loading plugin: socket
+[16:16:00]   Failed.
+[16:16:00]  Loading plugin: NPatcher
+[16:16:00]   Failed.
+[16:16:00]  Loading plugin: streamer
+[16:16:00]   Failed.
+[16:16:00]  Loaded 0 plugins.
+
+[16:16:00] 
+[16:16:00] Filterscripts
+[16:16:00] ---------------
+[16:16:00]   Loaded 0 filterscripts.
+
+[16:16:00] 
+---------------------------------------
+[16:16:00]  SA WORLD Main Frame Work
+
+[16:16:00]  By Liberty_Episodes
+
+[16:16:00] ---------------------------------------
+
+[16:16:00] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:20:33] filterscripts = ""  (string)
+[16:20:33] 
+[16:20:33] Server Plugins
+[16:20:33] --------------
+[16:20:33]  Loading plugin: mysql
+[16:20:33]   Failed.
+[16:20:33]  Loading plugin: sscanf
+[16:20:33]   Failed.
+[16:20:33]  Loading plugin: socket
+[16:20:33]   Failed.
+[16:20:33]  Loading plugin: NPatcher
+[16:20:33]   Failed.
+[16:20:33]  Loading plugin: streamer
+[16:20:33]   Failed.
+[16:20:33]  Loaded 0 plugins.
+
+[16:20:33] 
+[16:20:33] Filterscripts
+[16:20:33] ---------------
+[16:20:33]   Loaded 0 filterscripts.
+
+[16:20:33] 
+---------------------------------------
+[16:20:33]  SA WORLD Main Frame Work
+
+[16:20:33]  By Liberty_Episodes
+
+[16:20:33] ---------------------------------------
+
+[16:20:33] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:21:31] filterscripts = ""  (string)
+[16:21:31] 
+[16:21:31] Server Plugins
+[16:21:31] --------------
+[16:21:31]  Loading plugin: mysql
+[16:21:31]   Failed.
+[16:21:31]  Loading plugin: sscanf
+[16:21:31]   Failed.
+[16:21:31]  Loading plugin: socket
+[16:21:31]   Failed.
+[16:21:31]  Loading plugin: NPatcher
+[16:21:31]   Failed.
+[16:21:31]  Loading plugin: streamer
+[16:21:31]   Failed.
+[16:21:31]  Loaded 0 plugins.
+
+[16:21:31] 
+[16:21:31] Filterscripts
+[16:21:31] ---------------
+[16:21:31]   Loaded 0 filterscripts.
+
+[16:21:31] 
+---------------------------------------
+[16:21:31]  SA WORLD Main Frame Work
+
+[16:21:31]  By Liberty_Episodes
+
+[16:21:31] ---------------------------------------
+
+[16:21:31] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:21:52] filterscripts = ""  (string)
+[16:21:52] 
+[16:21:52] Server Plugins
+[16:21:52] --------------
+[16:21:52]  Loading plugin: mysql
+[16:21:52]   Failed.
+[16:21:52]  Loading plugin: sscanf
+[16:21:52]   Failed.
+[16:21:52]  Loading plugin: socket
+[16:21:52]   Failed.
+[16:21:52]  Loading plugin: NPatcher
+[16:21:52]   Failed.
+[16:21:52]  Loading plugin: streamer
+[16:21:52]   Failed.
+[16:21:52]  Loaded 0 plugins.
+
+[16:21:52] 
+[16:21:52] Filterscripts
+[16:21:52] ---------------
+[16:21:52]   Loaded 0 filterscripts.
+
+[16:21:52] Main 模块已经加载
+[16:21:52] 
+---------------------------------------
+[16:21:52]  SA WORLD Main Frame Work
+
+[16:21:52]  By Liberty_Episodes
+
+[16:21:52] ---------------------------------------
+
+[16:21:52] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:32:27] filterscripts = ""  (string)
+[16:32:27] 
+[16:32:27] Server Plugins
+[16:32:27] --------------
+[16:32:27]  Loading plugin: mysql
+[16:32:27]   Failed.
+[16:32:27]  Loading plugin: sscanf
+[16:32:27]   Failed.
+[16:32:27]  Loading plugin: socket
+[16:32:27]   Failed.
+[16:32:27]  Loading plugin: NPatcher
+[16:32:27]   Failed.
+[16:32:27]  Loading plugin: streamer
+[16:32:27]   Failed.
+[16:32:27]  Loaded 0 plugins.
+
+[16:32:27] 
+[16:32:27] Filterscripts
+[16:32:27] ---------------
+[16:32:27]   Loaded 0 filterscripts.
+
+[16:32:27] Main 模块已经加载
+[16:32:27] Modul: SA Icons Loaded
+[16:32:27] 
+---------------------------------------
+[16:32:27]  SA WORLD Main Frame Work
+
+[16:32:27]  By Liberty_Episodes
+
+[16:32:28] ---------------------------------------
+
+[16:32:28] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:52:56] filterscripts = ""  (string)
+[16:52:56] 
+[16:52:56] Server Plugins
+[16:52:56] --------------
+[16:52:56]  Loading plugin: mysql
+[16:52:56]   Failed.
+[16:52:56]  Loading plugin: sscanf
+[16:52:56]   Failed.
+[16:52:56]  Loading plugin: socket
+[16:52:56]   Failed.
+[16:52:56]  Loading plugin: NPatcher
+[16:52:56]   Failed.
+[16:52:56]  Loading plugin: streamer
+[16:52:56]   Failed.
+[16:52:56]  Loaded 0 plugins.
+
+[16:52:56] 
+[16:52:56] Filterscripts
+[16:52:56] ---------------
+[16:52:56]   Loaded 0 filterscripts.
+
+[16:52:56] Main 模块已经加载
+[16:52:56] Modul: SA Icons Loaded
+[16:52:56] 
+---------------------------------------
+[16:52:56]  SA WORLD Main Frame Work
+
+[16:52:56]  By Liberty_Episodes
+
+[16:52:56] ---------------------------------------
+
+[16:52:56] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:53:22] filterscripts = ""  (string)
+[16:53:22] 
+[16:53:22] Server Plugins
+[16:53:22] --------------
+[16:53:22]  Loading plugin: mysql
+[16:53:22]   Failed.
+[16:53:22]  Loading plugin: sscanf
+[16:53:22]   Failed.
+[16:53:22]  Loading plugin: socket
+[16:53:22]   Failed.
+[16:53:22]  Loading plugin: NPatcher
+[16:53:22]   Failed.
+[16:53:22]  Loading plugin: streamer
+[16:53:22]   Failed.
+[16:53:22]  Loaded 0 plugins.
+
+[16:53:22] 
+[16:53:22] Filterscripts
+[16:53:22] ---------------
+[16:53:22]   Loaded 0 filterscripts.
+
+[16:53:22] Main Moudel Is Loaded.
+[16:53:22] Modul: SA Icons Loaded
+[16:53:22] 
+---------------------------------------
+[16:53:22]  SA WORLD Main Frame Work
+
+[16:53:22]  By Liberty_Episodes
+
+[16:53:22] ---------------------------------------
+
+[16:53:22] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:54:48] filterscripts = ""  (string)
+[12:54:48] 
+[12:54:48] Server Plugins
+[12:54:48] --------------
+[12:54:48]  Loading plugin: mysql
+[12:54:48]   Failed.
+[12:54:48]  Loading plugin: sscanf
+[12:54:48]   Failed.
+[12:54:48]  Loading plugin: socket
+[12:54:48]   Failed.
+[12:54:48]  Loading plugin: NPatcher
+[12:54:48]   Failed.
+[12:54:48]  Loading plugin: streamer
+[12:54:48]   Failed.
+[12:54:48]  Loaded 0 plugins.
+
+[12:54:48] 
+[12:54:48] Filterscripts
+[12:54:48] ---------------
+[12:54:48]   Loaded 0 filterscripts.
+
+[12:54:48] Main Moudel Is Loaded.
+[12:54:48] Modul: SA Icons Loaded
+[12:54:48] 
+---------------------------------------
+[12:54:48]  SA WORLD Main Frame Work
+
+[12:54:48]  By Liberty_Episodes
+
+[12:54:48] ---------------------------------------
+
+[12:54:48] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:55:38] filterscripts = ""  (string)
+[12:55:38] 
+[12:55:38] Server Plugins
+[12:55:38] --------------
+[12:55:38]  Loading plugin: mysql
+[12:55:38]   Failed.
+[12:55:38]  Loading plugin: sscanf
+[12:55:38]   Failed.
+[12:55:38]  Loading plugin: socket
+[12:55:38]   Failed.
+[12:55:38]  Loading plugin: NPatcher
+[12:55:38]   Failed.
+[12:55:38]  Loading plugin: streamer
+[12:55:38]   Failed.
+[12:55:38]  Loaded 0 plugins.
+
+[12:55:38] 
+[12:55:38] Filterscripts
+[12:55:38] ---------------
+[12:55:38]   Loaded 0 filterscripts.
+
+[12:55:38] Main Moudel Is Loaded.
+[12:55:38] Modul: SA Icons Loaded
+[12:55:38] 
+---------------------------------------
+[12:55:38]  SA WORLD Main Frame Work
+
+[12:55:38]  By Liberty_Episodes
+
+[12:55:38] ---------------------------------------
+
+[12:55:38] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:56:09] filterscripts = ""  (string)
+[12:56:09] 
+[12:56:09] Server Plugins
+[12:56:09] --------------
+[12:56:09]  Loading plugin: mysql
+[12:56:09]   Failed.
+[12:56:09]  Loading plugin: sscanf
+[12:56:09]   Failed.
+[12:56:09]  Loading plugin: socket
+[12:56:09]   Failed.
+[12:56:09]  Loading plugin: NPatcher
+[12:56:09]   Failed.
+[12:56:09]  Loading plugin: streamer
+[12:56:09]   Failed.
+[12:56:09]  Loaded 0 plugins.
+
+[12:56:09] 
+[12:56:09] Filterscripts
+[12:56:09] ---------------
+[12:56:09]   Loaded 0 filterscripts.
+
+[12:56:09] Main Moudel Is Loaded.
+[12:56:09] Modul: SA Icons Loaded
+[12:56:09] 
+---------------------------------------
+[12:56:09]  SA WORLD Main Frame Work
+
+[12:56:09]  By Liberty_Episodes
+
+[12:56:09] ---------------------------------------
+
+[12:56:09] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:56:34] filterscripts = ""  (string)
+[12:56:34] 
+[12:56:34] Server Plugins
+[12:56:34] --------------
+[12:56:34]  Loading plugin: mysql
+[12:56:34]   Failed.
+[12:56:34]  Loading plugin: sscanf
+[12:56:34]   Failed.
+[12:56:34]  Loading plugin: socket
+[12:56:34]   Failed.
+[12:56:34]  Loading plugin: NPatcher
+[12:56:34]   Failed.
+[12:56:34]  Loading plugin: streamer
+[12:56:34]   Failed.
+[12:56:34]  Loaded 0 plugins.
+
+[12:56:34] 
+[12:56:34] Filterscripts
+[12:56:34] ---------------
+[12:56:34]   Loaded 0 filterscripts.
+
+[12:56:34] Main Moudel Is Loaded.
+[12:56:34] Modul: SA Icons Loaded
+[12:56:34] 
+---------------------------------------
+[12:56:34]  SA WORLD Main Frame Work
+
+[12:56:34]  By Liberty_Episodes
+
+[12:56:34] ---------------------------------------
+
+[12:56:34] Number of vehicle models: 0
+[12:56:55] [connection] 127.0.0.1:57652 requests connection cookie.
+[12:56:56] [connection] incoming connection: 127.0.0.1:57652 id: 0
+[12:56:57] [join] Kande has joined the server (0:127.0.0.1)
+[12:57:11] [part] Kande has left the server (0:1)
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:58:08] filterscripts = ""  (string)
+[12:58:08] 
+[12:58:08] Server Plugins
+[12:58:08] --------------
+[12:58:08]  Loading plugin: mysql
+[12:58:08]   Failed.
+[12:58:08]  Loading plugin: sscanf
+[12:58:08]   Failed.
+[12:58:08]  Loading plugin: socket
+[12:58:08]   Failed.
+[12:58:08]  Loading plugin: NPatcher
+[12:58:08]   Failed.
+[12:58:08]  Loading plugin: streamer
+[12:58:08]   Failed.
+[12:58:08]  Loaded 0 plugins.
+
+[12:58:08] 
+[12:58:08] Filterscripts
+[12:58:08] ---------------
+[12:58:08]   Loaded 0 filterscripts.
+
+[12:58:08] Main Moudel Is Loaded.
+[12:58:08] Modul: SA Icons Loaded
+[12:58:08] 
+---------------------------------------
+[12:58:08]  SA WORLD Main Frame Work
+
+[12:58:08]  By Liberty_Episodes
+
+[12:58:08] ---------------------------------------
+
+[12:58:08] Number of vehicle models: 0
+[12:58:23] [connection] 127.0.0.1:62057 requests connection cookie.
+[12:58:24] [connection] incoming connection: 127.0.0.1:62057 id: 0
+[12:58:24] [join] Kande has joined the server (0:127.0.0.1)
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:59:27] filterscripts = ""  (string)
+[12:59:27] 
+[12:59:27] Server Plugins
+[12:59:27] --------------
+[12:59:27]  Loading plugin: mysql
+[12:59:27]   Failed.
+[12:59:27]  Loading plugin: sscanf
+[12:59:27]   Failed.
+[12:59:27]  Loading plugin: socket
+[12:59:27]   Failed.
+[12:59:27]  Loading plugin: NPatcher
+[12:59:27]   Failed.
+[12:59:27]  Loading plugin: streamer
+[12:59:27]   Failed.
+[12:59:27]  Loaded 0 plugins.
+
+[12:59:27] 
+[12:59:27] Filterscripts
+[12:59:27] ---------------
+[12:59:27]   Loaded 0 filterscripts.
+
+[12:59:27] Main Moudel Is Loaded.
+[12:59:27] Modul: SA Icons Loaded
+[12:59:27] 
+---------------------------------------
+[12:59:27]  SA WORLD Main Frame Work
+
+[12:59:27]  By Liberty_Episodes
+
+[12:59:27] ---------------------------------------
+
+[12:59:27] Number of vehicle models: 0
+[12:59:38] [connection] 127.0.0.1:60942 requests connection cookie.
+[12:59:39] [connection] incoming connection: 127.0.0.1:60942 id: 0
+[12:59:39] [join] Kande has joined the server (0:127.0.0.1)
+[12:59:52] [part] Kande has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:16:45] filterscripts = ""  (string)
+[00:16:45] 
+[00:16:45] Server Plugins
+[00:16:45] --------------
+[00:16:45]  Loading plugin: mysql
+[00:16:45]   Failed.
+[00:16:45]  Loading plugin: sscanf
+[00:16:45]   Failed.
+[00:16:45]  Loading plugin: socket
+[00:16:45]   Failed.
+[00:16:45]  Loading plugin: NPatcher
+[00:16:45]   Failed.
+[00:16:45]  Loading plugin: streamer
+[00:16:45]   Failed.
+[00:16:45]  Loaded 0 plugins.
+
+[00:16:45] 
+[00:16:45] Filterscripts
+[00:16:45] ---------------
+[00:16:45]   Loaded 0 filterscripts.
+
+[00:16:45] Main Moudel Is Loaded.
+[00:16:45] Modul: SA Icons Loaded
+[00:16:45] 
+---------------------------------------
+[00:16:45]  SA WORLD Main Frame Work
+
+[00:16:45]  By Liberty_Episodes
+
+[00:16:45] ---------------------------------------
+
+[00:16:45] Number of vehicle models: 0
