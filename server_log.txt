@@ -618,3 +618,1380 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [00:16:45] ---------------------------------------
 
 [00:16:45] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:43:28] filterscripts = ""  (string)
+[19:43:28] 
+[19:43:28] Server Plugins
+[19:43:28] --------------
+[19:43:28]  Loading plugin: mysql
+[19:43:28]   Failed.
+[19:43:28]  Loading plugin: sscanf
+[19:43:28]   Failed.
+[19:43:28]  Loading plugin: socket
+[19:43:28]   Failed.
+[19:43:28]  Loading plugin: NPatcher
+[19:43:28]   Failed.
+[19:43:28]  Loading plugin: streamer
+[19:43:28]   Failed.
+[19:43:28]  Loaded 0 plugins.
+
+[19:43:28] 
+[19:43:28] Filterscripts
+[19:43:28] ---------------
+[19:43:28]   Loaded 0 filterscripts.
+
+[19:43:28] Main Moudel Is Loaded.
+[19:43:28] Modul: SA Icons Loaded
+[19:43:28] 
+---------------------------------------
+[19:43:28]  SA WORLD Main Frame Work
+
+[19:43:28]  By Liberty_Episodes
+
+[19:43:28] ---------------------------------------
+
+[19:43:28] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:26:18] filterscripts = ""  (string)
+[16:26:18] 
+[16:26:18] Server Plugins
+[16:26:18] --------------
+[16:26:18]  Loading plugin: mysql
+[16:26:18]   Failed.
+[16:26:18]  Loading plugin: sscanf
+[16:26:18]   Failed.
+[16:26:18]  Loading plugin: socket
+[16:26:18]   Failed.
+[16:26:18]  Loading plugin: NPatcher
+[16:26:18]   Failed.
+[16:26:18]  Loading plugin: streamer
+[16:26:18]   Failed.
+[16:26:18]  Loaded 0 plugins.
+
+[16:26:19] 
+[16:26:19] Filterscripts
+[16:26:19] ---------------
+[16:26:19]   Loaded 0 filterscripts.
+
+[16:26:19] Main Moudel Is Loaded.
+[16:26:19] Modul: SA Icons Loaded
+[16:26:19] 
+---------------------------------------
+[16:26:19]  SA WORLD Main Frame Work
+
+[16:26:19]  By Liberty_Episodes
+
+[16:26:19] ---------------------------------------
+
+[16:26:19] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:26:56] filterscripts = ""  (string)
+[16:26:56] 
+[16:26:56] Server Plugins
+[16:26:56] --------------
+[16:26:56]  Loading plugin: mysql
+[16:26:56]   Failed.
+[16:26:56]  Loading plugin: sscanf
+[16:26:56]   Failed.
+[16:26:56]  Loading plugin: socket
+[16:26:56]   Failed.
+[16:26:56]  Loading plugin: NPatcher
+[16:26:56]   Failed.
+[16:26:56]  Loading plugin: streamer
+[16:26:56]   Failed.
+[16:26:56]  Loaded 0 plugins.
+
+[16:26:56] 
+[16:26:56] Filterscripts
+[16:26:56] ---------------
+[16:26:56]   Loaded 0 filterscripts.
+
+[16:26:56] Main Moudel Is Loaded.
+[16:26:56] Modul: SA Icons Loaded
+[16:26:56] 
+---------------------------------------
+[16:26:56]  SA WORLD Main Frame Work
+
+[16:26:56]  By Liberty_Episodes
+
+[16:26:57] ---------------------------------------
+
+[16:26:57] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:36:30] filterscripts = ""  (string)
+[16:36:30] 
+[16:36:30] Server Plugins
+[16:36:30] --------------
+[16:36:30]  Loading plugin: mysql
+[16:36:30]   Failed.
+[16:36:30]  Loading plugin: sscanf
+[16:36:30]   Failed.
+[16:36:30]  Loading plugin: socket
+[16:36:30]   Failed.
+[16:36:30]  Loading plugin: NPatcher
+[16:36:30]   Failed.
+[16:36:30]  Loading plugin: streamer
+[16:36:30]   Failed.
+[16:36:30]  Loaded 0 plugins.
+
+[16:36:30] 
+[16:36:30] Filterscripts
+[16:36:30] ---------------
+[16:36:30]   Loaded 0 filterscripts.
+
+[16:36:30] Main Moudel Is Loaded.
+[16:36:30] Modul: SA Icons Loaded
+[16:36:30] 
+---------------------------------------
+[16:36:30]  SA WORLD Main Frame Work
+
+[16:36:30]  By Liberty_Episodes
+
+[16:36:30] ---------------------------------------
+
+[16:36:30] Number of vehicle models: 0
+[16:37:15] [connection] 127.0.0.1:51677 requests connection cookie.
+[16:37:16] [connection] incoming connection: 127.0.0.1:51677 id: 0
+[16:37:16] [join] Kanna has joined the server (0:127.0.0.1)
+[16:37:30] [part] Kanna has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:39:20] filterscripts = ""  (string)
+[16:39:20] 
+[16:39:20] Server Plugins
+[16:39:20] --------------
+[16:39:20]  Loading plugin: mysql
+[16:39:20]   Failed.
+[16:39:20]  Loading plugin: sscanf
+[16:39:20]   Failed.
+[16:39:20]  Loading plugin: socket
+[16:39:20]   Failed.
+[16:39:20]  Loading plugin: NPatcher
+[16:39:20]   Failed.
+[16:39:20]  Loading plugin: streamer
+[16:39:20]   Failed.
+[16:39:20]  Loaded 0 plugins.
+
+[16:39:20] 
+[16:39:20] Filterscripts
+[16:39:20] ---------------
+[16:39:20]   Loaded 0 filterscripts.
+
+[16:39:20] Main Moudel Is Loaded.
+[16:39:20] Modul: SA Icons Loaded
+[16:39:20] 
+---------------------------------------
+[16:39:20]  SA WORLD Main Frame Work
+
+[16:39:20]  By Liberty_Episodes
+
+[16:39:20] ---------------------------------------
+
+[16:39:20] Number of vehicle models: 0
+[16:39:57] [connection] 127.0.0.1:52206 requests connection cookie.
+[16:39:58] [connection] incoming connection: 127.0.0.1:52206 id: 0
+[16:39:58] [join] Kanna has joined the server (0:127.0.0.1)
+[16:40:11] [part] Kanna has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:48:07] filterscripts = ""  (string)
+[16:48:07] 
+[16:48:07] Server Plugins
+[16:48:07] --------------
+[16:48:07]  Loading plugin: mysql
+[16:48:07]   Failed.
+[16:48:07]  Loading plugin: sscanf
+[16:48:07]   Failed.
+[16:48:07]  Loading plugin: socket
+[16:48:07]   Failed.
+[16:48:07]  Loading plugin: NPatcher
+[16:48:07]   Failed.
+[16:48:07]  Loading plugin: streamer
+[16:48:07]   Failed.
+[16:48:07]  Loaded 0 plugins.
+
+[16:48:07] 
+[16:48:07] Filterscripts
+[16:48:07] ---------------
+[16:48:07]   Loaded 0 filterscripts.
+
+[16:48:07] Main Moudel Is Loaded.
+[16:48:07] Modul: SA Icons Loaded
+[16:48:07] 
+---------------------------------------
+[16:48:07]  SA WORLD Main Frame Work
+
+[16:48:07]  By Liberty_Episodes
+
+[16:48:07] ---------------------------------------
+
+[16:48:07] Number of vehicle models: 0
+[16:48:44] [connection] 127.0.0.1:52351 requests connection cookie.
+[16:48:45] [connection] incoming connection: 127.0.0.1:52351 id: 0
+[16:48:45] [join] Kanna has joined the server (0:127.0.0.1)
+[16:49:11] [part] Kanna has left the server (0:1)
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:51:02] filterscripts = ""  (string)
+[16:51:02] 
+[16:51:02] Server Plugins
+[16:51:02] --------------
+[16:51:02]  Loading plugin: mysql
+[16:51:02]   Failed.
+[16:51:02]  Loading plugin: sscanf
+[16:51:02]   Failed.
+[16:51:02]  Loading plugin: socket
+[16:51:02]   Failed.
+[16:51:02]  Loading plugin: NPatcher
+[16:51:02]   Failed.
+[16:51:02]  Loading plugin: streamer
+[16:51:02]   Failed.
+[16:51:02]  Loaded 0 plugins.
+
+[16:51:02] 
+[16:51:02] Filterscripts
+[16:51:02] ---------------
+[16:51:02]   Loaded 0 filterscripts.
+
+[16:51:02] Main Moudel Is Loaded.
+[16:51:02] Modul: SA Icons Loaded
+[16:51:02] 
+---------------------------------------
+[16:51:02]  SA WORLD Main Frame Work
+
+[16:51:02]  By Liberty_Episodes
+
+[16:51:02] ---------------------------------------
+
+[16:51:02] Number of vehicle models: 0
+[16:51:27] [connection] 127.0.0.1:57994 requests connection cookie.
+[16:51:28] [connection] incoming connection: 127.0.0.1:57994 id: 0
+[16:51:32] [join] Kanna has joined the server (0:127.0.0.1)
+[17:00:34] --- Server Shutting Down.
+[17:00:34] [part] Kanna has left the server (0:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:00:35] filterscripts = ""  (string)
+[17:00:35] 
+[17:00:35] Server Plugins
+[17:00:35] --------------
+[17:00:35]  Loading plugin: mysql
+[17:00:35]   Failed.
+[17:00:35]  Loading plugin: sscanf
+[17:00:35]   Failed.
+[17:00:35]  Loading plugin: socket
+[17:00:35]   Failed.
+[17:00:35]  Loading plugin: NPatcher
+[17:00:35]   Failed.
+[17:00:35]  Loading plugin: streamer
+[17:00:35]   Failed.
+[17:00:35]  Loaded 0 plugins.
+
+[17:00:35] 
+[17:00:35] Filterscripts
+[17:00:35] ---------------
+[17:00:35]   Loaded 0 filterscripts.
+
+[17:00:35] Main Moudel Is Loaded.
+[17:00:35] Modul: SA Icons Loaded
+[17:00:35] 
+---------------------------------------
+[17:00:35]  SA WORLD Main Frame Work
+
+[17:00:35]  By Liberty_Episodes
+
+[17:00:35] ---------------------------------------
+
+[17:00:35] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:00:41] filterscripts = ""  (string)
+[17:00:41] 
+[17:00:41] Server Plugins
+[17:00:41] --------------
+[17:00:41]  Loading plugin: mysql
+[17:00:41]   Failed.
+[17:00:41]  Loading plugin: sscanf
+[17:00:41]   Failed.
+[17:00:41]  Loading plugin: socket
+[17:00:41]   Failed.
+[17:00:41]  Loading plugin: NPatcher
+[17:00:41]   Failed.
+[17:00:41]  Loading plugin: streamer
+[17:00:41]   Failed.
+[17:00:41]  Loaded 0 plugins.
+
+[17:00:42] 
+[17:00:42] Filterscripts
+[17:00:42] ---------------
+[17:00:42]   Loaded 0 filterscripts.
+
+[17:00:42] Main Moudel Is Loaded.
+[17:00:42] Loaded 3 vehicles from: vehicles/trains.txt
+[17:00:42] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:00:42] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:00:42] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:00:42] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:00:42] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:00:42] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:00:42] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:00:42] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:00:42] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:00:42] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:00:42] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:00:42] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:00:42] Loaded 168 vehicles from: vehicles/bone.txt
+[17:00:42] Loaded 61 vehicles from: vehicles/flint.txt
+[17:00:42] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:00:42] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:00:42] [‰∏ñÁïå‰∫§ÈÄöÂ∑•ÂÖ∑]: Â∑≤ÁªèÂä†ËΩΩ:1781‰∏™
+[17:00:42] Modul: SA Icons Loaded
+[17:00:42] 
+---------------------------------------
+[17:00:42]  SA WORLD Main Frame Work
+
+[17:00:42]  By Liberty_Episodes
+
+[17:00:42] ---------------------------------------
+
+[17:00:42] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:01:26] filterscripts = ""  (string)
+[17:01:26] 
+[17:01:26] Server Plugins
+[17:01:26] --------------
+[17:01:26]  Loading plugin: mysql
+[17:01:26]   Failed.
+[17:01:26]  Loading plugin: sscanf
+[17:01:26]   Failed.
+[17:01:26]  Loading plugin: socket
+[17:01:26]   Failed.
+[17:01:26]  Loading plugin: NPatcher
+[17:01:26]   Failed.
+[17:01:26]  Loading plugin: streamer
+[17:01:26]   Failed.
+[17:01:26]  Loaded 0 plugins.
+
+[17:01:26] 
+[17:01:26] Filterscripts
+[17:01:26] ---------------
+[17:01:26]   Loaded 0 filterscripts.
+
+[17:01:26] Main Moudel Is Loaded.
+[17:01:26] Loaded 3 vehicles from: vehicles/trains.txt
+[17:01:26] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:01:26] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:01:26] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:01:26] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:01:26] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:01:26] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:01:26] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:01:26] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:01:26] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:01:26] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:01:26] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:01:26] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:01:26] Loaded 168 vehicles from: vehicles/bone.txt
+[17:01:26] Loaded 61 vehicles from: vehicles/flint.txt
+[17:01:26] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:01:26] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:01:26] [‰∏ñÁïå‰∫§ÈÄöÂ∑•ÂÖ∑]: Â∑≤ÁªèÂä†ËΩΩ:1781‰∏™
+[17:01:26] Modul: SA Icons Loaded
+[17:01:26] 
+---------------------------------------
+[17:01:26]  SA WORLD Main Frame Work
+
+[17:01:26]  By Liberty_Episodes
+
+[17:01:26] ---------------------------------------
+
+[17:01:26] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:01:44] filterscripts = ""  (string)
+[17:01:44] 
+[17:01:44] Server Plugins
+[17:01:44] --------------
+[17:01:44]  Loading plugin: mysql
+[17:01:44]   Failed.
+[17:01:44]  Loading plugin: sscanf
+[17:01:44]   Failed.
+[17:01:44]  Loading plugin: socket
+[17:01:44]   Failed.
+[17:01:44]  Loading plugin: NPatcher
+[17:01:44]   Failed.
+[17:01:44]  Loading plugin: streamer
+[17:01:44]   Failed.
+[17:01:44]  Loaded 0 plugins.
+
+[17:01:44] 
+[17:01:44] Filterscripts
+[17:01:44] ---------------
+[17:01:44]   Loaded 0 filterscripts.
+
+[17:01:44] Main Moudel Is Loaded.
+[17:01:44] Loaded 3 vehicles from: vehicles/trains.txt
+[17:01:44] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:01:44] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:01:44] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:01:44] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:01:44] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:01:44] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:01:44] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:01:44] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:01:44] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:01:44] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:01:44] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:01:44] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:01:44] Loaded 168 vehicles from: vehicles/bone.txt
+[17:01:44] Loaded 61 vehicles from: vehicles/flint.txt
+[17:01:44] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:01:44] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:01:44] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:01:44] Modul: SA Icons Loaded
+[17:01:44] 
+---------------------------------------
+[17:01:44]  SA WORLD Main Frame Work
+
+[17:01:44]  By Liberty_Episodes
+
+[17:01:44] ---------------------------------------
+
+[17:01:44] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:06:35] filterscripts = ""  (string)
+[17:06:35] 
+[17:06:35] Server Plugins
+[17:06:35] --------------
+[17:06:35]  Loading plugin: mysql
+[17:06:35]   Failed.
+[17:06:35]  Loading plugin: sscanf
+[17:06:35]   Failed.
+[17:06:35]  Loading plugin: socket
+[17:06:35]   Failed.
+[17:06:35]  Loading plugin: NPatcher
+[17:06:35]   Failed.
+[17:06:35]  Loading plugin: streamer
+[17:06:35]   Failed.
+[17:06:35]  Loaded 0 plugins.
+
+[17:06:35] 
+[17:06:35] Filterscripts
+[17:06:35] ---------------
+[17:06:35]   Loaded 0 filterscripts.
+
+[17:06:35] Main Moudel Is Loaded.
+[17:06:35] Loaded 3 vehicles from: vehicles/trains.txt
+[17:06:35] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:06:35] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:06:35] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:06:35] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:06:35] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:06:35] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:06:35] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:06:35] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:06:35] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:06:35] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:06:35] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:06:35] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:06:35] Loaded 168 vehicles from: vehicles/bone.txt
+[17:06:35] Loaded 61 vehicles from: vehicles/flint.txt
+[17:06:35] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:06:35] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:06:35] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:06:35] Modul: SA Icons Loaded
+[17:06:35] 
+---------------------------------------
+[17:06:35]  SA WORLD Main Frame Work
+
+[17:06:35]  By Liberty_Episodes
+
+[17:06:35] ---------------------------------------
+
+[17:06:35] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:11:59] filterscripts = ""  (string)
+[17:11:59] 
+[17:11:59] Server Plugins
+[17:11:59] --------------
+[17:11:59]  Loading plugin: mysql
+[17:11:59]   Failed.
+[17:11:59]  Loading plugin: sscanf
+[17:11:59]   Failed.
+[17:11:59]  Loading plugin: socket
+[17:11:59]   Failed.
+[17:11:59]  Loading plugin: NPatcher
+[17:11:59]   Failed.
+[17:11:59]  Loading plugin: streamer
+[17:11:59]   Failed.
+[17:11:59]  Loaded 0 plugins.
+
+[17:12:00] 
+[17:12:00] Filterscripts
+[17:12:00] ---------------
+[17:12:00]   Loaded 0 filterscripts.
+
+[17:12:00] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:12:00] Main Moudel Is Loaded.
+[17:12:00] Loaded 3 vehicles from: vehicles/trains.txt
+[17:12:00] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:12:00] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:12:00] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:12:00] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:12:00] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:12:00] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:12:00] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:12:00] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:12:00] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:12:00] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:12:00] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:12:00] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:12:00] Loaded 168 vehicles from: vehicles/bone.txt
+[17:12:00] Loaded 61 vehicles from: vehicles/flint.txt
+[17:12:00] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:12:00] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:12:00] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:12:00] Modul: SA Icons Loaded
+[17:12:00] 
+---------------------------------------
+[17:12:00]  SA WORLD Main Frame Work
+
+[17:12:00]  By Liberty_Episodes
+
+[17:12:00] ---------------------------------------
+
+[17:12:00] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[17:12:40] filterscripts = ""  (string)
+[17:12:40] 
+[17:12:40] Server Plugins
+[17:12:40] --------------
+[17:12:40]  Loading plugin: mysql
+[17:12:40]   Failed.
+[17:12:40]  Loading plugin: sscanf
+[17:12:40]   Failed.
+[17:12:40]  Loading plugin: socket
+[17:12:40]   Failed.
+[17:12:40]  Loading plugin: NPatcher
+[17:12:40]   Failed.
+[17:12:40]  Loading plugin: streamer
+[17:12:40]   Failed.
+[17:12:40]  Loaded 0 plugins.
+
+[17:12:40] 
+[17:12:40] Filterscripts
+[17:12:40] ---------------
+[17:12:40]   Loaded 0 filterscripts.
+
+[17:12:41] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:12:41] Main Moudel Is Loaded.
+[17:12:41] Loaded 3 vehicles from: vehicles/trains.txt
+[17:12:41] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:12:41] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:12:41] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:12:41] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:12:41] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:12:41] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:12:41] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:12:41] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:12:41] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:12:41] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:12:41] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:12:41] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:12:41] Loaded 168 vehicles from: vehicles/bone.txt
+[17:12:41] Loaded 61 vehicles from: vehicles/flint.txt
+[17:12:41] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:12:41] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:12:41] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:12:41] Modul: SA Icons Loaded
+[17:12:41] 
+---------------------------------------
+[17:12:41]  SA WORLD Main Frame Work
+
+[17:12:41]  By Liberty_Episodes
+
+[17:12:41] ---------------------------------------
+
+[17:12:41] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:12:48] filterscripts = ""  (string)
+[17:12:48] 
+[17:12:48] Server Plugins
+[17:12:48] --------------
+[17:12:48]  Loading plugin: mysql
+[17:12:48]   Failed.
+[17:12:48]  Loading plugin: sscanf
+[17:12:48]   Failed.
+[17:12:48]  Loading plugin: socket
+[17:12:48]   Failed.
+[17:12:48]  Loading plugin: NPatcher
+[17:12:48]   Failed.
+[17:12:48]  Loading plugin: streamer
+[17:12:48]   Failed.
+[17:12:48]  Loaded 0 plugins.
+
+[17:12:49] 
+[17:12:49] Filterscripts
+[17:12:49] ---------------
+[17:12:49]   Loaded 0 filterscripts.
+
+[17:12:49] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:12:49] Main Moudel Is Loaded.
+[17:12:49] Loaded 3 vehicles from: vehicles/trains.txt
+[17:12:49] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:12:49] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:12:49] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:12:49] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:12:49] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:12:49] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:12:49] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:12:49] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:12:49] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:12:49] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:12:49] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:12:49] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:12:49] Loaded 168 vehicles from: vehicles/bone.txt
+[17:12:49] Loaded 61 vehicles from: vehicles/flint.txt
+[17:12:49] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:12:49] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:12:49] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:12:49] Modul: SA Icons Loaded
+[17:12:49] 
+---------------------------------------
+[17:12:49]  SA WORLD Main Frame Work
+
+[17:12:49]  By Liberty_Episodes
+
+[17:12:49] ---------------------------------------
+
+[17:12:49] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:13:44] filterscripts = ""  (string)
+[17:13:44] 
+[17:13:44] Server Plugins
+[17:13:44] --------------
+[17:13:44]  Loading plugin: mysql
+[17:13:44]   Failed.
+[17:13:44]  Loading plugin: sscanf
+[17:13:44]   Failed.
+[17:13:44]  Loading plugin: socket
+[17:13:44]   Failed.
+[17:13:44]  Loading plugin: NPatcher
+[17:13:44]   Failed.
+[17:13:44]  Loading plugin: streamer
+[17:13:44]   Failed.
+[17:13:44]  Loaded 0 plugins.
+
+[17:13:45] 
+[17:13:45] Filterscripts
+[17:13:45] ---------------
+[17:13:45]   Loaded 0 filterscripts.
+
+[17:13:45] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:13:45] Main Moudel Is Loaded.
+[17:13:45] Loaded 3 vehicles from: vehicles/trains.txt
+[17:13:45] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:13:45] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:13:45] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:13:45] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:13:45] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:13:45] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:13:45] [connection] 127.0.0.1:49850 requests connection cookie.
+[17:13:45] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:13:45] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:13:45] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:13:45] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:13:45] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:13:45] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:13:45] Loaded 168 vehicles from: vehicles/bone.txt
+[17:13:45] Loaded 61 vehicles from: vehicles/flint.txt
+[17:13:45] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:13:45] [connection] 127.0.0.1:49851 requests connection cookie.
+[17:13:45] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:13:45] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:13:45] Modul: SA Icons Loaded
+[17:13:45] 
+---------------------------------------
+[17:13:45]  SA WORLD Main Frame Work
+
+[17:13:45]  By Liberty_Episodes
+
+[17:13:45] ---------------------------------------
+
+[17:13:45] Number of vehicle models: 173
+[17:13:45] [connection] 127.0.0.1:49852 requests connection cookie.
+[17:13:45] [connection] 127.0.0.1:49853 requests connection cookie.
+[17:13:45] [connection] 127.0.0.1:49854 requests connection cookie.
+[17:13:45] [connection] 127.0.0.1:49855 requests connection cookie.
+[17:13:46] [connection] incoming connection: 127.0.0.1:49850 id: 0
+[17:13:46] [connection] incoming connection: 127.0.0.1:49851 id: 1
+[17:13:46] [connection] incoming connection: 127.0.0.1:49852 id: 2
+[17:13:46] [connection] incoming connection: 127.0.0.1:49853 id: 3
+[17:13:46] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:13:46] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:46] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:13:46] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:46] [connection] incoming connection: 127.0.0.1:49854 id: 4
+[17:13:46] [connection] incoming connection: 127.0.0.1:49855 id: 5
+[17:13:46] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:13:46] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:46] [npc:join] PilotLV has joined the server (4:127.0.0.1)
+[17:13:46] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:46] [npc:join] PilotSF has joined the server (3:127.0.0.1)
+[17:13:46] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:46] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:13:46] NPC: Connection from 127.0.0.1 is allowed.
+[17:14:21] [connection] 127.0.0.1:55260 requests connection cookie.
+[17:14:22] [connection] incoming connection: 127.0.0.1:55260 id: 6
+[17:14:22] [join] Kanna has joined the server (6:127.0.0.1)
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:17:28] filterscripts = ""  (string)
+[17:17:28] 
+[17:17:28] Server Plugins
+[17:17:28] --------------
+[17:17:28]  Loading plugin: mysql
+[17:17:28]   Failed.
+[17:17:28]  Loading plugin: sscanf
+[17:17:28]   Failed.
+[17:17:28]  Loading plugin: socket
+[17:17:28]   Failed.
+[17:17:28]  Loading plugin: NPatcher
+[17:17:28]   Failed.
+[17:17:28]  Loading plugin: streamer
+[17:17:28]   Failed.
+[17:17:28]  Loaded 0 plugins.
+
+[17:17:28] 
+[17:17:28] Filterscripts
+[17:17:28] ---------------
+[17:17:28]   Loaded 0 filterscripts.
+
+[17:17:28] Main Moudel Is Loaded.
+[17:17:28] Loaded 3 vehicles from: vehicles/trains.txt
+[17:17:28] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:17:28] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:17:28] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:17:28] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:17:28] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:17:28] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:17:28] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:17:28] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:17:28] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:17:28] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:17:28] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:17:28] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:17:28] Loaded 168 vehicles from: vehicles/bone.txt
+[17:17:28] Loaded 61 vehicles from: vehicles/flint.txt
+[17:17:28] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:17:28] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:17:28] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:17:28] Modul: SA Icons Loaded
+[17:17:28] 
+---------------------------------------
+[17:17:28]  SA WORLD Main Frame Work
+
+[17:17:28]  By Liberty_Episodes
+
+[17:17:28] ---------------------------------------
+
+[17:17:28] Number of vehicle models: 173
+[17:17:31] [connection] 127.0.0.1:63920 requests connection cookie.
+[17:17:32] [connection] incoming connection: 127.0.0.1:63920 id: 0
+[17:17:32] [join] Kanna has joined the server (0:127.0.0.1)
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:18:13] filterscripts = ""  (string)
+[17:18:13] 
+[17:18:13] Server Plugins
+[17:18:13] --------------
+[17:18:13]  Loading plugin: mysql
+[17:18:13]   Failed.
+[17:18:13]  Loading plugin: sscanf
+[17:18:13]   Failed.
+[17:18:13]  Loading plugin: socket
+[17:18:13]   Failed.
+[17:18:13]  Loading plugin: NPatcher
+[17:18:13]   Failed.
+[17:18:13]  Loading plugin: streamer
+[17:18:13]   Failed.
+[17:18:13]  Loaded 0 plugins.
+
+[17:18:14] 
+[17:18:14] Filterscripts
+[17:18:14] ---------------
+[17:18:14]   Loaded 0 filterscripts.
+
+[17:18:14] Main Moudel Is Loaded.
+[17:18:14] Modul: SA Icons Loaded
+[17:18:14] 
+---------------------------------------
+[17:18:14]  SA WORLD Main Frame Work
+
+[17:18:14]  By Liberty_Episodes
+
+[17:18:14] ---------------------------------------
+
+[17:18:14] Number of vehicle models: 0
+[17:18:25] [connection] 127.0.0.1:49890 requests connection cookie.
+[17:18:26] [connection] incoming connection: 127.0.0.1:49890 id: 0
+[17:18:26] [join] Kanna has joined the server (0:127.0.0.1)
+[17:18:29] [part] Kanna has left the server (0:1)
+[17:19:00] [connection] 127.0.0.1:61158 requests connection cookie.
+[17:19:01] [connection] incoming connection: 127.0.0.1:61158 id: 0
+[17:19:01] [join] Kanna has joined the server (0:127.0.0.1)
+[17:19:07] [part] Kanna has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:19:28] filterscripts = ""  (string)
+[17:19:28] 
+[17:19:28] Server Plugins
+[17:19:28] --------------
+[17:19:28]  Loading plugin: mysql
+[17:19:28]   Failed.
+[17:19:28]  Loading plugin: sscanf
+[17:19:28]   Failed.
+[17:19:28]  Loading plugin: socket
+[17:19:28]   Failed.
+[17:19:28]  Loading plugin: NPatcher
+[17:19:28]   Failed.
+[17:19:28]  Loading plugin: streamer
+[17:19:28]   Failed.
+[17:19:28]  Loaded 0 plugins.
+
+[17:19:28] 
+[17:19:28] Filterscripts
+[17:19:28] ---------------
+[17:19:28]   Loaded 0 filterscripts.
+
+[17:19:29] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:19:29] Main Moudel Is Loaded.
+[17:19:29] Loaded 3 vehicles from: vehicles/trains.txt
+[17:19:29] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:19:29] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:19:29] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:19:29] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:19:29] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:19:29] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:19:29] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:19:29] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:19:29] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:19:29] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:19:29] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:19:29] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:19:29] Loaded 168 vehicles from: vehicles/bone.txt
+[17:19:29] Loaded 61 vehicles from: vehicles/flint.txt
+[17:19:29] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:19:29] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:19:29] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:19:29] Modul: SA Icons Loaded
+[17:19:29] 
+---------------------------------------
+[17:19:29]  SA WORLD Main Frame Work
+
+[17:19:29]  By Liberty_Episodes
+
+[17:19:29] ---------------------------------------
+
+[17:19:29] Number of vehicle models: 173
+[17:19:29] [connection] 127.0.0.1:53213 requests connection cookie.
+[17:19:29] [connection] 127.0.0.1:53212 requests connection cookie.
+[17:19:29] [connection] 127.0.0.1:53214 requests connection cookie.
+[17:19:29] [connection] 127.0.0.1:53215 requests connection cookie.
+[17:19:29] [connection] 127.0.0.1:53216 requests connection cookie.
+[17:19:29] [connection] 127.0.0.1:53217 requests connection cookie.
+[17:19:30] [connection] incoming connection: 127.0.0.1:53213 id: 0
+[17:19:30] [connection] incoming connection: 127.0.0.1:53212 id: 1
+[17:19:30] [connection] incoming connection: 127.0.0.1:53214 id: 2
+[17:19:30] [connection] incoming connection: 127.0.0.1:53215 id: 3
+[17:19:30] [connection] incoming connection: 127.0.0.1:53216 id: 4
+[17:19:30] [connection] incoming connection: 127.0.0.1:53217 id: 5
+[17:19:30] [npc:join] TrainDriverLS has joined the server (0:127.0.0.1)
+[17:19:30] NPC: Connection from 127.0.0.1 is allowed.
+[17:19:30] [npc:join] TrainDriverLV has joined the server (1:127.0.0.1)
+[17:19:30] NPC: Connection from 127.0.0.1 is allowed.
+[17:19:30] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:19:30] NPC: Connection from 127.0.0.1 is allowed.
+[17:19:30] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:19:30] NPC: Connection from 127.0.0.1 is allowed.
+[17:19:30] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:19:30] NPC: Connection from 127.0.0.1 is allowed.
+[17:19:30] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:19:30] NPC: Connection from 127.0.0.1 is allowed.
+[17:20:02] [connection] 127.0.0.1:49716 requests connection cookie.
+[17:20:03] [connection] incoming connection: 127.0.0.1:49716 id: 6
+[17:20:04] [join] Kanna has joined the server (6:127.0.0.1)
+[17:20:11] [part] Kanna has left the server (6:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:21:19] filterscripts = ""  (string)
+[17:21:19] 
+[17:21:19] Server Plugins
+[17:21:19] --------------
+[17:21:19]  Loading plugin: mysql
+[17:21:19]   Failed.
+[17:21:19]  Loading plugin: sscanf
+[17:21:19]   Failed.
+[17:21:19]  Loading plugin: socket
+[17:21:19]   Failed.
+[17:21:19]  Loading plugin: NPatcher
+[17:21:19]   Failed.
+[17:21:19]  Loading plugin: streamer
+[17:21:19]   Failed.
+[17:21:19]  Loaded 0 plugins.
+
+[17:21:19] 
+[17:21:19] Filterscripts
+[17:21:19] ---------------
+[17:21:19]   Loaded 0 filterscripts.
+
+[17:21:19] Main Moudel Is Loaded.
+[17:21:19] Loaded 3 vehicles from: vehicles/trains.txt
+[17:21:19] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:21:19] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:21:19] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:21:19] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:21:19] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:21:19] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:21:19] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:21:19] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:21:19] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:21:19] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:21:19] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:21:19] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:21:19] Loaded 168 vehicles from: vehicles/bone.txt
+[17:21:19] Loaded 61 vehicles from: vehicles/flint.txt
+[17:21:19] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:21:19] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:21:19] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:21:19] Modul: SA Icons Loaded
+[17:21:19] 
+---------------------------------------
+[17:21:19]  SA WORLD Main Frame Work
+
+[17:21:19]  By Liberty_Episodes
+
+[17:21:19] ---------------------------------------
+
+[17:21:19] Number of vehicle models: 173
+[17:21:45] [connection] 127.0.0.1:50019 requests connection cookie.
+[17:21:46] [connection] incoming connection: 127.0.0.1:50019 id: 0
+[17:21:46] [join] Kanna has joined the server (0:127.0.0.1)
+[17:21:51] [part] Kanna has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:23:23] filterscripts = ""  (string)
+[17:23:23] 
+[17:23:23] Server Plugins
+[17:23:23] --------------
+[17:23:23]  Loading plugin: mysql
+[17:23:23]   Failed.
+[17:23:23]  Loading plugin: sscanf
+[17:23:23]   Failed.
+[17:23:23]  Loading plugin: socket
+[17:23:23]   Failed.
+[17:23:23]  Loading plugin: NPatcher
+[17:23:23]   Failed.
+[17:23:23]  Loading plugin: streamer
+[17:23:23]   Failed.
+[17:23:23]  Loaded 0 plugins.
+
+[17:23:23] 
+[17:23:23] Filterscripts
+[17:23:23] ---------------
+[17:23:23]   Loaded 0 filterscripts.
+
+[17:23:23] [connection] 127.0.0.1:54620 requests connection cookie.
+[17:23:23] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:23:23] Main Moudel Is Loaded.
+[17:23:23] Loaded 3 vehicles from: vehicles/trains.txt
+[17:23:23] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:23:23] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:23:23] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:23:23] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:23:23] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:23:23] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:23:23] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:23:23] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:23:23] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:23:23] [connection] 127.0.0.1:54621 requests connection cookie.
+[17:23:23] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:23:23] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:23:23] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:23:23] Loaded 168 vehicles from: vehicles/bone.txt
+[17:23:23] Loaded 61 vehicles from: vehicles/flint.txt
+[17:23:23] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:23:23] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:23:23] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:23:23] Modul: SA Icons Loaded
+[17:23:23] 
+---------------------------------------
+[17:23:23]  SA WORLD Main Frame Work
+
+[17:23:23]  By Liberty_Episodes
+
+[17:23:23] ---------------------------------------
+
+[17:23:23] Number of vehicle models: 173
+[17:23:24] [connection] 127.0.0.1:54622 requests connection cookie.
+[17:23:24] [connection] 127.0.0.1:54623 requests connection cookie.
+[17:23:24] [connection] 127.0.0.1:54624 requests connection cookie.
+[17:23:24] [connection] 127.0.0.1:54628 requests connection cookie.
+[17:23:24] [connection] incoming connection: 127.0.0.1:54620 id: 0
+[17:23:24] [connection] incoming connection: 127.0.0.1:54621 id: 1
+[17:23:25] [connection] incoming connection: 127.0.0.1:54622 id: 2
+[17:23:25] [connection] incoming connection: 127.0.0.1:54623 id: 3
+[17:23:25] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:23:25] NPC: Connection from 127.0.0.1 is allowed.
+[17:23:25] [connection] incoming connection: 127.0.0.1:54624 id: 4
+[17:23:25] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:23:25] NPC: Connection from 127.0.0.1 is allowed.
+[17:23:25] [connection] incoming connection: 127.0.0.1:54628 id: 5
+[17:23:25] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:23:25] NPC: Connection from 127.0.0.1 is allowed.
+[17:23:25] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:23:25] NPC: Connection from 127.0.0.1 is allowed.
+[17:23:25] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:23:25] NPC: Connection from 127.0.0.1 is allowed.
+[17:23:25] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:23:25] NPC: Connection from 127.0.0.1 is allowed.
+[17:24:05] [connection] 127.0.0.1:53693 requests connection cookie.
+[17:24:06] [connection] incoming connection: 127.0.0.1:53693 id: 6
+[17:24:06] [join] Kanna has joined the server (6:127.0.0.1)
+[17:24:30] [part] Kanna has left the server (6:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:25:48] filterscripts = ""  (string)
+[17:25:48] 
+[17:25:48] Server Plugins
+[17:25:48] --------------
+[17:25:48]  Loading plugin: mysql
+[17:25:48]   Failed.
+[17:25:48]  Loading plugin: sscanf
+[17:25:48]   Failed.
+[17:25:48]  Loading plugin: socket
+[17:25:48]   Failed.
+[17:25:48]  Loading plugin: NPatcher
+[17:25:48]   Failed.
+[17:25:48]  Loading plugin: streamer
+[17:25:48]   Failed.
+[17:25:48]  Loaded 0 plugins.
+
+[17:25:48] 
+[17:25:48] Filterscripts
+[17:25:48] ---------------
+[17:25:48]   Loaded 0 filterscripts.
+
+[17:25:49] [connection] 127.0.0.1:56498 requests connection cookie.
+[17:25:49] [connection] 127.0.0.1:56499 requests connection cookie.
+[17:25:49] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:25:49] Main Moudel Is Loaded.
+[17:25:49] Loaded 3 vehicles from: vehicles/trains.txt
+[17:25:49] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:25:49] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:25:49] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:25:49] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:25:49] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:25:49] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:25:49] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:25:49] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:25:49] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:25:49] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:25:49] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:25:49] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:25:49] Loaded 168 vehicles from: vehicles/bone.txt
+[17:25:49] Loaded 61 vehicles from: vehicles/flint.txt
+[17:25:49] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:25:49] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:25:49] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:25:49] Modul: SA Icons Loaded
+[17:25:49] 
+---------------------------------------
+[17:25:49]  SA WORLD Main Frame Work
+
+[17:25:49]  By Liberty_Episodes
+
+[17:25:49] ---------------------------------------
+
+[17:25:49] Number of vehicle models: 173
+[17:25:49] [connection] 127.0.0.1:56500 requests connection cookie.
+[17:25:49] [connection] 127.0.0.1:56501 requests connection cookie.
+[17:25:49] [connection] 127.0.0.1:56502 requests connection cookie.
+[17:25:49] [connection] 127.0.0.1:56503 requests connection cookie.
+[17:25:50] [connection] incoming connection: 127.0.0.1:56498 id: 0
+[17:25:50] [connection] incoming connection: 127.0.0.1:56499 id: 1
+[17:25:50] [connection] incoming connection: 127.0.0.1:56500 id: 2
+[17:25:50] [connection] incoming connection: 127.0.0.1:56501 id: 3
+[17:25:50] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:25:50] NPC: Connection from 127.0.0.1 is allowed.
+[17:25:50] [connection] incoming connection: 127.0.0.1:56502 id: 4
+[17:25:50] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:25:50] NPC: Connection from 127.0.0.1 is allowed.
+[17:25:50] [connection] incoming connection: 127.0.0.1:56503 id: 5
+[17:25:50] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:25:50] NPC: Connection from 127.0.0.1 is allowed.
+[17:25:50] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:25:50] NPC: Connection from 127.0.0.1 is allowed.
+[17:25:50] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:25:50] NPC: Connection from 127.0.0.1 is allowed.
+[17:25:50] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:25:50] NPC: Connection from 127.0.0.1 is allowed.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:26:02] filterscripts = ""  (string)
+[17:26:02] 
+[17:26:02] Server Plugins
+[17:26:02] --------------
+[17:26:02]  Loading plugin: mysql
+[17:26:02]   Failed.
+[17:26:02]  Loading plugin: sscanf
+[17:26:02]   Failed.
+[17:26:02]  Loading plugin: socket
+[17:26:02]   Failed.
+[17:26:02]  Loading plugin: NPatcher
+[17:26:02]   Failed.
+[17:26:02]  Loading plugin: streamer
+[17:26:02]   Failed.
+[17:26:02]  Loaded 0 plugins.
+
+[17:26:02] 
+[17:26:02] Filterscripts
+[17:26:02] ---------------
+[17:26:02]   Loaded 0 filterscripts.
+
+[17:26:03] [connection] 127.0.0.1:50542 requests connection cookie.
+[17:26:03] [connection] 127.0.0.1:50543 requests connection cookie.
+[17:26:03] [ƒ£øÈ]: ¿ΩÁNPC“—æ≠º”‘ÿ
+[17:26:03] Main Moudel Is Loaded.
+[17:26:03] Loaded 3 vehicles from: vehicles/trains.txt
+[17:26:03] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:26:03] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:26:03] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:26:03] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:26:03] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:26:03] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:26:03] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:26:03] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:26:03] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:26:03] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:26:03] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:26:03] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:26:03] Loaded 168 vehicles from: vehicles/bone.txt
+[17:26:03] Loaded 61 vehicles from: vehicles/flint.txt
+[17:26:03] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:26:03] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:26:03] [ ¿ΩÁΩªÕ®π§æﬂ]: “—æ≠º”‘ÿ:1781∏ˆ
+[17:26:03] Modul: SA Icons Loaded
+[17:26:03] 
+---------------------------------------
+[17:26:03]  SA WORLD Main Frame Work
+
+[17:26:03]  By Liberty_Episodes
+
+[17:26:03] ---------------------------------------
+
+[17:26:03] Number of vehicle models: 173
+[17:26:03] [connection] 127.0.0.1:50544 requests connection cookie.
+[17:26:03] [connection] 127.0.0.1:50545 requests connection cookie.
+[17:26:03] [connection] 127.0.0.1:50546 requests connection cookie.
+[17:26:03] [connection] 127.0.0.1:50547 requests connection cookie.
+[17:26:04] [connection] incoming connection: 127.0.0.1:50542 id: 0
+[17:26:04] [connection] incoming connection: 127.0.0.1:50543 id: 1
+[17:26:04] [connection] incoming connection: 127.0.0.1:50544 id: 2
+[17:26:04] [connection] incoming connection: 127.0.0.1:50545 id: 3
+[17:26:04] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:26:04] NPC: Connection from 127.0.0.1 is allowed.
+[17:26:04] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:26:04] NPC: Connection from 127.0.0.1 is allowed.
+[17:26:04] [connection] incoming connection: 127.0.0.1:50546 id: 4
+[17:26:04] [connection] incoming connection: 127.0.0.1:50547 id: 5
+[17:26:04] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:26:04] NPC: Connection from 127.0.0.1 is allowed.
+[17:26:04] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:26:04] NPC: Connection from 127.0.0.1 is allowed.
+[17:26:04] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:26:04] NPC: Connection from 127.0.0.1 is allowed.
+[17:26:04] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:26:04] NPC: Connection from 127.0.0.1 is allowed.
+[17:26:33] [connection] 127.0.0.1:59222 requests connection cookie.
+[17:26:34] [connection] incoming connection: 127.0.0.1:59222 id: 6
+[17:26:34] [join] Kanna has joined the server (6:127.0.0.1)
+[17:27:13] [part] Kanna has left the server (6:0)
+[17:27:36] [connection] 127.0.0.1:55212 requests connection cookie.
+[17:27:37] [connection] incoming connection: 127.0.0.1:55212 id: 6
+[17:27:37] [join] Kanna has joined the server (6:127.0.0.1)
+[17:37:42] [part] Kanna has left the server (6:1)

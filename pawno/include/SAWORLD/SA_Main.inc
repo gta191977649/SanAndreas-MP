@@ -1,15 +1,23 @@
 //For more info on ALS Hooking check
 //http://forum.sa-mp.com/showthread.php?t=85907
 #include <SAWORLD/SA_WeaponSkill>
+#include <SAWORLD/Enviroment/Veh/SA_WorldVehicles>
+#include <SAWORLD/Enviroment/NPC/SA_WorldNPC>
 
+#define GAMEMODE "SAMP圣安地列斯v0.1"
 static gMAIN_HasCB[3];
 
 //--------------OnGameModeInit Hook-------------------
 
 public OnGameModeInit()
 {
-	//your OnGameModeInit pre code here
+	SetGameModeText(GAMEMODE);
 	printf("Main Moudel Is Loaded.");
+	//加载世界系统车辆
+	new WORLD_VEH = SYSTEM_LoadSAWorldVehicle();
+
+	
+	printf("[世界交通工具]: 已经加载:%d个",WORLD_VEH);
 	//function hook checks
 
 	gMAIN_HasCB[0] = funcidx("MAIN_OnPlayerConnect") != -1;
