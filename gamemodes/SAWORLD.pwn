@@ -6,11 +6,14 @@
 //----------------------------------------------------------
 
 #include <a_samp>
+#include <streamer>
+
 #include <SAWORLD/SA_Main>
 #include <SAWORLD/SA_MapIcons>
 #include <SAWORLD/SA_MapIcons>
 #include <SAWORLD/SA_Spawn>
 #include <SAWORLD/SA_GlCommon>
+#include <SAWORLD/GYM/SA_GYM>
 
 //UI
 #include <SAWORLD/UI/InfoBox>
