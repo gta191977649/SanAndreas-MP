@@ -26,9 +26,8 @@
 #include <SA/Mission/PlayerMission>
 //任务列表
 #include <SA/Mission/HotDog/Main>
-
-
 #include <SA/Mission/IceCream/Main>
+#include <SA/Mission/Paramedic/Main>
 
 
 //----------------------------------------------------------

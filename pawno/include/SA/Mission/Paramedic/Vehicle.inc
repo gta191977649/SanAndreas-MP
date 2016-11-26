@@ -1,6 +1,8 @@
 #define AMB_VEHICLE 416
 
-stock AMB_IsVaildVehicle(vehicleid)
+stock AMB_IsVaildVehicle(playerid)
 {
-	return vehicleid == AMB_VEHICLE;
+	new vehicleid = GetPlayerVehicleID(playerid);
+    new vehid = GetVehicleModel(vehicleid);
+	return vehid == AMB_VEHICLE ? true : false;
 }

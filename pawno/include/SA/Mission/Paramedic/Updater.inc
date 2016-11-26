@@ -1,8 +1,14 @@
 forward AMB_OnIndicatorUpdate();
 public AMB_OnIndicatorUpdate()
 {
-	for(new i = 0 ; i < MAX_PLAYERS; i++)
+	for(new i = 0 ; i < 50; i++)
 	{
-		if(UpdateMapIndicator(playerid))
+		if(IsPlayerConnected(i))
+		{
+			if(AMB_IsPlayerInMission(i)) 
+			{
+				UpdateMapIndicator(i);
+			}
+		}
 	}
 }

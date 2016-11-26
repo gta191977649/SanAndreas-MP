@@ -15,3 +15,7 @@
 //讯息
 #define C_OBJECTIVE "{DFBE64}"
 #define C_WHITE "{FFFFFF}"
+
+//Player
+
+#define C_PLAYER 0xFFFFFF00 //<- Used Default Transperent

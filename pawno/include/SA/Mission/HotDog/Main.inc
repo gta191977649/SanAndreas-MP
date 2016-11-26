@@ -11,7 +11,7 @@
 #define KEY_MISSION (newkeys & KEY_SUBMISSION) && !(oldkeys & KEY_SUBMISSION)
 #define KEY_ALT  (newkeys &  KEY_WALK ) && !(oldkeys &  KEY_WALK )
 
-static gHOTDOG_HasCB[7];
+static gHOTDOG_HasCB[8];
 
 //--------------OnGameModeInit Hook-------------------
 
@@ -28,6 +28,7 @@ public OnGameModeInit()
 	gHOTDOG_HasCB[4] = funcidx("HOTDOG_OnPlayerKeyStateChange")  != -1;
 	gHOTDOG_HasCB[5] = funcidx("HOTDOG_OnPlayerStreamIn") != -1;
 	gHOTDOG_HasCB[6] = funcidx("HOTDOG_OnPlayerStreamOut") != -1;
+	gHOTDOG_HasCB[7] = funcidx("HOTDOG_OnPlayerDeath") != -1;
 	if (funcidx("HOTDOG_OnGameModeInit") != -1)
 	{
 		return CallLocalFunction("HOTDOG_OnGameModeInit", "");
@@ -239,6 +240,37 @@ public OnPlayerStreamOut(playerid, forplayerid)
 	}
 	return 1;
 }
+//--------------OnPlayerDeath Hook-------------------
+
+public OnPlayerDeath(playerid, killerid,  reason)
+{
+	//your OnPlayerDeath code here
+	if(HOTDOG_PLAYER_isSell(playerid)) 
+	{
+		SG_Sub(playerid,"~r~ You died.",5);
+		HOTDOG_PLAYER_stopSelling(playerid);
+		HOTDOG_PLAYER_reset(playerid);
+		
+	}
+	
+	if (gHOTDOG_HasCB[0])
+	{
+		return CallLocalFunction("HOTDOG_OnPlayerDeath", "iii",playerid, killerid,  reason);
+	}
+	return 1;
+}
+#if defined _ALS_OnPlayerDeath
+	#undef OnPlayerDeath
+#else
+	#define _ALS_OnPlayerDeath
+#endif
+#define OnPlayerDeath HOTDOG_OnPlayerDeath
+forward HOTDOG_OnPlayerDeath(playerid, killerid,  reason);
+
+
+
+
+
 #if defined _ALS_OnPlayerStreamOut
 	#undef OnPlayerStreamOut
 #else

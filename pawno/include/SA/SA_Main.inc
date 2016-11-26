@@ -3,6 +3,7 @@
 
 #include <SA/Enviroment/Veh/SA_WorldVehicles>
 #include <SA/Enviroment/NPC/SA_WorldNPC>
+#include <SA/SA_Player>
 
 #define GAMEMODE "SAMP圣安地列斯v0.1"
 static gMAIN_HasCB[3];
@@ -46,7 +47,6 @@ forward MAIN_OnGameModeInit();
 
 public OnPlayerConnect(playerid)
 {
-	
 
 	if (gMAIN_HasCB[0])
 	{
@@ -91,7 +91,9 @@ forward MAIN_OnPlayerDisconnect(playerid,  reason);
 public OnPlayerSpawn(playerid)
 {
 	//your OnPlayerSpawn code here
-
+	
+	SetPlayerColor(playerid,C_PLAYER);
+	
 	if (gMAIN_HasCB[2])
 	{
 		return CallLocalFunction("MAIN_OnPlayerSpawn", "i",playerid);
