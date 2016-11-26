@@ -1,8 +1,8 @@
 //For more info on ALS Hooking check
 //http://forum.sa-mp.com/showthread.php?t=85907
-#include <SAWORLD/SA_WeaponSkill>
-#include <SAWORLD/Enviroment/Veh/SA_WorldVehicles>
-#include <SAWORLD/Enviroment/NPC/SA_WorldNPC>
+
+#include <SA/Enviroment/Veh/SA_WorldVehicles>
+#include <SA/Enviroment/NPC/SA_WorldNPC>
 
 #define GAMEMODE "SAMP圣安地列斯v0.1"
 static gMAIN_HasCB[3];

@@ -9,3 +9,9 @@
 
 //提示框
 #define INFO_BoxBG 0x000000FF
+#define C_RED 0xFF0000FF
+
+
+//讯息
+#define C_OBJECTIVE "{DFBE64}"
+#define C_WHITE "{FFFFFF}"
