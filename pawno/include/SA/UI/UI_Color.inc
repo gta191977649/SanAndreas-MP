@@ -9,7 +9,7 @@
 
 //提示框
 #define INFO_BoxBG 0x000000FF
-#define C_RED 0xFF0000FF
+#define C_RED 0xAE211AFF
 
 
 //讯息

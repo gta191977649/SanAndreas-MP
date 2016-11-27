@@ -4420,3 +4420,91 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [00:58:11] [connection] incoming connection: 172.16.0.8:54519 id: 7
 [00:58:11] [join] Honhyomone has joined the server (7:172.16.0.8)
 [00:59:37] [part] Honhyomone has left the server (7:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:36:41] 
+[13:36:41] Server Plugins
+[13:36:41] --------------
+[13:36:41]  Loading plugin: streamer
+[13:36:41] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[13:36:41]   Loaded.
+[13:36:41]  Loaded 1 plugins.
+
+[13:36:41] 
+[13:36:41] Filterscripts
+[13:36:41] ---------------
+[13:36:41]   Loading filterscript 'test_cmds.amx'...
+[13:36:41]   Loaded 1 filterscripts.
+
+[13:36:41] [模块]:世界NPC已经加载
+[13:36:41] Main Moudel Is Loaded.
+[13:36:41] Loaded 3 vehicles from: vehicles/trains.txt
+[13:36:41] Loaded 3 vehicles from: vehicles/pilots.txt
+[13:36:41] Loaded 15 vehicles from: vehicles/lv_law.txt
+[13:36:41] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[13:36:41] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[13:36:41] [connection] 127.0.0.1:63378 requests connection cookie.
+[13:36:41] Loaded 38 vehicles from: vehicles/sf_law.txt
+[13:36:41] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[13:36:41] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[13:36:41] Loaded 24 vehicles from: vehicles/ls_law.txt
+[13:36:41] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[13:36:41] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[13:36:41] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[13:36:41] Loaded 71 vehicles from: vehicles/whetstone.txt
+[13:36:41] Loaded 168 vehicles from: vehicles/bone.txt
+[13:36:41] Loaded 61 vehicles from: vehicles/flint.txt
+[13:36:41] Loaded 96 vehicles from: vehicles/tierra.txt
+[13:36:41] Loaded 96 vehicles from: vehicles/red_county.txt
+[13:36:41] [connection] 127.0.0.1:63379 requests connection cookie.
+[13:36:41] [世界交通工具]: 已经加载:1781个
+[13:36:41] Modul: SA Icons Loaded
+[13:36:41] 
+---------------------------------------
+[13:36:41]  SA WORLD Main Frame Work
+
+[13:36:41]  By Liberty_Episodes
+
+[13:36:41] ---------------------------------------
+
+[13:36:41] Number of vehicle models: 173
+[13:36:41] [connection] 127.0.0.1:63380 requests connection cookie.
+[13:36:41] [connection] 127.0.0.1:63381 requests connection cookie.
+[13:36:41] [connection] 127.0.0.1:63383 requests connection cookie.
+[13:36:41] [connection] 127.0.0.1:63382 requests connection cookie.
+[13:36:42] [connection] incoming connection: 127.0.0.1:63378 id: 0
+[13:36:42] [connection] incoming connection: 127.0.0.1:63379 id: 1
+[13:36:42] [connection] incoming connection: 127.0.0.1:63380 id: 2
+[13:36:42] [connection] incoming connection: 127.0.0.1:63381 id: 3
+[13:36:42] [connection] incoming connection: 127.0.0.1:63382 id: 4
+[13:36:42] [connection] incoming connection: 127.0.0.1:63383 id: 5
+[13:36:42] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[13:36:42] NPC: Connection from 127.0.0.1 is allowed.
+[13:36:42] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[13:36:42] NPC: Connection from 127.0.0.1 is allowed.
+[13:36:42] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[13:36:42] NPC: Connection from 127.0.0.1 is allowed.
+[13:36:42] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[13:36:42] NPC: Connection from 127.0.0.1 is allowed.
+[13:36:42] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[13:36:42] NPC: Connection from 127.0.0.1 is allowed.
+[13:36:42] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[13:36:42] NPC: Connection from 127.0.0.1 is allowed.
+[13:37:07] [connection] 127.0.0.1:57267 requests connection cookie.
+[13:37:08] [connection] incoming connection: 127.0.0.1:57267 id: 6
+[13:37:08] [join] Liberty_Episodes has joined the server (6:127.0.0.1)
+[13:38:48] [connection] 172.16.0.8:58866 requests connection cookie.
+[13:38:49] [connection] incoming connection: 172.16.0.8:58866 id: 7
+[13:38:49] [join] Kande has joined the server (7:172.16.0.8)
+[13:43:25] [part] Kande has left the server (7:1)
+[13:43:28] [part] Liberty_Episodes has left the server (6:1)
