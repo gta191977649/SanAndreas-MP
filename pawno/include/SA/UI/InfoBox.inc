@@ -78,7 +78,7 @@ stock ShowInfoBox(playerid, box_color, shown_for, text[])
 	PlayerTextDrawSetString(playerid, ptInfoBox[playerid], text);
 	PlayerTextDrawShow(playerid, ptInfoBox[playerid]);
 	//Sound
-	PlayerPlaySound(playerid,1083,0.0,0.0,0.0);
+	PlayerPlaySound(playerid,SOUND_NOTIFY,0.0,0.0,0.0);
 	
 	KillTimer(tmInfoBox[playerid]);
 	tmInfoBox[playerid] = SetTimerEx("HideInfoBox", (1000 * shown_for), false, "i", playerid);

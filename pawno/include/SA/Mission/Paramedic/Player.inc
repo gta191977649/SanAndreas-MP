@@ -66,9 +66,10 @@ stock AMB_GetNearstPatient(playerid)
 stock AMB_TreatPlayer(playerid,treaterid)
 {
 	SetPlayerHealth(treaterid,100.0);
-	AMB_ApplyAnimation(playerid);
+	//AMB_ApplyAnimation(playerid);//动作...
 	GivePlayerMoney(playerid,900);
 	GameTextForPlayer(playerid, "Payout:~w~$900", 2000, 6);
+	PlayerPlaySound(playerid,SOUND_COMPELETE,0.0,0.0,0.0);
 }
 stock UpdateMapIndicator(playerid)
 {
