@@ -39,8 +39,8 @@ stock ResetPlayerMission(playerid,missionid)
 		switch (missionid)
 		{
 			case MISSION_HOTDOG: HOTDOG_PLAYER_reset(playerid);
-			//case MISSION_ICECREAM: IceCream_PLAYER_reset(playerid);
-			//....
+			case MISSION_ICECREAM: IceCream_PLAYER_reset(playerid);
+			case MISSION_PARAMEDIT: AMB_PLAYER_reset(playerid);
 		}
 	}
 }

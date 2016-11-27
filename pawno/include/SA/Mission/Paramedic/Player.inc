@@ -27,9 +27,13 @@ stock AMB_SetPlayerMissionStatus(playerid,bool:toogle)
 	}
 	else
 	{
-		SetPlayerMissionStatus(playerid,MISSION_PARAMEDIT,false);
-		ResetMapIndicator(playerid);
+		AMB_PLAYER_reset(playerid);
 	}
+}
+stock AMB_PLAYER_reset(playerid)
+{
+	ResetMapIndicator(playerid);
+	SetPlayerMissionStatus(playerid,MISSION_PARAMEDIT,false);
 }
 stock AMB_IsPlayerInMission(playerid)
 {
