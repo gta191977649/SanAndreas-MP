@@ -13,6 +13,7 @@
 #include <SA/UI/UI_Sound>
 #include <SA/UI/InfoBox>
 #include <SA/UI/UI_Subtitle>
+#include <SA/UI/UI_Progress>
 
 #include <SA/SA_Main>
 #include <SA/SA_MapIcons>
@@ -30,6 +31,7 @@
 #include <SA/Mission/HotDog/Main>
 #include <SA/Mission/IceCream/Main>
 #include <SA/Mission/Paramedic/Main>
+#include <SA/Mission/CarShop/Main>
 
 
 //----------------------------------------------------------
