@@ -1,0 +1,153 @@
+#if !defined MASTER_MASTERLEVEL
+	#define MASTER_MASTERLEVEL 1
+#endif
+
+#if !defined MAX_MASTERS
+	#define MAX_MASTERS 32
+#else
+	#if MAX_MASTERS > 32
+		#undef MAX_MASTERS
+		#define MAX_MASTERS 32
+	#endif
+#endif
+
+#define MAX_MASTER_NAME 16
+
+#define YSIM_MASTER "YSIM_Master"
+
+#if !defined MASTER_LEVEL
+	#define MASTER_LEVEL 0
+#endif
+
+enum (+= 0x01000000)
+{
+	E_MASTER_RELINQUISH = 0x01000000,
+	E_MASTER_SET_MASTER,
+	E_MASTER_NOT_MASTER
+}
+
+#if MASTER_LEVEL != 0
+	forward Master_RelHi(master);
+#else
+	forward Master_RelLo(master);
+#endif
+forward Master_Refresh();
+
+static
+	YSI_g_sMasterCount,
+	YSI_g_sMasters,
+	YSI_g_sMasterData[MAX_MASTERS][MAX_MASTER_NAME];
+
+new
+	YSI_gMasterID = -1;
+
+#define Master_CheckProp(%1) \
+	(existproperty(0, (%1)) && getproperty(0, (%1)) != -1)
+
+#define Master_SetMaster(%1) \
+	setproperty(0, (%1), YSI_gMasterID); \
+	CallLocalFunction((%1), "i", E_MASTER_SET_MASTER)
+
+Master_Master()
+{
+	if (!existproperty(0, YSIM_MASTER))
+	{
+		YSI_gMasterID = 0;
+		setproperty(0, YSIM_MASTER, 1);
+	}
+	else
+	{
+		new
+			masters = getproperty(0, YSIM_MASTER);
+		for (new i = 0; i < 32; i++)
+		{
+			if (!(masters & (1 << i)))
+			{
+				YSI_gMasterID = i;
+				masters |= 1 << i;
+				break;
+			}
+		}
+		setproperty(0, YSIM_MASTER, masters);
+	}
+	if (YSI_gMasterID == -1) printf("*** Internal Error! MasterID not assigned");
+	return 1;
+}
+
+Master_@Master()
+{
+	if (YSI_gMasterID == -1) return 0;
+	for (new i = 0; i < YSI_g_sMasterCount; i++)
+	{
+		if (YSI_g_sMasters & (1 << i))
+		{
+			setproperty(0, YSI_g_sMasterData[i], -1);
+			CallLocalFunction(YSI_g_sMasterData[i], "i", E_MASTER_NOT_MASTER);
+		}
+	}
+	CallRemoteFunction("Master_RelHi", "i", YSI_gMasterID);
+	CallRemoteFunction("Master_RelLo", "i", YSI_gMasterID);
+	for (new i = 0; i < YSI_g_sMasterCount; i++)
+	{
+		if (YSI_g_sMasters & (1 << i))
+		{
+			CallLocalFunction(YSI_g_sMasterData[i], "i", E_MASTER_RELINQUISH | YSI_gMasterID);
+		}
+		else
+		{
+			CallRemoteFunction(YSI_g_sMasterData[i], "i", E_MASTER_RELINQUISH | YSI_gMasterID);
+		}
+	}
+	return 1;
+}
+
+/*
+Notes:
+	Current offical tags:
+		YSIM_Checkpoint
+		YSIM_Commands
+		YSIM_Player
+		YSIM_Areas
+*/
+
+Master_Add(name[])
+{
+	if (YSI_g_sMasterCount >= MAX_MASTERS) return -1;
+	strcpy(YSI_g_sMasterData[YSI_g_sMasterCount], name, MAX_MASTER_NAME);
+	new
+		ret;
+	if (!Master_CheckProp(name))
+	{
+		setproperty(0, name, YSI_gMasterID);
+		YSI_g_sMasters |= 1 << YSI_g_sMasterCount;
+		ret = 1;
+	}
+	YSI_g_sMasterCount++;
+	return ret;
+}
+
+#if MASTER_LEVEL != 0
+	public Master_RelHi(master)
+#else
+	public Master_RelLo(master)
+#endif
+{
+	if (master == YSI_gMasterID) return;
+	for (new i = 0; i < YSI_g_sMasterCount; i++)
+	{
+		if (!Master_CheckProp(YSI_g_sMasterData[i]))
+		{
+			Master_SetMaster(YSI_g_sMasterData[i]);
+			YSI_g_sMasters |= 1 << i;
+		}
+	}
+}
+
+public Master_Refresh()
+{
+	if (YSI_gMasterID != -1) setproperty(0, YSIM_MASTER, getproperty(0, YSIM_MASTER) | (1 << YSI_gMasterID));
+	for (new i = 0; i < YSI_g_sMasterCount; i++)
+	{
+		if (YSI_g_sMasters & (1 << i)) Master_SetMaster(YSI_g_sMasterData[i]);
+	}
+}

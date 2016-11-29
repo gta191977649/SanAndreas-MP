@@ -1,13 +1,25 @@
-#include <SA/Mission/CarShop/Vehicles>
-#include <SA/Mission/CarShop/Player>
-
-
 #define KEY_MISSION (newkeys & KEY_SUBMISSION) && !(oldkeys & KEY_SUBMISSION)
 #define KEY_ALT  (newkeys &  KEY_WALK ) && !(oldkeys &  KEY_WALK )
 
-//For more info on ALS Hooking check
-//http://forum.sa-mp.com/showthread.php?t=85907
-//-1970.7388, 297.4897, 34.7497
+//任务地点
+#define CP_X -1970.7388
+#define CP_Y  297.4897
+#define CP_Z  34.7497
+#define CP_SIZE  3.0
+
+//-1979.2891,288.7288,35.1719
+#define CPB_X -1979.2891
+#define CPB_Y 288.7288
+#define CPB_Z 35.1719
+
+//递增值
+#define ADD_VAL 5
+
+new CarShopCP[2];
+
+#include <SA/Mission/CarShop/Vehicles>
+#include <SA/Mission/CarShop/Player>
+#include <SA/Mission/CarShop/Updater>
 
 static gCARSHOP_HasCB[8];
 
@@ -16,9 +28,9 @@ static gCARSHOP_HasCB[8];
 public OnGameModeInit()
 {
 	//Mission Location
-	
+	CarShop_CreateCP();
 	//function hook checks
-
+	SetTimer("OnCarShopDrive",1000,true);
 	gCARSHOP_HasCB[0] = funcidx("CARSHOP_OnPlayerConnect") != -1;
 	gCARSHOP_HasCB[1] = funcidx("CARSHOP_OnPlayerDeath") != -1;
 	gCARSHOP_HasCB[2] = funcidx("CARSHOP_OnPlayerDisconnect") != -1;
@@ -51,7 +63,7 @@ forward CARSHOP_OnGameModeInit();
 public OnPlayerConnect(playerid)
 {
 	//your OnPlayerConnect code here
-	CarShop_PlayerCreateCP(playerid);
+	if(!IsPlayerNPC(playerid)) CarShop_PlayerCreateCP(playerid);
 	if (gCARSHOP_HasCB[0])
 	{
 		return CallLocalFunction("CARSHOP_OnPlayerConnect", "i",playerid);
@@ -123,12 +135,20 @@ forward CARSHOP_OnPlayerDisconnect(playerid,  reason);
 public OnPlayerEnterDynamicCP(playerid,checkpointid)
 {
 	//判断是否完结在在任务
-	if(checkpointid == CarShop_Player[playerid][CP])
+	if(checkpointid == CarShopCP[0])
 	{
 		if(CarShop_IsPlayerInMission(playerid)) return 1;
 		CarShop_PlayerStart(playerid);
-		SG_Sub(playerid,"Get in the ~y~Car~w~ for the test drive.",5);
+		SG_Sub(playerid,"Take the ~y~vehicle~w~ on a test drive.",5);
 	}	
+	if(checkpointid == CarShopCP[1])
+	{
+		CarShop_PLAYER_reset(playerid);
+		//任务完成!!!!!!!!!!!!!!!!!!!!!!!
+		GivePlayerMoney(playerid,1200);
+		GameTextForPlayer(playerid, "Payout:~w~$1200", 2000, 6);
+		PlayerPlaySound(playerid,SOUND_COMPELETE,0.0,0.0,0.0);
+	}
 	if (gCARSHOP_HasCB[3])
 	{
 		return CallLocalFunction("CARSHOP_OnPlayerEnterDynamicCP", "ii",playerid,checkpointid);
@@ -210,6 +230,8 @@ public OnPlayerStateChange(playerid, newstate,  oldstate)
 			{
 				//销毁OBJECTIVE
 				SetPlayerObjective(playerid,CarShop_PlayerVehGet(playerid),false);
+				//UI
+				CarShop_PlayerCreateUI(playerid);
 				//提示玩家试驾
 				new cartype = CarShop_PlayerGetVehType(playerid);
 				switch(cartype)
@@ -260,5 +282,11 @@ public OnVehicleDeath(vehicleid)
 #define OnVehicleDeath CARSHOP_OnVehicleDeath
 forward CARSHOP_OnVehicleDeath(vehicleid);
 
+
+stock CarShop_CreateCP()
+{
+	CarShopCP[0] = CreateDynamicCP(CP_X,CP_Y,CP_Z,CP_SIZE,-1,-1,-1,50.0);
+	CarShopCP[1] = CreateDynamicCP(CPB_X,CPB_Y,CPB_Z,CP_SIZE,-1,-1,-1,-1);
+}
 
 

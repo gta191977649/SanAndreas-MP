@@ -1,0 +1,274 @@
+/*----------------------------------------------------------------------------*-
+					==============================
+					Y Server Includes - MTA Loader
+					==============================
+Description:
+	Loads MTA XML format map files for use with the object and race systems.
+Legal:
+	Copyright (C) 2007 Alex "Y_Less" Cole
+
+	This program is free software; you can redistribute it and/or
+	modify it under the terms of the GNU General Public License
+	as published by the Free Software Foundation; either version 2
+	of the License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+	MA 02110-1301, USA.
+Changelog:
+	24/08/07:
+		First version.
+Functions:
+	Public:
+		Loader_Spawn - Processes a loaded spawn point.
+		Loader_Check - Processes a loaded checkpoint.
+		Loader_Obj - Processes a loaded object.
+	Core:
+		Loader_Loader - Initialises data.
+	Stock:
+		Loader_Parse - Loads a file.
+	Static:
+		-
+	Inline:
+		-
+	API:
+		-
+Callbacks:
+	-
+Definitions:
+	-
+Enums:
+	-
+Macros:
+	-
+Tags:-e_RACE_FLAGS - Race data flag.
+Variables:
+	Global:
+		-
+	Static:
+		YSI_g_sXMLRules - Handle to the XML parse rule set.
+		YSI_g_sCurRace - Handle to the current race being built.
+Commands:
+	-
+Compile options:
+	-
+Operators:
+	-
+-*----------------------------------------------------------------------------*/
+
+static
+	XML:YSI_g_sXMLRules = NO_XML_FILE,
+	YSI_g_sCurRace;
+
+forward Loader_Spawn();
+forward Loader_Check();
+forward Loader_Obj();
+
+/*----------------------------------------------------------------------------*-
+Function:
+	Loader_Loader
+Params:
+	-
+Return:
+	-
+Notes:
+	Defines the parsing rules for reading MTA XML maps.
+-*----------------------------------------------------------------------------*/
+
+Loader_Loader()
+{
+	if (YSI_g_sXMLRules == NO_XML_FILE)
+	{
+		YSI_g_sXMLRules = XML_New();
+		if (YSI_g_sXMLRules != NO_XML_FILE)
+		{
+			XML_AddHandler(YSI_g_sXMLRules, "object", "Loader_Obj");
+			XML_AddHandler(YSI_g_sXMLRules, "checkpoint", "Loader_Check");
+			XML_AddHandler(YSI_g_sXMLRules, "spawnpoint", "Loader_Spawn");
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------*-
+Function:
+	Loader_Parse
+Params:
+	filename[] - File to parse as an XML race file.
+Return:
+	Created race.
+Notes:
+	Tries to create a new race to save to then parses the file.
+-*----------------------------------------------------------------------------*/
+
+stock Loader_Parse(filename[])
+{
+	new
+		race = Race_Create();
+	if (race != NO_RACE)
+	{
+		YSI_g_sCurRace = race;
+		XML_Parse(YSI_g_sXMLRules, filename);
+	}
+	return race;
+}
+
+/*----------------------------------------------------------------------------*-
+Function:
+	Loader_Convert
+Params:
+	Float:radians - Radian angle to convert to degrees.
+Return:
+	Float
+Notes:
+	Based on mtarad2deg made by Trix and fixed by Mike.  Converts radians to
+	degrees and rationalises.
+-*----------------------------------------------------------------------------*/
+
+stock Float:Loader_Convert(Float:radians)
+{
+	if (radians == 0.0)
+	{
+		return 0.0;
+	}
+	new Float:retval = (360.0 + (radians / 0.0174532925));
+	while (retval >= 360.0) retval -= 360.0;
+	while (retval < 0.0) retval += 360.0;
+	return retval;
+}
+
+/*----------------------------------------------------------------------------*-
+Function:
+	Loader_Obj
+Params:
+	-
+Return:
+	CreateDynamicObject
+Notes:
+	Called when an end object tag is reached to create an object.
+-*----------------------------------------------------------------------------*/
+
+public Loader_Obj()
+{
+	static
+		name[MAX_XML_ENTRY_NAME],
+		val[MAX_XML_ENTRY_TEXT];
+	new
+		Float:x,
+		Float:y,
+		Float:z,
+		Float:rx,
+		Float:ry,
+		Float:rz,
+		model;
+	while (XML_GetKeyValue(name, val))
+	{
+		if (!strcmp(name, "position", true))
+		{
+			new
+				pos;
+			x = floatstr(val);
+			pos = chrfind(' ', val, pos);
+			y = floatstr(val[++pos]);
+			pos = chrfind(' ', val, pos);
+			z = floatstr(val[++pos]);
+		}
+		else if (!strcmp(name, "rotation", true))
+		{
+			new
+				pos;
+			rz = floatstr(val);
+			pos = chrfind(' ', val, pos);
+			ry = floatstr(val[++pos]);
+			pos = chrfind(' ', val, pos);
+			rx = floatstr(val[++pos]);
+		}
+		else if (!strcmp(name, "model", true))
+		{
+			model = strval(val);
+		}
+	}
+	return CreateDynamicObject(model, x, y, z, Loader_Convert(rx), Loader_Convert(ry), Loader_Convert(rz));
+}
+
+/*----------------------------------------------------------------------------*-
+Function:
+	Loader_Check
+Params:
+	-
+Return:
+	Race_AddCheckpoint
+Notes:
+	Called when an end checkpoint tag is reached to add a checkpoint to a race.
+-*----------------------------------------------------------------------------*/
+
+public Loader_Check()
+{
+	static
+		name[MAX_XML_ENTRY_NAME],
+		val[MAX_XML_ENTRY_TEXT];
+	new
+		Float:x,
+		Float:y,
+		Float:z;
+	while (XML_GetKeyValue(name, val))
+	{
+		if (!strcmp(name, "position", true))
+		{
+			new
+				pos;
+			x = floatstr(val);
+			pos = chrfind(' ', val, pos);
+			y = floatstr(val[++pos]);
+			pos = chrfind(' ', val, pos);
+			z = floatstr(val[++pos]);
+		}
+	}
+	return Race_AddCheckpoint(YSI_g_sCurRace, x, y, z);
+}
+
+/*----------------------------------------------------------------------------*-
+Function:
+	Loader_Spawn
+Params:
+	-
+Return:
+	Race_AddStart
+Notes:
+	Called when an end spawnpoint tag is reached to add an object to a race.
+-*----------------------------------------------------------------------------*/
+
+public Loader_Spawn()
+{
+	static
+		name[MAX_XML_ENTRY_NAME],
+		val[MAX_XML_ENTRY_TEXT];
+	new
+		Float:x,
+		Float:y,
+		Float:z,
+		Float:rz;
+	while (XML_GetKeyValue(name, val))
+	{
+		if (!strcmp(name, "position", true))
+		{
+			new
+				pos;
+			x = floatstr(val);
+			pos = chrfind(' ', val, pos);
+			y = floatstr(val[++pos]);
+			pos = chrfind(' ', val, pos);
+			z = floatstr(val[++pos]);
+		}
+		else if (!strcmp(name, "rotation", true))
+		{
+			rz = floatstr(val);
+		}
+	}
+	return Race_AddStart(YSI_g_sCurRace, x, y, z, rz);
+}

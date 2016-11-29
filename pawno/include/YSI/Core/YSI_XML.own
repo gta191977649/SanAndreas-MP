@@ -1,0 +1,281 @@
+#if !defined MAX_XML_FILES
+	#define MAX_XML_FILES 5
+#endif
+
+#define XML_MAX_XML_FILES (XML:MAX_XML_FILES)
+
+#define NO_XML_FILE (XML:-1)
+
+#define MAX_XML_ENTRY_NAME 32
+#define MAX_XML_ENTRY_TEXT 80
+#define MAX_XML_FUNCTION 32
+
+#define XML_BUFFER_SIZE 32
+
+#define MAX_XML_HANDLERS 16
+
+enum E_XML_PARA
+{
+	E_XML_PARA_NAME[MAX_XML_ENTRY_NAME],
+	E_XML_PARA_VALUE[MAX_XML_ENTRY_TEXT],
+	E_XML_PARA_LEVEL
+}
+
+enum E_XML_HANDLER
+{
+	E_XML_HANDLER_TRIGGER[MAX_XML_ENTRY_NAME],
+	E_XML_HANDLER_FUNCTION[MAX_XML_FUNCTION]
+}
+
+static
+	YSI_g_sParameters[XML_BUFFER_SIZE][E_XML_PARA],
+	YSI_g_sHandlers[XML_MAX_XML_FILES][MAX_XML_HANDLERS][E_XML_HANDLER],
+	YSI_g_sCurHandler[XML_MAX_XML_FILES] = {-1, ...},
+	YSI_g_sCurBuffer = -1,
+	YSI_g_sEndTag = 0;
+
+#define XML_IsValid(%1) \
+	((%1) >= XML:0 && (%1) < XML_MAX_XML_FILES && YSI_g_sCurHandler[(%1)] != -1)
+
+#define XML_IsChar(%1) \
+	(((%1) >= 'a' && (%1) <= 'z') || ((%1) >= 'A' && (%1) <= 'Z') || ((%1) >= '0' && (%1) <= '9') || (%1 == '_'))
+
+stock XML:XML_New()
+{
+	new
+		XML:i;
+	while (i < XML_MAX_XML_FILES) if (YSI_g_sCurHandler[i] == -1) break;
+	if (i == XML_MAX_XML_FILES) return NO_XML_FILE;
+	YSI_g_sCurHandler[i] = 0;
+	YSI_g_sCurBuffer = 0;
+	return i;
+}
+
+stock XML_Destroy(XML:rule)
+{
+	if (!XML_IsValid(rule)) return 0;
+	YSI_g_sCurBuffer = -1;
+	YSI_g_sCurHandler[rule] = -1;
+	return 1;
+}
+
+stock XML_Parse(XML:rule, filename[])
+{
+	if (!XML_IsValid(rule)) return 0;
+	new
+		File:xFile = fopen(filename);
+	if (xFile)
+	{
+		new
+			line[MAX_STRING],
+			tagCount,
+			gotLastValue,
+			inClose,
+			inOpen,
+			value[MAX_XML_ENTRY_TEXT],
+			name[MAX_XML_ENTRY_NAME],
+			inPar;
+		while (fread(xFile, line))
+		{
+			new
+				pos,
+				ch;
+			while ((ch = line[pos]) && ch <= ' ') pos++;
+			while (ch)
+			{
+				if (ch <= ' ') pos++;
+				else if (ch == '<')
+				{
+					if (line[++pos] == '/')
+					{
+						pos++;
+						tagCount--;
+						if (gotLastValue)
+						{
+							XML_Push(XML_GetName(line, pos), value, tagCount);
+						}
+						else
+						{
+							name = XML_GetName(line, pos);
+							value = XML_ParseTag(rule, name, tagCount);
+							if (value[0] && tagCount > 1)
+							{
+								XML_Push(name, value, tagCount);
+							}
+						}
+						inClose = 1;
+					}
+					else
+					{
+						inOpen = 1;
+						tagCount++;
+						while ((ch = line[pos]) && XML_IsChar(ch)) pos++;
+					}
+					gotLastValue = 0;
+					inPar = 0;
+				}
+				else if (ch == '>')
+				{
+					if (inClose) inPar = 0;
+					else inPar = 1;
+					inOpen = 0;
+					inClose = 0;
+					pos++;
+				}
+				else if (inPar)
+				{
+					value = XML_GetValue(line, pos);
+					gotLastValue = 1;
+				}
+				else if (inOpen)
+				{
+					name = XML_GetName(line, pos);
+					value = XML_GetParameter(line, pos);
+					XML_Push(name, value, tagCount);
+				}
+				else pos++;
+				ch = line[pos];
+			}
+		}
+		fclose(xFile);
+		return 1;
+	}
+	return 0;
+}
+
+stock XML_Push(name[], text[], depth)
+{
+	if (YSI_g_sCurBuffer < XML_BUFFER_SIZE && YSI_g_sCurBuffer >= 0)
+	{
+		strcpy(YSI_g_sParameters[YSI_g_sCurBuffer][E_XML_PARA_NAME], name, MAX_XML_ENTRY_NAME);
+		strcpy(YSI_g_sParameters[YSI_g_sCurBuffer][E_XML_PARA_VALUE], text, MAX_XML_ENTRY_TEXT);
+		YSI_g_sParameters[YSI_g_sCurBuffer][E_XML_PARA_LEVEL] = depth;
+		YSI_g_sCurBuffer++;
+	}
+}
+
+stock XML_GetParameter(line[], &pos)
+{
+	new
+		ch,
+		ret[MAX_XML_ENTRY_TEXT],
+		i;
+	while ((ch = line[pos++]) && ch != '"') {}
+	if (ch) while ((ch = line[pos++]) && ch != '"' && i < (sizeof (ret) - 1)) ret[i++] = ch;
+	if (i == (sizeof (ret) - 1))
+	{
+		while ((ch = line[pos]) && ch != '"') pos++;
+	}
+	pos++;
+	ret[i] = '\0';
+	return ret;
+}
+
+stock XML_GetValue(line[], &pos)
+{
+	new
+		ch,
+		ret[MAX_XML_ENTRY_TEXT],
+		i;
+	while (((ch = line[pos++]) >= ' ' || ch == '\t') && (ch != '<') && i < (sizeof (ret) - 1)) ret[i++] = ch;
+	pos--;
+	if (i == (sizeof (ret) - 1))
+	{
+		while (((ch = line[pos]) >= ' ' || ch == '\t') && (ch != '<')) pos++;
+	}
+	ret[i] = '\0';
+	return ret;
+}
+
+stock XML_GetName(line[], &pos)
+{
+	new
+		ch,
+		ret[MAX_XML_ENTRY_NAME],
+		i;
+	while ((ch = line[pos++]) && XML_IsChar(ch) && i < (sizeof (ret) - 1)) ret[i++] = ch;
+	pos--;
+	if (i == (sizeof (ret) - 1))
+	{
+		while ((ch = line[pos]) >= ' ' && XML_IsChar(ch)) pos++;
+	}
+	ret[i] = '\0';
+	return ret;
+}
+
+
+stock XML_ParseTag(XML:rule, name[], tagCount)
+{
+	new
+		i,
+		j = YSI_g_sCurHandler[rule],
+		ret[MAX_XML_ENTRY_TEXT] = "\1";
+	YSI_g_sEndTag = tagCount;
+	while (i < j)
+	{
+		if (!strcmp(YSI_g_sHandlers[rule][i][E_XML_HANDLER_TRIGGER], name, true))
+		{
+			break;
+		}
+		i++;
+	}
+	if (i != j)
+	{
+		format(ret, sizeof (ret), "%d", CallLocalFunction(YSI_g_sHandlers[rule][i][E_XML_HANDLER_FUNCTION], ""));
+	}
+	while (YSI_g_sCurBuffer)
+	{
+		if (YSI_g_sParameters[--YSI_g_sCurBuffer][E_XML_PARA_LEVEL] <= tagCount) break;
+	}
+	return ret;
+}
+
+stock XML_GetKeyValue(key[], value[])
+{
+	key[0] = 1;
+	key[1] = 0;
+	value[0] = 1;
+	value[1] = 0;
+	if (YSI_g_sCurBuffer)
+	{
+		YSI_g_sCurBuffer--;
+		if (YSI_g_sParameters[YSI_g_sCurBuffer][E_XML_PARA_LEVEL] <= YSI_g_sEndTag) return 0;
+		strcpy(key, YSI_g_sParameters[YSI_g_sCurBuffer][E_XML_PARA_NAME], MAX_XML_ENTRY_NAME);
+		strcpy(value, YSI_g_sParameters[YSI_g_sCurBuffer][E_XML_PARA_VALUE], MAX_XML_ENTRY_TEXT);
+		return 1;
+	}
+	return 0;
+}
+
+stock XML_AddHandler(XML:rule, trigger[], function[])
+{
+	new
+		handle;
+	if (!XML_IsValid(rule) || (handle = YSI_g_sCurHandler[rule]) >= MAX_XML_HANDLERS && handle >= 0) return 0;
+	strcpy(YSI_g_sHandlers[rule][handle][E_XML_HANDLER_TRIGGER], trigger, MAX_XML_ENTRY_NAME);
+	strcpy(YSI_g_sHandlers[rule][handle][E_XML_HANDLER_FUNCTION], function, MAX_XML_FUNCTION);
+	YSI_g_sCurHandler[rule]++;
+	return 1;
+}
+
+stock XML_RemoveHandler(XML:rule, trigger[])
+{
+	if (XML_IsValid(rule))
+	{
+		for (new i = 0, j = YSI_g_sCurHandler[rule]; i < j; i++)
+		{
+			if (!strcmp(YSI_g_sHandlers[rule][i][E_XML_HANDLER_TRIGGER], trigger, true))
+			{
+				new
+					last = --YSI_g_sCurHandler[rule];
+				if (last)
+				{
+					strcpy(YSI_g_sHandlers[rule][i][E_XML_HANDLER_TRIGGER], YSI_g_sHandlers[rule][last][E_XML_HANDLER_TRIGGER], MAX_XML_ENTRY_NAME);
+					strcpy(YSI_g_sHandlers[rule][i][E_XML_HANDLER_FUNCTION], YSI_g_sHandlers[rule][last][E_XML_HANDLER_FUNCTION], MAX_XML_FUNCTION);
+				}
+				return 1;
+			}
+		}
+	}
+	return 0;
+}

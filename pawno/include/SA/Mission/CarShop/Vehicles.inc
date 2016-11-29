@@ -12,6 +12,11 @@
 #define VEHICLE_FAST 0 
 #define VEHICLE_SLOW 1
 
+//速度
+#define VMIN_FAST 50
+#define VMAX_SLOW 30
+#define VMIN_SLOW 10
+
 new VehicleIDs[][] = 
 {
 	{411,VEHICLE_FAST},
@@ -38,8 +43,8 @@ stock CarShop_VehicleCreate(playerid)
 	new idx = random(sizeof(VehicleIDs));
 	CarShop_PlayerSetVehType(playerid,VehicleIDs[idx][1]);
 	
-	//CarShop_PlayerVehCreate(playerid,VehicleIDs[idx][0],VehicleSpawn[0][0],VehicleSpawn[0][1],VehicleSpawn[0][2],VehicleSpawn[0][3]);
-	CarShop_PlayerVehCreate(playerid,VehicleIDs[idx][0],-1958.8414, 259.7624, 35.6943,90.0);
+	CarShop_PlayerVehCreate(playerid,VehicleIDs[idx][0],VehicleSpawn[0][0],VehicleSpawn[0][1],VehicleSpawn[0][2],VehicleSpawn[0][3]);
+	//CarShop_PlayerVehCreate(playerid,VehicleIDs[idx][0],-1958.8414, 259.7624, 35.6943,90.0);
 }
 
 stock CarShop_VehicleIsVaild(playerid)

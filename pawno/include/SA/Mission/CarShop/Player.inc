@@ -1,13 +1,10 @@
-#define CP_X -1970.7388
-#define CP_Y  297.4897
-#define CP_Z  34.7497
-#define CP_SIZE  5.0
+
 enum CP_INFO
 {
 	Vehicleid,
-	CP,
 	PlayerBar:Bar,
-	VehType
+	VehType,
+	bool:Finished
 }
 new CarShop_Player[MAX_PLAYERS][CP_INFO];
 
@@ -18,11 +15,12 @@ stock CarShop_PlayerStart(playerid)
 	CarShop_PlayerDestoryCP(playerid);
 	//设置任务状态以及UI
 	CarShop_SetPlayerMissionStatus(playerid,true);
-	CarShop_PlayerCreateUI(playerid);
+	CarShop_PlayerSetFininsh(playerid,false);
+	
 	//创建交通工具
 	CarShop_VehicleCreate(playerid);
 	//设置Objctive
-	SetPlayerObjective(playerid,CarShop_Player[playerid][Vehicleid],true);
+	SetPlayerObjective(playerid,CarShop_PlayerVehGet(playerid),true);
 	
 }
 CarShop_PlayerFaild(playerid)
@@ -30,23 +28,43 @@ CarShop_PlayerFaild(playerid)
 	CarShop_SetPlayerMissionStatus(playerid,false);
 
 }
+stock CarShop_SetPlayerProg(playerid,Float:value)
+{
+	SetPlayerProgressBarValue(playerid, CarShop_Player[playerid][Bar], value);
+}
+stock Float:CarShop_GetPlayerProg(playerid)
+{
+	return GetPlayerProgressBarValue(playerid,CarShop_Player[playerid][Bar]);
+}
 
 //功能函数...
 stock CarShop_PlayerCreateCP(playerid)
 {
-	CarShop_Player[playerid][CP] = CreateDynamicCP(CP_X,CP_Y,CP_Z,CP_SIZE,-1,-1,-1,100.0);
+	TogglePlayerDynamicCP(playerid,CarShopCP[0],true);
+	TogglePlayerDynamicCP(playerid,CarShopCP[1],false);
+	//printf("CarShop_PlayerCreateCP called ");
 }
+stock CarShop_PlayerSetCPBack(playerid)
+{
+	TogglePlayerDynamicCP(playerid,CarShopCP[0],false);
+	TogglePlayerDynamicCP(playerid,CarShopCP[1],true);
+	//显示小地图
+	//CreateDynamicMapIcon(Float:x, Float:y, Float:z)
+	//printf("CarShop_PlayerCreateCP called ");
+}
+
 stock CarShop_PlayerDestoryCP(playerid)
 {
-	DestroyDynamicCP(CarShop_Player[playerid][CP]);
+	TogglePlayerDynamicCP(playerid,CarShopCP[0],false);
+	TogglePlayerDynamicCP(playerid,CarShopCP[1],false);
 }
 
 stock CarShop_PlayerCreateUI(playerid)
 {
-	CarShop_Player[playerid][Bar] = CreatePlayerProgressBar(playerid, 320.0, 200.0, 50.0, 10.0, 0xcfcaf1FF, 10.0, BAR_DIRECTION_RIGHT);
+	CarShop_Player[playerid][Bar] = CreatePlayerProgressBar(playerid, 550.000000, 166.000000, 50.0, 3.2, 0xcfcaf1FF, 100.0, BAR_DIRECTION_RIGHT);
 	
 	//设置BAR值
-	SetPlayerProgressBarValue(playerid, CarShop_Player[playerid][Bar], 20.0);
+	SetPlayerProgressBarValue(playerid, CarShop_Player[playerid][Bar], 0.0);
 	//显示UI
 	ShowPlayerProgressBar(playerid, CarShop_Player[playerid][Bar]);
 }
@@ -64,7 +82,14 @@ stock CarShop_PlayerGetVehType(playerid)
 {
 	return CarShop_Player[playerid][VehType];
 }
-
+stock CarShop_PlayerSetFininsh(playerid,bool:toogle)
+{
+	CarShop_Player[playerid][Finished] = toogle;
+}
+stock CarShop_PlayerIsFinished(playerid)
+{
+	return CarShop_Player[playerid][Finished];
+}
 
 stock CarShop_PlayerVehCreate(playerid,modelid,Float:VX,Float:VY,Float:VZ,Float:VA)
 {
@@ -85,9 +110,11 @@ stock CarShop_SetPlayerMissionStatus(playerid,bool:toogle)
 	if(toogle)
 	{
 		SetPlayerMissionStatus(playerid,MISSION_CARSHOP,true);
+		
 	}
 	else
 	{
+		SetPlayerMissionStatus(playerid,MISSION_CARSHOP,false);
 		CarShop_PLAYER_reset(playerid);
 	}
 }
