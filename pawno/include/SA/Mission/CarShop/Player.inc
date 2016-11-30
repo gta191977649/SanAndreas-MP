@@ -64,8 +64,8 @@ stock CarShop_PlayerDestoryCP(playerid)
 
 stock CarShop_PlayerCreateUI(playerid)
 {
-	CarShop_Player[playerid][Bar] = CreatePlayerProgressBar(playerid, 550.000000, 166.000000, 50.0, 3.2, 0xcfcaf1FF, 100.0, BAR_DIRECTION_RIGHT);
-	
+	CarShop_Player[playerid][Bar] = CreatePlayerProgressBar(playerid, 540.0, 245.0, 60, 3.5, C_SABLUE, 100.0, BAR_DIRECTION_RIGHT);
+	SG_RightSub(playerid,"SALES:",true);
 	//设置BAR值
 	SetPlayerProgressBarValue(playerid, CarShop_Player[playerid][Bar], 0.0);
 	//显示UI
@@ -74,6 +74,7 @@ stock CarShop_PlayerCreateUI(playerid)
 stock CarShop_PlayerDestoryUI(playerid)
 {
 	DestroyPlayerProgressBar(playerid,CarShop_Player[playerid][Bar]);
+	SG_RightSub(playerid," ",false);
 }
 
 stock CarShop_PlayerSetVehType(playerid,type)

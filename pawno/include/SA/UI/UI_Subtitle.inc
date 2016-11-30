@@ -64,7 +64,7 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawFont(playerid, PCSub[playerid], 1);
 	PlayerTextDrawSetProportional(playerid, PCSub[playerid], 1);
 	
-	PRIGHT[playerid] = CreatePlayerTextDraw(playerid,454.333129, 196.637054, "RIGHTTEST");
+	PRIGHT[playerid] = CreatePlayerTextDraw(playerid,468.0, 236.0, "RIGHTTEST");
 	PlayerTextDrawLetterSize(playerid, PRIGHT[playerid],0.453666, 2.010666);
 	PlayerTextDrawAlignment(playerid, PRIGHT[playerid],2);
 	PlayerTextDrawColor(playerid, PRIGHT[playerid],0xC6E2FFFF);

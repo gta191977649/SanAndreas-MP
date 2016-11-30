@@ -11,7 +11,8 @@
 #define INFO_BoxBG 0x000000FF
 #define C_RED 0xAE211AFF
 
-
+//BAR
+#define C_SABLUE 0xC6E2FFFF
 //讯息
 #define C_OBJECTIVE "{DFBE64}"
 #define C_WHITE "{FFFFFF}"

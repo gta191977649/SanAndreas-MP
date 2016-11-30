@@ -145,7 +145,7 @@ public OnPlayerEnterDynamicCP(playerid,checkpointid)
 	}	
 	if(checkpointid == CarShopCP[1])
 	{
-		CarShop_PLAYER_reset(playerid);
+		CarShop_SetPlayerMissionStatus(playerid,false);
 		//任务完成!!!!!!!!!!!!!!!!!!!!!!!
 		GivePlayerMoney(playerid,1200);
 		GameTextForPlayer(playerid, "Payout:~w~$1200", 2000, 6);
