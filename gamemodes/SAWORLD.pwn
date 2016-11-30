@@ -64,7 +64,7 @@ public OnPlayerConnect(playerid)
 public OnPlayerSpawn(playerid)
 {
 	if(IsPlayerNPC(playerid)) return 1;
-	ShowInfoBox(playerid,INFO_BoxBG,10,"Welcome To SanAndreas MultiPlayer!");
+	ShowInfoBox(playerid,INFO_BoxBG,10,"Welcome To SanAndreas MultiPlayer CN!");
     
 
 	return 1;

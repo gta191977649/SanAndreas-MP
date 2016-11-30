@@ -21,7 +21,7 @@ stock SetPlayerObjective(playerid,vehicleid,bool:toggle)
 	if(toggle)
 	{
 		
-		SetVehicleParamsForPlayer(vehicleid, playerid, 1, iDoors);
+		SetVehicleParamsForPlayer(vehicleid, playerid, 1, 0);
 		PlayerObjective[playerid][Objective] = true;
 		PlayerObjective[playerid][ObjectiveVehicle] = vehicleid;
 	}

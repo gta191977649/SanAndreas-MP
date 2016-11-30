@@ -39,6 +39,7 @@ public OnGameModeInit()
 	gCARSHOP_HasCB[5] = funcidx("CARSHOP_OnPlayerKeyStateChange") != -1;
 	gCARSHOP_HasCB[6] = funcidx("CARSHOP_OnVehicleDeath") != -1;
 	gCARSHOP_HasCB[7] = funcidx("CARSHOP_OnPlayerStateChange") != -1;
+	
 	if (funcidx("CARSHOP_OnGameModeInit") != -1)
 	{
 		return CallLocalFunction("CARSHOP_OnGameModeInit", "");
@@ -55,6 +56,7 @@ public OnGameModeInit()
 #endif
 #define OnGameModeInit CARSHOP_OnGameModeInit
 forward CARSHOP_OnGameModeInit();
+
 
 
 

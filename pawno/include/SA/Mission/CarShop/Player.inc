@@ -11,17 +11,20 @@ new CarShop_Player[MAX_PLAYERS][CP_INFO];
 //开始任务...
 stock CarShop_PlayerStart(playerid)
 {
+	//创建交通工具
+	CarShop_VehicleCreate(playerid);
 	//销毁红点
 	CarShop_PlayerDestoryCP(playerid);
 	//设置任务状态以及UI
 	CarShop_SetPlayerMissionStatus(playerid,true);
 	CarShop_PlayerSetFininsh(playerid,false);
-	
-	//创建交通工具
-	CarShop_VehicleCreate(playerid);
-	//设置Objctive
+	//Objective
+	SetTimerEx("CarShopCreateVehObjecitve",3000, false, "i", playerid);
+}
+forward CarShopCreateVehObjecitve(playerid);
+public CarShopCreateVehObjecitve(playerid)
+{
 	SetPlayerObjective(playerid,CarShop_PlayerVehGet(playerid),true);
-	
 }
 CarShop_PlayerFaild(playerid)
 {
@@ -94,7 +97,7 @@ stock CarShop_PlayerIsFinished(playerid)
 stock CarShop_PlayerVehCreate(playerid,modelid,Float:VX,Float:VY,Float:VZ,Float:VA)
 {
 	CarShop_Player[playerid][Vehicleid] = CreateVehicle(modelid, VX, VY, VZ, VA, -1, -1, -1);
-	printf("Debug %d,%f,%f,%f,%f",modelid,Float:VX,Float:VY,Float:VZ,Float:VA);
+	//printf("Debug %d,%f,%f,%f,%f",modelid,Float:VX,Float:VY,Float:VZ,Float:VA);
 }
 stock CarShop_PlayerVehDesotry(playerid)
 {

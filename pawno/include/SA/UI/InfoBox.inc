@@ -39,16 +39,16 @@ static PlayerText:ptInfoBox[MAX_PLAYERS];
 public OnPlayerConnect(playerid)
 {
 	ptInfoBox[playerid] = CreatePlayerTextDraw(playerid, 38.000000, 132.000000, "");
-	PlayerTextDrawBackgroundColor(playerid, ptInfoBox[playerid], 255);
+	PlayerTextDrawBackgroundColor(playerid, ptInfoBox[playerid], 0);
 	PlayerTextDrawFont(playerid, ptInfoBox[playerid], 1);
-	PlayerTextDrawLetterSize(playerid, ptInfoBox[playerid], 0.429999, 1.400000);
+	PlayerTextDrawLetterSize(playerid, ptInfoBox[playerid], 0.5, 2.0);
 	PlayerTextDrawColor(playerid, ptInfoBox[playerid], -1);
 	PlayerTextDrawSetOutline(playerid, ptInfoBox[playerid], 0);
 	PlayerTextDrawSetProportional(playerid, ptInfoBox[playerid], 1);
 	PlayerTextDrawSetShadow(playerid, ptInfoBox[playerid], 1);
 	PlayerTextDrawUseBox(playerid, ptInfoBox[playerid], 1);
-	PlayerTextDrawBoxColor(playerid, ptInfoBox[playerid], 255);
-	PlayerTextDrawTextSize(playerid, ptInfoBox[playerid], 219.000000, 30.000000);
+	PlayerTextDrawBoxColor(playerid, ptInfoBox[playerid], 102);
+	PlayerTextDrawTextSize(playerid, ptInfoBox[playerid], 225.000000, 40.000000);
 	PlayerTextDrawSetSelectable(playerid, ptInfoBox[playerid], 0);
 
 	#if defined spib_OnPlayerConnect

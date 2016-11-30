@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
     #endif
 	//Sub 
 	PCommon[playerid] = CreatePlayerTextDraw(playerid, 20.333337, 117.392578, "This is the sample Text");
-	PlayerTextDrawLetterSize(playerid, PCommon[playerid],0.453666, 2.010666);
+	PlayerTextDrawLetterSize(playerid, PCommon[playerid],0.5, 2.0);
 	PlayerTextDrawTextSize(playerid, PCommon[playerid], 216.999969, 141.451797);
 	PlayerTextDrawAlignment(playerid, PCommon[playerid], 1);
 	PlayerTextDrawColor(playerid, PCommon[playerid], 0xC0C0C0FF);
@@ -55,7 +55,7 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawSetProportional(playerid, PCommon[playerid], 1);
 	//TextDraw
 	PCSub[playerid] = CreatePlayerTextDraw(playerid, 396.666595, 343.051971, "This is the area that will be used to display ~r~subtitles~w~.");
-	PlayerTextDrawLetterSize(playerid, PCSub[playerid],0.453666, 2.010666);
+	PlayerTextDrawLetterSize(playerid, PCSub[playerid],0.5, 2.0);
 	PlayerTextDrawAlignment(playerid, PCSub[playerid], 2);
 	PlayerTextDrawColor(playerid, PCSub[playerid], -1);
 	PlayerTextDrawSetShadow(playerid, PCSub[playerid], 2);
