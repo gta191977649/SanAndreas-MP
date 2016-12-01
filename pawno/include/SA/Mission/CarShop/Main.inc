@@ -17,10 +17,12 @@
 
 new CarShopCP[2];
 
+#include <SA/Mission/CarShop/Text>
 #include <SA/Mission/CarShop/Vehicles>
 #include <SA/Mission/CarShop/Player>
 #include <SA/Mission/CarShop/Updater>
 #include <SA/Mission/CarShop/Recyc>
+
 
 static gCARSHOP_HasCB[8];
 
@@ -28,6 +30,7 @@ static gCARSHOP_HasCB[8];
 
 public OnGameModeInit()
 {
+
 	//Mission Location
 	CarShop_CreateCP();
 	//function hook checks
@@ -87,8 +90,17 @@ forward CARSHOP_OnPlayerConnect(playerid);
 
 public OnPlayerDeath(playerid, killerid,  reason)
 {
+	
 	//your OnPlayerDeath code here
-
+	if(CarShop_IsPlayerInMission(playerid)) 
+	{
+		if(CarShop_VehicleIsVaild(playerid))
+		{
+			CarShop_PlayerFaild(playerid);
+			SG_Sub(playerid,TEXT_FAILED_DEAD,5);
+		}
+	}
+	
 	if (gCARSHOP_HasCB[1])
 	{
 		return CallLocalFunction("CARSHOP_OnPlayerDeath", "iii",playerid, killerid,  reason);
@@ -141,8 +153,14 @@ public OnPlayerEnterDynamicCP(playerid,checkpointid)
 	if(checkpointid == CarShopCP[0])
 	{
 		if(CarShop_IsPlayerInMission(playerid)) return 1;
+		if(!CarShop_ResAvaiable())
+		{
+			SG_Sub(playerid,TEXT_MISSION_NOWORK,5);
+			return 1;
+		}
+
 		CarShop_PlayerStart(playerid);
-		SG_Sub(playerid,"Take the ~y~vehicle~w~ on a test drive.",5);
+		SG_Sub(playerid,TEXT_MISSION_OBECTIVE,5);
 	}	
 	if(checkpointid == CarShopCP[1])
 	{
@@ -178,7 +196,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 		if(CarShop_VehicleIsVaild(playerid))
 		{
 			CarShop_PlayerFaild(playerid);
-			SG_Sub(playerid,"~r~ You have left the vehicle.",5);
+			SG_Sub(playerid,TEXT_FAILED_LEFT,5);
 		}
 	}
 	
@@ -239,8 +257,8 @@ public OnPlayerStateChange(playerid, newstate,  oldstate)
 				new cartype = CarShop_PlayerGetVehType(playerid);
 				switch(cartype)
 				{
-					case VEHICLE_FAST: SG_Sub(playerid,"Drive this car as fast as possible.",5);
-					case VEHICLE_SLOW: SG_Sub(playerid,"Drive this car as slowly as possible.",5);
+					case VEHICLE_FAST: ShowInfoBox(playerid,INFO_BoxBG,5,TEXT_MISSION_DRIVE_FAST);
+					case VEHICLE_SLOW: ShowInfoBox(playerid,INFO_BoxBG,5,TEXT_MISSION_DRIVE_SLOW);
 				}
 			}
 		}
@@ -269,8 +287,18 @@ forward CARSHOP_OnPlayerStateChange(playerid, newstate,  oldstate);
 
 public OnVehicleDeath(vehicleid)
 {
+	
 	//your OnVehicleDeath code here
-
+	//检查炸掉的车是否是任务中的
+	new ownerid = CarShop_GetVehicleOwner(vehicleid);
+	
+	//如果是任务失败
+	if(ownerid != NULL)
+	{
+		CarShop_PlayerFaild(ownerid);
+		SG_Sub(ownerid,TEXT_FAILED_DESTORY,5);
+	}
+	
 	if (gCARSHOP_HasCB[6])
 	{
 		return CallLocalFunction("CARSHOP_OnVehicleDeath", "i",vehicleid);
@@ -292,8 +320,16 @@ stock CarShop_CreateCP()
 	CarShopCP[1] = CreateDynamicCP(CPB_X,CPB_Y,CPB_Z,CP_SIZE,-1,-1,-1,-1);
 }
 
-stock CarShop_IsVehNear()
+stock CarShop_ResAvaiable()
 {
-	
-	
+	return CARSHOP_REC_MALLOC() != NULL;
 }
+
+
+stock CarShop_GetVehicleOwner(vehicleid)
+{
+	for(new i =0;i < MAX_PLAYERS;i++)
+		if(CarShop_PlayerVehGet(i) == vehicleid) return i;
+	return NULL;
+}
+

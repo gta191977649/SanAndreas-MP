@@ -24,7 +24,8 @@
 #include <SA/SA_MapIcons>
 #include <SA/SA_Spawn>
 #include <SA/SA_GlCommon>
-
+//Libs
+#include <SA/Lib/SA_Vehs>
 //任务库
 #include <SA/Mission/PlayerObjective>
 #include <SA/Mission/PlayerObjectiveMain>

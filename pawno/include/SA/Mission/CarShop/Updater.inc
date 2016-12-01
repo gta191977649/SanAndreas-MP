@@ -21,7 +21,7 @@ public OnCarShopDrive()
 								else
 								{
 									CarShop_UpdaterDecreaseVal(i);
-									SG_Sub(i,"~w~ You drive too slow.",2);
+									SG_Sub(i,TEXT_MISSION_DRIVE_2SLOW,2);
 								}
 							}
 							case VEHICLE_SLOW:
@@ -30,8 +30,8 @@ public OnCarShopDrive()
 								else 
 								{
 									CarShop_UpdaterDecreaseVal(i);
-									SG_Sub(i,"~w~ You drive too fast.",2);
-									if(Speed < VMIN_SLOW) SG_Sub(i,"~w~ You drive too slow.",2);
+									SG_Sub(i,TEXT_MISSION_DRIVE_2FAST,2);
+									if(Speed < VMIN_SLOW) SG_Sub(i,TEXT_MISSION_DRIVE_2SLOW,2);
 										
 								}
 							}

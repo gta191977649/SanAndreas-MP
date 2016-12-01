@@ -29,7 +29,7 @@ public CarShopCreateVehObjecitve(playerid)
 CarShop_PlayerFaild(playerid)
 {
 	CarShop_SetPlayerMissionStatus(playerid,false);
-
+	//GameTextForPlayer(playerid, "~r~mission faild!", 5000, 0);
 }
 stock CarShop_SetPlayerProg(playerid,Float:value)
 {
@@ -98,11 +98,20 @@ stock CarShop_PlayerIsFinished(playerid)
 stock CarShop_PlayerVehCreate(playerid,modelid,Float:VX,Float:VY,Float:VZ,Float:VA)
 {
 	CarShop_Player[playerid][Vehicleid] = CreateVehicle(modelid, VX, VY, VZ, VA, -1, -1, -1);
+	//丢进垃圾回收系统
+	CARSHOP_REC_ADD(CarShop_Player[playerid][Vehicleid]);
 	//printf("Debug %d,%f,%f,%f,%f",modelid,Float:VX,Float:VY,Float:VZ,Float:VA);
 }
 stock CarShop_PlayerVehDesotry(playerid)
 {
-	DestroyVehicle(CarShop_Player[playerid][Vehicleid]);
+	//DestroyVehicle(CarShop_Player[playerid][Vehicleid]);
+	//让玩家下车(如果玩家在车上的话)
+    if(IsPlayerInAnyVehicle(playerid) && CarShop_VehicleIsVaild(playerid)) RemovePlayerFromVehicle(playerid);
+	//锁车门
+	SA_Veh_ToogleDoorLock(playerid,CarShop_Player[playerid][Vehicleid],true);
+	//执行垃圾回收
+	CARSHOP_REC_FREE(CarShop_Player[playerid][Vehicleid]);
+
 }
 stock CarShop_PlayerVehGet(playerid)
 {
@@ -128,6 +137,7 @@ stock CarShop_PLAYER_reset(playerid)
 	CarShop_PlayerDestoryUI(playerid);
 	CarShop_PlayerVehDesotry(playerid);
 	CarShop_PlayerCreateCP(playerid);
+	CarShop_Player[playerid][Vehicleid] = INVALID_VEHICLE_ID;
 }
 
 stock CarShop_IsPlayerInMission(playerid)
