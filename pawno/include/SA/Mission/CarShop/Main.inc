@@ -94,11 +94,9 @@ public OnPlayerDeath(playerid, killerid,  reason)
 	//your OnPlayerDeath code here
 	if(CarShop_IsPlayerInMission(playerid)) 
 	{
-		if(CarShop_VehicleIsVaild(playerid))
-		{
-			CarShop_PlayerFaild(playerid);
-			SG_Sub(playerid,TEXT_FAILED_DEAD,5);
-		}
+		CarShop_PlayerFaild(playerid);
+		SG_Sub(playerid,TEXT_FAILED_DEAD,5);
+		
 	}
 	
 	if (gCARSHOP_HasCB[1])
@@ -301,7 +299,7 @@ public OnVehicleDeath(vehicleid)
 	
 	if (gCARSHOP_HasCB[6])
 	{
-		return CallLocalFunction("CARSHOP_OnVehicleDeath", "i",vehicleid);
+		return CallLocalFunction("CARSHOP_OnVehicleDeath", "ii",vehicleid);
 	}
 	return 1;
 }
