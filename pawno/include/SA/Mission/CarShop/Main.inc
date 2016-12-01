@@ -20,6 +20,7 @@ new CarShopCP[2];
 #include <SA/Mission/CarShop/Vehicles>
 #include <SA/Mission/CarShop/Player>
 #include <SA/Mission/CarShop/Updater>
+#include <SA/Mission/CarShop/Recyc>
 
 static gCARSHOP_HasCB[8];
 
@@ -291,4 +292,8 @@ stock CarShop_CreateCP()
 	CarShopCP[1] = CreateDynamicCP(CPB_X,CPB_Y,CPB_Z,CP_SIZE,-1,-1,-1,-1);
 }
 
-
+stock CarShop_IsVehNear()
+{
+	
+	
+}
