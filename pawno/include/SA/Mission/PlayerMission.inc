@@ -41,6 +41,8 @@ stock ResetPlayerMission(playerid,missionid)
 			case MISSION_HOTDOG: HOTDOG_PLAYER_reset(playerid);
 			case MISSION_ICECREAM: IceCream_PLAYER_reset(playerid);
 			case MISSION_PARAMEDIT: AMB_PLAYER_reset(playerid);
+			case MISSION_PIZZA: PIZZA_PLAYER_reset(playerid);
+			case MISSION_CARSHOP: CarShop_PLAYER_reset(playerid);
 		}
 	}
 }

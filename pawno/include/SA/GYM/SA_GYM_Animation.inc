@@ -114,3 +114,8 @@ public GYM_ANIM_RUN(playerid,mahcinetype)
 	}
 	
 }
+
+stock PreloadAnimLib(playerid, animlib[])
+{
+    ApplyAnimation(playerid,animlib,"null",0.0,0,0,0,0,0);
+}

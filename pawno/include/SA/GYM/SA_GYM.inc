@@ -12,19 +12,7 @@
 
 #define KEY_ENTER (newkeys & KEY_SECONDARY_ATTACK) && !(oldkeys & KEY_SECONDARY_ATTACK)
 
-static gGYM_HasCB[2];
-stock GYM_start(playerid,type)
-{
-	
-}
-stock GYM_end(playerid)
-{
-	
-}
-stock GYM_resetStatus(playerid)
-{
-	
-}
+static gGYM_HasCB[3];
 
 //Callbacks
 public OnGameModeInit()
@@ -35,6 +23,7 @@ public OnGameModeInit()
 
 	gGYM_HasCB[0] = funcidx("GYM_OnPlayerDisconnect") != -1;
 	gGYM_HasCB[1] = funcidx("GYM_OnPlayerKeyStateChange") != -1;
+	gGYM_HasCB[2] = funcidx("GYM_OnPlayerSpawn") != -1;
 	if (funcidx("GYM_OnGameModeInit") != -1)
 	{
 		return CallLocalFunction("GYM_OnGameModeInit", "");
@@ -51,6 +40,32 @@ public OnGameModeInit()
 #endif
 #define OnGameModeInit GYM_OnGameModeInit
 forward GYM_OnGameModeInit();
+
+//--------------OnPlayerSpawn Hook-------------------
+
+public OnPlayerSpawn(playerid)
+{
+	//your OnPlayerSpawn code here
+	PreloadAnimLib(playerid, "GYMNASIUM");
+	PreloadAnimLib(playerid, "GYMNASIUM");
+	PreloadAnimLib(playerid, "benchpress");
+	
+	
+	if (gGYM_HasCB[0])
+	{
+		return CallLocalFunction("GYM_OnPlayerSpawn", "i",playerid);
+	}
+	return 1;
+}
+#if defined _ALS_OnPlayerSpawn
+	#undef OnPlayerSpawn
+#else
+	#define _ALS_OnPlayerSpawn
+#endif
+#define OnPlayerSpawn GYM_OnPlayerSpawn
+forward GYM_OnPlayerSpawn(playerid);
+
+
 
 
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys )

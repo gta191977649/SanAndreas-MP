@@ -29,6 +29,9 @@
 //任务库
 #include <SA/Mission/PlayerObjective>
 #include <SA/Mission/PlayerObjectiveMain>
+//物理库
+#define COLANDREAS
+#include <physics>
 
 #include <SA/Mission/MissionConfig>
 #include <SA/Mission/PlayerMission>
@@ -37,6 +40,7 @@
 #include <SA/Mission/IceCream/Main>
 #include <SA/Mission/Paramedic/Main>
 #include <SA/Mission/CarShop/Main>
+#include <SA/Mission/PizzaBoy/Main>
 
 
 //----------------------------------------------------------
