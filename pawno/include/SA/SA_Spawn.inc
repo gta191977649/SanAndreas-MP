@@ -58,6 +58,7 @@ forward SPAWN_OnPlayerRequestSpawn(playerid);
 
 public OnPlayerSpawn(playerid)
 {
+	//SetPlayerPos(playerid,-1999.2786,288.1255,33.6684);//SF
 	SetPlayerPos(playerid,-1999.2786,288.1255,33.6684);
 	SetPlayerFacingAngle(playerid,270);
 	//your OnPlayerSpawn code here

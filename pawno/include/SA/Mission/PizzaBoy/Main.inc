@@ -86,10 +86,11 @@ forward PIZZA_PHY_OnObjectUpdate(objectid);
 public OnPlayerExitVehicle(playerid, vehicleid)
 {
 	//your OnPlayerExitVehicle code here
+	/*
 	if(PIZZA_IsPlayerInMission(playerid))
 	{
 		if()
-	}
+	}*/
 
 	if (gPIZZA_HasCB[0])
 	{

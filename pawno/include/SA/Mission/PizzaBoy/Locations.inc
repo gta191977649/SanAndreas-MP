@@ -1,3 +1,7 @@
+new Float:pizzaShop_LS[][3] = {
+	{2095.5488, -1814.8341, 12.6719}
+};
+
 new Float:gRandomSpawns_LosSantos[][4] = {
 {1751.1097,-2106.4529,13.5469,183.1979}, // El-Corona - Outside random house
 {2652.6418,-1989.9175,13.9988,182.7107}, // Random house in willowfield - near playa de seville and stadium

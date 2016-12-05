@@ -7,7 +7,7 @@ enum Player_CP
 }
 
 new PlayerCP[MAX_PLAYERS][Player_CP];
- 
+new PlayerPizzaVeh[MAX_PLAYERS] = {INVALID_VEHICLE_ID,...};
 
 stock PIZZA_IsPlayerInMission(playerid)
 {
@@ -31,14 +31,15 @@ stock PIZZA_PLAYER_CreateUI(playerid)
 	SG_Sub(playerid,PIZZA_OBJTIVE,5);
 	SG_Textbox(playerid,PIZZA_TUT,5);
 	new tem[125];
-	format(tem,sizeof(tem),"PIZZAS:		%d",PIZZA_GetRemain(playerid));
+	format(tem,sizeof(tem),"PIZZAS:			%d",PIZZA_GetRemain(playerid));
 	SG_RightSub(playerid,tem,true);
 }
 stock PIZZA_PLAYER_UIUpdate(playerid)
 {
-	new tem[125];
-	format(tem,sizeof(tem),"PIZZAS:		%d",PIZZA_GetRemain(playerid));
+	new tem[125],amount = PIZZA_GetRemain(playerid);
+	format(tem,sizeof(tem),"PIZZAS:			%d",amount);
 	SG_RightSub(playerid,tem,true);
+	if(amount == 0) PIZZA_CreatePizzaShopCP(playerid);//没Pizza提示回去拿
 }
 stock PIZZA_PLAYER_DestoryUI(playerid)
 {
@@ -69,9 +70,19 @@ stock PIZZA_SetPlayerMissionStatus(playerid,bool:toogle)
 		PIZZA_PLAYER_reset(playerid);
 	}
 }
-
-PIZZA_CreatePlayerCheckPoints(playerid)
+stock PIZZA_CreatePizzaShopCP(playerid)
 {
+	PIZZA_DestoryPlayerCheckPoints(playerid);//删除之前的CP点
+	PlayerCP[playerid][cp] = CreateDynamicCP(pizzaShop_LS[0][0],pizzaShop_LS[0][1],pizzaShop_LS[0][2],3,-1,-1,-1,-1);
+}
+stock PIZZA_DestoryPizzaShopCP(playerid)
+{
+	DestroyDynamicCP(PlayerCP[playerid][cp]);
+}
+
+stock PIZZA_CreatePlayerCheckPoints(playerid)
+{
+	PIZZA_DestoryPizzaShopCP(playerid);
 	#define CONS (0.5)
 	new randSpawn = 0;
 	randSpawn = random(sizeof(gRandomSpawns_LosSantos));
@@ -91,7 +102,7 @@ PIZZA_CreatePlayerCheckPoints(playerid)
 	PlayerCP[playerid][cp_z],2,-1,-1,playerid,-1);
 }
 
-PIZZA_DestoryPlayerCheckPoints(playerid)
+stock PIZZA_DestoryPlayerCheckPoints(playerid)
 {
 	DestroyDynamicRaceCP(PlayerCP[playerid][cp]);
 }

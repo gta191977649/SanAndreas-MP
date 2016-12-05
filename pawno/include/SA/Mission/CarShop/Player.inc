@@ -134,6 +134,7 @@ stock CarShop_SetPlayerMissionStatus(playerid,bool:toogle)
 
 stock CarShop_PLAYER_reset(playerid)
 {
+	SetPlayerObjective(playerid,CarShop_PlayerVehGet(playerid),false);	
 	CarShop_PlayerDestoryUI(playerid);
 	CarShop_PlayerVehDesotry(playerid);
 	CarShop_PlayerCreateCP(playerid);

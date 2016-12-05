@@ -1,7 +1,7 @@
 #define MAX_PIZZA 5 //一次能带的PIZZA
 #define VECTOR_LEFT 0
 #define VECTOR_RIGHT 1
-
+#define PIZZA_OBJECT 19571
 enum Pizza_obj
 {
 	p_object, // 指针指向PIZZA对象
@@ -23,7 +23,7 @@ stock PIZZA_LunchObject(playerid,vectordir)
 	#define Z_SPEED (4.0)
 	
 	#define mass (5.0)
-    new modelid = 19571 ; // Deagle Model ID
+    new modelid = PIZZA_OBJECT ;
 	new Float:x, Float:y, Float:z, Float:ang;
 	GetPlayerPos(playerid, x, y, z);
 	new currentveh;
@@ -31,6 +31,7 @@ stock PIZZA_LunchObject(playerid,vectordir)
 
 	GetVehicleZAngle(currentveh,ang);
 	new Sot = PIZZA_GetFreeSlot(playerid);
+	//printf("Slot = %d",Sot);
 	if(Sot == NULL)
 	{
 		SendClientMessage(playerid,-1,"[小任务]: 没Pizza了,请回到餐厅去在拿一些~.");
@@ -45,8 +46,8 @@ stock PIZZA_LunchObject(playerid,vectordir)
 			PizzaObject[playerid][Sot][p_object] = CreateObject(modelid, x- CONS * floatcos(ang, degrees), y- CONS *  floatsin(ang, degrees) , z+1, 90, 0, 0);
 			PizzaObject[playerid][Sot][p_throwed] = true;
 			//PHY_InitObject(Pizza[playerid][Sot][Taken], modelid, mass, _, PHY_MODE_3D);
-			PHY_InitObject(PizzaObject[playerid][Sot][p_object], modelid, 2.0, 0.3);
-			PHY_SetObjectVelocity(PizzaObject[playerid][Sot][p_throwed], -SPEED * floatcos(ang, degrees), -SPEED * floatsin(ang, degrees), Z_SPEED);
+			PHY_InitObject(PizzaObject[playerid][Sot][p_object], modelid, 2.0, 0.1,PHY_MODE_3D);
+			PHY_SetObjectVelocity(PizzaObject[playerid][Sot][p_object], -SPEED * floatcos(ang, degrees), -SPEED * floatsin(ang, degrees), Z_SPEED);
 			//print("VECTOR_LEFT");
 		}
 		case VECTOR_RIGHT:
@@ -54,8 +55,8 @@ stock PIZZA_LunchObject(playerid,vectordir)
 			PizzaObject[playerid][Sot][p_object]  = CreateObject(modelid, x+ CONS * floatcos(ang, degrees), y+ CONS *  floatsin(ang, degrees) , z+1, 90, 0, 0);
 			PizzaObject[playerid][Sot][p_throwed] = true;
 			//PHY_InitObject(Pizza[playerid][Sot][Taken], modelid, mass, _, PHY_MODE_3D);
-			PHY_InitObject(PizzaObject[playerid][Sot][p_object], modelid, 2.0, 0.3);
-			PHY_SetObjectVelocity(PizzaObject[playerid][Sot][p_throwed] , SPEED * floatcos(ang, degrees), SPEED * floatsin(ang, degrees), Z_SPEED);
+			PHY_InitObject(PizzaObject[playerid][Sot][p_object], modelid, 2.0, 0.1,PHY_MODE_3D);
+			PHY_SetObjectVelocity(PizzaObject[playerid][Sot][p_object] , SPEED * floatcos(ang, degrees), SPEED * floatsin(ang, degrees), Z_SPEED);
 			//print("VECTOR_RIGHT");
 		}
 		
@@ -66,7 +67,7 @@ stock PIZZA_LunchObject(playerid,vectordir)
 	PHY_SetObjectFriction(PizzaObject[playerid][Sot][p_object], 10.0);
 	PHY_SetObjectAirResistance(PizzaObject[playerid][Sot][p_object], 0.1);
 	PHY_SetObjectGravity(PizzaObject[playerid][Sot][p_object], 10.0);
-	PHY_SetObjectZBound(PizzaObject[playerid][Sot][p_object], _, _, 0.1);
+	PHY_SetObjectZBound(PizzaObject[playerid][Sot][p_object], _, _,0.1);
 	PHY_UseColAndreas(PizzaObject[playerid][Sot][p_object],3);
 
 		
