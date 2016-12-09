@@ -30,6 +30,7 @@ CarShop_PlayerFaild(playerid)
 {
 	CarShop_SetPlayerMissionStatus(playerid,false);
 	//GameTextForPlayer(playerid, "~r~mission faild!", 5000, 0);
+	ShowMissionFailed(playerid);
 }
 stock CarShop_SetPlayerProg(playerid,Float:value)
 {
@@ -64,7 +65,7 @@ stock CarShop_PlayerDestoryCP(playerid)
 
 stock CarShop_PlayerCreateUI(playerid)
 {
-	CarShop_Player[playerid][Bar] = CreatePlayerProgressBar(playerid, 540.0, 245.0, 60, 3.5, C_SABLUE, 100.0, BAR_DIRECTION_RIGHT);
+	CarShop_Player[playerid][Bar] = CreatePlayerProgressBar(playerid, 550.0, 245.0, 60, 3.5, C_SABLUE, 100.0, BAR_DIRECTION_RIGHT);
 	SG_RightSub(playerid,"SALES:",true);
 	//设置BAR值
 	SetPlayerProgressBarValue(playerid, CarShop_Player[playerid][Bar], 0.0);

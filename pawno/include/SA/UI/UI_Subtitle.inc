@@ -31,9 +31,10 @@
 new PlayerText:PCommon[MAX_PLAYERS];
 new PlayerText:PCSub[MAX_PLAYERS];
 new PlayerText:PRIGHT[MAX_PLAYERS];
+new PlayerText:MISSIONTEXT[MAX_PLAYERS];
 //new TdelyTimer[MAX_PLAYERS];
 new bool:SUB_IsShow[MAX_PLAYERS];
-
+#define C_MISSION 0xD3900DFF
 public OnPlayerConnect(playerid)
 {
 	
@@ -43,16 +44,18 @@ public OnPlayerConnect(playerid)
 	//Sub 
 	PCommon[playerid] = CreatePlayerTextDraw(playerid, 20.333337, 117.392578, "This is the sample Text");
 	PlayerTextDrawLetterSize(playerid, PCommon[playerid],0.5, 2.0);
-	PlayerTextDrawTextSize(playerid, PCommon[playerid], 216.999969, 141.451797);
+	PlayerTextDrawTextSize(playerid, PCommon[playerid], 225.000000, 40.000000);
 	PlayerTextDrawAlignment(playerid, PCommon[playerid], 1);
 	PlayerTextDrawColor(playerid, PCommon[playerid], 0xC0C0C0FF);
 	PlayerTextDrawUseBox(playerid, PCommon[playerid], true);
-	PlayerTextDrawBoxColor(playerid, PCommon[playerid], 255);
+	PlayerTextDrawBoxColor(playerid, PCommon[playerid], 0x00000088);
+	/*
 	PlayerTextDrawSetShadow(playerid, PCommon[playerid], 2);
 	PlayerTextDrawSetOutline(playerid, PCommon[playerid], 1);
-	PlayerTextDrawBackgroundColor(playerid, PCommon[playerid], 51);
+	//PlayerTextDrawBackgroundColor(playerid, PCommon[playerid], 51);
 	PlayerTextDrawFont(playerid, PCommon[playerid], 1);
 	PlayerTextDrawSetProportional(playerid, PCommon[playerid], 1);
+	*/
 	//TextDraw
 	PCSub[playerid] = CreatePlayerTextDraw(playerid, 396.666595, 343.051971, "This is the area that will be used to display ~r~subtitles~w~.");
 	PlayerTextDrawLetterSize(playerid, PCSub[playerid],0.5, 2.0);
@@ -64,7 +67,7 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawFont(playerid, PCSub[playerid], 1);
 	PlayerTextDrawSetProportional(playerid, PCSub[playerid], 1);
 	
-	PRIGHT[playerid] = CreatePlayerTextDraw(playerid,468.0, 236.0, "RIGHTTEST");
+	PRIGHT[playerid] = CreatePlayerTextDraw(playerid,478.0, 236.0, "RIGHTTEST");
 	PlayerTextDrawLetterSize(playerid, PRIGHT[playerid],0.453666, 2.010666);
 	PlayerTextDrawAlignment(playerid, PRIGHT[playerid],2);
 	PlayerTextDrawColor(playerid, PRIGHT[playerid],0xC6E2FFFF);
@@ -73,6 +76,19 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawBackgroundColor(playerid, PRIGHT[playerid], 255);
 	PlayerTextDrawFont(playerid, PRIGHT[playerid], 2);
 	PlayerTextDrawSetProportional(playerid, PRIGHT[playerid],1);
+	//MissionTest(Faild)
+	MISSIONTEXT[playerid] = CreatePlayerTextDraw(playerid, 331.133209, 173.890441, "mission passed!");
+	PlayerTextDrawLetterSize(playerid, MISSIONTEXT[playerid], 1.411334, 4.362665);
+	PlayerTextDrawAlignment(playerid, MISSIONTEXT[playerid], 2);
+	PlayerTextDrawColor(playerid, MISSIONTEXT[playerid], C_MISSION);
+	PlayerTextDrawSetShadow(playerid, MISSIONTEXT[playerid], 0);
+	PlayerTextDrawSetOutline(playerid, MISSIONTEXT[playerid], 1);
+	PlayerTextDrawBackgroundColor(playerid, MISSIONTEXT[playerid], 51);
+	PlayerTextDrawFont(playerid, MISSIONTEXT[playerid], 3);
+	PlayerTextDrawSetProportional(playerid, MISSIONTEXT[playerid], 1);
+
+
+
 	return 1;
 }
 #if defined _ALS_OnPlayerConnect
@@ -119,12 +135,17 @@ stock SG_RightSub(playerid,string[],toggle)
 
 }
 
-
+stock SG_TextMission(playerid,string[],time)
+{
+	PlayerTextDrawSetString(playerid,MISSIONTEXT[playerid],string);
+	PlayerTextDrawShow(playerid,MISSIONTEXT[playerid]);
+	SetTimerEx("TextMissonDestoryTimer",time*1000, false, "d", playerid);
+}
 stock SG_Textbox(playerid,string[],time)
 {
 	PlayerTextDrawSetString(playerid,PCommon[playerid],string);
 	PlayerTextDrawShow(playerid,PCommon[playerid]);
-	SetTimerEx("TextboxDistoryTimer",time, false, "d", playerid);
+	SetTimerEx("TextboxDistoryTimer",time*1000, false, "d", playerid);
 
 }
 
@@ -132,9 +153,14 @@ forward TextboxDistoryTimer(playerid);
 public TextboxDistoryTimer(playerid)
 {
 	PlayerTextDrawHide(playerid,PCommon[playerid]);
-
-
 }
+forward TextMissonDestoryTimer(playerid);
+public TextMissonDestoryTimer(playerid)
+{
+	PlayerTextDrawHide(playerid,MISSIONTEXT[playerid]);
+}
+
+
 forward TextSubDistoryTimer(playerid);
 public TextSubDistoryTimer(playerid)
 {

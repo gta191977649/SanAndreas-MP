@@ -25,7 +25,7 @@ new CarShopCP[2];
 #include <SA/Mission/CarShop/Recyc>
 
 
-static gCARSHOP_HasCB[8];
+static gCARSHOP_HasCB[9];
 
 //--------------OnGameModeInit Hook-------------------
 
@@ -44,6 +44,7 @@ public OnGameModeInit()
 	gCARSHOP_HasCB[5] = funcidx("CARSHOP_OnPlayerKeyStateChange") != -1;
 	gCARSHOP_HasCB[6] = funcidx("CARSHOP_OnVehicleDeath") != -1;
 	gCARSHOP_HasCB[7] = funcidx("CARSHOP_OnPlayerStateChange") != -1;
+	gCARSHOP_HasCB[8] = funcidx("CARSHOP_OnVehDamage") != -1;
 	
 	if (funcidx("CARSHOP_OnGameModeInit") != -1)
 	{
@@ -114,6 +115,33 @@ public OnPlayerDeath(playerid, killerid,  reason)
 #define OnPlayerDeath CARSHOP_OnPlayerDeath
 forward CARSHOP_OnPlayerDeath(playerid, killerid,  reason);
 
+//--------------OnVehicleDamageStatusUpdate Hook-------------------
+
+public OnVehicleDamageStatusUpdate(vehicleid, playerid)
+{
+	//your OnVehicleDamageStatusUpdate code here
+	if(CarShop_IsPlayerInMission(playerid)) 
+	{
+		CarShop_SetPlayerProg(playerid,0);
+		
+	}
+	
+	if (gCARSHOP_HasCB[0])
+	{
+		return CallLocalFunction("CARSHOP_OnVehDamage", "ii",vehicleid, playerid);
+	}
+	return 1;
+}
+#if defined _ALS_OnVehicleDamageStatusUpd
+	#undef OnVehicleDamageStatusUpd
+#else
+	#define _ALS_OnVehicleDamageStatusUpd
+#endif
+#define OnVehicleDamageStatusUpdate CARSHOP_OnVehDamage
+forward CARSHOP_OnVehDamage(vehicleid, playerid);
+
+
+
 
 
 //--------------OnPlayerDisconnect Hook-------------------
@@ -165,6 +193,7 @@ public OnPlayerEnterDynamicCP(playerid,checkpointid)
 	{
 		CarShop_SetPlayerMissionStatus(playerid,false);
 		//任务完成!!!!!!!!!!!!!!!!!!!!!!!
+		ShowMissionPass(playerid,"~w~Exp: +15");
 		GivePlayerMoney(playerid,1200);
 		GameTextForPlayer(playerid, "Payout:~w~$1200", 2000, 6);
 		PlayerPlaySound(playerid,SOUND_COMPELETE,0.0,0.0,0.0);
@@ -277,7 +306,6 @@ public OnPlayerStateChange(playerid, newstate,  oldstate)
 #endif
 #define OnPlayerStateChange CARSHOP_OnPlayerStateChange
 forward CARSHOP_OnPlayerStateChange(playerid, newstate,  oldstate);
-
 
 
 

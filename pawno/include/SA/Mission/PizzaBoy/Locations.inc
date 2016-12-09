@@ -1,6 +1,17 @@
+#define SHOP_LS 0
+#define SHOP_LV 1
+#define SHOP_SF 2
+
 new Float:pizzaShop_LS[][3] = {
 	{2095.5488, -1814.8341, 12.6719}
 };
+new Float:pizzaShop_SF[][3] = {
+	{-1804.2899, 947.6200, 23.8710}
+};
+new Float:pizzaShop_LV[][3] = {
+	{2065.7874, 2239.3906, 8.9165}
+};
+
 
 new Float:gRandomSpawns_LosSantos[][4] = {
 {1751.1097,-2106.4529,13.5469,183.1979}, // El-Corona - Outside random house
@@ -36,3 +47,123 @@ new Float:gRandomSpawns_LosSantos[][4] = {
 {2215.5181,-2627.8174,13.5469,273.7786}, // Ocean docks 1
 {2509.4346,-2637.6543,13.6453,358.3565} // Ocean Docks spawn 2
 };
+
+new Float:gRandomSpawns_LasVenturas[][4] = {
+{1435.8024,2662.3647,11.3926,1.1650}, //  Northern train station
+{1457.4762,2773.4868,10.8203,272.2754}, //  Northern golf club
+{1739.6390,2803.0569,14.2735,285.3929}, //  Northern housing estate 1
+{1870.3096,2785.2471,14.2734,42.3102}, //  Northern housing estate 2
+{1959.7142,2754.6863,10.8203,181.4731}, //  Northern house 1
+{2314.2556,2759.4504,10.8203,93.2711}, //  Northern industrial estate 1
+{2216.5674,2715.0334,10.8130,267.6540}, //  Northern industrial estate 2
+{2101.4192,2678.7874,10.8130,92.0607}, //  Northern near railway line
+{1951.1090,2660.3877,10.8203,180.8461}, //  Northern house 2
+{1666.6949,2604.9861,10.8203,179.8495}, //  Northern house 3
+{2808.3367,2421.5107,11.0625,136.2060}, //  Northern shopping centre
+{2633.3203,2349.7061,10.6719,178.7175}, //  V-Rock
+{2606.6348,2161.7490,10.8203,88.7508}, //  South V-Rock
+{2616.5286,2100.6226,10.8158,177.7834}, //  North Ammunation 1
+{2491.8816,2397.9370,10.8203,266.6003}, //  North carpark 1
+{2531.7891,2530.3223,21.8750,91.6686}, //  North carpark 2
+{2340.6677,2530.4324,10.8203,177.8630}, //  North Pizza Stack
+{2097.6855,2491.3313,14.8390,181.8117}, //  Emerald Isle
+{1893.1000,2423.2412,11.1782,269.4385}, //  Souvenir shop
+{1698.9330,2241.8320,10.8203,357.8584}, //  Northern casino
+{1479.4559,2249.0769,11.0234,306.3790}, //  Baseball stadium 1
+{1298.1548,2083.4016,10.8127,256.7034}, //  Baseball stadium 2
+{1117.8785,2304.1514,10.8203,81.5490}, //  North carparks
+{1108.9878,1705.8639,10.8203,0.6785}, //  Dirtring racing 1
+{1423.9780,1034.4188,10.8203,90.9590}, //  Sumo
+{1537.4377,752.0641,11.0234,271.6893}, //  Church
+{1917.9590,702.6984,11.1328,359.2682}, //  Southern housing estate
+{2089.4785,658.0414,11.2707,357.3572}, //  Southern house 1
+{2489.8286,928.3251,10.8280,67.2245}, //  Wedding chapel
+{2697.4717,856.4916,9.8360,267.0983}, //  Southern construction site
+{2845.6104,1288.1444,11.3906,3.6506}, //  Southern train station
+{2437.9370,1293.1442,10.8203,86.3830}, //  Wedding chapel (near Pyramid)
+{2299.5430,1451.4177,10.8203,269.1287}, //  Carpark (near Pyramid)
+{2214.3008,2041.9165,10.8203,268.7626}, //  Central parking lot
+{2005.9174,2152.0835,10.8203,270.1372}, //  Central motel
+{2222.1042,1837.4220,10.8203,88.6461}, //  Clowns Pocket
+{2025.6753,1916.4363,12.3382,272.5852}, //  The Visage
+{2087.9902,1516.5336,10.8203,48.9300}, //  Royal Casino
+{2172.1624,1398.7496,11.0625,91.3783}, //  Auto Bahn
+{2139.1841,987.7975,10.8203,0.2315}, //  Come-a-lot
+{1860.9672,1030.2910,10.8203,271.6988}, //  Behind 4 Dragons
+{1673.2345,1316.1067,10.8203,177.7294}, //  Airport carpark
+{1412.6187,2000.0596,14.7396,271.3568} //  South baseball stadium houses
+};
+
+new Float:gRandomSpawns_SanFierro[][4] = {
+{-2723.4639,-314.8138,7.1839,43.5562},  // golf course spawn
+{-2694.5344,64.5550,4.3359,95.0190},  // in front of a house
+{-2458.2000,134.5419,35.1719,303.9446},  // hotel
+{-2796.6589,219.5733,7.1875,88.8288},  // house
+{-2706.5261,397.7129,4.3672,179.8611},  // park
+{-2866.7683,691.9363,23.4989,286.3060},  // house
+{-2764.9543,785.6434,52.7813,357.6817},  // donut shop
+{-2660.9402,883.2115,79.7738,357.4440},  // house
+{-2861.0796,1047.7109,33.6068,188.2750}, //  parking lot
+{-2629.2009,1383.1367,7.1833,179.7006},  // parking lot at the bridge
+{-2079.6802,1430.0189,7.1016,177.6486},  // pier
+{-1660.2294,1382.6698,9.8047,136.2952}, //  pier 69
+{-1674.1964,430.3246,7.1797,226.1357},  // gas station]
+{-1954.9982,141.8080,27.1747,277.7342},  // train station
+{-1956.1447,287.1091,35.4688,90.4465},  // car shop
+{-1888.1117,615.7245,35.1719,128.4498},  // random
+{-1922.5566,886.8939,35.3359,272.1293},  // random
+{-1983.3458,1117.0645,53.1243,271.2390},  // church
+{-2417.6458,970.1491,45.2969,269.3676},  // gas station
+{-2108.0171,902.8030,76.5792,5.7139},  // house
+{-2097.5664,658.0771,52.3672,270.4487},  // random
+{-2263.6650,393.7423,34.7708,136.4152},  // random
+{-2287.5027,149.1875,35.3125,266.3989},  // baseball parking lot
+{-2039.3571,-97.7205,35.1641,7.4744},  // driving school
+{-1867.5022,-141.9203,11.8984,22.4499},  // factory
+{-1537.8992,116.0441,17.3226,120.8537},  // docks ship
+{-1708.4763,7.0187,3.5489,319.3260},  // docks hangar
+{-1427.0858,-288.9430,14.1484,137.0812},  // airport
+{-2173.0654,-392.7444,35.3359,237.0159},  // stadium
+{-2320.5286,-180.3870,35.3135,179.6980},  // burger shot
+{-2930.0049,487.2518,4.9141,3.8258}  // harbor
+};
+//获取玩家最近的商店
+stock PIZZA_GetNearCity(playerid)
+{
+	//来自 System/SA_Zone.inc 
+	return GetPlayerCurrentCity(playerid);	 
+}
+
+stock PIZZA_GetRandomPostLocation(city,&Float:cx,&Float:cy,&Float:cz,&Float:cang)
+{
+	new randSpawn = 0;
+	randSpawn = random(sizeof(gRandomSpawns_LosSantos));
+	switch(city)
+	{
+		case CITY_LS:
+		{
+			//lS
+			cx = gRandomSpawns_LosSantos[randSpawn][0];
+			cy = gRandomSpawns_LosSantos[randSpawn][1];
+			cz = gRandomSpawns_LosSantos[randSpawn][2]+1;
+			cang = gRandomSpawns_LosSantos[randSpawn][3];
+		}
+		case CITY_LV:
+		{
+			//LV
+			cx = gRandomSpawns_LasVenturas[randSpawn][0];
+			cy = gRandomSpawns_LasVenturas[randSpawn][1];
+			cz = gRandomSpawns_LasVenturas[randSpawn][2]+1;
+			cang = gRandomSpawns_LasVenturas[randSpawn][3];
+		}
+		case CITY_SF:
+		{
+			//SF
+			cx = gRandomSpawns_SanFierro[randSpawn][0];
+			cy = gRandomSpawns_SanFierro[randSpawn][1];
+			cz = gRandomSpawns_SanFierro[randSpawn][2]+1;
+			cang = gRandomSpawns_SanFierro[randSpawn][3];
+		}
+		
+	}
+}

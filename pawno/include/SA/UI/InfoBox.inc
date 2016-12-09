@@ -47,7 +47,7 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawSetProportional(playerid, ptInfoBox[playerid], 1);
 	PlayerTextDrawSetShadow(playerid, ptInfoBox[playerid], 1);
 	PlayerTextDrawUseBox(playerid, ptInfoBox[playerid], 1);
-	PlayerTextDrawBoxColor(playerid, ptInfoBox[playerid], 102);
+	PlayerTextDrawBoxColor(playerid, ptInfoBox[playerid], 0x00000088);
 	PlayerTextDrawTextSize(playerid, ptInfoBox[playerid], 225.000000, 40.000000);
 	PlayerTextDrawSetSelectable(playerid, ptInfoBox[playerid], 0);
 
@@ -72,9 +72,9 @@ public OnPlayerConnect(playerid)
 
 // ** FUNCTIONS
 
-stock ShowInfoBox(playerid, box_color, shown_for, text[])
+stock ShowInfoBox(playerid, color,shown_for, text[])
 {
-	PlayerTextDrawBoxColor(playerid, ptInfoBox[playerid], box_color);
+	PlayerTextDrawBoxColor(playerid, ptInfoBox[playerid],color);
 	PlayerTextDrawSetString(playerid, ptInfoBox[playerid], text);
 	PlayerTextDrawShow(playerid, ptInfoBox[playerid]);
 	//Sound

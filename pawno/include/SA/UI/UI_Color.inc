@@ -8,7 +8,7 @@
 */
 
 //提示框
-#define INFO_BoxBG 0x000000FF
+#define INFO_BoxBG 0x00000088
 #define C_RED 0xAE211AFF
 
 //BAR

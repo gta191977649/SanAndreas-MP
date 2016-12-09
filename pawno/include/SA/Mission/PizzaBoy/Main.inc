@@ -137,7 +137,11 @@ forward PIZZA_OnPlayerConnect(playerid);
 public OnPlayerDeath(playerid, killerid,  reason)
 {
 	//your OnPlayerDeath code here
-
+	if(PIZZA_IsPlayerInMission(playerid)) 
+	{
+		PIZZA_PLAYER_Failed(playerid);
+		SG_Sub(playerid,PIZZA_DEAD,5);
+	}
 	if (gPIZZA_HasCB[1])
 	{
 		return CallLocalFunction("PIZZA_OnPlayerDeath", "iii",playerid, killerid,  reason);
@@ -213,6 +217,11 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	if(KEY_MISSION)
 	{
 		if(PIZZA_IsPlayerInMission(playerid)) return 1;
+		if(PIZZA_GetNearCity(playerid) == NULL)
+		{
+			SG_Sub(playerid,PIZZA_NOMISSION,5);
+			return 1;
+		}
 			//开始任务
 		if(PIZZA_IsInVaildVeh(playerid))
 		{

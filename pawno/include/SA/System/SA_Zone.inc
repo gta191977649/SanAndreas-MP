@@ -394,6 +394,48 @@ new Float:zones[][zoneinfo] = {
 };
 new ZoneArea[sizeof(zones)];
 
+//城市区域
+enum e_ZONEINFO
+{
+	z_Name[125],
+    Float:z_MinX,
+    Float:z_MinY,
+    Float:z_MinZ,
+    Float:z_MaxX,
+    Float:z_MaxY,
+    Float:z_MaxZ
+};
+
+new const
+	g_Cities[][e_ZONEINFO] =
+{
+	// Main Zones
+	{"Los Santos",                     44.60, -2892.90,  -242.90,  2997.00,  -768.00,   900.00},
+	{"Las Venturas",                  869.40,   596.30,  -242.90,  2997.00,  2993.80,   900.00},
+	//{"Bone County",                  -480.50,   596.30,  -242.90,   869.40,  2993.80,   900.00},
+	//{"Tierra Robada",               -2997.40,  1659.60,  -242.90,  -480.50,  2993.80,   900.00},
+	//{"Tierra Robada",               -1213.90,   596.30,  -242.90,  -480.50,  1659.60,   900.00},
+	{"San Fierro",                  -2997.40, -1115.50,  -242.90, -1213.90,  1659.60,   900.00}
+	//{"Red County",                  -1213.90,  -768.00,  -242.90,  2997.00,   596.30,   900.00},
+	//{"Flint County",                -1213.90, -2892.90,  -242.90,    44.60,  -768.00,   900.00},
+	//{"Whetstone",                   -2997.40, -2892.90,  -242.90, -1213.90, -1115.50,   900.00}
+};
+#define CITY_LS 0
+#define CITY_LV 1
+#define CITY_SF 2
+stock GetPlayerCurrentCity(playerid)
+{
+	new Float:f_Pos[3];
+	GetPlayerPos(playerid, f_Pos[0], f_Pos[1], f_Pos[2]);
+	for(new i = 0; i < sizeof(g_Cities); i++)
+	{
+	    if(	(f_Pos[0] >= g_Cities[i][z_MinX] && f_Pos[0] < g_Cities[i][z_MaxX]) && (f_Pos[1] >= g_Cities[i][z_MinY] && f_Pos[1] < g_Cities[i][z_MaxY]))
+		{
+		    return i;
+		}
+	}
+	return -1;
+}
 #if defined FILTERSCRIPT
 	public OnFilterScriptInit()
 	{
