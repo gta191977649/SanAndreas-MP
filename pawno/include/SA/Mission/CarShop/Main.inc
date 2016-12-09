@@ -5,12 +5,13 @@
 #define CP_X -1970.7388
 #define CP_Y  297.4897
 #define CP_Z  34.7497
-#define CP_SIZE  3.0
+#define CP_SIZE  2.0
 
 //-1979.2891,288.7288,35.1719
 #define CPB_X -1979.2891
 #define CPB_Y 288.7288
 #define CPB_Z 35.1719
+#define CPB_SIZE  5.0
 
 //递增值
 #define ADD_VAL 5
@@ -315,7 +316,7 @@ forward CARSHOP_OnVehicleDeath(vehicleid);
 stock CarShop_CreateCP()
 {
 	CarShopCP[0] = CreateDynamicCP(CP_X,CP_Y,CP_Z,CP_SIZE,-1,-1,-1,50.0);
-	CarShopCP[1] = CreateDynamicCP(CPB_X,CPB_Y,CPB_Z,CP_SIZE,-1,-1,-1,-1);
+	CarShopCP[1] = CreateDynamicCP(CPB_X,CPB_Y,CPB_Z,CPB_SIZE,-1,-1,-1,-1);
 }
 
 stock CarShop_ResAvaiable()

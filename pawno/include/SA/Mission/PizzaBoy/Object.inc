@@ -76,6 +76,13 @@ stock PIZZA_LunchObject(playerid,vectordir)
 			
 
 }
+PIZZA_Fill(playerid)
+{
+	//清空创建的Pizza
+	PIZZA_ObjectsRecycle(playerid);
+	PIZZA_PLAYER_UIUpdate(playerid);
+}
+
 //垃圾回收
 stock PIZZA_ObjectsRecycle(playerid)
 {
@@ -122,6 +129,7 @@ stock PIZZA_GetObjectIDX(playerid,objectid)
 	}
 	return false;
 }
+
 
 stock PIZZA_OnObjectUpdate(objectid)
 {

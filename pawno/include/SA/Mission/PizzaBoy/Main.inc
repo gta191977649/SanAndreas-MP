@@ -21,7 +21,7 @@
 #define VECTOR_LEFT 0
 #define VECTOR_RIGHT 1
 
-#define MAX_PIZZA 6
+//#define MAX_PIZZA 6
 
 
 static gPIZZA_HasCB[9];
@@ -37,7 +37,7 @@ public OnGameModeInit()
 	gPIZZA_HasCB[0] = funcidx("PIZZA_OnPlayerConnect") != -1;
 	gPIZZA_HasCB[1] = funcidx("PIZZA_OnPlayerDeath") != -1;
 	gPIZZA_HasCB[2] = funcidx("PIZZA_OnPlayerDisconnect") != -1;
-	gPIZZA_HasCB[3] = funcidx("PIZZA_OnPlayerEnterCheckpoint") != -1;
+	gPIZZA_HasCB[3] = funcidx("OnPlayerEnterDynamicCP") != -1;
 	gPIZZA_HasCB[4] = funcidx("PIZZA_OnPlayerKeyStateChange") != -1;
 	gPIZZA_HasCB[5] = funcidx("PIZZA_OnPlayerStateChange") != -1;
 	gPIZZA_HasCB[6] = funcidx("PIZZA_OnVehicleDeath") != -1;
@@ -158,6 +158,7 @@ forward PIZZA_OnPlayerDeath(playerid, killerid,  reason);
 
 public OnPlayerDisconnect(playerid,  reason)
 {
+	
 	//your OnPlayerDisconnect code here
 	if(PIZZA_IsPlayerInMission(playerid)) PIZZA_PLAYER_reset(playerid);
 		
@@ -179,23 +180,28 @@ forward PIZZA_OnPlayerDisconnect(playerid,  reason);
 
 //--------------OnPlayerEnterCheckpoint Hook-------------------
 
-public OnPlayerEnterCheckpoint(playerid)
+public OnPlayerEnterDynamicCP(playerid,checkpointid)
 {
 	//your OnPlayerEnterCheckpoint code here
-
+	if(checkpointid == PlayerCP[playerid][shopcp])
+	{
+		PIZZA_Fill(playerid);
+		PIZZA_CreatePlayerCheckPoints(playerid);
+	}
+	
 	if (gPIZZA_HasCB[3])
 	{
-		return CallLocalFunction("PIZZA_OnPlayerEnterCheckpoint", "i",playerid);
+		return CallLocalFunction("PIZZA_OnPlayerEnterCheckpoint", "ii",playerid,checkpointid);
 	}
 	return 1;
 }
-#if defined _ALS_OnPlayerEnterCheckpoint
-	#undef OnPlayerEnterCheckpoint
+#if defined _ALS_OnPlayerEnterDynamicCP
+	#undef OnPlayerEnterDynamicCP
 #else
-	#define _ALS_OnPlayerEnterCheckpoint
+	#define _ALS_OnPlayerEnterDynamicCP
 #endif
-#define OnPlayerEnterCheckpoint PIZZA_OnPlayerEnterCheckpoint
-forward PIZZA_OnPlayerEnterCheckpoint(playerid);
+#define OnPlayerEnterDynamicCP PIZZA_OnPlayerEnterDynamicCP
+forward PIZZA_OnPlayerEnterDynamicCP(playerid,checkpointid);
 
 
 

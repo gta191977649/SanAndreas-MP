@@ -3,11 +3,12 @@ enum Player_CP
 	Float:cp_x,
 	Float:cp_y,
 	Float:cp_z,
-	cp
+	cp,
+	shopcp
 }
 
 new PlayerCP[MAX_PLAYERS][Player_CP];
-new PlayerPizzaVeh[MAX_PLAYERS] = {INVALID_VEHICLE_ID,...};
+
 
 stock PIZZA_IsPlayerInMission(playerid)
 {
@@ -51,6 +52,8 @@ stock PIZZA_PLAYER_DestoryUI(playerid)
 
 stock PIZZA_PLAYER_reset(playerid)
 {
+	PIZZA_DestoryPizzaShopCP(playerid);
+	PIZZA_DestoryPlayerCheckPoints(playerid);
 	PIZZA_PLAYER_DestoryUI(playerid);
 	PIZZA_ObjectsRecycle(playerid);
 }
@@ -73,11 +76,11 @@ stock PIZZA_SetPlayerMissionStatus(playerid,bool:toogle)
 stock PIZZA_CreatePizzaShopCP(playerid)
 {
 	PIZZA_DestoryPlayerCheckPoints(playerid);//删除之前的CP点
-	PlayerCP[playerid][cp] = CreateDynamicCP(pizzaShop_LS[0][0],pizzaShop_LS[0][1],pizzaShop_LS[0][2],3,-1,-1,-1,-1);
+	PlayerCP[playerid][shopcp] = CreateDynamicCP(pizzaShop_LS[0][0],pizzaShop_LS[0][1],pizzaShop_LS[0][2],3,-1,-1,-1,-1);
 }
 stock PIZZA_DestoryPizzaShopCP(playerid)
 {
-	DestroyDynamicCP(PlayerCP[playerid][cp]);
+	if(IsValidDynamicCP(PlayerCP[playerid][shopcp])) DestroyDynamicCP(PlayerCP[playerid][shopcp]);
 }
 
 stock PIZZA_CreatePlayerCheckPoints(playerid)
@@ -104,5 +107,5 @@ stock PIZZA_CreatePlayerCheckPoints(playerid)
 
 stock PIZZA_DestoryPlayerCheckPoints(playerid)
 {
-	DestroyDynamicRaceCP(PlayerCP[playerid][cp]);
+	if(IsValidDynamicCP(PlayerCP[playerid][cp])) DestroyDynamicRaceCP(PlayerCP[playerid][cp]);
 }

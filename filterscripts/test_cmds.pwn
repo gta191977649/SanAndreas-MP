@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 		GetPlayerPos( playerid, X, Y, Z );
 
-		created_vehicle_id = CreateVehicle( strval(tmp), X+2, Y+2, Z, 0, 0, 0, -1 );
+		created_vehicle_id = CreateVehicle( strval(tmp), X+2, Y+2, Z, -1, -1, -1, -1 );
 
 		new msg[256];
 		format(msg,256,"Created vehicle: %d",created_vehicle_id);
