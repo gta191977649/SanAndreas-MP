@@ -67,7 +67,7 @@ stock PIZZA_LunchObject(playerid,vectordir)
 	PHY_SetObjectFriction(PizzaObject[playerid][Sot][p_object], 10.0);
 	PHY_SetObjectAirResistance(PizzaObject[playerid][Sot][p_object], 0.1);
 	PHY_SetObjectGravity(PizzaObject[playerid][Sot][p_object], 10.0);
-	PHY_SetObjectZBound(PizzaObject[playerid][Sot][p_object], _, _,0.1);
+	PHY_SetObjectZBound(PizzaObject[playerid][Sot][p_object], _, _,0.0);
 	PHY_UseColAndreas(PizzaObject[playerid][Sot][p_object],3);
 
 		

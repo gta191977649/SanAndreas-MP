@@ -17241,3 +17241,127 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [19:34:16] [connection] 127.0.0.1:64774 requests connection cookie.
 [19:34:17] [connection] incoming connection: 127.0.0.1:64774 id: 6
 [19:34:17] [join] Hatsune_Miku has joined the server (6:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:27:03] 
+[18:27:03] Server Plugins
+[18:27:03] --------------
+[18:27:03]  Loading plugin: streamer
+[18:27:03] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[18:27:03]   Loaded.
+[18:27:03]  Loading plugin: sscanf
+[18:27:03] 
+
+[18:27:03]  ===============================
+
+[18:27:03]       sscanf plugin loaded.     
+
+[18:27:03]    (c) 2009 Alex "Y_Less" Cole
+
+[18:27:03]    0.3d-R2 500 Players "dnee"
+
+[18:27:03]  ===============================
+
+[18:27:03]   Loaded.
+[18:27:03]  Loading plugin: ColAndreas
+[18:27:03] *********************
+[18:27:03] ** Created By:     **
+[18:27:03] ** [uL]Chris42O    **
+[18:27:03] ** [uL]Slice       **
+[18:27:03] ** [uL]Pottus      **
+[18:27:03] *********************
+[18:27:05] Loaded collision data.
+[18:27:05] *********************
+[18:27:05]   ColAndreas Loaded
+[18:27:05]    v1.3.0
+[18:27:05] *********************
+[18:27:05]   Loaded.
+[18:27:05]  Loaded 3 plugins.
+
+[18:27:05] 
+[18:27:05] Filterscripts
+[18:27:05] ---------------
+[18:27:05]   Loading filterscript 'test_cmds.amx'...
+[18:27:05]   Loading filterscript 'test_teleport.amx'...
+[18:27:05]   Loaded 2 filterscripts.
+
+[18:27:05] [connection] 127.0.0.1:62300 requests connection cookie.
+[18:27:05] [模块]:世界NPC已经加载
+[18:27:05] Main Moudel Is Loaded.
+[18:27:05] Loaded 3 vehicles from: vehicles/trains.txt
+[18:27:05] Loaded 3 vehicles from: vehicles/pilots.txt
+[18:27:05] Loaded 15 vehicles from: vehicles/lv_law.txt
+[18:27:05] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[18:27:05] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[18:27:06] Loaded 38 vehicles from: vehicles/sf_law.txt
+[18:27:06] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[18:27:06] [connection] 127.0.0.1:62301 requests connection cookie.
+[18:27:06] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[18:27:06] Loaded 24 vehicles from: vehicles/ls_law.txt
+[18:27:06] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[18:27:06] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[18:27:06] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[18:27:06] [connection] 127.0.0.1:62302 requests connection cookie.
+[18:27:06] Loaded 71 vehicles from: vehicles/whetstone.txt
+[18:27:06] Loaded 168 vehicles from: vehicles/bone.txt
+[18:27:06] Loaded 61 vehicles from: vehicles/flint.txt
+[18:27:06] Loaded 96 vehicles from: vehicles/tierra.txt
+[18:27:06] [connection] 127.0.0.1:62303 requests connection cookie.
+[18:27:06] Loaded 96 vehicles from: vehicles/red_county.txt
+[18:27:06] [世界交通工具]: 已经加载:1781个
+[18:27:06] Modul: SA Icons Loaded
+[18:27:06]  
+[18:27:06]  
+[18:27:06]  
+[18:27:06]  ======================================= 
+[18:27:06]  |                                     | 
+[18:27:06]  |        YSI version 3.09.0684        | 
+[18:27:06]  |        By Alex "Y_Less" Cole        | 
+[18:27:06]  |                                     | 
+[18:27:06]  ======================================= 
+[18:27:06]  
+[18:27:06] Loading Map.
+[18:27:06] [connection] 127.0.0.1:62304 requests connection cookie.
+[18:27:06] [connection] 127.0.0.1:62305 requests connection cookie.
+[18:27:06] Loaded Map.                             
+[18:27:06] 
+---------------------------------------
+[18:27:06]  SA WORLD Main Frame Work
+
+[18:27:06]  By Liberty_Episodes
+
+[18:27:06] ---------------------------------------
+
+[18:27:06] Number of vehicle models: 173
+[18:27:06] [connection] incoming connection: 127.0.0.1:62300 id: 0
+[18:27:07] [connection] incoming connection: 127.0.0.1:62301 id: 1
+[18:27:07] [connection] incoming connection: 127.0.0.1:62302 id: 2
+[18:27:07] [connection] incoming connection: 127.0.0.1:62303 id: 3
+[18:27:07] [connection] incoming connection: 127.0.0.1:62304 id: 4
+[18:27:07] [connection] incoming connection: 127.0.0.1:62305 id: 5
+[18:27:07] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[18:27:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:27:07] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[18:27:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:27:07] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[18:27:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:27:07] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[18:27:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:27:07] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[18:27:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:27:07] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[18:27:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:27:38] [connection] 127.0.0.1:60941 requests connection cookie.
+[18:27:39] [connection] incoming connection: 127.0.0.1:60941 id: 6
+[18:27:39] [join] Liberty_Episodes has joined the server (6:127.0.0.1)
+[18:28:17] [part] Liberty_Episodes has left the server (6:1)
