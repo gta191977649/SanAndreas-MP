@@ -44,6 +44,7 @@
 #include <SA/Mission/Paramedic/Main>
 #include <SA/Mission/CarShop/Main>
 #include <SA/Mission/PizzaBoy/Main>
+#include <SA/Mission/Burglary/Main>
 
 
 //----------------------------------------------------------

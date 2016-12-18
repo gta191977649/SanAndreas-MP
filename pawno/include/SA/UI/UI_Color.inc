@@ -10,6 +10,7 @@
 //提示框
 #define INFO_BoxBG 0x00000088
 #define C_RED 0xAE211AFF
+#define C_MOBJECTIVE 0xDFBE64FF
 
 //BAR
 #define C_SABLUE 0xC6E2FFFF

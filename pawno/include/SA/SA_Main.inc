@@ -12,6 +12,8 @@ static gMAIN_HasCB[3];
 
 public OnGameModeInit()
 {
+	DisableInteriorEnterExits();
+	
 	SetGameModeText(GAMEMODE);
 	printf("Main Moudel Is Loaded.");
 	//加载世界系统车辆
