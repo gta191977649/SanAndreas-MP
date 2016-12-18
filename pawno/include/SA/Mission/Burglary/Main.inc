@@ -9,6 +9,8 @@
 
 #include <SA/Mission/Burglary/Map>
 #include <SA/Mission/Burglary/Locations>
+#include <SA/Mission/Burglary/IO>
+#include <SA/Mission/Burglary/Funiture>
 #include <SA/Mission/Burglary/Text>
 #include <SA/Mission/Burglary/Room>
 #include <SA/Mission/Burglary/Player>

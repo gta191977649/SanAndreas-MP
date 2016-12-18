@@ -7,9 +7,11 @@
 */
 
 
-stock BurglaryReadFunitureFromFile(hourseid)
+stock BurglaryReadFunitureFromFile(gameid,hourseid)
 {
-	new File:file = fopen("file.ini", io_read), line[128],idx=0;
+	new str_path[125];
+	format(str_path,sizeof(str_path),"%d.ini",hourseid);
+	new File:file = fopen(str_path, io_read), line[128],idx=0;
     while(fread(file, line))
     {	
 		if(idx >= MAX_FUNITURE) break; //无视超过上限的数据
@@ -19,7 +21,7 @@ stock BurglaryReadFunitureFromFile(hourseid)
         
 		if (!sscanf(line, "iffffff",MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ)) //如果读取到了正确数据
 		{
-			BurglaryFunitureCreate(hourseid,MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ);
+			BurglaryFunitureCreate(gameid,idx,MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ);
 		}
 		idx++;
     }
