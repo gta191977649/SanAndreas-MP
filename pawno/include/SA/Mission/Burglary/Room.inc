@@ -44,6 +44,10 @@ stock BurglaryRoomPlayersReset()
 			printf("i %d, j %d Var %d",i,j,BurglaryRoomPlayers[i][j]);
 }
 
+stock Burglary_CreateFuniture(roomid,houseid)
+{
+	BurglaryReadFunitureFromFile(roomid,houseid);
+}
 stock Burglary_UpdateMissionObj(roomid,houseid)
 {
 	//更新提示所有玩家

@@ -7,6 +7,7 @@
 
 #include <a_samp>
 #include <streamer>
+#include <sscanf>
 
 //System
 #include <SA/System/SA_Zone>

@@ -51,6 +51,8 @@ stock Burglary_PlayerStart(playerid)
 	new houseid = Burglary_GenRobbryHouseID();
 	printf("Burglary_GenRobbryHouseID");
 	
+	//创建室内家具
+	Burglary_CreateFuniture(roomid,houseid);
 	//创建PickUp
 	Burglary_CreatePickUp(roomid,houseid);
 	//创建地图图标

@@ -1,7 +1,7 @@
 
 #define MAX_BURGLARY 10
 #define MAX_BURGLARY_PLAYER 4 //最多一个任务可以加入多少玩家
-
+#define MAX_FUNITURE 10 //一个房子里面最大有多少家具
 
 //-------Mission STATUS--------------
 #define MISSION_BURGLARY_DO 0

@@ -1,4 +1,4 @@
-#define MAX_FUNITURE 10 一个房子里面最多有多少家具
+
 
 enum FunitureInfo
 {
@@ -7,11 +7,12 @@ enum FunitureInfo
 	bool:b_ispicked,
 	bool:b_used //可用么
 };
-new BurglaryFuniture[MAX_BURGLARY][MAX_FUNITURE];
+new BurglaryFuniture[MAX_BURGLARY][MAX_FUNITURE][FunitureInfo];
 
 
 stock BurglaryFunitureCreate(gameid,idx,modelid,Float:fx,Float:fy,Float:fz,Float:frx,Float:fry,Float:frz)
 {
+	printf("Created Funiture %d %d",idx,modelid);
 	BurglaryFuniture[gameid][idx][b_object] = CreateDynamicObject(modelid,fx,fy,fz,frx,fry,frz,0,-1,-1); //记得修改世界线
 	BurglaryFuniture[gameid][idx][b_model] = modelid;
 	BurglaryFuniture[gameid][idx][b_used] = true;

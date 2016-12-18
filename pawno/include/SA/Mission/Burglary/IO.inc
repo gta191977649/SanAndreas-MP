@@ -10,17 +10,19 @@
 stock BurglaryReadFunitureFromFile(gameid,hourseid)
 {
 	new str_path[125];
-	format(str_path,sizeof(str_path),"%d.ini",hourseid);
+	format(str_path,sizeof(str_path),"Mission/Burglary/%d.ini",hourseid);
+	printf("[ÈëÊÒµÁÇÔ] ¼Ò¾ß´´½¨ ¶ÁÈ¡ÎÄ¼şÂ·¾¶ %s",str_path);
 	new File:file = fopen(str_path, io_read), line[128],idx=0;
     while(fread(file, line))
     {	
-		if(idx >= MAX_FUNITURE) break; //æ— è§†è¶…è¿‡ä¸Šé™çš„æ•°æ®
-		if(strfind(line, "#", true)) continue; //è·³è¿‡æ³¨é‡Šè¡Œ
+		if(idx >= MAX_FUNITURE) break; //ÎŞÊÓ³¬¹ıÉÏÏŞµÄÊı¾İ
+		if(strfind(line, "#", true) != -1) continue; //Ìø¹ı×¢ÊÍĞĞ
 		
         new MODELID,Float:POSX,Float:POSY,Float:POSZ,Float:POSRX,Float:POSRY,Float:POSRZ;
-        
-		if (!sscanf(line, "iffffff",MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ)) //å¦‚æœè¯»å–åˆ°äº†æ­£ç¡®æ•°æ®
+
+		if (!sscanf(line, "iffffff",MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ)) //Èç¹û¶ÁÈ¡µ½ÁËÕıÈ·Êı¾İ
 		{
+			
 			BurglaryFunitureCreate(gameid,idx,MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ);
 		}
 		idx++;
