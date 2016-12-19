@@ -2663,3 +2663,201 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [16:19:02] Burglary_CreatePickUp(0,0)
 [16:19:02] ÈëÊÒÈÎÎñ¿ªÊ¼
 [16:19:55] [part] Kande has left the server (6:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:39:42] 
+[16:39:42] Server Plugins
+[16:39:42] --------------
+[16:39:42]  Loading plugin: streamer
+[16:39:42] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[16:39:42]   Loaded.
+[16:39:42]  Loading plugin: sscanf
+[16:39:42] 
+
+[16:39:42]  ===============================
+
+[16:39:42]       sscanf plugin loaded.     
+
+[16:39:42]    (c) 2009 Alex "Y_Less" Cole
+
+[16:39:42]    0.3d-R2 500 Players "dnee"
+
+[16:39:42]  ===============================
+
+[16:39:42]   Loaded.
+[16:39:42]  Loading plugin: ColAndreas
+[16:39:42] *********************
+[16:39:42] ** Created By:     **
+[16:39:42] ** [uL]Chris42O    **
+[16:39:42] ** [uL]Slice       **
+[16:39:42] ** [uL]Pottus      **
+[16:39:42] *********************
+[16:39:42] No collision data found.
+[16:39:42] *********************
+[16:39:42]   ColAndreas Loaded
+[16:39:42]    v1.3.0
+[16:39:42] *********************
+[16:39:42]   Loaded.
+[16:39:42]  Loaded 3 plugins.
+
+[16:39:42] 
+[16:39:42] Filterscripts
+[16:39:42] ---------------
+[16:39:42]   Loading filterscript 'debug.amx'...
+[16:39:42] 
+  *********************
+  * µçÓ°ÖÆ×÷¸¨Öú½Å±¾   *
+[16:39:42]   * By Simon Campbell *
+  *********************
+[16:39:42]   * ÐÞ¸Ä: [Fly_CoOl]_luck      *
+  *********************
+[16:39:42]   * -- ÔØÈë³É¹¦         *
+  *********************
+
+[16:39:42] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:39:42]   Loading filterscript 'test_int.amx'...
+[16:39:42] =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[16:39:42] 											  
+[16:39:42] => Interior Menu by Garsino | Edited by Oggle <=
+[16:39:42] ==============ºº»¯:[Fly_O_o]CHY=================
+[16:39:42] 											  
+[16:39:42] =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[16:39:42]   Loading filterscript 'test_teleport.amx'...
+[16:39:42]   Loaded 3 filterscripts.
+
+[16:39:42] [connection] 127.0.0.1:61394 requests connection cookie.
+[16:39:42] [connection] 127.0.0.1:61395 requests connection cookie.
+[16:39:42] [connection] 127.0.0.1:61396 requests connection cookie.
+[16:39:42] [Ä£¿é]:ÊÀ½çNPCÒÑ¾­¼ÓÔØ
+[16:39:42] Main Moudel Is Loaded.
+[16:39:42] Loaded 3 vehicles from: vehicles/trains.txt
+[16:39:42] Loaded 3 vehicles from: vehicles/pilots.txt
+[16:39:42] Loaded 15 vehicles from: vehicles/lv_law.txt
+[16:39:42] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[16:39:42] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[16:39:42] Loaded 38 vehicles from: vehicles/sf_law.txt
+[16:39:42] [connection] 127.0.0.1:61397 requests connection cookie.
+[16:39:42] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[16:39:42] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[16:39:42] Loaded 24 vehicles from: vehicles/ls_law.txt
+[16:39:42] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[16:39:42] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[16:39:42] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[16:39:42] Loaded 71 vehicles from: vehicles/whetstone.txt
+[16:39:42] [connection] 127.0.0.1:61398 requests connection cookie.
+[16:39:42] Loaded 168 vehicles from: vehicles/bone.txt
+[16:39:42] Loaded 61 vehicles from: vehicles/flint.txt
+[16:39:42] Loaded 96 vehicles from: vehicles/tierra.txt
+[16:39:42] Loaded 96 vehicles from: vehicles/red_county.txt
+[16:39:42] [ÊÀ½ç½»Í¨¹¤¾ß]: ÒÑ¾­¼ÓÔØ:1781¸ö
+[16:39:42] Modul: SA Icons Loaded
+[16:39:42]  
+[16:39:42]  
+[16:39:42]  
+[16:39:42]  ======================================= 
+[16:39:42]  |                                     | 
+[16:39:42]  |        YSI version 3.09.0684        | 
+[16:39:42]  |        By Alex "Y_Less" Cole        | 
+[16:39:42]  |                                     | 
+[16:39:42]  ======================================= 
+[16:39:42]  
+[16:39:42] i 0, j 0 Var 65535
+[16:39:42] i 0, j 1 Var 65535
+[16:39:42] i 0, j 2 Var 65535
+[16:39:42] i 0, j 3 Var 65535
+[16:39:42] i 1, j 0 Var 65535
+[16:39:42] i 1, j 1 Var 65535
+[16:39:42] i 1, j 2 Var 65535
+[16:39:42] i 1, j 3 Var 65535
+[16:39:42] i 2, j 0 Var 65535
+[16:39:42] i 2, j 1 Var 65535
+[16:39:42] i 2, j 2 Var 65535
+[16:39:42] i 2, j 3 Var 65535
+[16:39:42] i 3, j 0 Var 65535
+[16:39:42] [connection] 127.0.0.1:61399 requests connection cookie.
+[16:39:42] i 3, j 1 Var 65535
+[16:39:42] i 3, j 2 Var 65535
+[16:39:42] i 3, j 3 Var 65535
+[16:39:42] i 4, j 0 Var 65535
+[16:39:42] i 4, j 1 Var 65535
+[16:39:42] i 4, j 2 Var 65535
+[16:39:42] i 4, j 3 Var 65535
+[16:39:42] i 5, j 0 Var 65535
+[16:39:42] i 5, j 1 Var 65535
+[16:39:42] i 5, j 2 Var 65535
+[16:39:42] i 5, j 3 Var 65535
+[16:39:42] i 6, j 0 Var 65535
+[16:39:42] i 6, j 1 Var 65535
+[16:39:42] i 6, j 2 Var 65535
+[16:39:42] i 6, j 3 Var 65535
+[16:39:42] i 7, j 0 Var 65535
+[16:39:42] i 7, j 1 Var 65535
+[16:39:42] i 7, j 2 Var 65535
+[16:39:42] i 7, j 3 Var 65535
+[16:39:42] i 8, j 0 Var 65535
+[16:39:42] i 8, j 1 Var 65535
+[16:39:42] i 8, j 2 Var 65535
+[16:39:42] i 8, j 3 Var 65535
+[16:39:42] i 9, j 0 Var 65535
+[16:39:42] i 9, j 1 Var 65535
+[16:39:42] i 9, j 2 Var 65535
+[16:39:42] i 9, j 3 Var 65535
+[16:39:42] 
+---------------------------------------
+[16:39:42]  SA WORLD Main Frame Work
+
+[16:39:42]  By Liberty_Episodes
+
+[16:39:42] ---------------------------------------
+
+[16:39:42] Number of vehicle models: 173
+[16:39:43] [connection] incoming connection: 127.0.0.1:61394 id: 0
+[16:39:43] [connection] incoming connection: 127.0.0.1:61395 id: 1
+[16:39:43] [connection] incoming connection: 127.0.0.1:61396 id: 2
+[16:39:43] [connection] incoming connection: 127.0.0.1:61397 id: 3
+[16:39:43] [connection] incoming connection: 127.0.0.1:61398 id: 4
+[16:39:43] [connection] incoming connection: 127.0.0.1:61399 id: 5
+[16:39:43] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[16:39:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:39:43] NPC: Connection from 127.0.0.1 is allowed.
+[16:39:43] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[16:39:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:39:43] NPC: Connection from 127.0.0.1 is allowed.
+[16:39:43] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[16:39:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:39:43] NPC: Connection from 127.0.0.1 is allowed.
+[16:39:43] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[16:39:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:39:43] NPC: Connection from 127.0.0.1 is allowed.
+[16:39:43] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[16:39:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:39:43] NPC: Connection from 127.0.0.1 is allowed.
+[16:39:43] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[16:39:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:39:43] NPC: Connection from 127.0.0.1 is allowed.
+[16:40:02] [connection] 127.0.0.1:53358 requests connection cookie.
+[16:40:03] [connection] incoming connection: 127.0.0.1:53358 id: 6
+[16:40:04] [join] Kande has joined the server (6:127.0.0.1)
+[16:40:04] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[16:40:56] pre Burglary_PlayerJoin
+[16:40:56] Burglary_GetAvaiablePlayerSlot
+[16:40:56] Burglary_SetPlayerSlot
+[16:40:56] Burglary_PlayerJoin Out
+[16:40:56] [ÈëÊÒµÁÇÔ] ¼Ò¾ß´´½¨ ¶ÁÈ¡ÎÄ¼þÂ·¾¶ Mission/Burglary/0.ini
+[16:40:56] Created Funiture 0 1429
+[16:40:56] Created Funiture 1 2103
+[16:40:56] Created Funiture 2 2149
+[16:40:56] Burglary_CreatePickUp(0,0)
+[16:40:56] ÈëÊÒÈÎÎñ¿ªÊ¼
+[16:41:35] [å…¥å®¤ç›—çªƒ] å®¶å…·å›žæ”¶å¤±è´¥,å› ä¸º id 0 å¹¶æ²¡ç”¨ä½¿ç”¨
+[16:41:50] [part] Kande has left the server (6:1)

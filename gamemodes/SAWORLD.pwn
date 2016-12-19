@@ -75,7 +75,7 @@ public OnPlayerSpawn(playerid)
 {
 	if(IsPlayerNPC(playerid)) return 1;
 	ShowInfoBox(playerid,INFO_BoxBG,5,"Welcome To SanAndreas MultiPlayer CN!");
-    
+    SetPlayerSkin(playerid, 2);
 
 	return 1;
 }
