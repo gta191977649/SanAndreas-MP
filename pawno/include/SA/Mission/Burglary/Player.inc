@@ -1,8 +1,30 @@
-
+#define PLAYER_ATTACH_INDEX 9
+#define PLAYER_ANIM_DELAY 1500
 
 new PlayerBurglaryRoom[MAX_PLAYERS];
 
+stock BurglaryPlayerLiftFuniture(playerid,funitureidx)
+{
+	
+	new PlayerGameID = Burglary_PlayerRoomGet(playerid); 
+	//绑定OBJ给玩家
+	new ObjectModel = BurglaryFunitureGetModel(PlayerGameID,funitureidx);
+	SetPlayerAttachedObject(playerid,PLAYER_ATTACH_INDEX,ObjectModel,1,0,0.6,0,0,90,0,1.000000, 1.000000, 1.000000);
+	
+	BurglaryAnimationPick(playerid);
+	//设置动作延迟
+	SetTimerEx("BurglaryPickUp",PLAYER_ANIM_DELAY, false, "iii",playerid,PlayerGameID,funitureidx);
+	
+}
 
+
+forward BurglaryPickUp(playerid,GameID,funitureidx);
+public BurglaryPickUp(playerid,GameID,funitureidx)
+{
+	BurglaryFunitureDestory(GameID,funitureidx);
+	//设置动作
+	BurglaryAnimationPrtial(playerid);
+}
 stock PlayerBurglaryRoomReset()
 {
 	for(new i=0; i < MAX_PLAYERS;i++)
@@ -29,8 +51,6 @@ stock Burglary_SetPlayerMissionStatus(playerid,bool:toogle)
 
 stock Burglary_PlayerStart(playerid)
 {
-
-
 	//获取房间ID
 	new roomid = Burglary_GetAvaiableRoomID();
 	if(roomid == NULL)
@@ -40,16 +60,16 @@ stock Burglary_PlayerStart(playerid)
 	}
 	
 	Burglary_PlayerRoomSet(playerid,roomid);
-	printf("Burglary_PlayerRoomSet");
+	
 	//加入房间
 	Burglary_PlayerJoin(roomid,playerid);
-	printf("Burglary_PlayerJoin");
+	
 	//设置任务状态
 	Burglary_SetVehicle(roomid,GetPlayerVehicleID(playerid));
-	printf("Burglary_SetVehicle");
+	
 	//分配盗窃房子
 	new houseid = Burglary_GenRobbryHouseID();
-	printf("Burglary_GenRobbryHouseID");
+	
 	
 	//创建室内家具
 	Burglary_CreateFuniture(roomid,houseid);

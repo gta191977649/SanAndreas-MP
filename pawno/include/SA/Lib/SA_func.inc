@@ -27,3 +27,8 @@ SetPlayerPosFront(playerid,Float:x, Float:y,Float:z,Float:Angle,Float:distance)
 	y += (distance * floatcos(-Angle, degrees));
 	SetPlayerPos(playerid,x,y,z);
 }
+
+PreloadAnimLib(playerid, animlib[])
+{
+	ApplyAnimation(playerid, animlib, "null", 0.0, 0, 0, 0, 0, 0);
+}

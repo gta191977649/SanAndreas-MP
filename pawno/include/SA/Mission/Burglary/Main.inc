@@ -8,14 +8,17 @@
 #define MISSION_BURGLARY_RETURN 1
 
 #include <SA/Mission/Burglary/Map>
+#include <SA/Mission/Burglary/Animation>
 #include <SA/Mission/Burglary/Locations>
 #include <SA/Mission/Burglary/IO>
 #include <SA/Mission/Burglary/Funiture>
+
 #include <SA/Mission/Burglary/Text>
 #include <SA/Mission/Burglary/Room>
 #include <SA/Mission/Burglary/Player>
 #include <SA/Mission/Burglary/Vehicle>
 
+#define KEY_ENTER (newkeys & KEY_SECONDARY_ATTACK ) && !(oldkeys & KEY_SECONDARY_ATTACK )
 
 static gBurg_HasCB[9];
 
@@ -101,6 +104,7 @@ public OnPlayerConnect(playerid)
 {
 	//your OnPlayerConnect code here
 	//if(!IsPlayerNPC(playerid)) RemoveSABurglaryObject(playerid);
+	PreloadAnimLib(playerid,"CARRY");
 	
 	if (gBurg_HasCB[0])
 	{
@@ -220,6 +224,17 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 		Burglary_PlayerStart(playerid);
 	}
 	
+	if(KEY_ENTER)
+	{
+		if(!Burglary_IsPlayerInMission(playerid)) return 1;//无视玩家不在任务的
+		new PlayerTeam = Burglary_PlayerRoomGet(playerid);
+		new nearFuniture = BurglaryGetClostFuniture(playerid,PlayerTeam);
+		
+		if(nearFuniture != NULL)//如果附近有家具
+		{
+			BurglaryPlayerLiftFuniture(playerid,nearFuniture);
+		}
+	}
 	if (gBurg_HasCB[5])
 	{
 		return CallLocalFunction("Burg_OnPlayerKeyStateChange", "iii",playerid, newkeys, oldkeys);
