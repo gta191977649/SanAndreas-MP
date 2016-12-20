@@ -2,28 +2,78 @@
 #define PLAYER_ANIM_DELAY 1500
 
 new PlayerBurglaryRoom[MAX_PLAYERS];
+enum PlayerBurglarInfo
+{
+	bool:ishold,//如果手持家具的话
+	b_holdFunitureID//拿起的ID
+};
 
+new PlayerBurglar[MAX_PLAYERS][PlayerBurglarInfo];
+
+stock BurglaryPlayerSetHoldID(playerid,var) // 设置拿起来的家具ID
+{
+	PlayerBurglar[playerid][b_holdFunitureID] = var;
+}
+stock BurglaryPlayerGetHoldID(playerid) //获取拿起来的家具ID
+{
+	return PlayerBurglar[playerid][b_holdFunitureID];
+}
+
+stock BurglaryPlayerSetHoldStatus(playerid,bool:holditm)
+{
+	if(holditm) PlayerBurglar[playerid][ishold] = true;
+	else PlayerBurglar[playerid][ishold] = false;
+}
+stock BurglaryPlayerGetHoldStatus(playerid)
+{
+	return PlayerBurglar[playerid][ishold];
+}
+
+//放下家具(地板上)
+stock BurglaryPlayerFunitureOnFloor(playerid,funitureidx)
+{
+	new PlayerGameID = Burglary_PlayerRoomGet(playerid); 
+
+	BurglaryAnimationDown(playerid);
+	//设置动作延迟
+	SetTimerEx("BurglaryPutDown",PLAYER_ANIM_DELAY, false, "iii",playerid,PlayerGameID,funitureidx);
+}
+//拿起家具
 stock BurglaryPlayerLiftFuniture(playerid,funitureidx)
 {
-	
 	new PlayerGameID = Burglary_PlayerRoomGet(playerid); 
-	//绑定OBJ给玩家
-	new ObjectModel = BurglaryFunitureGetModel(PlayerGameID,funitureidx);
-	SetPlayerAttachedObject(playerid,PLAYER_ATTACH_INDEX,ObjectModel,1,0,0.6,0,0,90,0,1.000000, 1.000000, 1.000000);
-	
 	BurglaryAnimationPick(playerid);
 	//设置动作延迟
 	SetTimerEx("BurglaryPickUp",PLAYER_ANIM_DELAY, false, "iii",playerid,PlayerGameID,funitureidx);
-	
 }
 
-
+forward BurglaryPutDown(playerid,GameID,funitureidx);
+public BurglaryPutDown(playerid,GameID,funitureidx)
+{
+	new PlayerGameID = Burglary_PlayerRoomGet(playerid); 
+	RemovePlayerAttachedObject(playerid,PLAYER_ATTACH_INDEX);
+	BurglaryFunitureShow(playerid,PlayerGameID,funitureidx);
+	//清除拿起的家具ID
+	BurglaryPlayerSetHoldID(playerid,NULL);
+	//设置玩家状态
+	BurglaryPlayerSetHoldStatus(playerid,false);
+	//清楚动作
+	BurglaryAnimationClear(playerid);
+}
 forward BurglaryPickUp(playerid,GameID,funitureidx);
 public BurglaryPickUp(playerid,GameID,funitureidx)
 {
-	BurglaryFunitureDestory(GameID,funitureidx);
+	//绑定OBJ给玩家
+	new ObjectModel = BurglaryFunitureGetModel(GameID,funitureidx);
+	SetPlayerAttachedObject(playerid,PLAYER_ATTACH_INDEX,ObjectModel,1,0,0.6,0,0,90,0,1.000000, 1.000000, 1.000000);
+	//隐藏静态OBJ
+	BurglaryFunitureHide(GameID,funitureidx);
 	//设置动作
 	BurglaryAnimationPrtial(playerid);
+	//设置拿起ID
+	BurglaryPlayerSetHoldID(playerid,funitureidx);
+	//设置玩家状态
+	BurglaryPlayerSetHoldStatus(playerid,true);
 }
 stock PlayerBurglaryRoomReset()
 {

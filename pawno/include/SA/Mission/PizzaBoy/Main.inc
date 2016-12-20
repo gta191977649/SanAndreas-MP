@@ -233,9 +233,15 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	if (HOLDING( KEY_LOOK_LEFT))
 	{
 		if(!PIZZA_IsPlayerInMission(playerid)) return 1;
+		
 		//printf("KEY_LOOK_LEFT");
 		if (PRESSED( KEY_FIRE ))
 		{
+			if(!PIZZA_IsInVaildVeh(playerid))
+			{
+				SG_Sub(playerid,PIZZA_WRONGCAR,5);
+				return 1;
+			}
 			PIZZA_LunchObject(playerid,VECTOR_LEFT);
 			//printf("KEY_ACTION");
 		}
@@ -247,6 +253,11 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 		//printf("KEY_LOOK_RIGHT");
 		if (PRESSED( KEY_FIRE ))
 		{
+			if(!PIZZA_IsInVaildVeh(playerid))
+			{
+				SG_Sub(playerid,PIZZA_WRONGCAR,5);
+				return 1;
+			}
 			PIZZA_LunchObject(playerid,VECTOR_RIGHT);
 			//printf("KEY_ACTION");
 		}

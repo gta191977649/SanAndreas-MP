@@ -21,11 +21,20 @@ stock IsPointInRangeOfPoint(Float:x, Float:y, Float:z, Float:x2, Float:y2, Float
 	return ((x2 * x2) + (y2 * y2) + (z2 * z2)) < (range * range);
 }
 
-SetPlayerPosFront(playerid,Float:x, Float:y,Float:z,Float:Angle,Float:distance)
+stock SetPlayerPosFront(playerid,Float:x, Float:y,Float:z,Float:Angle,Float:distance)
 {
 	x += (distance * floatsin(-Angle, degrees));
 	y += (distance * floatcos(-Angle, degrees));
 	SetPlayerPos(playerid,x,y,z);
+}
+
+stock GetXYZInFrontOfPlayer(playerid, &Float:x, &Float:y,&Float:z, Float:distance)
+{
+	new Float:a;
+	GetPlayerPos(playerid, x, y, z);
+	GetPlayerFacingAngle(playerid, a);
+	x += (distance * floatsin(-a, degrees));
+	y += (distance * floatcos(-a, degrees));
 }
 
 PreloadAnimLib(playerid, animlib[])

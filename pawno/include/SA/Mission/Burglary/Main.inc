@@ -1,7 +1,7 @@
 
 #define MAX_BURGLARY 10
-#define MAX_BURGLARY_PLAYER 4 //æœ€å¤šä¸€ä¸ªä»»åŠ¡å¯ä»¥åŠ å…¥å¤šå°‘ç©å®¶
-#define MAX_FUNITURE 10 //ä¸€ä¸ªæˆ¿å­é‡Œé¢æœ€å¤§æœ‰å¤šå°‘å®¶å…·
+#define MAX_BURGLARY_PLAYER 4 //×î¶àÒ»¸öÈÎÎñ¿ÉÒÔ¼ÓÈë¶àÉÙÍæ¼Ò
+#define MAX_FUNITURE 10 //Ò»¸ö·¿×ÓÀïÃæ×î´óÓĞ¶àÉÙ¼Ò¾ß
 
 //-------Mission STATUS--------------
 #define MISSION_BURGLARY_DO 0
@@ -65,19 +65,19 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 {
 	//your OnPlayerPickUpPickup code here
 	
-	if(Burglary_IsPlayerInMission(playerid)) //å¦‚æœç©å®¶åœ¨ä»»åŠ¡æ¨¡å¼ä¸­
+	if(Burglary_IsPlayerInMission(playerid)) //Èç¹ûÍæ¼ÒÔÚÈÎÎñÄ£Ê½ÖĞ
 	{
-		new PlayerTeam = Burglary_PlayerRoomGet(playerid);//è·å–ç©å®¶çš„ç»„id
+		new PlayerTeam = Burglary_PlayerRoomGet(playerid);//»ñÈ¡Íæ¼ÒµÄ×éid
 		new HourseId = Burglary_GetHouseID(PlayerTeam);
 		
-		if(pickupid == BurglaryRoom[PlayerTeam][b_entrypickup]) //è¿›å…¥
+		if(pickupid == BurglaryRoom[PlayerTeam][b_entrypickup]) //½øÈë
 		{
-			//æ‰§è¡Œæ¥å…¥å®¤å†…ä¼ é€....
+			//Ö´ĞĞ½ÓÈëÊÒÄÚ´«ËÍ....
 			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][3],BurlagryHoursesLS[HourseId][4],BurlagryHoursesLS[HourseId][5],0.0,2);
 		}
-		if(pickupid == BurglaryRoom[PlayerTeam][b_exitpickup]) //ç¦»å¼€
+		if(pickupid == BurglaryRoom[PlayerTeam][b_exitpickup]) //Àë¿ª
 		{
-			//æ‰§è¡Œæ¥å…¥å®¤å†…ä¼ é€....
+			//Ö´ĞĞ½ÓÈëÊÒÄÚ´«ËÍ....
 			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][0],BurlagryHoursesLS[HourseId][1],BurlagryHoursesLS[HourseId][2],0.0,2);
 		}
 	
@@ -220,20 +220,32 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	{
 		if(Burglary_IsPlayerInMission(playerid)) return 1;
 		if(!BurglaryIsVaildVeh(playerid)) return 1;
-		//å¼€å§‹ä»»åŠ¡
+		//¿ªÊ¼ÈÎÎñ
 		Burglary_PlayerStart(playerid);
 	}
 	
 	if(KEY_ENTER)
 	{
-		if(!Burglary_IsPlayerInMission(playerid)) return 1;//æ— è§†ç©å®¶ä¸åœ¨ä»»åŠ¡çš„
+		if(!Burglary_IsPlayerInMission(playerid)) return 1;//ÎŞÊÓÍæ¼Ò²»ÔÚÈÎÎñµÄ
 		new PlayerTeam = Burglary_PlayerRoomGet(playerid);
 		new nearFuniture = BurglaryGetClostFuniture(playerid,PlayerTeam);
 		
-		if(nearFuniture != NULL)//å¦‚æœé™„è¿‘æœ‰å®¶å…·
+		if(!BurglaryPlayerGetHoldStatus(playerid)) //Èç¹ûÍæ¼ÒÃ»ÓĞÄÃÆğ¼Ò¾ßµÄ»°
 		{
-			BurglaryPlayerLiftFuniture(playerid,nearFuniture);
+			if(nearFuniture != NULL)//Èç¹û¸½½üÓĞ¼Ò¾ß
+			{
+				BurglaryPlayerLiftFuniture(playerid,nearFuniture);
+			}
 		}
+		else
+		{
+			//·ÅÏÂ¼Ò¾ß
+			//»ñÈ¡ÔÚÊÖÉÏµÄ¼Ò¾ßID
+			new OnHoldID = BurglaryPlayerGetHoldID(playerid);
+			if(OnHoldID != NULL) BurglaryPlayerFunitureOnFloor(playerid,OnHoldID);
+			else printf("Burglary : ´íÎó,»ñÈ¡µ½Íæ¼ÒÔÚÊÖÉÏµÄ¼Ò¾ßIDÎª NULL,Òò´ËÎŞ·¨·ÅÏÂ");
+		}
+			
 	}
 	if (gBurg_HasCB[5])
 	{

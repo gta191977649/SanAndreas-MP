@@ -1,4 +1,6 @@
-#define FINIUTRE_NEARDIS 2
+#define FINIUTRE_NEARDIS 2.0
+#define FUNIUTRE_FONTDIS 2.0
+#define FUNIUTRE_FLOOROFFSET 0.9
 
 enum FunitureInfo
 {
@@ -26,6 +28,29 @@ stock BurglaryFunitureCreate(gameid,idx,modelid,Float:fx,Float:fy,Float:fz,Float
 	BurglaryFuniture[gameid][idx][b_model] = modelid;
 	BurglaryFuniture[gameid][idx][b_used] = true;
 }
+
+stock BurglaryFunitureShow(playerid,gameid,idx)
+{
+	if(BurglaryFuniture[gameid][idx][b_used])
+	{
+		new Float:c_pos[3];
+		GetXYZInFrontOfPlayer(playerid,c_pos[0],c_pos[1],c_pos[2],FUNIUTRE_FONTDIS);
+		BurglaryFuniture[gameid][idx][b_object] = CreateDynamicObject(BurglaryFuniture[gameid][idx][b_model],c_pos[0],c_pos[1],c_pos[2]-FUNIUTRE_FLOOROFFSET,0.0,0.0,0.0,0,-1,-1); //记得修改世界线
+	}
+	
+}
+stock BurglaryFunitureHide(gameid,idx)
+{
+	if(BurglaryFuniture[gameid][idx][b_used])
+	{
+		DestroyDynamicObject(BurglaryFuniture[gameid][idx][b_object]);
+	}
+	else
+	{
+		printf("[入室盗窃] 家具隐藏失败,因为 id %d 并没用使用",idx);
+	}
+}
+
 
 stock BurglaryFunitureDestory(gameid,idx)
 {

@@ -3,3 +3,4 @@
 #define PIZZA_NOMISSION "~r~ Sorry, this mission is not available in your current area. "
 #define PIZZA_DEAD "~r~You dead."
 #define PIZZA_INFO "PIZZAS:       %d"
+#define PIZZA_WRONGCAR "You have to be in a pizza boy vehicle in order to throw."
