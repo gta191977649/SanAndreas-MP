@@ -1,7 +1,4 @@
 
-#define BULGRAY_PICKUPMODEL 19198
-#define BULGRAY_PICKUPTYPE 1
-
 enum BurglaryRoomInfo
 {
 	bool:b_used,//表示当前房间是否可用
@@ -9,10 +6,10 @@ enum BurglaryRoomInfo
 	b_stealAmount,
 	b_maxAmount,
 	b_vehicle, //车辆ID
-	b_entrypickup,//进入房子的PickUp
-	b_exitpickup,//离开房子的PickUp
 	b_map,
-	b_hourseid
+	b_hourseid,
+	b_cash,
+	b_city //哪个城市进行的任务
 	
 }
 new BurglaryRoom[MAX_BURGLARY][BurglaryRoomInfo]; //任务房间
@@ -25,7 +22,7 @@ stock Burglary_StartRoom(playerid)
 	new roomid = Burglary_GetAvaiableRoomID();
 	if(roomid != NULL)
 	{
-		ShowInfoBox(playerid,INFO_BoxBG,5,"There is no aviable room, sorry.");
+		ShowInfoBox(playerid,INFO_BoxBG,5,BURGLARY_NOROOM);
 		return 1;
 	}
 		
@@ -38,15 +35,18 @@ stock BurglaryRoomPlayersReset()
 		for(new j =0; j < MAX_BURGLARY_PLAYER;j++)
 			BurglaryRoomPlayers[i][j] = INVALID_PLAYER_ID;
 		
-	//debug
-	for(new i =0; i < MAX_BURGLARY;i++)
-		for(new j =0; j < MAX_BURGLARY_PLAYER;j++)
-			printf("i %d, j %d Var %d",i,j,BurglaryRoomPlayers[i][j]);
+	
 }
 
 stock Burglary_CreateFuniture(roomid,houseid)
 {
 	BurglaryReadFunitureFromFile(roomid,houseid);
+}
+
+stock Burglary_DeleteFuniture(roomid)
+{
+	for(new i = 0; i < MAX_FUNITURE; i++)
+		BurglaryFunitureDelete(roomid,i);
 }
 stock Burglary_UpdateMissionObj(roomid,houseid)
 {
@@ -62,6 +62,46 @@ stock Burglary_UpdateMissionObj(roomid,houseid)
 	}
 	return 1;
 }
+
+stock Burglary_UpdateUIForAllPlayer(roomid)
+{
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			Burglary_PlayerUpdateUI(BurglaryRoomPlayers[roomid][i]);
+		}
+	}
+	
+	
+	//当全部都偷完的时候
+	if(Burglary_GetStealAmount(roomid) >= 1)
+	{
+		Burglary_ReturnLoad(roomid);
+	}
+}
+
+stock Burglary_ReturnLoad(roomid)
+{
+	Burglary_DeleteMarker(roomid);
+	Burglary_CreateReturnCP(roomid);
+}
+
+stock Burglary_CreateReturnCP(roomid)
+{
+	new BurglaryCity = Burglary_GetCity(roomid);
+	
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			BuglaryPlayerCreateReturnCP(BurglaryRoomPlayers[roomid][i],BurglaryCity);
+		}
+	}
+	
+}
+
+
 stock Burglary_SetHouse(roomid,houseid)
 {
 	BurglaryRoom[roomid][b_hourseid] = houseid;
@@ -74,22 +114,38 @@ stock Burglary_GetHouseID(roomid)
 }
 stock Burglary_CreatePickUp(roomid,houseid)
 {
-	
-	printf("Burglary_CreatePickUp(%d,%d)",roomid,houseid);
+
 	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
 	{
 		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
 		{
-			//进入的Pickup
-			BurglaryRoom[roomid][b_entrypickup] = CreateDynamicPickup(BULGRAY_PICKUPMODEL, BULGRAY_PICKUPTYPE, BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2],-1,0,BurglaryRoomPlayers[roomid][i],STREAMER_PICKUP_SD);
-			//printf("CreateDynamicPickup %d %f %f %f %d",BULGRAY_PICKUPMODEL,BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2],BurglaryRoomPlayers[roomid][i]);
-			//离开的PickUP
-			BurglaryRoom[roomid][b_exitpickup] = CreateDynamicPickup(BULGRAY_PICKUPMODEL, BULGRAY_PICKUPTYPE, BurlagryHoursesLS[houseid][3],BurlagryHoursesLS[houseid][4], BurlagryHoursesLS[houseid][5],-1,0,BurglaryRoomPlayers[roomid][i],STREAMER_PICKUP_SD);
-			
-		
+			BurglaryPlayerPickUpCreate(BurglaryRoomPlayers[roomid][i],houseid);
 		}
 	}
 	
+}
+
+stock Burglary_DeleteUIForAll(roomid)
+{
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			Burglary_PlayerDeleteUI(BurglaryRoomPlayers[roomid][i]);
+		}
+	}	
+}
+
+stock Burglary_DeletePickUp(roomid,houseid)
+{
+
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			BurglaryPlayerPickUpDelete(BurglaryRoomPlayers[roomid][i]);
+		}
+	}	
 }
 stock Burglary_CreateMarker(roomid,houseid)
 {
@@ -98,13 +154,48 @@ stock Burglary_CreateMarker(roomid,houseid)
 	{
 		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
 		{
-			BurglaryRoom[roomid][b_map] = CreateDynamicMapIcon(BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2], 0, C_MOBJECTIVE,0, 0,BurglaryRoomPlayers[roomid][i],  STREAMER_MAP_ICON_SD, MAPICON_GLOBAL);
+			CreatePlayerObjectiveMarker(BurglaryRoomPlayers[roomid][i],BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2],C_MOBJECTIVE);
 			
 			//BurglaryRoom[roomid][b_map] = CreateDynamicMapIcon(BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2], -1, C_MOBJECTIVE, BurglaryRoomPlayers[roomid][i]);
 		}
 	}
 }
+stock Burglary_CPResetForAll(roomid)
+{
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			Burglary_PlayerCPReset(BurglaryRoomPlayers[roomid][i]);
+		}
+	}
+	
+}
+stock Burglary_DeleteMarker(roomid)
+{
+	//在地图上标记颜色
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			
+			DestoryPlayerObjectiveMarker(BurglaryRoomPlayers[roomid][i]);
+			//BurglaryRoom[roomid][b_map] = CreateDynamicMapIcon(BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2], -1, C_MOBJECTIVE, BurglaryRoomPlayers[roomid][i]);
+		}
+	}
+}
 
+stock Burglary_ResetMissionForAll(roomid)
+{
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			Burglary_SetPlayerMissionStatus(BurglaryRoomPlayers[roomid][i],false);
+		}
+	}
+
+}
 stock Burglary_GenRobbryHouseID()
 {
 	//随机选择房子
@@ -112,6 +203,14 @@ stock Burglary_GenRobbryHouseID()
 	return Rand;
 }
 //功能函数
+stock Burglary_SetCity(roomid,city)
+{
+	BurglaryRoom[roomid][b_city] = city;
+}
+stock Burglary_GetCity(roomid)
+{
+	return BurglaryRoom[roomid][b_city];
+}
 
 stock Burglary_SetVehicle(roomid,vehicleid)
 {
@@ -141,6 +240,15 @@ stock Burglary_SetMisssionStatus(roomid,status)
 {
 	BurglaryRoom[roomid][b_status] = status;
 }
+stock Burglary_SetStealCash(roomid,amount)
+{
+	BurglaryRoom[roomid][b_status] = amount;
+}
+stock Burglary_GetStealCash(roomid)
+{
+	return BurglaryRoom[roomid][b_status];
+}
+
 stock Burglary_GetMisssionStatus(roomid)
 {
 	return BurglaryRoom[roomid][b_status];
@@ -151,11 +259,17 @@ stock Burglary_SetPlayerSlot(roomid,slot,playerid)
 	BurglaryRoomPlayers[roomid][slot] = playerid;
 }
 
+
 stock Burglary_GetPlayerSlot(roomid,slot)
 {
 	return BurglaryRoomPlayers[roomid][slot];
 }
 
+stock Burglary_SetRoomUse(roomid,bool:status)
+{
+	BurglaryRoom[roomid][b_used] = status;
+	
+}
 stock Burglary_GetAvaiableRoomID()
 {
 	for(new i = 0; i < MAX_BURGLARY;i++)
@@ -170,4 +284,41 @@ stock Burglary_GetAvaiablePlayerSlot(roomid)
 		if(BurglaryRoomPlayers[roomid][i] == INVALID_PLAYER_ID) return i;
 
 	return NULL;
+}
+
+stock Burglary_StartRoom(roomid)
+{	
+	Burglary_SetRoomUse(roomid,true);
+
+	
+	//分配盗窃房子
+	new houseid = Burglary_GenRobbryHouseID();
+
+	//创建室内家具
+	Burglary_CreateFuniture(roomid,houseid);
+	/*
+	在玩家加入的时候做
+	//创建PickUp
+	Burglary_CreatePickUp(roomid,houseid);
+	//创建地图图标
+	Burglary_CreateMarker(roomid,houseid);
+	//更新任务提示
+	Burglary_UpdateMissionObj(roomid,houseid);
+	//显示UI
+	Burglary_UpdateUIForAllPlayer(roomid);
+	*/
+}
+
+
+stock Burglary_EndRoom(roomid)
+{
+	Burglary_ResetMissionForAll(roomid);
+	Burglary_SetRoomUse(roomid,false);
+	Burglary_SetVehicle(roomid,INVALID_VEHICLE_ID);
+	Burglary_SetStealCash(roomid,0);
+	Burglary_SetMaxStealAmount(roomid,0);
+	Burglary_SetStealCash(roomid,0);
+	Burglary_DeleteFuniture(roomid);
+	
+	
 }

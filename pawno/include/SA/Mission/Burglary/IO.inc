@@ -22,10 +22,11 @@ stock BurglaryReadFunitureFromFile(gameid,hourseid)
 
 		if (!sscanf(line, "iffffff",MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ)) //如果读取到了正确数据
 		{
-			
+				
 			BurglaryFunitureCreate(gameid,idx,MODELID,POSX,POSY,POSZ,POSRX,POSRY,POSRZ);
 		}
 		idx++;
+		
     }
-	
+	Burglary_SetMaxStealAmount(gameid,idx);	
 }

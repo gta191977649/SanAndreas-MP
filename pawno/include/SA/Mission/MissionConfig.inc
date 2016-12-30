@@ -5,3 +5,5 @@
 #define MISSION_HOTDOG 2
 #define MISSION_ICECREAM 1
 #define MISSION_NONE 0
+
+#define NULL -1

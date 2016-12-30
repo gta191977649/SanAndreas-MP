@@ -37,6 +37,17 @@ stock GetXYZInFrontOfPlayer(playerid, &Float:x, &Float:y,&Float:z, Float:distanc
 	y += (distance * floatcos(-a, degrees));
 }
 
+stock GetXYZInBackOfVehicle(vehicleid,&Float:x,&Float:y,&Float:z,Float:dis)
+{
+	new Float:angle;
+	GetVehiclePos(vehicleid,x,y,z);
+	GetVehicleZAngle(vehicleid,angle);
+
+	x -= (dis * floatsin(-angle, degrees));
+	y -= (dis * floatcos(-angle, degrees));
+	z = z;
+	
+}
 PreloadAnimLib(playerid, animlib[])
 {
 	ApplyAnimation(playerid, animlib, "null", 0.0, 0, 0, 0, 0, 0);

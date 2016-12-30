@@ -4,7 +4,6 @@
 */
 #define MAX_RECS 50
 #define REC_TIMER 10000
-#define NULL -1
 
 new CARSHOP_REC[MAX_RECS] = {INVALID_VEHICLE_ID,...};
 /*

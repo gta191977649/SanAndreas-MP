@@ -1,34 +1,22 @@
 #define b_size 800
 
-new BurlagryItems[] =
+new BurlagryItems[][] =
 {
-	2648,//电视
-	1429,//电视
-	1518,//电视
-	1747,//电视
-	1748,//电视
-	1749,//电视
-	1750,//电视
-	1751,//电视
-	1752,//电视
-	1781,//电视
-	1786,//电视
-	1791,//电视
-	1792,//电视
-	2102,//收音机
-	2103,//收音机
-	2101,//VCD组合
-	1839,//VCD组合
-	1782,//VCD
-	1783,//VCD
-	1785,//VCD
-	1787,//VCD
-	1788,//VCD
-	1790,//VCD
-	2149//微波炉
+	{2648,1000},//电视
+	{1429,1000},//电视
+	{1518,1000},//电视
+	{2103,800},//收音机
+	{2149,1000}//微波炉
 };
 
-
+stock Burglary_GetItemCash(modelid)
+{
+	for(new i = 0; i < sizeof(BurlagryItems);i++)
+	{
+		if(BurlagryItems[i][0] == modelid) return BurlagryItems[i][1];
+	}
+	return NULL;
+}
 stock Burglary_ReCreateMap()
 {
 	//GEN 2.IPL

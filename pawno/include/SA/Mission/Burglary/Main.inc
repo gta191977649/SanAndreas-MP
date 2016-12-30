@@ -7,6 +7,9 @@
 #define MISSION_BURGLARY_DO 0
 #define MISSION_BURGLARY_RETURN 1
 
+
+new BurglaryGarageCP[3];
+
 #include <SA/Mission/Burglary/Map>
 #include <SA/Mission/Burglary/Animation>
 #include <SA/Mission/Burglary/Locations>
@@ -20,8 +23,18 @@
 
 #define KEY_ENTER (newkeys & KEY_SECONDARY_ATTACK ) && !(oldkeys & KEY_SECONDARY_ATTACK )
 
+
+
 static gBurg_HasCB[9];
 
+
+stock BurglargCreateCPS()
+{
+	BurglaryGarageCP[0] = CreateDynamicCP(2741.3831, -2000.6416, 13.2586,3.0,-1,-1,-1,-1);//LS
+	BurglaryGarageCP[1] = CreateDynamicCP(-2100.0601, -15.9510, 35.0646,3.0,-1,-1,-1,-1);//SF
+	BurglaryGarageCP[2] = CreateDynamicCP(2609.0959, 1434.1698, 10.4594,3.0,-1,-1,-1,-1);//LV
+	
+}
 //--------------OnGameModeInit Hook-------------------
 
 public OnGameModeInit()
@@ -29,13 +42,13 @@ public OnGameModeInit()
 	//your OnGameModeInit pre code here
 	Burglary_ReCreateMap();
 	BurglaryRoomPlayersReset();
-	
+	BurglargCreateCPS();
 	//function hook checks
 	
 	gBurg_HasCB[0] = funcidx("Burg_OnPlayerConnect") != -1;
 	gBurg_HasCB[1] = funcidx("Burg_OnPlayerDeath") != -1;
 	gBurg_HasCB[2] = funcidx("Burg_OnPlayerDisconnect") != -1;
-	gBurg_HasCB[3] = funcidx("Burg_OnPlayerEnterCheckpoint") != -1;
+	gBurg_HasCB[3] = funcidx("Burg_OnPlayerEnterDynamicCP") != -1;
 	gBurg_HasCB[4] = funcidx("Burg_OnPlayerInteriorChange") != -1;
 	gBurg_HasCB[5] = funcidx("Burg_OnPlayerKeyStateChange") != -1;
 	gBurg_HasCB[6] = funcidx("Burg_OnPlayerStateChange") != -1;
@@ -70,15 +83,20 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 		new PlayerTeam = Burglary_PlayerRoomGet(playerid);//获取玩家的组id
 		new HourseId = Burglary_GetHouseID(PlayerTeam);
 		
-		if(pickupid == BurglaryRoom[PlayerTeam][b_entrypickup]) //进入
+		if(pickupid == PlayerBurglar[playerid][b_entrypickup]) //进入
 		{
 			//执行接入室内传送....
 			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][3],BurlagryHoursesLS[HourseId][4],BurlagryHoursesLS[HourseId][5],0.0,2);
+			SG_Sub(playerid,BURGLARY_OBJ2,5);
+			
 		}
-		if(pickupid == BurglaryRoom[PlayerTeam][b_exitpickup]) //离开
+		if(pickupid == PlayerBurglar[playerid][b_exitpickup]) //离开
 		{
 			//执行接入室内传送....
 			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][0],BurlagryHoursesLS[HourseId][1],BurlagryHoursesLS[HourseId][2],0.0,2);
+			SG_Sub(playerid,BURGLARY_OBJ4,5);
+			SetPlayerObjective(playerid,Burglary_GetVehicle(PlayerTeam),true);
+			if(Burglary_GetStealAmount(PlayerTeam) >= 1) SG_Sub(playerid,BURGLARY_OBJ5,5);
 		}
 	
 	}
@@ -105,6 +123,7 @@ public OnPlayerConnect(playerid)
 	//your OnPlayerConnect code here
 	//if(!IsPlayerNPC(playerid)) RemoveSABurglaryObject(playerid);
 	PreloadAnimLib(playerid,"CARRY");
+	Burglary_PlayerCPReset(playerid);
 	
 	if (gBurg_HasCB[0])
 	{
@@ -166,25 +185,41 @@ forward Burg_OnPlayerDisconnect(playerid,  reason);
 
 
 
-//--------------OnPlayerEnterCheckpoint Hook-------------------
 
-public OnPlayerEnterCheckpoint(playerid)
+
+public OnPlayerEnterDynamicCP(playerid,checkpointid)
 {
 	//your OnPlayerEnterCheckpoint code here
-
+	printf("CP Called");
+	if(checkpointid == BurglaryGarageCP[0] || checkpointid == BurglaryGarageCP[1] || checkpointid == BurglaryGarageCP[2])
+	{
+		printf("Buglarge CP Triggered");
+		new roomid = Burglary_PlayerRoomGet(playerid);
+		if(GetPlayerVehicleID(playerid) == Burglary_GetVehicle(roomid))
+		{
+			printf("Player Is in vaild veh");
+			Burglary_EndRoom(roomid);
+		}
+		else
+		{
+			//.....
+		}
+		
+	}
+	//Burglary_EndRoom(roomid)
 	if (gBurg_HasCB[3])
 	{
-		return CallLocalFunction("Burg_OnPlayerEnterCheckpoint", "i",playerid);
+		return CallLocalFunction("Burg_OnPlayerEnterDynamicCP", "ii",playerid,checkpointid);
 	}
 	return 1;
 }
-#if defined _ALS_OnPlayerEnterCheckpoint
-	#undef OnPlayerEnterCheckpoint
+#if defined _ALS_OnPlayerEnterDynamicCP
+	#undef OnPlayerEnterDynamicCP
 #else
-	#define _ALS_OnPlayerEnterCheckpoint
+	#define _ALS_OnPlayerEnterDynamicCP
 #endif
-#define OnPlayerEnterCheckpoint Burg_OnPlayerEnterCheckpoint
-forward Burg_OnPlayerEnterCheckpoint(playerid);
+#define OnPlayerEnterDynamicCP Burg_OnPlayerEnterDynamicCP
+forward Burg_OnPlayerEnterDynamicCP(playerid,checkpointid);
 
 
 
@@ -242,7 +277,11 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			//放下家具
 			//获取在手上的家具ID
 			new OnHoldID = BurglaryPlayerGetHoldID(playerid);
-			if(OnHoldID != NULL) BurglaryPlayerFunitureOnFloor(playerid,OnHoldID);
+			if(OnHoldID != NULL)
+			{
+				if(BurglaryIsVaildLoadPos(playerid)) BurglaryPlayerLoadFuniture(playerid,OnHoldID); //卸载家具
+				else BurglaryPlayerFunitureOnFloor(playerid,OnHoldID);
+			}
 			else printf("Burglary : 错误,获取到玩家在手上的家具ID为 NULL,因此无法放下");
 		}
 			

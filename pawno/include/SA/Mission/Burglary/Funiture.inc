@@ -29,13 +29,22 @@ stock BurglaryFunitureCreate(gameid,idx,modelid,Float:fx,Float:fy,Float:fz,Float
 	BurglaryFuniture[gameid][idx][b_used] = true;
 }
 
+stock BurglaryFunitureDelete(gameid,idx)
+{
+	if(IsValidDynamicObject(BurglaryFuniture[gameid][idx][b_object]))
+	{
+		DestroyDynamicObject(BurglaryFuniture[gameid][idx][b_object]);
+	}
+}
 stock BurglaryFunitureShow(playerid,gameid,idx)
 {
 	if(BurglaryFuniture[gameid][idx][b_used])
 	{
 		new Float:c_pos[3];
 		GetXYZInFrontOfPlayer(playerid,c_pos[0],c_pos[1],c_pos[2],FUNIUTRE_FONTDIS);
-		BurglaryFuniture[gameid][idx][b_object] = CreateDynamicObject(BurglaryFuniture[gameid][idx][b_model],c_pos[0],c_pos[1],c_pos[2]-FUNIUTRE_FLOOROFFSET,0.0,0.0,0.0,0,-1,-1); //记得修改世界线
+		CA_FindZ_For2DCoord(c_pos[0],c_pos[1], c_pos[2]);//获取地面Z
+		new Float:modelSize = GetColSphereRadius(BurglaryFuniture[gameid][idx][b_model]);//获取模型大小
+		BurglaryFuniture[gameid][idx][b_object] = CreateDynamicObject(BurglaryFuniture[gameid][idx][b_model],c_pos[0],c_pos[1],c_pos[2]-modelSize-0.2,0.0,0.0,0.0,0,-1,-1); //记得修改世界线
 	}
 	
 }
@@ -81,7 +90,7 @@ stock BurglaryGetClostFuniture(playerid,gameid)
 	{
 		new Float:funiturePos[3];
 		GetDynamicObjectPos(BurglaryFuniture[gameid][i][b_object],funiturePos[0],funiturePos[1],funiturePos[2]);
-		if(IsPointInRangeOfPoint(playerPos[0],playerPos[1],playerPos[2], funiturePos[0],funiturePos[1],funiturePos[2], FINIUTRE_NEARDIS))
+		if(IsPointInRangeOfPoint(playerPos[0],playerPos[1],playerPos[2], funiturePos[0],funiturePos[1],funiturePos[2], FINIUTRE_NEARDIS) && BurglaryFuniture[gameid][i][b_used])
 		{
 			return i;
 		}

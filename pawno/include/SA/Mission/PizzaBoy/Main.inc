@@ -37,7 +37,7 @@ public OnGameModeInit()
 	gPIZZA_HasCB[0] = funcidx("PIZZA_OnPlayerConnect") != -1;
 	gPIZZA_HasCB[1] = funcidx("PIZZA_OnPlayerDeath") != -1;
 	gPIZZA_HasCB[2] = funcidx("PIZZA_OnPlayerDisconnect") != -1;
-	gPIZZA_HasCB[3] = funcidx("OnPlayerEnterDynamicCP") != -1;
+	gPIZZA_HasCB[3] = funcidx("PIZZA_OnPlayerEnterDynamicCP") != -1;
 	gPIZZA_HasCB[4] = funcidx("PIZZA_OnPlayerKeyStateChange") != -1;
 	gPIZZA_HasCB[5] = funcidx("PIZZA_OnPlayerStateChange") != -1;
 	gPIZZA_HasCB[6] = funcidx("PIZZA_OnVehicleDeath") != -1;
@@ -195,7 +195,7 @@ public OnPlayerEnterDynamicCP(playerid,checkpointid)
 	
 	if (gPIZZA_HasCB[3])
 	{
-		return CallLocalFunction("PIZZA_OnPlayerEnterCheckpoint", "ii",playerid,checkpointid);
+		return CallLocalFunction("PIZZA_OnPlayerEnterDynamicCP", "ii",playerid,checkpointid);
 	}
 	return 1;
 }

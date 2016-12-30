@@ -5,10 +5,21 @@
 enum Objective_Info {
 	ObjectiveVehicle,
 	bool:Objective,
+	ObjectiveMarker
 	
-}
+};
 
 new PlayerObjective[MAX_PLAYERS][Objective_Info];
+
+
+stock CreatePlayerObjectiveMarker(playerid,Float:x,Float:y,Float:z,color)
+{
+	PlayerObjective[playerid][ObjectiveMarker] = CreateDynamicMapIcon(x,y,z, 0,color,0, 0,playerid,  STREAMER_MAP_ICON_SD, MAPICON_GLOBAL);
+}
+stock DestoryPlayerObjectiveMarker(playerid)
+{
+	if(IsValidDynamicMapIcon(PlayerObjective[playerid][ObjectiveMarker])) DestroyDynamicMapIcon(PlayerObjective[playerid][ObjectiveMarker]);
+}
 
 stock SetPlayerObjective(playerid,vehicleid,bool:toggle)
 {

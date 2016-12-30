@@ -2,12 +2,16 @@
 //
 //  SA WORLD 0.1 beta
 //  A freeroam gamemode for SA-MP 
+//	Developer: Liberty_Episodes
+//	QQ: 191977649
+//	(C) JavaSparrow Project 2010 - 2017
 //
 //----------------------------------------------------------
 
 #include <a_samp>
 #include <streamer>
 #include <sscanf>
+#include <zcmd>
 
 //System
 #include <SA/System/SA_Zone>
@@ -43,9 +47,11 @@
 #include <SA/Mission/HotDog/Main>
 #include <SA/Mission/IceCream/Main>
 #include <SA/Mission/Paramedic/Main>
-#include <SA/Mission/CarShop/Main>
+
 #include <SA/Mission/PizzaBoy/Main>
 #include <SA/Mission/Burglary/Main>
+#include <SA/Mission/CarShop/Main>
+
 
 
 //----------------------------------------------------------
@@ -81,5 +87,21 @@ public OnPlayerSpawn(playerid)
 }
 
 //----------------------------------------------------------
-
+//Debug
+CMD:cpdebug(playerid,params[])
+{
+	new Float:getPos[3];
+	GetXYZInBackOfVehicle(GetPlayerVehicleID(playerid),getPos[0],getPos[1],getPos[2],5);
+	//debug
+	//CreateDynamicCP(getPos[0],getPos[1],getPos[2],5, -1,-1, -1,STREAMER_CP_SD);
+	CreateObject(19607,getPos[0],getPos[1],getPos[2],0.0, 0.0, 0.0);
+	
+	printf("[Fomula] %f,%f,%f",getPos[0],getPos[1],getPos[2]);
+	GetPlayerPos(playerid,getPos[0],getPos[1],getPos[2]);
+	printf("[PLAYER] %f,%f,%f",getPos[0],getPos[1],getPos[2]);
+	ShowInfoBox(playerid,INFO_BoxBG,5,"Debug Has excecuted.");
+	return 1;
+}
+  
+  
   

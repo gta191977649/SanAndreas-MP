@@ -1,3 +1,7 @@
-#define BURGLARY_TOOGLE "Press ~k~~TOGGLE_SUBMISSIONS~  to start sell Burglary Missions."
+#define BURGLARY_TOOGLE "Press ~k~~TOGGLE_SUBMISSIONS~ to toggle Burglary missions on or off."
 #define BURGLARY_NOROOM "There is no aviable room, sorry."
 #define BURGLARY_OBJ1 "Go and break in to a ~y~hourse~w~ located at %s."
+#define BURGLARY_OBJ2 "Find something worth to stealing."
+#define BURGLARY_OBJ4 "Put the goods in the ~y~truck~w~."
+#define BURGLARY_OBJBACK "Return to the ~r~garage ~w~to sell your goods."
+#define BURGLARY_OBJ5 "Return to the ~r~garage ~w~or keep loading item to your ~y~track~w~."
