@@ -126,7 +126,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	//your OnPlayerKeyStateChange code here
 	if(KEY_MISSION)
 	{
-		if(!AMB_IsPlayerInMission(playerid) && AMB_IsVaildVehicle(playerid)) 
+		if(!AMB_IsPlayerInMission(playerid) && AMB_IsVaildVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER) 
 		{
 			AMB_SetPlayerMissionStatus(playerid,true);
 			SG_Sub(playerid,"Treat a ~r~patient~w~.",5);

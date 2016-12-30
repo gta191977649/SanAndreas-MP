@@ -38,11 +38,12 @@ stock ResetPlayerMission(playerid,missionid)
 	{	
 		switch (missionid)
 		{
-			case MISSION_HOTDOG: HOTDOG_PLAYER_reset(playerid);
+			case MISSION_HOTDOG: HOTDOG_SetPlayerMissionStatus(playerid,false);
 			case MISSION_ICECREAM: IceCream_PLAYER_reset(playerid);
-			case MISSION_PARAMEDIT: AMB_PLAYER_reset(playerid);
-			case MISSION_PIZZA: PIZZA_PLAYER_reset(playerid);
-			case MISSION_CARSHOP: CarShop_PLAYER_reset(playerid);
+			case MISSION_PARAMEDIT: AMB_SetPlayerMissionStatus(playerid,false);
+			case MISSION_PIZZA: PIZZA_SetPlayerMissionStatus(playerid,false);
+			case MISSION_CARSHOP: CarShop_SetPlayerMissionStatus(playerid,false);
+			case MISSION_BURGLARY: Burglary_SetPlayerMissionStatus(playerid,false);
 		}
 	}
 }

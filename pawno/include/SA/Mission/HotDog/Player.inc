@@ -64,10 +64,24 @@ stock HOTDOG_PLAYER_buy(playerid,sellerid)
 	
 }
 
+stock HOTDOG_SetPlayerMissionStatus(playerid,bool:toogle)
+{
+	if(toogle)
+	{
+		SetPlayerMissionStatus(playerid,MISSION_HOTDOG,true);
+	}
+	else
+	{
+		SetPlayerMissionStatus(playerid,MISSION_HOTDOG,false);
+		HOTDOG_PLAYER_reset(playerid);
+	}
+	
+}
 stock HOTDOG_PLAYER_reset(playerid)
 {
 	IsPlayerSellHotDog[playerid] = false;
 	HOTDOG_SetAllObjectiveOff(playerid);
+	HOTDOG_PLAYER_stopSelling(playerid);
 	
 }
 

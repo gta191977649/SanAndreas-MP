@@ -157,7 +157,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	{
 		if(IceCream_PLAYER_isSell(playerid)) return 1;
 		//开始任务
-		if(IsVaildIceCreamVehicle(playerid))
+		if(IsVaildIceCreamVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
 		{
 			IceCream_PLAYER_startSelling(playerid);
 			SG_Sub(playerid,"Find a ~y~Customer~w~.",5);

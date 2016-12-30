@@ -34,8 +34,6 @@ stock BurglaryRoomPlayersReset()
 	for(new i =0; i < MAX_BURGLARY;i++)
 		for(new j =0; j < MAX_BURGLARY_PLAYER;j++)
 			BurglaryRoomPlayers[i][j] = INVALID_PLAYER_ID;
-		
-	
 }
 
 stock Burglary_CreateFuniture(roomid,houseid)
@@ -100,6 +98,7 @@ stock Burglary_CreateReturnCP(roomid)
 	}
 	
 }
+
 
 
 stock Burglary_SetHouse(roomid,houseid)
@@ -258,7 +257,12 @@ stock Burglary_SetPlayerSlot(roomid,slot,playerid)
 {
 	BurglaryRoomPlayers[roomid][slot] = playerid;
 }
-
+//从房间里面移除玩家
+stock Burglary_ResetPlayerSlot(roomid,playerid)
+{
+	for(new i = 0; i < MAX_BURGLARY_PLAYER; i++)
+		if(BurglaryRoomPlayers[roomid][i] == playerid) BurglaryRoomPlayers[roomid][i] = INVALID_PLAYER_ID;
+}
 
 stock Burglary_GetPlayerSlot(roomid,slot)
 {
@@ -286,27 +290,27 @@ stock Burglary_GetAvaiablePlayerSlot(roomid)
 	return NULL;
 }
 
+stock Burglary_RoomResetAll()
+{
+	for(new i = 0; i < MAX_BURGLARY;i++)
+	{
+		BurglaryRoom[i][b_vehicle] = INVALID_VEHICLE_ID;
+		BurglaryRoom[i][b_used] = false;
+	}
+}
+stock Burglary_GetVehicleRoom(vehicleid)
+{
+	for(new i = 0; i < MAX_BURGLARY;i++)
+		if(BurglaryRoom[i][b_used] && BurglaryRoom[i][b_vehicle] == vehicleid) return i;
+	return NULL;
+}
 stock Burglary_StartRoom(roomid)
 {	
 	Burglary_SetRoomUse(roomid,true);
-
-	
 	//分配盗窃房子
 	new houseid = Burglary_GenRobbryHouseID();
-
 	//创建室内家具
 	Burglary_CreateFuniture(roomid,houseid);
-	/*
-	在玩家加入的时候做
-	//创建PickUp
-	Burglary_CreatePickUp(roomid,houseid);
-	//创建地图图标
-	Burglary_CreateMarker(roomid,houseid);
-	//更新任务提示
-	Burglary_UpdateMissionObj(roomid,houseid);
-	//显示UI
-	Burglary_UpdateUIForAllPlayer(roomid);
-	*/
 }
 
 
@@ -319,6 +323,5 @@ stock Burglary_EndRoom(roomid)
 	Burglary_SetMaxStealAmount(roomid,0);
 	Burglary_SetStealCash(roomid,0);
 	Burglary_DeleteFuniture(roomid);
-	
 	
 }

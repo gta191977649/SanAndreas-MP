@@ -42,6 +42,7 @@ public OnGameModeInit()
 	//your OnGameModeInit pre code here
 	Burglary_ReCreateMap();
 	BurglaryRoomPlayersReset();
+	Burglary_RoomResetAll();
 	BurglargCreateCPS();
 	//function hook checks
 	
@@ -256,7 +257,10 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 		if(Burglary_IsPlayerInMission(playerid)) return 1;
 		if(!BurglaryIsVaildVeh(playerid)) return 1;
 		//开始任务
-		Burglary_PlayerStart(playerid);
+		new vehicleid = GetPlayerVehicleID(playerid);
+		new roomid = Burglary_GetVehicleRoom(vehicleid);
+		if(roomid != NULL) Burglary_PlayerJoin(roomid,playerid); //判断是否这类车在任何游戏中,如果是则加入任务
+		else Burglary_PlayerStart(playerid); //否则开始新任务
 	}
 	
 	if(KEY_ENTER)
@@ -307,9 +311,8 @@ forward Burg_OnPlayerKeyStateChange(playerid, newkeys, oldkeys);
 public OnPlayerStateChange(playerid, newstate,  oldstate)
 {
 	//your OnPlayerStateChange code here
-	if(oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER) // Player entered a vehicle as a driver
+	if(oldstate == PLAYER_STATE_ONFOOT && newstate == PLAYER_STATE_DRIVER|| newstate == PLAYER_STATE_PASSENGER) // Player entered a vehicle as a driver
     {
-		
 		if(!Burglary_IsPlayerInMission(playerid) && BurglaryIsVaildVeh(playerid)) ShowInfoBox(playerid,INFO_BoxBG,3,BURGLARY_TOOGLE);
     }
 	

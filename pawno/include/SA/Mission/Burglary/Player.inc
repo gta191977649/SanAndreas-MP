@@ -183,7 +183,6 @@ stock Burglary_PlayerStart(playerid)
 		return 1;
 	}
 
-	
 	//分配房间
 	Burglary_StartRoom(roomid);
 	
@@ -201,18 +200,18 @@ stock Burglary_PlayerStart(playerid)
 }
 stock Burglary_PLAYER_reset(playerid)
 {
+	Burglary_ResetPlayerSlot(Burglary_PlayerRoomGet(playerid),playerid);
 	Burglary_PlayerRoomReset(playerid);
 	Burglary_PlayerCPReset(playerid);
 	Burglary_PlayerDeleteUI(playerid);
 	Burglary_PlayerPickUpDelete(playerid);
 	Burglary_PlayerDeleteMapMark(playerid);
-	//Burglary_SetPlayerSlot(roomid,slot,playerid);
-	
 }
 stock Burglary_PlayerJoin(roomid,playerid)
 {
 	new playerSlot = Burglary_GetAvaiablePlayerSlot(roomid);
 	
+	printf("加入: 获得槽ID:%d",playerSlot);
 	Burglary_SetPlayerSlot(roomid,playerSlot,playerid);
 	//设置任务状态
 	Burglary_SetPlayerMissionStatus(playerid,true);
@@ -265,7 +264,7 @@ stock Burglary_PlayerUpdateUI(playerid)
 {
 	new str[125];
 	new PlayerRoom = Burglary_PlayerRoomGet(playerid);
-	format(str,sizeof(str),"~w~TIME LEFT:       X:XX ~n~~b~ITEM STEAL:       %d/%d~n~CASH:       %d",Burglary_GetStealAmount(PlayerRoom),Burglary_GetMaxStealAmount(PlayerRoom),Burglary_GetStealCash(PlayerRoom));
+	format(str,sizeof(str),"~w~TIME LEFT:       X:XX ~n~ITEM STEAL:       %d/%d~n~CASH:       %d",Burglary_GetStealAmount(PlayerRoom),Burglary_GetMaxStealAmount(PlayerRoom),Burglary_GetStealCash(PlayerRoom));
 	SG_RightSub(playerid,str,true);
 	//Objs
 	new PlayerTeam = Burglary_PlayerRoomGet(playerid);

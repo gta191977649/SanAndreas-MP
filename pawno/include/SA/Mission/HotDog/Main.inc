@@ -105,7 +105,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 	{
 		SG_Sub(playerid,"~r~ You have left the vehicle.",5);
 		HOTDOG_PLAYER_stopSelling(playerid);
-		HOTDOG_PLAYER_reset(playerid);
+		HOTDOG_SetPlayerMissionStatus(playerid,false);
 		
 	}
 	
@@ -159,7 +159,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	{
 		if(HOTDOG_PLAYER_isSell(playerid)) return 1;
 		//开始任务
-		if(IsVaildHotDogVehicle(playerid))
+		if(IsVaildHotDogVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
 		{
 			HOTDOG_PLAYER_startSelling(playerid);
 			SG_Sub(playerid,"Find a ~y~Customer~w~.",5);
@@ -249,7 +249,7 @@ public OnPlayerDeath(playerid, killerid,  reason)
 	{
 		SG_Sub(playerid,"~r~ You died.",5);
 		HOTDOG_PLAYER_stopSelling(playerid);
-		HOTDOG_PLAYER_reset(playerid);
+		HOTDOG_SetPlayerMissionStatus(playerid,false);
 		
 	}
 	
