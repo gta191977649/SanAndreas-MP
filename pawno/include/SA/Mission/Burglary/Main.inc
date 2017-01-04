@@ -10,11 +10,13 @@
 
 new BurglaryGarageCP[3];
 
+
 #include <SA/Mission/Burglary/Map>
 #include <SA/Mission/Burglary/Animation>
 #include <SA/Mission/Burglary/Locations>
 #include <SA/Mission/Burglary/IO>
 #include <SA/Mission/Burglary/Funiture>
+#include <SA/Mission/Burglary/Item>
 
 #include <SA/Mission/Burglary/Text>
 #include <SA/Mission/Burglary/Room>
@@ -87,17 +89,23 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 		if(pickupid == PlayerBurglar[playerid][b_entrypickup]) //进入
 		{
 			//执行接入室内传送....
-			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][3],BurlagryHoursesLS[HourseId][4],BurlagryHoursesLS[HourseId][5],0.0,2);
-			SG_Sub(playerid,BURGLARY_OBJ2,5);
+			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][4],BurlagryHoursesLS[HourseId][5],BurlagryHoursesLS[HourseId][6],BurlagryHoursesLS[HourseId][7],2);
+			SetCameraBehindPlayer(playerid);
+			if(Burglary_GetStealAmount(PlayerTeam) >= Burglary_GetMaxStealAmount(PlayerTeam)) SG_Sub(playerid,BURGLARY_OBJBACK,5);
+			else SG_Sub(playerid,BURGLARY_OBJ2,5);
+			
 			
 		}
 		if(pickupid == PlayerBurglar[playerid][b_exitpickup]) //离开
 		{
 			//执行接入室内传送....
-			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][0],BurlagryHoursesLS[HourseId][1],BurlagryHoursesLS[HourseId][2],0.0,2);
+			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][0],BurlagryHoursesLS[HourseId][1],BurlagryHoursesLS[HourseId][2],BurlagryHoursesLS[HourseId][3],2);
+			SetCameraBehindPlayer(playerid);
 			SG_Sub(playerid,BURGLARY_OBJ4,5);
 			SetPlayerObjective(playerid,Burglary_GetVehicle(PlayerTeam),true);
-			if(Burglary_GetStealAmount(PlayerTeam) >= 1) SG_Sub(playerid,BURGLARY_OBJ5,5);
+			if(Burglary_GetStealAmount(PlayerTeam) >= Burglary_GetMaxStealAmount(PlayerTeam)) SG_Sub(playerid,BURGLARY_OBJBACK,5);
+			else SG_Sub(playerid,BURGLARY_OBJ5,5);
+			
 		}
 	
 	}

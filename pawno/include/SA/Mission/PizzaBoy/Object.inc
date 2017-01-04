@@ -34,8 +34,8 @@ stock PIZZA_LunchObject(playerid,vectordir)
 	//printf("Slot = %d",Sot);
 	if(Sot == NULL)
 	{
-		SendClientMessage(playerid,-1,"[小任务]: 没Pizza了,请回到餐厅去在拿一些~.");
-		SG_Sub(playerid,"Return to the ~r~restaurant ~w~for more pizzas.",5);
+		//SendClientMessage(playerid,-1,"[小任务]: 没Pizza了,请回到餐厅去在拿一些~.");
+		SG_Sub(playerid,PIZZA_MORE,5);
 	}	
 	
 	

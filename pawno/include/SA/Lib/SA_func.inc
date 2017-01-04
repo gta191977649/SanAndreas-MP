@@ -36,7 +36,12 @@ stock GetXYZInFrontOfPlayer(playerid, &Float:x, &Float:y,&Float:z, Float:distanc
 	x += (distance * floatsin(-a, degrees));
 	y += (distance * floatcos(-a, degrees));
 }
-
+stock GetXYZInFrontOfPos(Float:fx,Float:fy,Float:fz,&Float:x, &Float:y,&Float:z,Float:angle,Float:distance)
+{
+	x = fx + (distance * floatsin(-angle, degrees));
+	y = fy + (distance * floatcos(-angle, degrees));
+	z = fz;
+}
 stock GetXYZInBackOfVehicle(vehicleid,&Float:x,&Float:y,&Float:z,Float:dis)
 {
 	new Float:angle;

@@ -195,6 +195,17 @@ stock Burglary_ResetMissionForAll(roomid)
 	}
 
 }
+
+stock Burglary_SendMsgToAll(roomid,msg[]) //..
+{
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			ShowInfoBox(BurglaryRoomPlayers[roomid][i],INFO_BoxBG,3,msg);
+		}
+	}
+}
 stock Burglary_GenRobbryHouseID()
 {
 	//随机选择房子

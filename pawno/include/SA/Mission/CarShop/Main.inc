@@ -151,10 +151,8 @@ public OnPlayerDisconnect(playerid,  reason)
 	//your OnPlayerDisconnect code here
 	if(CarShop_IsPlayerInMission(playerid)) 
 	{
-		if(CarShop_VehicleIsVaild(playerid))
-		{
-			CarShop_PlayerFaild(playerid);
-		}
+		CarShop_PlayerFaild(playerid);
+		
 	}
 	if (gCARSHOP_HasCB[2])
 	{

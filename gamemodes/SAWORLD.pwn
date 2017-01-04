@@ -80,7 +80,7 @@ public OnPlayerConnect(playerid)
 public OnPlayerSpawn(playerid)
 {
 	if(IsPlayerNPC(playerid)) return 1;
-	ShowInfoBox(playerid,INFO_BoxBG,5,"Welcome To SanAndreas MultiPlayer CN!");
+	ShowInfoBox(playerid,INFO_BoxBG,5,"欢迎来到圣安地列斯!");
     SetPlayerSkin(playerid, 2);
 
 	return 1;

@@ -18,7 +18,7 @@ new PlayerBurglar[MAX_PLAYERS][PlayerBurglarInfo];
 stock BurglaryPlayerPickUpCreate(playerid,houseid)
 {
 	PlayerBurglar[playerid][b_entrypickup] = CreateDynamicPickup(BULGRAY_PICKUPMODEL, BULGRAY_PICKUPTYPE, BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2],-1,0,playerid,STREAMER_PICKUP_SD);
-	PlayerBurglar[playerid][b_exitpickup] = CreateDynamicPickup(BULGRAY_PICKUPMODEL, BULGRAY_PICKUPTYPE, BurlagryHoursesLS[houseid][3],BurlagryHoursesLS[houseid][4], BurlagryHoursesLS[houseid][5],-1,0,playerid,STREAMER_PICKUP_SD);
+	PlayerBurglar[playerid][b_exitpickup] = CreateDynamicPickup(BULGRAY_PICKUPMODEL, BULGRAY_PICKUPTYPE, BurlagryHoursesLS[houseid][4],BurlagryHoursesLS[houseid][5], BurlagryHoursesLS[houseid][6],-1,0,playerid,STREAMER_PICKUP_SD);
 }
 
 stock Burglary_PlayerPickUpDelete(playerid)
@@ -92,6 +92,7 @@ stock BurglaryPlayerFunitureOnFloor(playerid,funitureidx)
 stock BurglaryPlayerLiftFuniture(playerid,funitureidx)
 {
 	new PlayerGameID = Burglary_PlayerRoomGet(playerid); 
+	BurglaryPlayerSetFontOfFuniture(playerid,PlayerGameID,funitureidx);
 	BurglaryAnimationPick(playerid);
 	//设置动作延迟
 	SetTimerEx("BurglaryPickUp",PLAYER_ANIM_DELAY, false, "iii",playerid,PlayerGameID,funitureidx);
@@ -206,6 +207,7 @@ stock Burglary_PLAYER_reset(playerid)
 	Burglary_PlayerDeleteUI(playerid);
 	Burglary_PlayerPickUpDelete(playerid);
 	Burglary_PlayerDeleteMapMark(playerid);
+	printf("重设玩家任务");
 }
 stock Burglary_PlayerJoin(roomid,playerid)
 {
@@ -225,6 +227,13 @@ stock Burglary_PlayerJoin(roomid,playerid)
 	BurglaryPlayerPickUpCreate(playerid,GameHouse);
 	//创建地图
 	Burglary_PlayerCreateMapMark(playerid,GameHouse);
+	
+
+	//提示加入
+	new pName[MAX_PLAYER_NAME],str[128];
+	GetPlayerName(playerid,pName,sizeof(pName));
+	format(str,sizeof(str),BURGLARY_TEXTJOIN,pName);
+	Burglary_SendMsgToAll(roomid,str);
 	
 	//显示任务
 	Burglary_PlayerUpdateObj(playerid,GameHouse);
@@ -264,11 +273,13 @@ stock Burglary_PlayerUpdateUI(playerid)
 {
 	new str[125];
 	new PlayerRoom = Burglary_PlayerRoomGet(playerid);
-	format(str,sizeof(str),"~w~TIME LEFT:       X:XX ~n~ITEM STEAL:       %d/%d~n~CASH:       %d",Burglary_GetStealAmount(PlayerRoom),Burglary_GetMaxStealAmount(PlayerRoom),Burglary_GetStealCash(PlayerRoom));
+	format(str,sizeof(str),BURGLARY_UIINDICATOR,Burglary_GetStealAmount(PlayerRoom),Burglary_GetMaxStealAmount(PlayerRoom),Burglary_GetStealCash(PlayerRoom));
 	SG_RightSub(playerid,str,true);
 	//Objs
 	new PlayerTeam = Burglary_PlayerRoomGet(playerid);
-	if(Burglary_GetStealAmount(PlayerTeam) >= 1) SG_Sub(playerid,BURGLARY_OBJ5,5);
+	if(Burglary_GetStealAmount(PlayerTeam) >= Burglary_GetMaxStealAmount(PlayerTeam)) SG_Sub(playerid,BURGLARY_OBJBACK,5);
+	else if(Burglary_GetStealAmount(PlayerTeam) < 1) SG_Sub(playerid,BURGLARY_OBJ1,5); 
+	else SG_Sub(playerid,BURGLARY_OBJ5,5);
 }
 stock Burglary_PlayerDeleteUI(playerid)
 {

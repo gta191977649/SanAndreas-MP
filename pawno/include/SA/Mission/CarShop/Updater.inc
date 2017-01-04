@@ -55,7 +55,7 @@ stock CarShop_UpdateSaleFinished(playerid)
 	//消除UI
 	CarShop_PlayerDestoryUI(playerid);
 	//提示玩家
-	SG_Sub(playerid,"Drive the vehicle back to ~r~car slot~w~.",5);
+	SG_Sub(playerid,TEXT_MISSION_DRIVE_BACK,5);
 	
 }
 

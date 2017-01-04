@@ -66,7 +66,7 @@ stock CarShop_PlayerDestoryCP(playerid)
 stock CarShop_PlayerCreateUI(playerid)
 {
 	CarShop_Player[playerid][Bar] = CreatePlayerProgressBar(playerid, 550.0, 245.0, 60, 3.5, C_SABLUE, 100.0, BAR_DIRECTION_RIGHT);
-	SG_RightSub(playerid,"SALES:",true);
+	SG_RightSub(playerid,"销量:",true);
 	//设置BAR值
 	SetPlayerProgressBarValue(playerid, CarShop_Player[playerid][Bar], 0.0);
 	//显示UI

@@ -50,11 +50,11 @@ stock ResetPlayerMission(playerid,missionid)
 
 stock ShowMissionFailed(playerid)
 {
-	SG_TextMission(playerid,"~r~mission failed!",5);
+	SG_TextMission(playerid,"~r~任务失败!",5);
 }
 stock ShowMissionPass(playerid,bouns[])
 {
 	new str[125];
-	format(str,sizeof(str),"mission passed!~n~%s",bouns);
+	format(str,sizeof(str),"任务通过!~n~%s",bouns);
 	SG_TextMission(playerid,str,5);
 }
