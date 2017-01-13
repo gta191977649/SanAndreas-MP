@@ -420,15 +420,17 @@ stock GetPlayerCurrentCity(playerid)
 
 stock GetZoneNameFromPos(Float:zx,Float:zy)
 {
-	
+	new returnstr[28];
     for(new i = 0; i != sizeof(SAZones); i++ )
     {
         if(zx >= SAZones[i][SAZONE_AREA][0] && zx <= SAZones[i][SAZONE_AREA][3] && zy >= SAZones[i][SAZONE_AREA][1] && zy <= SAZones[i][SAZONE_AREA][4])
         {
-           return SAZones[i][SAZONE_NAME];
+			format(returnstr,sizeof(returnstr),SAZones[i][SAZONE_NAME]);
+			return returnstr;
         }
     }	
-	return -1;
+	format(returnstr,sizeof(returnstr),"NOT Match!");
+	return returnstr;
 }
 
 

@@ -17,6 +17,7 @@ enum PlayerBurglarInfo
 new PlayerBurglar[MAX_PLAYERS][PlayerBurglarInfo];
 stock BurglaryPlayerPickUpCreate(playerid,houseid)
 {
+
 	PlayerBurglar[playerid][b_entrypickup] = CreateDynamicPickup(BULGRAY_PICKUPMODEL, BULGRAY_PICKUPTYPE, BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1], BurlagryHoursesLS[houseid][2],-1,0,playerid,STREAMER_PICKUP_SD);
 	PlayerBurglar[playerid][b_exitpickup] = CreateDynamicPickup(BULGRAY_PICKUPMODEL, BULGRAY_PICKUPTYPE, BurlagryHoursesLS[houseid][4],BurlagryHoursesLS[houseid][5], BurlagryHoursesLS[houseid][6],-1,0,playerid,STREAMER_PICKUP_SD);
 }
@@ -199,8 +200,10 @@ stock Burglary_PlayerStart(playerid)
 	
 	return 1;
 }
+
 stock Burglary_PLAYER_reset(playerid)
-{
+{	
+	new PlayerRoom = Burglary_PlayerRoomGet(playerid);
 	Burglary_ResetPlayerSlot(Burglary_PlayerRoomGet(playerid),playerid);
 	Burglary_PlayerRoomReset(playerid);
 	Burglary_PlayerCPReset(playerid);
@@ -208,6 +211,10 @@ stock Burglary_PLAYER_reset(playerid)
 	Burglary_PlayerPickUpDelete(playerid);
 	Burglary_PlayerDeleteMapMark(playerid);
 	printf("重设玩家任务");
+	//回收房间资源判断
+	new RoomPlayers = Burglary_CountPlayer(PlayerRoom);
+	printf("剩余玩家在房间: %d",RoomPlayers);
+	if(RoomPlayers == 0) Burglary_EndRoom(PlayerRoom); 
 }
 stock Burglary_PlayerJoin(roomid,playerid)
 {
@@ -267,6 +274,8 @@ stock Burglary_PlayerUpdateObj(playerid,houseid)
 	new str[125];
 	format(str,sizeof(str),BURGLARY_OBJ1,GetZoneNameFromPos(BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1]));
 	SG_Sub(playerid,str,5);
+	
+	//printf("House: %s",GetZoneNameFromPos(BurlagryHoursesLS[houseid][0],BurlagryHoursesLS[houseid][1]));
 }
 
 stock Burglary_PlayerUpdateUI(playerid)
@@ -278,8 +287,7 @@ stock Burglary_PlayerUpdateUI(playerid)
 	//Objs
 	new PlayerTeam = Burglary_PlayerRoomGet(playerid);
 	if(Burglary_GetStealAmount(PlayerTeam) >= Burglary_GetMaxStealAmount(PlayerTeam)) SG_Sub(playerid,BURGLARY_OBJBACK,5);
-	else if(Burglary_GetStealAmount(PlayerTeam) < 1) SG_Sub(playerid,BURGLARY_OBJ1,5); 
-	else SG_Sub(playerid,BURGLARY_OBJ5,5);
+	else if(Burglary_GetStealAmount(PlayerTeam) > 1) SG_Sub(playerid,BURGLARY_OBJ5,5);
 }
 stock Burglary_PlayerDeleteUI(playerid)
 {

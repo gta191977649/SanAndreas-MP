@@ -1,4 +1,5 @@
-//#include <SAWORLD/Mission/PlayerMissionReset>
+static gMission_HasCB[1];
+
 enum MissionInfo
 {
 	MissionID,
@@ -23,7 +24,7 @@ stock SetPlayerMissionStatus(playerid,Missionid,bool:start)
 {
 	if(start)
 	{
-		//鍨冨溇鍥炴敹
+		//垃圾回收
 		ResetPlayerMission(playerid,PlayerMission[playerid][MissionID]);
 		PlayerMission[playerid][MissionID] = Missionid;
 	}
@@ -50,11 +51,69 @@ stock ResetPlayerMission(playerid,missionid)
 
 stock ShowMissionFailed(playerid)
 {
-	SG_TextMission(playerid,"~r~浠诲姟澶辫触!",5);
+	SG_TextMission(playerid,"~r~任务失败!",5);
 }
 stock ShowMissionPass(playerid,bouns[])
 {
 	new str[125];
-	format(str,sizeof(str),"浠诲姟閫氳繃!~n~%s",bouns);
+	format(str,sizeof(str),"任务通过!~n~%s",bouns);
 	SG_TextMission(playerid,str,5);
 }
+
+//--------------OnGameModeInit Hook-------------------
+
+public OnGameModeInit()
+{
+	//your OnGameModeInit pre code here
+
+	//function hook checks
+	print("============================");
+	print("SA Mission Library");
+	print("By Liberty_Episodes");
+	print("Loaded.");
+	print("============================");
+
+	gMission_HasCB[0] = funcidx("Mission_OnPlayerDisconnect") != -1;
+	if (funcidx("Mission_OnGameModeInit") != -1)
+	{
+		return CallLocalFunction("Mission_OnGameModeInit", "");
+	}
+	//your OnGameModeInit post code here
+
+	return 1;
+}
+
+#if defined _ALS_OnGameModeInit
+	#undef OnGameModeInit
+#else
+	#define _ALS_OnGameModeInit
+#endif
+#define OnGameModeInit Mission_OnGameModeInit
+forward Mission_OnGameModeInit();
+
+
+
+//--------------OnPlayerDisconnect Hook-------------------
+
+public OnPlayerDisconnect(playerid,  reason)
+{
+	//your OnPlayerDisconnect code here
+	//复位玩家任务状态
+	ResetPlayerMission(playerid,GetPlayerMissionID(playerid));
+	
+	if (gMission_HasCB[0])
+	{
+		return CallLocalFunction("Mission_OnPlayerDisconnect", "ii",playerid,  reason);
+	}
+	return 1;
+}
+#if defined _ALS_OnPlayerDisconnect
+	#undef OnPlayerDisconnect
+#else
+	#define _ALS_OnPlayerDisconnect
+#endif
+#define OnPlayerDisconnect Mission_OnPlayerDisconnect
+forward Mission_OnPlayerDisconnect(playerid,  reason);
+
+
+

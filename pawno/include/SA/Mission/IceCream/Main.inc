@@ -5,6 +5,7 @@
 #include <SA/Mission/IceCream/Animation>
 #include <SA/Mission/IceCream/Vehicle>
 #include <SA/Mission/IceCream/Player>
+#include <SA/Mission/IceCream/Text>
 
 
 
@@ -102,7 +103,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 	
 	if(IceCream_PLAYER_isSell(playerid)) 
 	{
-		SG_Sub(playerid,"~r~ You have left the vehicle.",5);
+		SG_Sub(playerid,ICE_LEFT,5);
 		IceCream_PLAYER_stopSelling(playerid);
 		IceCream_PLAYER_reset(playerid);
 	}
@@ -155,13 +156,15 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	//your OnPlayerKeyStateChange code here
 	if(KEY_MISSION)
 	{
-		if(IceCream_PLAYER_isSell(playerid)) return 1;
-		//开始任务
-		if(IsVaildIceCreamVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
+		if(!IceCream_PLAYER_isSell(playerid))
 		{
-			IceCream_PLAYER_startSelling(playerid);
-			SG_Sub(playerid,"Find a ~y~Customer~w~.",5);
-			
+			//开始任务
+			if(IsVaildIceCreamVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
+			{
+				IceCream_PLAYER_startSelling(playerid);
+				SG_Sub(playerid,ICE_TEXTSELL,5);
+				
+			}
 		}
 	}
 	
@@ -206,8 +209,8 @@ public OnPlayerStreamIn(playerid, forplayerid)
 		//添加车上换色箭头
 		IceCream_SetObjective(playerid,forplayerid);
 		//提示告诉玩家
-		SG_Sub(forplayerid,"You can buy IceCream from ~y~vendor~w~.",5);
-		SendClientMessage(forplayerid,-1,"[提示]: 你可以在附近的"C_OBJECTIVE"供应商"C_WHITE"那买冰淇淋.");
+		SG_Sub(forplayerid,ICE_NOTFIFY,5);
+		//SendClientMessage(forplayerid,-1,"[提示]: 你可以在附近的"C_OBJECTIVE"供应商"C_WHITE"那买冰淇淋.");
 	}
 
 	if (gIceCream_HasCB[5])

@@ -31,7 +31,7 @@ stock PIZZA_PLAYER_Failed(playerid)
 stock PIZZA_PLAYER_CreateUI(playerid)
 {
 	SG_Sub(playerid,PIZZA_OBJTIVE,5);
-	SG_Textbox(playerid,PIZZA_TUT,5);
+	ShowInfoBox(playerid,INFO_BoxBG,5,PIZZA_TUT);
 	new tem[125];
 	format(tem,sizeof(tem),PIZZA_INFO,PIZZA_GetRemain(playerid));
 	SG_RightSub(playerid,tem,true);

@@ -14,7 +14,7 @@ new PlayerObjective[MAX_PLAYERS][Objective_Info];
 
 stock CreatePlayerObjectiveMarker(playerid,Float:x,Float:y,Float:z,color)
 {
-	PlayerObjective[playerid][ObjectiveMarker] = CreateDynamicMapIcon(x,y,z, 0,color,0, 0,playerid,  STREAMER_MAP_ICON_SD, MAPICON_GLOBAL);
+	PlayerObjective[playerid][ObjectiveMarker] = CreateDynamicMapIcon(x,y,z, 0,color,0, 0,playerid,  -1, MAPICON_GLOBAL);
 }
 stock DestoryPlayerObjectiveMarker(playerid)
 {

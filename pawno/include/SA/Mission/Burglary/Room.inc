@@ -206,6 +206,20 @@ stock Burglary_SendMsgToAll(roomid,msg[]) //..
 		}
 	}
 }
+
+//计算总共玩家
+stock Burglary_CountPlayer(roomid)
+{
+	new idx=0;
+	for(new i =0; i < MAX_BURGLARY_PLAYER;i++)
+	{
+		if(BurglaryRoomPlayers[roomid][i] != INVALID_PLAYER_ID)
+		{
+			idx++;
+		}
+	}
+	return idx;
+}
 stock Burglary_GenRobbryHouseID()
 {
 	//随机选择房子
@@ -327,12 +341,16 @@ stock Burglary_StartRoom(roomid)
 
 stock Burglary_EndRoom(roomid)
 {
-	Burglary_ResetMissionForAll(roomid);
+	//判断房间里面是否还有剩余玩家
+	new RoomPlayers = Burglary_CountPlayer(roomid);
+	if(RoomPlayers > 0) Burglary_ResetMissionForAll(roomid); 
 	Burglary_SetRoomUse(roomid,false);
 	Burglary_SetVehicle(roomid,INVALID_VEHICLE_ID);
 	Burglary_SetStealCash(roomid,0);
 	Burglary_SetMaxStealAmount(roomid,0);
+	Burglary_SetStealAmount(roomid,0);
 	Burglary_SetStealCash(roomid,0);
 	Burglary_DeleteFuniture(roomid);
+	printf("[Burglary]: 房间资源回收! ID:%d",roomid);
 	
 }

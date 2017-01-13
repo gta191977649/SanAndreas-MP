@@ -5,6 +5,7 @@
 #include <SA/Mission/HotDog/Animation>
 #include <SA/Mission/HotDog/Vehicle>
 #include <SA/Mission/HotDog/Player>
+#include <SA/Mission/HotDog/Text>
 
 
 
@@ -103,7 +104,7 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 	
 	if(HOTDOG_PLAYER_isSell(playerid)) 
 	{
-		SG_Sub(playerid,"~r~ You have left the vehicle.",5);
+		SG_Sub(playerid,HOTDOG_LEFT,5);
 		HOTDOG_PLAYER_stopSelling(playerid);
 		HOTDOG_SetPlayerMissionStatus(playerid,false);
 		
@@ -157,13 +158,15 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	//your OnPlayerKeyStateChange code here
 	if(KEY_MISSION)
 	{
-		if(HOTDOG_PLAYER_isSell(playerid)) return 1;
-		//开始任务
-		if(IsVaildHotDogVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
+		if(!HOTDOG_PLAYER_isSell(playerid))
 		{
-			HOTDOG_PLAYER_startSelling(playerid);
-			SG_Sub(playerid,"Find a ~y~Customer~w~.",5);
-			
+			//开始任务
+			if(IsVaildHotDogVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
+			{
+				HOTDOG_PLAYER_startSelling(playerid);
+				SG_Sub(playerid,HOTDOG_TEXTSELL,5);
+				
+			}
 		}
 	}
 	
@@ -208,8 +211,8 @@ public OnPlayerStreamIn(playerid, forplayerid)
 		//添加车上换色箭头
 		HOTDOG_SetObjective(playerid,forplayerid);
 		//提示告诉玩家
-		SG_Sub(forplayerid,"You can buy hotdog from ~y~vendor~w~.",5);
-		SendClientMessage(forplayerid,-1,"[提示]: 你可以在附近的"C_OBJECTIVE"供应商"C_WHITE"那买热狗.");
+		SG_Sub(forplayerid,HOTDOG_NOTFIFY,5);
+		//SendClientMessage(forplayerid,-1,"[提示]: 你可以在附近的"C_OBJECTIVE"供应商"C_WHITE"那买热狗.");
 	}
 
 	if (gHOTDOG_HasCB[5])

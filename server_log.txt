@@ -20026,3 +20026,3320 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [21:03:45] CP Called
 [21:04:09] CP Called
 [21:04:39] [part] HiyajoMaho has left the server (6:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:13:13] 
+[17:13:13] Server Plugins
+[17:13:13] --------------
+[17:13:13]  Loading plugin: streamer
+[17:13:13] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[17:13:13]   Loaded.
+[17:13:13]  Loading plugin: sscanf
+[17:13:13] 
+
+[17:13:13]  ===============================
+
+[17:13:13]       sscanf plugin loaded.     
+
+[17:13:13]    (c) 2009 Alex "Y_Less" Cole
+
+[17:13:13]    0.3d-R2 500 Players "dnee"
+
+[17:13:13]  ===============================
+
+[17:13:13]   Loaded.
+[17:13:13]  Loading plugin: ColAndreas
+[17:13:13] *********************
+[17:13:13] ** Created By:     **
+[17:13:13] ** [uL]Chris42O    **
+[17:13:13] ** [uL]Slice       **
+[17:13:13] ** [uL]Pottus      **
+[17:13:13] *********************
+[17:13:16] Loaded collision data.
+[17:13:16] *********************
+[17:13:16]   ColAndreas Loaded
+[17:13:16]    v1.3.0
+[17:13:16] *********************
+[17:13:16]   Loaded.
+[17:13:16]  Loaded 3 plugins.
+
+[17:13:16] 
+[17:13:16] Filterscripts
+[17:13:16] ---------------
+[17:13:16]   Loading filterscript 'debug.amx'...
+[17:13:16] 
+  *********************
+  * 电影制作辅助脚本   *
+[17:13:16]   * By Simon Campbell *
+  *********************
+[17:13:16]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[17:13:16]   * -- 载入成功         *
+  *********************
+
+[17:13:16] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:13:16]   Loading filterscript 'test_teleport.amx'...
+[17:13:16]   Loaded 2 filterscripts.
+
+[17:13:16] [connection] 127.0.0.1:60305 requests connection cookie.
+[17:13:16] [模块]:世界NPC已经加载
+[17:13:16] Main Moudel Is Loaded.
+[17:13:16] Loaded 3 vehicles from: vehicles/trains.txt
+[17:13:16] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:13:16] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:13:16] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:13:16] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:13:16] [connection] 127.0.0.1:60306 requests connection cookie.
+[17:13:16] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:13:16] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:13:16] [connection] 127.0.0.1:60307 requests connection cookie.
+[17:13:16] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:13:16] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:13:16] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:13:16] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:13:16] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:13:16] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:13:16] Loaded 168 vehicles from: vehicles/bone.txt
+[17:13:16] Loaded 61 vehicles from: vehicles/flint.txt
+[17:13:16] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:13:16] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:13:16] [世界交通工具]: 已经加载:1781个
+[17:13:16] Modul: SA Icons Loaded
+[17:13:16]  
+[17:13:16]  
+[17:13:16]  
+[17:13:16]  ======================================= 
+[17:13:16]  |                                     | 
+[17:13:16]  |        YSI version 3.09.0684        | 
+[17:13:16]  |        By Alex "Y_Less" Cole        | 
+[17:13:16]  |                                     | 
+[17:13:16]  ======================================= 
+[17:13:16]  
+[17:13:16] Loading Map.
+[17:13:16] [connection] 127.0.0.1:60308 requests connection cookie.
+[17:13:16] [connection] 127.0.0.1:60309 requests connection cookie.
+[17:13:16] [connection] 127.0.0.1:60310 requests connection cookie.
+[17:13:16] Loaded Map.                             
+[17:13:16] 
+---------------------------------------
+[17:13:16]  SA WORLD Main Frame Work
+
+[17:13:16]  By Liberty_Episodes
+
+[17:13:16] ---------------------------------------
+
+[17:13:16] Number of vehicle models: 173
+[17:13:17] [connection] incoming connection: 127.0.0.1:60305 id: 0
+[17:13:17] [connection] incoming connection: 127.0.0.1:60306 id: 1
+[17:13:17] [connection] incoming connection: 127.0.0.1:60307 id: 2
+[17:13:17] [connection] incoming connection: 127.0.0.1:60308 id: 3
+[17:13:17] [connection] incoming connection: 127.0.0.1:60309 id: 4
+[17:13:17] [connection] incoming connection: 127.0.0.1:60310 id: 5
+[17:13:17] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:13:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:13:17] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:17] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:13:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:13:17] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:17] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:13:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:13:17] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:17] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:13:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:13:17] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:17] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:13:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:13:17] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:17] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:13:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:13:17] NPC: Connection from 127.0.0.1 is allowed.
+[17:13:28] [connection] 127.0.0.1:53708 requests connection cookie.
+[17:13:29] [connection] incoming connection: 127.0.0.1:53708 id: 6
+[17:13:29] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[17:13:29] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:14:12] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:14:12] Created Funiture 0 2648
+[17:14:12] Created Funiture 1 1839
+[17:14:12] Created Funiture 2 2028
+[17:14:12] Created Funiture 3 2149
+[17:14:12] Created Funiture 4 1786
+[17:14:12] Created Funiture 5 1840
+[17:14:12] Created Funiture 6 1841
+[17:14:12] 加入: 获得槽ID:0
+[17:14:12] 入室任务开始
+[17:16:26] [connection] 172.16.0.3:64390 requests connection cookie.
+[17:16:27] [connection] incoming connection: 172.16.0.3:64390 id: 7
+[17:16:27] [join] HatsuneMiku has joined the server (7:172.16.0.3)
+[17:16:27] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:16:43] 加入: 获得槽ID:1
+[17:17:27] 重设玩家任务
+[17:17:49] CP Called
+[17:17:49] Buglarge CP Triggered
+[17:17:49] 重设玩家任务
+[17:21:39] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:21:39] Created Funiture 0 2648
+[17:21:39] Created Funiture 1 1839
+[17:21:39] Created Funiture 2 2028
+[17:21:39] Created Funiture 3 2149
+[17:21:39] Created Funiture 4 1786
+[17:21:39] Created Funiture 5 1840
+[17:21:39] Created Funiture 6 1841
+[17:21:39] 加入: 获得槽ID:0
+[17:21:39] 入室任务开始
+[17:27:03] CP Called
+[17:27:03] Buglarge CP Triggered
+[17:27:03] 重设玩家任务
+[17:27:22] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:27:22] Created Funiture 0 2648
+[17:27:22] Created Funiture 1 1839
+[17:27:22] Created Funiture 2 2028
+[17:27:22] Created Funiture 3 2149
+[17:27:22] Created Funiture 4 1786
+[17:27:22] Created Funiture 5 1840
+[17:27:22] Created Funiture 6 1841
+[17:27:22] 加入: 获得槽ID:0
+[17:27:22] 入室任务开始
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:32:10] 
+[17:32:10] Server Plugins
+[17:32:10] --------------
+[17:32:10]  Loading plugin: streamer
+[17:32:10] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[17:32:10]   Loaded.
+[17:32:10]  Loading plugin: sscanf
+[17:32:10] 
+
+[17:32:10]  ===============================
+
+[17:32:10]       sscanf plugin loaded.     
+
+[17:32:10]    (c) 2009 Alex "Y_Less" Cole
+
+[17:32:10]    0.3d-R2 500 Players "dnee"
+
+[17:32:10]  ===============================
+
+[17:32:10]   Loaded.
+[17:32:10]  Loading plugin: ColAndreas
+[17:32:10] *********************
+[17:32:10] ** Created By:     **
+[17:32:10] ** [uL]Chris42O    **
+[17:32:10] ** [uL]Slice       **
+[17:32:10] ** [uL]Pottus      **
+[17:32:10] *********************
+[17:32:12] Loaded collision data.
+[17:32:12] *********************
+[17:32:12]   ColAndreas Loaded
+[17:32:12]    v1.3.0
+[17:32:12] *********************
+[17:32:12]   Loaded.
+[17:32:12]  Loaded 3 plugins.
+
+[17:32:12] 
+[17:32:12] Filterscripts
+[17:32:12] ---------------
+[17:32:12]   Loading filterscript 'debug.amx'...
+[17:32:12] 
+  *********************
+  * 电影制作辅助脚本   *
+[17:32:12]   * By Simon Campbell *
+  *********************
+[17:32:12]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[17:32:12]   * -- 载入成功         *
+  *********************
+
+[17:32:12] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:12]   Loading filterscript 'test_teleport.amx'...
+[17:32:12]   Loaded 2 filterscripts.
+
+[17:32:13] [connection] 127.0.0.1:57810 requests connection cookie.
+[17:32:13] [模块]:世界NPC已经加载
+[17:32:13] Main Moudel Is Loaded.
+[17:32:13] Loaded 3 vehicles from: vehicles/trains.txt
+[17:32:13] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:32:13] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:32:13] [connection] 127.0.0.1:57811 requests connection cookie.
+[17:32:13] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:32:13] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:32:13] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:32:13] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:32:13] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:32:13] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:32:13] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:32:13] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:32:13] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:32:13] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:32:13] [connection] 127.0.0.1:57812 requests connection cookie.
+[17:32:13] Loaded 168 vehicles from: vehicles/bone.txt
+[17:32:13] Loaded 61 vehicles from: vehicles/flint.txt
+[17:32:13] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:32:13] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:32:13] [世界交通工具]: 已经加载:1781个
+[17:32:13] Modul: SA Icons Loaded
+[17:32:13]  
+[17:32:13]  
+[17:32:13]  
+[17:32:13]  ======================================= 
+[17:32:13]  |                                     | 
+[17:32:13]  |        YSI version 3.09.0684        | 
+[17:32:13]  |        By Alex "Y_Less" Cole        | 
+[17:32:13]  |                                     | 
+[17:32:13]  ======================================= 
+[17:32:13]  
+[17:32:13] Loading Map.
+[17:32:13] [connection] 127.0.0.1:57813 requests connection cookie.
+[17:32:13] [connection] 127.0.0.1:57814 requests connection cookie.
+[17:32:13] [connection] 127.0.0.1:57815 requests connection cookie.
+[17:32:13] Loaded Map.                             
+[17:32:13] 
+---------------------------------------
+[17:32:13]  SA WORLD Main Frame Work
+
+[17:32:13]  By Liberty_Episodes
+
+[17:32:13] ---------------------------------------
+
+[17:32:13] Number of vehicle models: 173
+[17:32:14] [connection] incoming connection: 127.0.0.1:57810 id: 0
+[17:32:14] [connection] incoming connection: 127.0.0.1:57811 id: 1
+[17:32:14] [connection] incoming connection: 127.0.0.1:57812 id: 2
+[17:32:14] [connection] incoming connection: 127.0.0.1:57813 id: 3
+[17:32:14] [connection] incoming connection: 127.0.0.1:57814 id: 4
+[17:32:14] [connection] incoming connection: 127.0.0.1:57815 id: 5
+[17:32:14] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:32:14] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:14] NPC: Connection from 127.0.0.1 is allowed.
+[17:32:14] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:32:14] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:14] NPC: Connection from 127.0.0.1 is allowed.
+[17:32:14] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:32:14] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:14] NPC: Connection from 127.0.0.1 is allowed.
+[17:32:14] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:32:14] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:14] NPC: Connection from 127.0.0.1 is allowed.
+[17:32:14] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:32:14] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:14] NPC: Connection from 127.0.0.1 is allowed.
+[17:32:14] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:32:14] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:14] NPC: Connection from 127.0.0.1 is allowed.
+[17:32:17] [connection] 172.16.0.3:59163 requests connection cookie.
+[17:32:18] [connection] incoming connection: 172.16.0.3:59163 id: 6
+[17:32:19] [join] HatsuneMiku has joined the server (6:172.16.0.3)
+[17:32:19] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:24] [connection] 127.0.0.1:57816 requests connection cookie.
+[17:32:25] [connection] incoming connection: 127.0.0.1:57816 id: 7
+[17:32:25] [join] HiyajoMaho has joined the server (7:127.0.0.1)
+[17:32:25] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:32:38] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:32:38] Created Funiture 0 2648
+[17:32:38] Created Funiture 1 1839
+[17:32:38] Created Funiture 2 2028
+[17:32:38] Created Funiture 3 2149
+[17:32:38] Created Funiture 4 1786
+[17:32:38] Created Funiture 5 1840
+[17:32:38] Created Funiture 6 1841
+[17:32:38] 加入: 获得槽ID:0
+[17:32:38] 入室任务开始
+[17:34:16] 加入: 获得槽ID:1
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:40:22] 
+[17:40:22] Server Plugins
+[17:40:22] --------------
+[17:40:22]  Loading plugin: streamer
+[17:40:22] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[17:40:22]   Loaded.
+[17:40:22]  Loading plugin: sscanf
+[17:40:22] 
+
+[17:40:22]  ===============================
+
+[17:40:22]       sscanf plugin loaded.     
+
+[17:40:22]    (c) 2009 Alex "Y_Less" Cole
+
+[17:40:22]    0.3d-R2 500 Players "dnee"
+
+[17:40:22]  ===============================
+
+[17:40:22]   Loaded.
+[17:40:22]  Loading plugin: ColAndreas
+[17:40:22] *********************
+[17:40:22] ** Created By:     **
+[17:40:22] ** [uL]Chris42O    **
+[17:40:22] ** [uL]Slice       **
+[17:40:22] ** [uL]Pottus      **
+[17:40:22] *********************
+[17:40:25] Loaded collision data.
+[17:40:25] *********************
+[17:40:25]   ColAndreas Loaded
+[17:40:25]    v1.3.0
+[17:40:25] *********************
+[17:40:25]   Loaded.
+[17:40:25]  Loaded 3 plugins.
+
+[17:40:25] 
+[17:40:25] Filterscripts
+[17:40:25] ---------------
+[17:40:25]   Loading filterscript 'debug.amx'...
+[17:40:25] 
+  *********************
+  * 电影制作辅助脚本   *
+[17:40:25]   * By Simon Campbell *
+  *********************
+[17:40:25]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[17:40:25]   * -- 载入成功         *
+  *********************
+
+[17:40:25] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:40:25]   Loading filterscript 'test_teleport.amx'...
+[17:40:25]   Loaded 2 filterscripts.
+
+[17:40:25] [connection] 127.0.0.1:53390 requests connection cookie.
+[17:40:25] [模块]:世界NPC已经加载
+[17:40:25] [connection] 127.0.0.1:53391 requests connection cookie.
+[17:40:25] [connection] 127.0.0.1:53392 requests connection cookie.
+[17:40:25] Main Moudel Is Loaded.
+[17:40:25] Loaded 3 vehicles from: vehicles/trains.txt
+[17:40:25] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:40:25] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:40:25] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:40:25] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:40:25] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:40:25] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:40:25] [connection] 127.0.0.1:53393 requests connection cookie.
+[17:40:25] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:40:25] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:40:25] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:40:25] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:40:25] [connection] 127.0.0.1:53394 requests connection cookie.
+[17:40:25] [connection] 127.0.0.1:53395 requests connection cookie.
+[17:40:25] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:40:25] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:40:25] Loaded 168 vehicles from: vehicles/bone.txt
+[17:40:25] Loaded 61 vehicles from: vehicles/flint.txt
+[17:40:25] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:40:25] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:40:25] [世界交通工具]: 已经加载:1781个
+[17:40:25] [connection] 172.16.0.3:49837 requests connection cookie.
+[17:40:25] Modul: SA Icons Loaded
+[17:40:25]  
+[17:40:25]  
+[17:40:25]  
+[17:40:25]  ======================================= 
+[17:40:25]  |                                     | 
+[17:40:25]  |        YSI version 3.09.0684        | 
+[17:40:25]  |        By Alex "Y_Less" Cole        | 
+[17:40:25]  |                                     | 
+[17:40:25]  ======================================= 
+[17:40:25]  
+[17:40:25] Loading Map.
+[17:40:25] Loaded Map.                             
+[17:40:25] 
+---------------------------------------
+[17:40:25]  SA WORLD Main Frame Work
+
+[17:40:25]  By Liberty_Episodes
+
+[17:40:25] ---------------------------------------
+
+[17:40:25] Number of vehicle models: 173
+[17:40:26] [connection] incoming connection: 127.0.0.1:53390 id: 0
+[17:40:26] [connection] incoming connection: 127.0.0.1:53391 id: 1
+[17:40:26] [connection] incoming connection: 127.0.0.1:53392 id: 2
+[17:40:26] [connection] incoming connection: 127.0.0.1:53393 id: 3
+[17:40:26] [connection] incoming connection: 127.0.0.1:53394 id: 4
+[17:40:26] [connection] incoming connection: 127.0.0.1:53395 id: 5
+[17:40:26] [connection] incoming connection: 172.16.0.3:49837 id: 6
+[17:40:26] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:40:26] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:40:26] NPC: Connection from 127.0.0.1 is allowed.
+[17:40:26] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:40:26] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:40:26] NPC: Connection from 127.0.0.1 is allowed.
+[17:40:26] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:40:26] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:40:26] NPC: Connection from 127.0.0.1 is allowed.
+[17:40:26] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:40:26] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:40:26] NPC: Connection from 127.0.0.1 is allowed.
+[17:40:26] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:40:26] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:40:26] NPC: Connection from 127.0.0.1 is allowed.
+[17:40:26] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:40:26] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:40:26] NPC: Connection from 127.0.0.1 is allowed.
+[17:41:27] [connection] 127.0.0.1:52934 requests connection cookie.
+[17:41:28] [connection] incoming connection: 127.0.0.1:52934 id: 6
+[17:41:28] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[17:41:28] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:41:40] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:41:40] Created Funiture 0 2648
+[17:41:40] Created Funiture 1 1839
+[17:41:40] Created Funiture 2 2028
+[17:41:40] Created Funiture 3 2149
+[17:41:40] Created Funiture 4 1786
+[17:41:40] Created Funiture 5 1840
+[17:41:40] Created Funiture 6 1841
+[17:41:40] 加入: 获得槽ID:0
+[17:41:40] 入室任务开始
+[17:41:44] 重设玩家任务
+[17:42:03] CP Called
+[17:42:21] 加入: 获得槽ID:0
+[17:42:35] 重设玩家任务
+[17:42:43] [connection] 172.16.0.3:54295 requests connection cookie.
+[17:42:44] [connection] incoming connection: 172.16.0.3:54295 id: 7
+[17:42:44] [join] HatsuneMiku has joined the server (7:172.16.0.3)
+[17:42:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:42:56] 加入: 获得槽ID:0
+[17:43:11] CP Called
+[17:43:40] 加入: 获得槽ID:1
+[17:43:49] 重设玩家任务
+[17:44:01] CP Called
+[17:44:10] 加入: 获得槽ID:1
+[17:44:21] CP Called
+[17:44:21] 重设玩家任务
+[17:44:41] 加入: 获得槽ID:1
+[17:44:52] 重设玩家任务
+[17:45:04] 重设玩家任务
+[17:45:20] CP Called
+[17:45:54] CP Called
+[17:46:00] 加入: 获得槽ID:0
+[17:50:38] 加入: 获得槽ID:1
+[17:50:46] 重设玩家任务
+[17:51:08] CP Called
+[17:51:17] 加入: 获得槽ID:1
+[17:51:23] 重设玩家任务
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:52:33] 
+[17:52:33] Server Plugins
+[17:52:33] --------------
+[17:52:33]  Loading plugin: streamer
+[17:52:33] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[17:52:33]   Loaded.
+[17:52:33]  Loading plugin: sscanf
+[17:52:33] 
+
+[17:52:33]  ===============================
+
+[17:52:33]       sscanf plugin loaded.     
+
+[17:52:33]    (c) 2009 Alex "Y_Less" Cole
+
+[17:52:33]    0.3d-R2 500 Players "dnee"
+
+[17:52:33]  ===============================
+
+[17:52:33]   Loaded.
+[17:52:33]  Loading plugin: ColAndreas
+[17:52:33] *********************
+[17:52:33] ** Created By:     **
+[17:52:33] ** [uL]Chris42O    **
+[17:52:33] ** [uL]Slice       **
+[17:52:33] ** [uL]Pottus      **
+[17:52:33] *********************
+[17:52:35] Loaded collision data.
+[17:52:35] *********************
+[17:52:35]   ColAndreas Loaded
+[17:52:35]    v1.3.0
+[17:52:35] *********************
+[17:52:35]   Loaded.
+[17:52:35]  Loaded 3 plugins.
+
+[17:52:35] 
+[17:52:35] Filterscripts
+[17:52:35] ---------------
+[17:52:35]   Loading filterscript 'debug.amx'...
+[17:52:35] 
+  *********************
+  * 电影制作辅助脚本   *
+[17:52:35]   * By Simon Campbell *
+  *********************
+[17:52:35]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[17:52:35]   * -- 载入成功         *
+  *********************
+
+[17:52:35] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:35]   Loading filterscript 'test_teleport.amx'...
+[17:52:35]   Loaded 2 filterscripts.
+
+[17:52:35] [connection] 127.0.0.1:54043 requests connection cookie.
+[17:52:35] [connection] 127.0.0.1:54044 requests connection cookie.
+[17:52:35] [模块]:世界NPC已经加载
+[17:52:35] Main Moudel Is Loaded.
+[17:52:35] Loaded 3 vehicles from: vehicles/trains.txt
+[17:52:35] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:52:35] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:52:35] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:52:35] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:52:35] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:52:35] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:52:35] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:52:35] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:52:35] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:52:35] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:52:35] [connection] 127.0.0.1:54045 requests connection cookie.
+[17:52:35] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:52:35] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:52:35] Loaded 168 vehicles from: vehicles/bone.txt
+[17:52:35] Loaded 61 vehicles from: vehicles/flint.txt
+[17:52:35] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:52:35] [connection] 127.0.0.1:54046 requests connection cookie.
+[17:52:35] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:52:35] [世界交通工具]: 已经加载:1781个
+[17:52:35] Modul: SA Icons Loaded
+[17:52:35]  
+[17:52:35]  
+[17:52:35]  
+[17:52:35]  ======================================= 
+[17:52:35]  |                                     | 
+[17:52:35]  |        YSI version 3.09.0684        | 
+[17:52:35]  |        By Alex "Y_Less" Cole        | 
+[17:52:35]  |                                     | 
+[17:52:35]  ======================================= 
+[17:52:35]  
+[17:52:35] Loading Map.
+[17:52:35] [connection] 127.0.0.1:54047 requests connection cookie.
+[17:52:35] [connection] 127.0.0.1:54048 requests connection cookie.
+[17:52:36] Loaded Map.                             
+[17:52:36] 
+---------------------------------------
+[17:52:36]  SA WORLD Main Frame Work
+
+[17:52:36]  By Liberty_Episodes
+
+[17:52:36] ---------------------------------------
+
+[17:52:36] Number of vehicle models: 173
+[17:52:36] [connection] incoming connection: 127.0.0.1:54043 id: 0
+[17:52:36] [connection] incoming connection: 127.0.0.1:54044 id: 1
+[17:52:36] [connection] incoming connection: 127.0.0.1:54045 id: 2
+[17:52:36] [connection] incoming connection: 127.0.0.1:54046 id: 3
+[17:52:36] [connection] incoming connection: 127.0.0.1:54047 id: 4
+[17:52:36] [connection] incoming connection: 127.0.0.1:54048 id: 5
+[17:52:36] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:52:36] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:36] NPC: Connection from 127.0.0.1 is allowed.
+[17:52:37] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:52:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:37] NPC: Connection from 127.0.0.1 is allowed.
+[17:52:37] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:52:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:37] NPC: Connection from 127.0.0.1 is allowed.
+[17:52:37] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:52:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:37] NPC: Connection from 127.0.0.1 is allowed.
+[17:52:37] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:52:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:37] NPC: Connection from 127.0.0.1 is allowed.
+[17:52:37] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:52:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:37] NPC: Connection from 127.0.0.1 is allowed.
+[17:52:42] [connection] 172.16.0.3:59955 requests connection cookie.
+[17:52:43] [connection] incoming connection: 172.16.0.3:59955 id: 6
+[17:52:43] [join] HatsuneMiku has joined the server (6:172.16.0.3)
+[17:52:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:46] [connection] 127.0.0.1:54049 requests connection cookie.
+[17:52:47] [connection] incoming connection: 127.0.0.1:54049 id: 7
+[17:52:47] [join] HiyajoMaho has joined the server (7:127.0.0.1)
+[17:52:47] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:52:54] CheckPassed!~
+[17:52:54] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:52:54] Created Funiture 0 2648
+[17:52:54] Created Funiture 1 1839
+[17:52:54] Created Funiture 2 2028
+[17:52:54] Created Funiture 3 2149
+[17:52:54] Created Funiture 4 1786
+[17:52:54] Created Funiture 5 1840
+[17:52:54] Created Funiture 6 1841
+[17:52:54] 加入: 获得槽ID:0
+[17:52:54] 入室任务开始
+[17:52:57] 重设玩家任务
+[17:53:44] CP Called
+[17:53:56] CheckPassed!~
+[17:53:56] 加入: 获得槽ID:0
+[17:54:05] 重设玩家任务
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:55:48] 
+[17:55:48] Server Plugins
+[17:55:48] --------------
+[17:55:48]  Loading plugin: streamer
+[17:55:48] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[17:55:48]   Loaded.
+[17:55:48]  Loading plugin: sscanf
+[17:55:48] 
+
+[17:55:48]  ===============================
+
+[17:55:48]       sscanf plugin loaded.     
+
+[17:55:48]    (c) 2009 Alex "Y_Less" Cole
+
+[17:55:48]    0.3d-R2 500 Players "dnee"
+
+[17:55:48]  ===============================
+
+[17:55:48]   Loaded.
+[17:55:48]  Loading plugin: ColAndreas
+[17:55:48] *********************
+[17:55:48] ** Created By:     **
+[17:55:48] ** [uL]Chris42O    **
+[17:55:48] ** [uL]Slice       **
+[17:55:48] ** [uL]Pottus      **
+[17:55:48] *********************
+[17:55:50] Loaded collision data.
+[17:55:50] *********************
+[17:55:50]   ColAndreas Loaded
+[17:55:50]    v1.3.0
+[17:55:50] *********************
+[17:55:50]   Loaded.
+[17:55:50]  Loaded 3 plugins.
+
+[17:55:50] 
+[17:55:50] Filterscripts
+[17:55:50] ---------------
+[17:55:50]   Loading filterscript 'debug.amx'...
+[17:55:50] 
+  *********************
+  * 电影制作辅助脚本   *
+[17:55:50]   * By Simon Campbell *
+  *********************
+[17:55:50]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[17:55:50]   * -- 载入成功         *
+  *********************
+
+[17:55:50] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:55:50]   Loading filterscript 'test_teleport.amx'...
+[17:55:50]   Loaded 2 filterscripts.
+
+[17:55:50] [connection] 127.0.0.1:50825 requests connection cookie.
+[17:55:50] [模块]:世界NPC已经加载
+[17:55:50] [connection] 127.0.0.1:50826 requests connection cookie.
+[17:55:50] Main Moudel Is Loaded.
+[17:55:50] [connection] 127.0.0.1:50827 requests connection cookie.
+[17:55:50] Loaded 3 vehicles from: vehicles/trains.txt
+[17:55:50] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:55:50] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:55:50] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:55:50] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:55:50] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:55:50] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:55:50] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:55:50] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:55:50] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:55:50] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:55:50] [connection] 127.0.0.1:50828 requests connection cookie.
+[17:55:50] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:55:50] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:55:50] Loaded 168 vehicles from: vehicles/bone.txt
+[17:55:50] Loaded 61 vehicles from: vehicles/flint.txt
+[17:55:50] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:55:50] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:55:50] [世界交通工具]: 已经加载:1781个
+[17:55:50] Modul: SA Icons Loaded
+[17:55:50]  
+[17:55:50]  
+[17:55:50]  
+[17:55:50]  ======================================= 
+[17:55:50]  |                                     | 
+[17:55:50]  |        YSI version 3.09.0684        | 
+[17:55:50]  |        By Alex "Y_Less" Cole        | 
+[17:55:50]  |                                     | 
+[17:55:50]  ======================================= 
+[17:55:50]  
+[17:55:50] Loading Map.
+[17:55:50] [connection] 127.0.0.1:50829 requests connection cookie.
+[17:55:50] [connection] 127.0.0.1:50830 requests connection cookie.
+[17:55:50] Loaded Map.                             
+[17:55:50] 
+---------------------------------------
+[17:55:50]  SA WORLD Main Frame Work
+
+[17:55:50]  By Liberty_Episodes
+
+[17:55:50] ---------------------------------------
+
+[17:55:50] Number of vehicle models: 173
+[17:55:51] [connection] incoming connection: 127.0.0.1:50825 id: 0
+[17:55:51] [connection] incoming connection: 127.0.0.1:50826 id: 1
+[17:55:51] [connection] incoming connection: 127.0.0.1:50827 id: 2
+[17:55:51] [connection] incoming connection: 127.0.0.1:50828 id: 3
+[17:55:51] [connection] incoming connection: 127.0.0.1:50829 id: 4
+[17:55:51] [connection] incoming connection: 127.0.0.1:50830 id: 5
+[17:55:51] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:55:51] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:55:51] NPC: Connection from 127.0.0.1 is allowed.
+[17:55:51] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:55:51] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:55:51] NPC: Connection from 127.0.0.1 is allowed.
+[17:55:51] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:55:51] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:55:51] NPC: Connection from 127.0.0.1 is allowed.
+[17:55:51] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[17:55:51] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:55:51] NPC: Connection from 127.0.0.1 is allowed.
+[17:55:51] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:55:51] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:55:51] NPC: Connection from 127.0.0.1 is allowed.
+[17:55:51] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[17:55:51] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:55:51] NPC: Connection from 127.0.0.1 is allowed.
+[17:55:59] [connection] 172.16.0.3:57021 requests connection cookie.
+[17:56:00] [connection] 127.0.0.1:55485 requests connection cookie.
+[17:56:00] [connection] incoming connection: 172.16.0.3:57021 id: 6
+[17:56:01] [join] HatsuneMiku has joined the server (6:172.16.0.3)
+[17:56:01] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:56:01] [connection] incoming connection: 127.0.0.1:55485 id: 7
+[17:56:01] [join] HiyajoMaho has joined the server (7:127.0.0.1)
+[17:56:01] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:56:10] Pressed 2
+[17:56:10] CheckPassed!~
+[17:56:10] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:56:10] Created Funiture 0 2648
+[17:56:10] Created Funiture 1 1839
+[17:56:10] Created Funiture 2 2028
+[17:56:10] Created Funiture 3 2149
+[17:56:10] Created Funiture 4 1786
+[17:56:10] Created Funiture 5 1840
+[17:56:10] Created Funiture 6 1841
+[17:56:10] 加入: 获得槽ID:0
+[17:56:10] 入室任务开始
+[17:56:17] 重设玩家任务
+[17:56:17] Pressed 2
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:59:05] 
+[17:59:05] Server Plugins
+[17:59:05] --------------
+[17:59:05]  Loading plugin: streamer
+[17:59:05] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[17:59:05]   Loaded.
+[17:59:05]  Loading plugin: sscanf
+[17:59:05] 
+
+[17:59:05]  ===============================
+
+[17:59:05]       sscanf plugin loaded.     
+
+[17:59:05]    (c) 2009 Alex "Y_Less" Cole
+
+[17:59:05]    0.3d-R2 500 Players "dnee"
+
+[17:59:05]  ===============================
+
+[17:59:05]   Loaded.
+[17:59:05]  Loading plugin: ColAndreas
+[17:59:05] *********************
+[17:59:05] ** Created By:     **
+[17:59:05] ** [uL]Chris42O    **
+[17:59:05] ** [uL]Slice       **
+[17:59:05] ** [uL]Pottus      **
+[17:59:05] *********************
+[17:59:07] Loaded collision data.
+[17:59:07] *********************
+[17:59:07]   ColAndreas Loaded
+[17:59:07]    v1.3.0
+[17:59:07] *********************
+[17:59:07]   Loaded.
+[17:59:07]  Loaded 3 plugins.
+
+[17:59:07] 
+[17:59:07] Filterscripts
+[17:59:07] ---------------
+[17:59:07]   Loading filterscript 'debug.amx'...
+[17:59:07] 
+  *********************
+  * 电影制作辅助脚本   *
+[17:59:07]   * By Simon Campbell *
+  *********************
+[17:59:07]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[17:59:07]   * -- 载入成功         *
+  *********************
+
+[17:59:07] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:07]   Loading filterscript 'test_teleport.amx'...
+[17:59:07]   Loaded 2 filterscripts.
+
+[17:59:07] [connection] 127.0.0.1:61714 requests connection cookie.
+[17:59:07] [模块]:世界NPC已经加载
+[17:59:07] Main Moudel Is Loaded.
+[17:59:07] Loaded 3 vehicles from: vehicles/trains.txt
+[17:59:07] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:59:07] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:59:07] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:59:07] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:59:07] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:59:07] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:59:07] [connection] 127.0.0.1:61715 requests connection cookie.
+[17:59:07] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:59:07] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:59:07] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:59:07] [connection] 127.0.0.1:61716 requests connection cookie.
+[17:59:07] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:59:07] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:59:07] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:59:07] Loaded 168 vehicles from: vehicles/bone.txt
+[17:59:07] Loaded 61 vehicles from: vehicles/flint.txt
+[17:59:07] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:59:07] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:59:07] [世界交通工具]: 已经加载:1781个
+[17:59:07] Modul: SA Icons Loaded
+[17:59:07]  
+[17:59:07] [connection] 127.0.0.1:61718 requests connection cookie.
+[17:59:07]  
+[17:59:07] [connection] 127.0.0.1:61717 requests connection cookie.
+[17:59:07]  
+[17:59:07]  ======================================= 
+[17:59:07]  |                                     | 
+[17:59:07]  |        YSI version 3.09.0684        | 
+[17:59:07]  |        By Alex "Y_Less" Cole        | 
+[17:59:07]  |                                     | 
+[17:59:07]  ======================================= 
+[17:59:07]  
+[17:59:07] Loading Map.
+[17:59:07] [connection] 127.0.0.1:61719 requests connection cookie.
+[17:59:08] Loaded Map.                             
+[17:59:08] 
+---------------------------------------
+[17:59:08]  SA WORLD Main Frame Work
+
+[17:59:08]  By Liberty_Episodes
+
+[17:59:08] ---------------------------------------
+
+[17:59:08] Number of vehicle models: 173
+[17:59:08] [connection] incoming connection: 127.0.0.1:61714 id: 0
+[17:59:08] [connection] incoming connection: 127.0.0.1:61715 id: 1
+[17:59:08] [connection] incoming connection: 127.0.0.1:61716 id: 2
+[17:59:08] [connection] incoming connection: 127.0.0.1:61717 id: 3
+[17:59:08] [connection] incoming connection: 127.0.0.1:61718 id: 4
+[17:59:08] [connection] incoming connection: 127.0.0.1:61719 id: 5
+[17:59:08] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[17:59:08] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:08] NPC: Connection from 127.0.0.1 is allowed.
+[17:59:09] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[17:59:09] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:09] NPC: Connection from 127.0.0.1 is allowed.
+[17:59:09] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[17:59:09] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:09] NPC: Connection from 127.0.0.1 is allowed.
+[17:59:09] [npc:join] PilotSF has joined the server (3:127.0.0.1)
+[17:59:09] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:09] NPC: Connection from 127.0.0.1 is allowed.
+[17:59:09] [npc:join] PilotLV has joined the server (4:127.0.0.1)
+[17:59:09] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:09] NPC: Connection from 127.0.0.1 is allowed.
+[17:59:09] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[17:59:09] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:09] NPC: Connection from 127.0.0.1 is allowed.
+[17:59:16] [connection] 172.16.0.3:50038 requests connection cookie.
+[17:59:16] [connection] 127.0.0.1:61720 requests connection cookie.
+[17:59:17] [connection] incoming connection: 172.16.0.3:50038 id: 6
+[17:59:17] [connection] incoming connection: 127.0.0.1:61720 id: 7
+[17:59:17] [join] HatsuneMiku has joined the server (6:172.16.0.3)
+[17:59:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:17] [join] HiyajoMaho has joined the server (7:127.0.0.1)
+[17:59:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[17:59:29] Pressed 2
+[17:59:29] CheckPassed!~
+[17:59:29] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[17:59:29] Created Funiture 0 2648
+[17:59:29] Created Funiture 1 1839
+[17:59:29] Created Funiture 2 2028
+[17:59:29] Created Funiture 3 2149
+[17:59:29] Created Funiture 4 1786
+[17:59:29] Created Funiture 5 1840
+[17:59:29] Created Funiture 6 1841
+[17:59:29] 加入: 获得槽ID:0
+[17:59:29] 入室任务开始
+[17:59:33] 重设玩家任务
+[17:59:33] Pressed 2
+[17:59:39] Pressed 2
+[17:59:39] Pressed 2
+[17:59:39] Pressed 2
+[17:59:40] Pressed 2
+[17:59:44] Pressed 2
+[17:59:44] CheckPassed!~
+[17:59:44] 加入: 获得槽ID:0
+[17:59:50] [part] HiyajoMaho has left the server (7:1)
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:12:40] 
+[18:12:40] Server Plugins
+[18:12:40] --------------
+[18:12:40]  Loading plugin: streamer
+[18:12:40] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[18:12:40]   Loaded.
+[18:12:40]  Loading plugin: sscanf
+[18:12:40] 
+
+[18:12:40]  ===============================
+
+[18:12:40]       sscanf plugin loaded.     
+
+[18:12:40]    (c) 2009 Alex "Y_Less" Cole
+
+[18:12:40]    0.3d-R2 500 Players "dnee"
+
+[18:12:40]  ===============================
+
+[18:12:40]   Loaded.
+[18:12:40]  Loading plugin: ColAndreas
+[18:12:40] *********************
+[18:12:40] ** Created By:     **
+[18:12:40] ** [uL]Chris42O    **
+[18:12:40] ** [uL]Slice       **
+[18:12:40] ** [uL]Pottus      **
+[18:12:40] *********************
+[18:12:43] Loaded collision data.
+[18:12:43] *********************
+[18:12:43]   ColAndreas Loaded
+[18:12:43]    v1.3.0
+[18:12:43] *********************
+[18:12:43]   Loaded.
+[18:12:43]  Loaded 3 plugins.
+
+[18:12:43] 
+[18:12:43] Filterscripts
+[18:12:43] ---------------
+[18:12:43]   Loading filterscript 'debug.amx'...
+[18:12:43] 
+  *********************
+  * 电影制作辅助脚本   *
+[18:12:43]   * By Simon Campbell *
+  *********************
+[18:12:43]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[18:12:43]   * -- 载入成功         *
+  *********************
+
+[18:12:43] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:43]   Loading filterscript 'test_teleport.amx'...
+[18:12:43]   Loaded 2 filterscripts.
+
+[18:12:43] [connection] 127.0.0.1:61263 requests connection cookie.
+[18:12:43] [connection] 127.0.0.1:61264 requests connection cookie.
+[18:12:43] [模块]:世界NPC已经加载
+[18:12:43] Main Moudel Is Loaded.
+[18:12:43] Loaded 3 vehicles from: vehicles/trains.txt
+[18:12:43] Loaded 3 vehicles from: vehicles/pilots.txt
+[18:12:43] [connection] 127.0.0.1:61265 requests connection cookie.
+[18:12:43] Loaded 15 vehicles from: vehicles/lv_law.txt
+[18:12:43] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[18:12:43] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[18:12:43] Loaded 38 vehicles from: vehicles/sf_law.txt
+[18:12:43] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[18:12:43] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[18:12:43] [connection] 127.0.0.1:61266 requests connection cookie.
+[18:12:43] Loaded 24 vehicles from: vehicles/ls_law.txt
+[18:12:43] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[18:12:43] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[18:12:43] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[18:12:43] [connection] 127.0.0.1:61267 requests connection cookie.
+[18:12:43] Loaded 71 vehicles from: vehicles/whetstone.txt
+[18:12:43] Loaded 168 vehicles from: vehicles/bone.txt
+[18:12:43] Loaded 61 vehicles from: vehicles/flint.txt
+[18:12:43] Loaded 96 vehicles from: vehicles/tierra.txt
+[18:12:43] [connection] 127.0.0.1:61268 requests connection cookie.
+[18:12:43] Loaded 96 vehicles from: vehicles/red_county.txt
+[18:12:43] [世界交通工具]: 已经加载:1781个
+[18:12:43] Modul: SA Icons Loaded
+[18:12:43]  
+[18:12:43]  
+[18:12:43]  
+[18:12:43]  ======================================= 
+[18:12:43]  |                                     | 
+[18:12:43]  |        YSI version 3.09.0684        | 
+[18:12:43]  |        By Alex "Y_Less" Cole        | 
+[18:12:43]  |                                     | 
+[18:12:43]  ======================================= 
+[18:12:43]  
+[18:12:43] Loading Map.
+[18:12:43] [connection] 172.16.0.3:53165 requests connection cookie.
+[18:12:43] Loaded Map.                             
+[18:12:43] 
+---------------------------------------
+[18:12:43]  SA WORLD Main Frame Work
+
+[18:12:43]  By Liberty_Episodes
+
+[18:12:43] ---------------------------------------
+
+[18:12:43] Number of vehicle models: 173
+[18:12:44] [connection] incoming connection: 127.0.0.1:61263 id: 0
+[18:12:44] [connection] incoming connection: 127.0.0.1:61264 id: 1
+[18:12:44] [connection] incoming connection: 127.0.0.1:61265 id: 2
+[18:12:44] [connection] incoming connection: 127.0.0.1:61266 id: 3
+[18:12:44] [connection] incoming connection: 127.0.0.1:61267 id: 4
+[18:12:44] [connection] incoming connection: 127.0.0.1:61268 id: 5
+[18:12:44] [connection] incoming connection: 172.16.0.3:53166 id: 6
+[18:12:44] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[18:12:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:44] NPC: Connection from 127.0.0.1 is allowed.
+[18:12:44] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[18:12:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:44] NPC: Connection from 127.0.0.1 is allowed.
+[18:12:44] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[18:12:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:44] NPC: Connection from 127.0.0.1 is allowed.
+[18:12:44] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[18:12:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:44] NPC: Connection from 127.0.0.1 is allowed.
+[18:12:44] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[18:12:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:44] NPC: Connection from 127.0.0.1 is allowed.
+[18:12:44] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[18:12:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:44] NPC: Connection from 127.0.0.1 is allowed.
+[18:12:44] [join] HatsuneMiku has joined the server (6:172.16.0.3)
+[18:12:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:12:50] [connection] 127.0.0.1:61577 requests connection cookie.
+[18:12:51] [connection] incoming connection: 127.0.0.1:61577 id: 7
+[18:12:52] [join] HiyajoMaho has joined the server (7:127.0.0.1)
+[18:12:52] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:17:18] 
+[18:17:18] Server Plugins
+[18:17:18] --------------
+[18:17:18]  Loading plugin: streamer
+[18:17:18] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[18:17:18]   Loaded.
+[18:17:18]  Loading plugin: sscanf
+[18:17:18] 
+
+[18:17:18]  ===============================
+
+[18:17:18]       sscanf plugin loaded.     
+
+[18:17:18]    (c) 2009 Alex "Y_Less" Cole
+
+[18:17:18]    0.3d-R2 500 Players "dnee"
+
+[18:17:18]  ===============================
+
+[18:17:18]   Loaded.
+[18:17:18]  Loading plugin: ColAndreas
+[18:17:18] *********************
+[18:17:18] ** Created By:     **
+[18:17:18] ** [uL]Chris42O    **
+[18:17:18] ** [uL]Slice       **
+[18:17:18] ** [uL]Pottus      **
+[18:17:18] *********************
+[18:17:20] Loaded collision data.
+[18:17:20] *********************
+[18:17:20]   ColAndreas Loaded
+[18:17:20]    v1.3.0
+[18:17:20] *********************
+[18:17:20]   Loaded.
+[18:17:20]  Loaded 3 plugins.
+
+[18:17:20] 
+[18:17:20] Filterscripts
+[18:17:20] ---------------
+[18:17:20]   Loading filterscript 'debug.amx'...
+[18:17:20] 
+  *********************
+  * 电影制作辅助脚本   *
+[18:17:20]   * By Simon Campbell *
+  *********************
+[18:17:20]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[18:17:20]   * -- 载入成功         *
+  *********************
+
+[18:17:20] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:20]   Loading filterscript 'test_teleport.amx'...
+[18:17:20]   Loaded 2 filterscripts.
+
+[18:17:21] [connection] 127.0.0.1:50567 requests connection cookie.
+[18:17:21] [模块]:世界NPC已经加载
+[18:17:21] Main Moudel Is Loaded.
+[18:17:21] Loaded 3 vehicles from: vehicles/trains.txt
+[18:17:21] Loaded 3 vehicles from: vehicles/pilots.txt
+[18:17:21] Loaded 15 vehicles from: vehicles/lv_law.txt
+[18:17:21] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[18:17:21] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[18:17:21] [connection] 127.0.0.1:50568 requests connection cookie.
+[18:17:21] Loaded 38 vehicles from: vehicles/sf_law.txt
+[18:17:21] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[18:17:21] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[18:17:21] Loaded 24 vehicles from: vehicles/ls_law.txt
+[18:17:21] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[18:17:21] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[18:17:21] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[18:17:21] Loaded 71 vehicles from: vehicles/whetstone.txt
+[18:17:21] [connection] 127.0.0.1:50569 requests connection cookie.
+[18:17:21] Loaded 168 vehicles from: vehicles/bone.txt
+[18:17:21] Loaded 61 vehicles from: vehicles/flint.txt
+[18:17:21] Loaded 96 vehicles from: vehicles/tierra.txt
+[18:17:21] Loaded 96 vehicles from: vehicles/red_county.txt
+[18:17:21] [世界交通工具]: 已经加载:1781个
+[18:17:21] Modul: SA Icons Loaded
+[18:17:21]  
+[18:17:21]  
+[18:17:21]  
+[18:17:21]  ======================================= 
+[18:17:21]  |                                     | 
+[18:17:21]  |        YSI version 3.09.0684        | 
+[18:17:21]  |        By Alex "Y_Less" Cole        | 
+[18:17:21]  |                                     | 
+[18:17:21]  ======================================= 
+[18:17:21]  
+[18:17:21] Loading Map.
+[18:17:21] [connection] 127.0.0.1:50570 requests connection cookie.
+[18:17:21] [connection] 127.0.0.1:50571 requests connection cookie.
+[18:17:21] [connection] 127.0.0.1:50572 requests connection cookie.
+[18:17:21] Loaded Map.                             
+[18:17:21] 
+---------------------------------------
+[18:17:21]  SA WORLD Main Frame Work
+
+[18:17:21]  By Liberty_Episodes
+
+[18:17:21] ---------------------------------------
+
+[18:17:21] Number of vehicle models: 173
+[18:17:22] [connection] incoming connection: 127.0.0.1:50567 id: 0
+[18:17:22] [connection] incoming connection: 127.0.0.1:50568 id: 1
+[18:17:22] [connection] incoming connection: 127.0.0.1:50569 id: 2
+[18:17:22] [connection] incoming connection: 127.0.0.1:50570 id: 3
+[18:17:22] [connection] incoming connection: 127.0.0.1:50571 id: 4
+[18:17:22] [connection] incoming connection: 127.0.0.1:50572 id: 5
+[18:17:22] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[18:17:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:22] NPC: Connection from 127.0.0.1 is allowed.
+[18:17:22] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[18:17:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:22] NPC: Connection from 127.0.0.1 is allowed.
+[18:17:22] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[18:17:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:22] NPC: Connection from 127.0.0.1 is allowed.
+[18:17:22] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[18:17:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:22] NPC: Connection from 127.0.0.1 is allowed.
+[18:17:22] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[18:17:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:22] NPC: Connection from 127.0.0.1 is allowed.
+[18:17:22] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[18:17:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:22] NPC: Connection from 127.0.0.1 is allowed.
+[18:17:33] [connection] 172.16.0.3:63389 requests connection cookie.
+[18:17:34] [connection] incoming connection: 172.16.0.3:63389 id: 6
+[18:17:34] [join] HatsuneMiku has joined the server (6:172.16.0.3)
+[18:17:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:17:34] [connection] 127.0.0.1:64695 requests connection cookie.
+[18:17:35] [connection] incoming connection: 127.0.0.1:64695 id: 7
+[18:17:36] [join] HiyajoMaho has joined the server (7:127.0.0.1)
+[18:17:36] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:18:21] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[18:18:21] Created Funiture 0 2648
+[18:18:21] Created Funiture 1 1839
+[18:18:21] Created Funiture 2 2028
+[18:18:21] Created Funiture 3 2149
+[18:18:21] Created Funiture 4 1786
+[18:18:21] Created Funiture 5 1840
+[18:18:21] Created Funiture 6 1841
+[18:18:21] 加入: 获得槽ID:0
+[18:18:21] 入室任务开始
+[18:18:31] 重设玩家任务
+[18:18:36] 加入: 获得槽ID:0
+[18:18:55] 重设玩家任务
+[18:19:00] 加入: 获得槽ID:0
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:25:45] 
+[18:25:45] Server Plugins
+[18:25:45] --------------
+[18:25:45]  Loading plugin: streamer
+[18:25:45] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[18:25:45]   Loaded.
+[18:25:45]  Loading plugin: sscanf
+[18:25:45] 
+
+[18:25:45]  ===============================
+
+[18:25:45]       sscanf plugin loaded.     
+
+[18:25:45]    (c) 2009 Alex "Y_Less" Cole
+
+[18:25:45]    0.3d-R2 500 Players "dnee"
+
+[18:25:45]  ===============================
+
+[18:25:45]   Loaded.
+[18:25:45]  Loading plugin: ColAndreas
+[18:25:45] *********************
+[18:25:45] ** Created By:     **
+[18:25:45] ** [uL]Chris42O    **
+[18:25:45] ** [uL]Slice       **
+[18:25:45] ** [uL]Pottus      **
+[18:25:45] *********************
+[18:25:47] Loaded collision data.
+[18:25:47] *********************
+[18:25:47]   ColAndreas Loaded
+[18:25:47]    v1.3.0
+[18:25:47] *********************
+[18:25:47]   Loaded.
+[18:25:47]  Loaded 3 plugins.
+
+[18:25:47] 
+[18:25:47] Filterscripts
+[18:25:47] ---------------
+[18:25:47]   Loading filterscript 'debug.amx'...
+[18:25:47] 
+  *********************
+  * 电影制作辅助脚本   *
+[18:25:47]   * By Simon Campbell *
+  *********************
+[18:25:47]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[18:25:47]   * -- 载入成功         *
+  *********************
+
+[18:25:47] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:25:47]   Loading filterscript 'test_teleport.amx'...
+[18:25:47]   Loaded 2 filterscripts.
+
+[18:25:47] [connection] 127.0.0.1:50967 requests connection cookie.
+[18:25:47] [connection] 127.0.0.1:50968 requests connection cookie.
+[18:25:47] [模块]:世界NPC已经加载
+[18:25:47] Main Moudel Is Loaded.
+[18:25:47] Loaded 3 vehicles from: vehicles/trains.txt
+[18:25:47] Loaded 3 vehicles from: vehicles/pilots.txt
+[18:25:47] Loaded 15 vehicles from: vehicles/lv_law.txt
+[18:25:47] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[18:25:47] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[18:25:47] Loaded 38 vehicles from: vehicles/sf_law.txt
+[18:25:47] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[18:25:47] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[18:25:47] Loaded 24 vehicles from: vehicles/ls_law.txt
+[18:25:47] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[18:25:47] [connection] 127.0.0.1:50969 requests connection cookie.
+[18:25:47] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[18:25:47] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[18:25:47] Loaded 71 vehicles from: vehicles/whetstone.txt
+[18:25:47] Loaded 168 vehicles from: vehicles/bone.txt
+[18:25:47] Loaded 61 vehicles from: vehicles/flint.txt
+[18:25:47] Loaded 96 vehicles from: vehicles/tierra.txt
+[18:25:47] Loaded 96 vehicles from: vehicles/red_county.txt
+[18:25:47] [世界交通工具]: 已经加载:1781个
+[18:25:47] Modul: SA Icons Loaded
+[18:25:47]  
+[18:25:47]  
+[18:25:47]  
+[18:25:47]  ======================================= 
+[18:25:47]  |                                     | 
+[18:25:47]  |        YSI version 3.09.0684        | 
+[18:25:47]  |        By Alex "Y_Less" Cole        | 
+[18:25:47]  |                                     | 
+[18:25:47]  ======================================= 
+[18:25:47]  
+[18:25:47] [connection] 127.0.0.1:50970 requests connection cookie.
+[18:25:47] Loading Map.
+[18:25:47] [connection] 127.0.0.1:50971 requests connection cookie.
+[18:25:47] [connection] 127.0.0.1:54904 requests connection cookie.
+[18:25:47] Loaded Map.                             
+[18:25:47] 
+---------------------------------------
+[18:25:47]  SA WORLD Main Frame Work
+
+[18:25:47]  By Liberty_Episodes
+
+[18:25:47] ---------------------------------------
+
+[18:25:47] Number of vehicle models: 173
+[18:25:48] [connection] incoming connection: 127.0.0.1:50967 id: 0
+[18:25:48] [connection] incoming connection: 127.0.0.1:50968 id: 1
+[18:25:48] [connection] incoming connection: 127.0.0.1:50969 id: 2
+[18:25:48] [connection] incoming connection: 127.0.0.1:50970 id: 3
+[18:25:48] [connection] incoming connection: 127.0.0.1:50971 id: 4
+[18:25:48] [connection] incoming connection: 127.0.0.1:54904 id: 5
+[18:25:48] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[18:25:48] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:25:48] NPC: Connection from 127.0.0.1 is allowed.
+[18:25:48] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[18:25:48] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:25:48] NPC: Connection from 127.0.0.1 is allowed.
+[18:25:48] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[18:25:48] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:25:48] NPC: Connection from 127.0.0.1 is allowed.
+[18:25:48] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[18:25:48] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:25:48] NPC: Connection from 127.0.0.1 is allowed.
+[18:25:49] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[18:25:49] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:25:49] NPC: Connection from 127.0.0.1 is allowed.
+[18:25:49] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[18:25:49] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:25:49] NPC: Connection from 127.0.0.1 is allowed.
+[18:25:57] [connection] 127.0.0.1:54905 requests connection cookie.
+[18:25:58] [connection] incoming connection: 127.0.0.1:54905 id: 6
+[18:25:58] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[18:25:58] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:26:02] [connection] 172.16.0.3:49746 requests connection cookie.
+[18:26:03] [connection] incoming connection: 172.16.0.3:49746 id: 7
+[18:26:04] [join] HatsuneMiku has joined the server (7:172.16.0.3)
+[18:26:04] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:26:21] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[18:26:21] Created Funiture 0 2648
+[18:26:21] Created Funiture 1 1839
+[18:26:21] Created Funiture 2 2028
+[18:26:21] Created Funiture 3 2149
+[18:26:21] Created Funiture 4 1786
+[18:26:21] Created Funiture 5 1840
+[18:26:21] Created Funiture 6 1841
+[18:26:21] 加入: 获得槽ID:0
+[18:26:21] 入室任务开始
+[18:26:48] [part] HatsuneMiku has left the server (7:0)
+[18:26:53] [connection] 172.16.0.3:50742 requests connection cookie.
+[18:26:54] [connection] incoming connection: 172.16.0.3:50742 id: 7
+[18:26:54] [join] HatsuneMiku has joined the server (7:172.16.0.3)
+[18:26:54] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:28:04] [part] HiyajoMaho has left the server (6:1)
+[18:28:10] [part] HatsuneMiku has left the server (7:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:30:41] 
+[18:30:41] Server Plugins
+[18:30:41] --------------
+[18:30:41]  Loading plugin: streamer
+[18:30:41] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[18:30:41]   Loaded.
+[18:30:41]  Loading plugin: sscanf
+[18:30:41] 
+
+[18:30:41]  ===============================
+
+[18:30:41]       sscanf plugin loaded.     
+
+[18:30:41]    (c) 2009 Alex "Y_Less" Cole
+
+[18:30:41]    0.3d-R2 500 Players "dnee"
+
+[18:30:41]  ===============================
+
+[18:30:41]   Loaded.
+[18:30:41]  Loading plugin: ColAndreas
+[18:30:41] *********************
+[18:30:41] ** Created By:     **
+[18:30:41] ** [uL]Chris42O    **
+[18:30:41] ** [uL]Slice       **
+[18:30:41] ** [uL]Pottus      **
+[18:30:41] *********************
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:32:03] 
+[18:32:03] Server Plugins
+[18:32:03] --------------
+[18:32:03]  Loading plugin: streamer
+[18:32:03] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[18:32:03]   Loaded.
+[18:32:03]  Loading plugin: sscanf
+[18:32:03] 
+
+[18:32:03]  ===============================
+
+[18:32:03]       sscanf plugin loaded.     
+
+[18:32:03]    (c) 2009 Alex "Y_Less" Cole
+
+[18:32:03]    0.3d-R2 500 Players "dnee"
+
+[18:32:03]  ===============================
+
+[18:32:03]   Loaded.
+[18:32:03]  Loading plugin: ColAndreas
+[18:32:03] *********************
+[18:32:03] ** Created By:     **
+[18:32:03] ** [uL]Chris42O    **
+[18:32:03] ** [uL]Slice       **
+[18:32:03] ** [uL]Pottus      **
+[18:32:03] *********************
+[18:32:05] Loaded collision data.
+[18:32:05] *********************
+[18:32:05]   ColAndreas Loaded
+[18:32:05]    v1.3.0
+[18:32:05] *********************
+[18:32:05]   Loaded.
+[18:32:05]  Loaded 3 plugins.
+
+[18:32:05] 
+[18:32:05] Filterscripts
+[18:32:05] ---------------
+[18:32:05]   Loading filterscript 'debug.amx'...
+[18:32:05] 
+  *********************
+  * 电影制作辅助脚本   *
+[18:32:05]   * By Simon Campbell *
+  *********************
+[18:32:05]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[18:32:05]   * -- 载入成功         *
+  *********************
+
+[18:32:05] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:32:05]   Loading filterscript 'test_teleport.amx'...
+[18:32:05]   Loaded 2 filterscripts.
+
+[18:32:05] [connection] 127.0.0.1:50030 requests connection cookie.
+[18:32:05] [模块]:世界NPC已经加载
+[18:32:05] Main Moudel Is Loaded.
+[18:32:05] Loaded 3 vehicles from: vehicles/trains.txt
+[18:32:05] Loaded 3 vehicles from: vehicles/pilots.txt
+[18:32:05] Loaded 15 vehicles from: vehicles/lv_law.txt
+[18:32:05] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[18:32:05] [connection] 127.0.0.1:50031 requests connection cookie.
+[18:32:05] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[18:32:05] Loaded 38 vehicles from: vehicles/sf_law.txt
+[18:32:05] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[18:32:05] [connection] 127.0.0.1:50032 requests connection cookie.
+[18:32:05] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[18:32:05] Loaded 24 vehicles from: vehicles/ls_law.txt
+[18:32:05] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[18:32:05] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[18:32:05] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[18:32:05] Loaded 71 vehicles from: vehicles/whetstone.txt
+[18:32:05] Loaded 168 vehicles from: vehicles/bone.txt
+[18:32:05] Loaded 61 vehicles from: vehicles/flint.txt
+[18:32:05] Loaded 96 vehicles from: vehicles/tierra.txt
+[18:32:05] Loaded 96 vehicles from: vehicles/red_county.txt
+[18:32:05] [世界交通工具]: 已经加载:1781个
+[18:32:05] Modul: SA Icons Loaded
+[18:32:05]  
+[18:32:05]  
+[18:32:05]  
+[18:32:05]  ======================================= 
+[18:32:05]  |                                     | 
+[18:32:05]  |        YSI version 3.09.0684        | 
+[18:32:05]  |        By Alex "Y_Less" Cole        | 
+[18:32:05]  |                                     | 
+[18:32:05]  ======================================= 
+[18:32:05]  
+[18:32:05] Loading Map.
+[18:32:05] [connection] 127.0.0.1:50034 requests connection cookie.
+[18:32:05] [connection] 127.0.0.1:50033 requests connection cookie.
+[18:32:05] [connection] 127.0.0.1:50035 requests connection cookie.
+[18:32:06] Loaded Map.                             
+[18:32:06] ============================
+[18:32:06] SA Mission Library
+[18:32:06] By Liberty_Episodes
+[18:32:06] Loaded.
+[18:32:06] ============================
+[18:32:06] 
+---------------------------------------
+[18:32:06]  SA WORLD Main Frame Work
+
+[18:32:06]  By Liberty_Episodes
+
+[18:32:06] ---------------------------------------
+
+[18:32:06] Number of vehicle models: 173
+[18:32:06] [connection] incoming connection: 127.0.0.1:50030 id: 0
+[18:32:06] [connection] incoming connection: 127.0.0.1:50031 id: 1
+[18:32:06] [connection] incoming connection: 127.0.0.1:50032 id: 2
+[18:32:06] [connection] incoming connection: 127.0.0.1:50034 id: 3
+[18:32:06] [connection] incoming connection: 127.0.0.1:50033 id: 4
+[18:32:06] [connection] incoming connection: 127.0.0.1:50035 id: 5
+[18:32:07] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[18:32:07] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:32:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:32:07] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[18:32:07] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:32:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:32:07] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[18:32:07] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:32:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:32:07] [npc:join] PilotSF has joined the server (3:127.0.0.1)
+[18:32:07] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:32:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:32:07] [npc:join] PilotLV has joined the server (4:127.0.0.1)
+[18:32:07] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:32:07] NPC: Connection from 127.0.0.1 is allowed.
+[18:32:07] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[18:32:07] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:32:07] NPC: Connection from 127.0.0.1 is allowed.
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:30:05] 
+[21:30:05] Server Plugins
+[21:30:05] --------------
+[21:30:05]  Loading plugin: streamer
+[21:30:05] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:30:05]   Loaded.
+[21:30:05]  Loading plugin: sscanf
+[21:30:05] 
+
+[21:30:05]  ===============================
+
+[21:30:05]       sscanf plugin loaded.     
+
+[21:30:05]    (c) 2009 Alex "Y_Less" Cole
+
+[21:30:05]    0.3d-R2 500 Players "dnee"
+
+[21:30:05]  ===============================
+
+[21:30:05]   Loaded.
+[21:30:05]  Loading plugin: ColAndreas
+[21:30:05] *********************
+[21:30:05] ** Created By:     **
+[21:30:05] ** [uL]Chris42O    **
+[21:30:05] ** [uL]Slice       **
+[21:30:05] ** [uL]Pottus      **
+[21:30:05] *********************
+[21:30:07] Loaded collision data.
+[21:30:07] *********************
+[21:30:07]   ColAndreas Loaded
+[21:30:07]    v1.3.0
+[21:30:07] *********************
+[21:30:07]   Loaded.
+[21:30:07]  Loaded 3 plugins.
+
+[21:30:07] 
+[21:30:07] Filterscripts
+[21:30:07] ---------------
+[21:30:07]   Loading filterscript 'debug.amx'...
+[21:30:07] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:30:07]   * By Simon Campbell *
+  *********************
+[21:30:07]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:30:07]   * -- 载入成功         *
+  *********************
+
+[21:30:07] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:30:07]   Loading filterscript 'test_teleport.amx'...
+[21:30:07]   Loaded 2 filterscripts.
+
+[21:30:07] [connection] 127.0.0.1:55461 requests connection cookie.
+[21:30:07] [模块]:世界NPC已经加载
+[21:30:07] Main Moudel Is Loaded.
+[21:30:07] [connection] 127.0.0.1:55462 requests connection cookie.
+[21:30:07] Loaded 3 vehicles from: vehicles/trains.txt
+[21:30:07] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:30:07] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:30:07] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:30:07] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:30:07] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:30:07] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:30:07] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:30:07] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:30:07] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:30:07] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:30:07] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:30:07] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:30:07] Loaded 168 vehicles from: vehicles/bone.txt
+[21:30:07] Loaded 61 vehicles from: vehicles/flint.txt
+[21:30:07] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:30:07] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:30:07] [世界交通工具]: 已经加载:1781个
+[21:30:07] Modul: SA Icons Loaded
+[21:30:07] [connection] 127.0.0.1:55463 requests connection cookie.
+[21:30:07]  
+[21:30:07]  
+[21:30:07]  
+[21:30:07]  ======================================= 
+[21:30:07]  |                                     | 
+[21:30:07]  |        YSI version 3.09.0684        | 
+[21:30:07]  |        By Alex "Y_Less" Cole        | 
+[21:30:07]  |                                     | 
+[21:30:07]  ======================================= 
+[21:30:07]  
+[21:30:07] Loading Map.
+[21:30:07] [connection] 127.0.0.1:55464 requests connection cookie.
+[21:30:07] [connection] 127.0.0.1:58466 requests connection cookie.
+[21:30:07] [connection] 127.0.0.1:58467 requests connection cookie.
+[21:30:07] Loaded Map.                             
+[21:30:07] ============================
+[21:30:07] SA Mission Library
+[21:30:07] By Liberty_Episodes
+[21:30:07] Loaded.
+[21:30:07] ============================
+[21:30:07] 
+---------------------------------------
+[21:30:07]  SA WORLD Main Frame Work
+
+[21:30:07]  By Liberty_Episodes
+
+[21:30:07] ---------------------------------------
+
+[21:30:07] Number of vehicle models: 173
+[21:30:08] [connection] incoming connection: 127.0.0.1:55461 id: 0
+[21:30:08] [connection] incoming connection: 127.0.0.1:55462 id: 1
+[21:30:08] [connection] incoming connection: 127.0.0.1:55463 id: 2
+[21:30:08] [connection] incoming connection: 127.0.0.1:55464 id: 3
+[21:30:08] [connection] incoming connection: 127.0.0.1:58466 id: 4
+[21:30:08] [connection] incoming connection: 127.0.0.1:58467 id: 5
+[21:30:08] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[21:30:08] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:30:08] NPC: Connection from 127.0.0.1 is allowed.
+[21:30:08] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:30:08] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:30:08] NPC: Connection from 127.0.0.1 is allowed.
+[21:30:08] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[21:30:08] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:30:08] NPC: Connection from 127.0.0.1 is allowed.
+[21:30:08] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[21:30:08] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:30:08] NPC: Connection from 127.0.0.1 is allowed.
+[21:30:08] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[21:30:08] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:30:08] NPC: Connection from 127.0.0.1 is allowed.
+[21:30:08] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[21:30:08] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:30:08] NPC: Connection from 127.0.0.1 is allowed.
+[21:30:55] [connection] 127.0.0.1:59716 requests connection cookie.
+[21:30:56] [connection] incoming connection: 127.0.0.1:59716 id: 6
+[21:30:56] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:30:56] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:31:16] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:31:16] Created Funiture 0 2648
+[21:31:16] Created Funiture 1 1839
+[21:31:16] Created Funiture 2 2028
+[21:31:16] Created Funiture 3 2149
+[21:31:16] Created Funiture 4 1786
+[21:31:16] Created Funiture 5 1840
+[21:31:16] Created Funiture 6 1841
+[21:31:16] 加入: 获得槽ID:0
+[21:31:16] 入室任务开始
+[21:31:35] 剩余玩家在房间: 1
+[21:31:35] 重设玩家任务
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:33:13] 
+[21:33:13] Server Plugins
+[21:33:13] --------------
+[21:33:13]  Loading plugin: streamer
+[21:33:13] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:33:13]   Loaded.
+[21:33:13]  Loading plugin: sscanf
+[21:33:13] 
+
+[21:33:13]  ===============================
+
+[21:33:13]       sscanf plugin loaded.     
+
+[21:33:13]    (c) 2009 Alex "Y_Less" Cole
+
+[21:33:13]    0.3d-R2 500 Players "dnee"
+
+[21:33:13]  ===============================
+
+[21:33:13]   Loaded.
+[21:33:13]  Loading plugin: ColAndreas
+[21:33:13] *********************
+[21:33:13] ** Created By:     **
+[21:33:13] ** [uL]Chris42O    **
+[21:33:13] ** [uL]Slice       **
+[21:33:13] ** [uL]Pottus      **
+[21:33:13] *********************
+[21:33:15] Loaded collision data.
+[21:33:15] *********************
+[21:33:15]   ColAndreas Loaded
+[21:33:15]    v1.3.0
+[21:33:15] *********************
+[21:33:15]   Loaded.
+[21:33:15]  Loaded 3 plugins.
+
+[21:33:15] 
+[21:33:15] Filterscripts
+[21:33:15] ---------------
+[21:33:15]   Loading filterscript 'debug.amx'...
+[21:33:15] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:33:15]   * By Simon Campbell *
+  *********************
+[21:33:15]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:33:15]   * -- 载入成功         *
+  *********************
+
+[21:33:15] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:15]   Loading filterscript 'test_teleport.amx'...
+[21:33:15]   Loaded 2 filterscripts.
+
+[21:33:15] [connection] 127.0.0.1:50873 requests connection cookie.
+[21:33:15] [connection] 127.0.0.1:50874 requests connection cookie.
+[21:33:16] [模块]:世界NPC已经加载
+[21:33:16] Main Moudel Is Loaded.
+[21:33:16] Loaded 3 vehicles from: vehicles/trains.txt
+[21:33:16] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:33:16] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:33:16] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:33:16] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:33:16] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:33:16] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:33:16] [connection] 127.0.0.1:50876 requests connection cookie.
+[21:33:16] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:33:16] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:33:16] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:33:16] [connection] 127.0.0.1:50875 requests connection cookie.
+[21:33:16] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:33:16] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:33:16] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:33:16] Loaded 168 vehicles from: vehicles/bone.txt
+[21:33:16] Loaded 61 vehicles from: vehicles/flint.txt
+[21:33:16] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:33:16] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:33:16] [世界交通工具]: 已经加载:1781个
+[21:33:16] Modul: SA Icons Loaded
+[21:33:16]  
+[21:33:16]  
+[21:33:16]  
+[21:33:16]  ======================================= 
+[21:33:16]  |                                     | 
+[21:33:16]  |        YSI version 3.09.0684        | 
+[21:33:16]  |        By Alex "Y_Less" Cole        | 
+[21:33:16]  |                                     | 
+[21:33:16]  ======================================= 
+[21:33:16]  
+[21:33:16] Loading Map.
+[21:33:16] [connection] 127.0.0.1:50877 requests connection cookie.
+[21:33:16] [connection] 127.0.0.1:50878 requests connection cookie.
+[21:33:16] Loaded Map.                             
+[21:33:16] ============================
+[21:33:16] SA Mission Library
+[21:33:16] By Liberty_Episodes
+[21:33:16] Loaded.
+[21:33:16] ============================
+[21:33:16] 
+---------------------------------------
+[21:33:16]  SA WORLD Main Frame Work
+
+[21:33:16]  By Liberty_Episodes
+
+[21:33:16] ---------------------------------------
+
+[21:33:16] Number of vehicle models: 173
+[21:33:16] [connection] incoming connection: 127.0.0.1:50873 id: 0
+[21:33:17] [connection] incoming connection: 127.0.0.1:50874 id: 1
+[21:33:17] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:33:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:17] NPC: Connection from 127.0.0.1 is allowed.
+[21:33:17] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[21:33:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:17] NPC: Connection from 127.0.0.1 is allowed.
+[21:33:17] [connection] incoming connection: 127.0.0.1:50875 id: 2
+[21:33:17] [connection] incoming connection: 127.0.0.1:50876 id: 3
+[21:33:17] [connection] incoming connection: 127.0.0.1:50877 id: 4
+[21:33:17] [connection] incoming connection: 127.0.0.1:50878 id: 5
+[21:33:17] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[21:33:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:17] NPC: Connection from 127.0.0.1 is allowed.
+[21:33:17] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[21:33:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:17] NPC: Connection from 127.0.0.1 is allowed.
+[21:33:17] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[21:33:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:17] NPC: Connection from 127.0.0.1 is allowed.
+[21:33:17] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[21:33:17] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:17] NPC: Connection from 127.0.0.1 is allowed.
+[21:33:36] [connection] 127.0.0.1:61376 requests connection cookie.
+[21:33:37] [connection] incoming connection: 127.0.0.1:61376 id: 6
+[21:33:37] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:33:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:33:49] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:33:49] Created Funiture 0 2648
+[21:33:49] Created Funiture 1 1839
+[21:33:49] Created Funiture 2 2028
+[21:33:49] Created Funiture 3 2149
+[21:33:49] Created Funiture 4 1786
+[21:33:49] Created Funiture 5 1840
+[21:33:49] Created Funiture 6 1841
+[21:33:49] 加入: 获得槽ID:0
+[21:33:49] 入室任务开始
+[21:34:02] 重设玩家任务
+[21:34:15] 加入: 获得槽ID:0
+Console input: gmx
+[21:34:57] 重设玩家任务
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:35:02] 
+[21:35:02] Server Plugins
+[21:35:02] --------------
+[21:35:02]  Loading plugin: streamer
+[21:35:02] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:35:02]   Loaded.
+[21:35:02]  Loading plugin: sscanf
+[21:35:02] 
+
+[21:35:02]  ===============================
+
+[21:35:02]       sscanf plugin loaded.     
+
+[21:35:02]    (c) 2009 Alex "Y_Less" Cole
+
+[21:35:02]    0.3d-R2 500 Players "dnee"
+
+[21:35:02]  ===============================
+
+[21:35:02]   Loaded.
+[21:35:02]  Loading plugin: ColAndreas
+[21:35:02] *********************
+[21:35:02] ** Created By:     **
+[21:35:02] ** [uL]Chris42O    **
+[21:35:02] ** [uL]Slice       **
+[21:35:02] ** [uL]Pottus      **
+[21:35:02] *********************
+[21:35:04] Loaded collision data.
+[21:35:04] *********************
+[21:35:04]   ColAndreas Loaded
+[21:35:04]    v1.3.0
+[21:35:04] *********************
+[21:35:04]   Loaded.
+[21:35:04]  Loaded 3 plugins.
+
+[21:35:04] 
+[21:35:04] Filterscripts
+[21:35:04] ---------------
+[21:35:04]   Loading filterscript 'debug.amx'...
+[21:35:04] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:35:04]   * By Simon Campbell *
+  *********************
+[21:35:04]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:35:04]   * -- 载入成功         *
+  *********************
+
+[21:35:04] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:04]   Loading filterscript 'test_teleport.amx'...
+[21:35:04]   Loaded 2 filterscripts.
+
+[21:35:05] [connection] 127.0.0.1:61381 requests connection cookie.
+[21:35:05] [connection] 127.0.0.1:61382 requests connection cookie.
+[21:35:05] [模块]:世界NPC已经加载
+[21:35:05] Main Moudel Is Loaded.
+[21:35:05] Loaded 3 vehicles from: vehicles/trains.txt
+[21:35:05] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:35:05] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:35:05] [connection] 127.0.0.1:61383 requests connection cookie.
+[21:35:05] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:35:05] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:35:05] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:35:05] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:35:05] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:35:05] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:35:05] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:35:05] [connection] 127.0.0.1:61384 requests connection cookie.
+[21:35:05] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:35:05] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:35:05] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:35:05] Loaded 168 vehicles from: vehicles/bone.txt
+[21:35:05] Loaded 61 vehicles from: vehicles/flint.txt
+[21:35:05] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:35:05] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:35:05] [世界交通工具]: 已经加载:1781个
+[21:35:05] Modul: SA Icons Loaded
+[21:35:05]  
+[21:35:05]  
+[21:35:05]  
+[21:35:05]  ======================================= 
+[21:35:05]  |                                     | 
+[21:35:05]  |        YSI version 3.09.0684        | 
+[21:35:05]  |        By Alex "Y_Less" Cole        | 
+[21:35:05]  |                                     | 
+[21:35:05] [connection] 127.0.0.1:61385 requests connection cookie.
+[21:35:05]  ======================================= 
+[21:35:05]  
+[21:35:05] Loading Map.
+[21:35:05] [connection] 127.0.0.1:61386 requests connection cookie.
+[21:35:05] Loaded Map.                             
+[21:35:05] ============================
+[21:35:05] SA Mission Library
+[21:35:05] By Liberty_Episodes
+[21:35:05] Loaded.
+[21:35:05] ============================
+[21:35:05] 
+---------------------------------------
+[21:35:05]  SA WORLD Main Frame Work
+
+[21:35:05]  By Liberty_Episodes
+
+[21:35:05] ---------------------------------------
+
+[21:35:05] Number of vehicle models: 173
+[21:35:06] [connection] incoming connection: 127.0.0.1:61381 id: 0
+[21:35:06] [connection] incoming connection: 127.0.0.1:61382 id: 1
+[21:35:06] [connection] incoming connection: 127.0.0.1:61383 id: 2
+[21:35:06] [connection] incoming connection: 127.0.0.1:61384 id: 3
+[21:35:06] [connection] incoming connection: 127.0.0.1:61385 id: 4
+[21:35:06] [connection] incoming connection: 127.0.0.1:61386 id: 5
+[21:35:06] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:35:06] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:06] NPC: Connection from 127.0.0.1 is allowed.
+[21:35:06] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[21:35:06] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:06] NPC: Connection from 127.0.0.1 is allowed.
+[21:35:06] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[21:35:06] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:06] NPC: Connection from 127.0.0.1 is allowed.
+[21:35:06] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[21:35:06] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:06] NPC: Connection from 127.0.0.1 is allowed.
+[21:35:06] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[21:35:06] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:06] NPC: Connection from 127.0.0.1 is allowed.
+[21:35:06] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[21:35:06] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:06] NPC: Connection from 127.0.0.1 is allowed.
+[21:35:16] [connection] 127.0.0.1:61388 requests connection cookie.
+[21:35:17] [connection] incoming connection: 127.0.0.1:61388 id: 6
+[21:35:18] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:35:18] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:35:26] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:35:26] Created Funiture 0 2648
+[21:35:26] Created Funiture 1 1839
+[21:35:26] Created Funiture 2 2028
+[21:35:26] Created Funiture 3 2149
+[21:35:26] Created Funiture 4 1786
+[21:35:26] Created Funiture 5 1840
+[21:35:26] Created Funiture 6 1841
+[21:35:26] 加入: 获得槽ID:0
+[21:35:26] 入室任务开始
+[21:35:30] 重设玩家任务
+[21:35:30] 剩余玩家在房间: 0
+[21:35:30] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+[21:36:19] CP Called
+[21:36:27] [connection] 172.16.0.3:52981 requests connection cookie.
+[21:36:28] [connection] incoming connection: 172.16.0.3:52981 id: 7
+[21:36:28] [join] HatsuneMiku has joined the server (7:172.16.0.3)
+[21:36:28] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:36:37] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:36:37] Created Funiture 0 2648
+[21:36:37] Created Funiture 1 1839
+[21:36:37] Created Funiture 2 2028
+[21:36:37] Created Funiture 3 2149
+[21:36:37] Created Funiture 4 1786
+[21:36:37] Created Funiture 5 1840
+[21:36:37] Created Funiture 6 1841
+[21:36:37] 加入: 获得槽ID:0
+[21:36:37] 入室任务开始
+[21:37:02] 加入: 获得槽ID:1
+[21:37:11] 重设玩家任务
+[21:37:11] 剩余玩家在房间: 1
+[21:37:20] 重设玩家任务
+[21:37:20] 剩余玩家在房间: 0
+[21:37:20] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+[21:37:55] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:37:55] Created Funiture 0 2648
+[21:37:55] Created Funiture 1 1839
+[21:37:55] Created Funiture 2 2028
+[21:37:55] Created Funiture 3 2149
+[21:37:55] Created Funiture 4 1786
+[21:37:55] Created Funiture 5 1840
+[21:37:55] Created Funiture 6 1841
+[21:37:55] 加入: 获得槽ID:0
+[21:37:55] 入室任务开始
+[21:38:09] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:38:09] Created Funiture 0 2648
+[21:38:09] Created Funiture 1 1839
+[21:38:09] Created Funiture 2 2028
+[21:38:09] Created Funiture 3 2149
+[21:38:09] Created Funiture 4 1786
+[21:38:09] Created Funiture 5 1840
+[21:38:09] Created Funiture 6 1841
+[21:38:09] 加入: 获得槽ID:0
+[21:38:09] 入室任务开始
+[21:38:22] 重设玩家任务
+[21:38:22] 剩余玩家在房间: 0
+[21:38:22] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:1
+[21:38:36] CP Called
+[21:38:36] 重设玩家任务
+[21:38:36] 剩余玩家在房间: 0
+[21:38:36] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+[21:38:39] [part] HiyajoMaho has left the server (6:1)
+[21:38:42] [part] HatsuneMiku has left the server (7:1)
+Console input: gmx
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:45:30] 
+[21:45:30] Server Plugins
+[21:45:30] --------------
+[21:45:30]  Loading plugin: streamer
+[21:45:30] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:45:30]   Loaded.
+[21:45:30]  Loading plugin: sscanf
+[21:45:30] 
+
+[21:45:30]  ===============================
+
+[21:45:30]       sscanf plugin loaded.     
+
+[21:45:30]    (c) 2009 Alex "Y_Less" Cole
+
+[21:45:30]    0.3d-R2 500 Players "dnee"
+
+[21:45:30]  ===============================
+
+[21:45:30]   Loaded.
+[21:45:30]  Loading plugin: ColAndreas
+[21:45:30] *********************
+[21:45:30] ** Created By:     **
+[21:45:30] ** [uL]Chris42O    **
+[21:45:30] ** [uL]Slice       **
+[21:45:30] ** [uL]Pottus      **
+[21:45:30] *********************
+[21:45:32] Loaded collision data.
+[21:45:32] *********************
+[21:45:32]   ColAndreas Loaded
+[21:45:32]    v1.3.0
+[21:45:32] *********************
+[21:45:32]   Loaded.
+[21:45:32]  Loaded 3 plugins.
+
+[21:45:32] 
+[21:45:32] Filterscripts
+[21:45:32] ---------------
+[21:45:32]   Loading filterscript 'debug.amx'...
+[21:45:32] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:45:32]   * By Simon Campbell *
+  *********************
+[21:45:32]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:45:32]   * -- 载入成功         *
+  *********************
+
+[21:45:32] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:32]   Loading filterscript 'test_teleport.amx'...
+[21:45:32]   Loaded 2 filterscripts.
+
+[21:45:32] [模块]:世界NPC已经加载
+[21:45:32] Main Moudel Is Loaded.
+[21:45:32] Loaded 3 vehicles from: vehicles/trains.txt
+[21:45:32] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:45:32] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:45:32] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:45:32] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:45:32] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:45:32] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:45:32] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:45:32] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:45:32] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:45:32] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:45:32] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:45:32] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:45:32] Loaded 168 vehicles from: vehicles/bone.txt
+[21:45:32] Loaded 61 vehicles from: vehicles/flint.txt
+[21:45:32] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:45:32] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:45:32] [世界交通工具]: 已经加载:1781个
+[21:45:32] Modul: SA Icons Loaded
+[21:45:32]  
+[21:45:32]  
+[21:45:32]  
+[21:45:32]  ======================================= 
+[21:45:32]  |                                     | 
+[21:45:32]  |        YSI version 3.09.0684        | 
+[21:45:32] [connection] 127.0.0.1:59332 requests connection cookie.
+[21:45:32]  |        By Alex "Y_Less" Cole        | 
+[21:45:32]  |                                     | 
+[21:45:32]  ======================================= 
+[21:45:32]  
+[21:45:32] Loading Map.
+[21:45:32] [connection] 127.0.0.1:59333 requests connection cookie.
+[21:45:32] [connection] 127.0.0.1:59334 requests connection cookie.
+[21:45:32] [connection] 127.0.0.1:59335 requests connection cookie.
+[21:45:32] [connection] 127.0.0.1:57110 requests connection cookie.
+[21:45:32] [connection] 127.0.0.1:57111 requests connection cookie.
+[21:45:33] Loaded Map.                             
+[21:45:33] ============================
+[21:45:33] SA Mission Library
+[21:45:33] By Liberty_Episodes
+[21:45:33] Loaded.
+[21:45:33] ============================
+[21:45:33] 
+---------------------------------------
+[21:45:33]  SA WORLD Main Frame Work
+
+[21:45:33]  By Liberty_Episodes
+
+[21:45:33] ---------------------------------------
+
+[21:45:33] Number of vehicle models: 173
+[21:45:33] [connection] incoming connection: 127.0.0.1:59332 id: 0
+[21:45:33] [connection] incoming connection: 127.0.0.1:59333 id: 1
+[21:45:33] [connection] incoming connection: 127.0.0.1:59334 id: 2
+[21:45:33] [connection] incoming connection: 127.0.0.1:59335 id: 3
+[21:45:33] [connection] incoming connection: 127.0.0.1:57110 id: 4
+[21:45:33] [connection] incoming connection: 127.0.0.1:57111 id: 5
+[21:45:34] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:45:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:45:34] [npc:join] PilotLV has joined the server (1:127.0.0.1)
+[21:45:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:45:34] [npc:join] TrainDriverLS has joined the server (2:127.0.0.1)
+[21:45:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:45:34] [npc:join] TrainDriverSF has joined the server (3:127.0.0.1)
+[21:45:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:45:34] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[21:45:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:45:34] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[21:45:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:45:40] [connection] 127.0.0.1:57115 requests connection cookie.
+[21:45:41] [connection] incoming connection: 127.0.0.1:57115 id: 6
+[21:45:43] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:45:43] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:45:54] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:45:54] Created Funiture 0 2648
+[21:45:54] Created Funiture 1 1839
+[21:45:54] Created Funiture 2 2028
+[21:45:54] Created Funiture 3 2149
+[21:45:54] Created Funiture 4 1786
+[21:45:54] Created Funiture 5 1840
+[21:45:54] Created Funiture 6 1841
+[21:45:54] 加入: 获得槽ID:0
+[21:45:54] House: G27.0.0.1
+[21:45:54] 入室任务开始
+Console input: gmx
+[21:51:30] 重设玩家任务
+[21:51:30] 剩余玩家在房间: 0
+[21:51:30] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:51:33] 
+[21:51:33] Server Plugins
+[21:51:33] --------------
+[21:51:33]  Loading plugin: streamer
+[21:51:33] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:51:33]   Loaded.
+[21:51:33]  Loading plugin: sscanf
+[21:51:33] 
+
+[21:51:33]  ===============================
+
+[21:51:33]       sscanf plugin loaded.     
+
+[21:51:33]    (c) 2009 Alex "Y_Less" Cole
+
+[21:51:33]    0.3d-R2 500 Players "dnee"
+
+[21:51:33]  ===============================
+
+[21:51:33]   Loaded.
+[21:51:33]  Loading plugin: ColAndreas
+[21:51:33] *********************
+[21:51:33] ** Created By:     **
+[21:51:33] ** [uL]Chris42O    **
+[21:51:33] ** [uL]Slice       **
+[21:51:33] ** [uL]Pottus      **
+[21:51:33] *********************
+[21:51:35] Loaded collision data.
+[21:51:35] *********************
+[21:51:35]   ColAndreas Loaded
+[21:51:35]    v1.3.0
+[21:51:35] *********************
+[21:51:35]   Loaded.
+[21:51:35]  Loaded 3 plugins.
+
+[21:51:35] 
+[21:51:35] Filterscripts
+[21:51:35] ---------------
+[21:51:35]   Loading filterscript 'debug.amx'...
+[21:51:35] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:51:35]   * By Simon Campbell *
+  *********************
+[21:51:36]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:51:36]   * -- 载入成功         *
+  *********************
+
+[21:51:36] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:51:36]   Loading filterscript 'test_teleport.amx'...
+[21:51:36]   Loaded 2 filterscripts.
+
+[21:51:36] [connection] 127.0.0.1:52520 requests connection cookie.
+[21:51:36] [connection] 127.0.0.1:52521 requests connection cookie.
+[21:51:36] [模块]:世界NPC已经加载
+[21:51:36] Main Moudel Is Loaded.
+[21:51:36] Loaded 3 vehicles from: vehicles/trains.txt
+[21:51:36] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:51:36] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:51:36] [connection] 127.0.0.1:52522 requests connection cookie.
+[21:51:36] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:51:36] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:51:36] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:51:36] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:51:36] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:51:36] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:51:36] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:51:36] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:51:36] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:51:36] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:51:36] Loaded 168 vehicles from: vehicles/bone.txt
+[21:51:36] Loaded 61 vehicles from: vehicles/flint.txt
+[21:51:36] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:51:36] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:51:36] [世界交通工具]: 已经加载:1781个
+[21:51:36] Modul: SA Icons Loaded
+[21:51:36]  
+[21:51:36]  
+[21:51:36]  
+[21:51:36]  ======================================= 
+[21:51:36]  |                                     | 
+[21:51:36]  |        YSI version 3.09.0684        | 
+[21:51:36]  |        By Alex "Y_Less" Cole        | 
+[21:51:36]  |                                     | 
+[21:51:36]  ======================================= 
+[21:51:36]  
+[21:51:36] Loading Map.
+[21:51:36] [connection] 127.0.0.1:52523 requests connection cookie.
+[21:51:36] [connection] 127.0.0.1:52524 requests connection cookie.
+[21:51:36] [connection] 127.0.0.1:52525 requests connection cookie.
+[21:51:36] Loaded Map.                             
+[21:51:36] ============================
+[21:51:36] SA Mission Library
+[21:51:36] By Liberty_Episodes
+[21:51:36] Loaded.
+[21:51:36] ============================
+[21:51:36] 
+---------------------------------------
+[21:51:36]  SA WORLD Main Frame Work
+
+[21:51:36]  By Liberty_Episodes
+
+[21:51:36] ---------------------------------------
+
+[21:51:36] Number of vehicle models: 173
+[21:51:37] [connection] incoming connection: 127.0.0.1:52520 id: 0
+[21:51:37] [connection] incoming connection: 127.0.0.1:52521 id: 1
+[21:51:37] [connection] incoming connection: 127.0.0.1:52522 id: 2
+[21:51:37] [connection] incoming connection: 127.0.0.1:52523 id: 3
+[21:51:37] [connection] incoming connection: 127.0.0.1:52524 id: 4
+[21:51:37] [connection] incoming connection: 127.0.0.1:52525 id: 5
+[21:51:37] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:51:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:51:37] NPC: Connection from 127.0.0.1 is allowed.
+[21:51:37] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[21:51:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:51:37] NPC: Connection from 127.0.0.1 is allowed.
+[21:51:37] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[21:51:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:51:37] NPC: Connection from 127.0.0.1 is allowed.
+[21:51:37] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[21:51:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:51:37] NPC: Connection from 127.0.0.1 is allowed.
+[21:51:37] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[21:51:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:51:37] NPC: Connection from 127.0.0.1 is allowed.
+[21:51:37] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[21:51:37] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:51:37] NPC: Connection from 127.0.0.1 is allowed.
+[21:52:22] [connection] 127.0.0.1:51391 requests connection cookie.
+[21:52:23] [connection] incoming connection: 127.0.0.1:51391 id: 6
+[21:52:23] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:52:23] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:52:39] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:52:39] Created Funiture 0 2648
+[21:52:39] Created Funiture 1 1839
+[21:52:39] Created Funiture 2 2028
+[21:52:39] Created Funiture 3 2149
+[21:52:39] Created Funiture 4 1786
+[21:52:39] Created Funiture 5 1840
+[21:52:39] Created Funiture 6 1841
+[21:52:39] 加入: 获得槽ID:0
+[21:52:39] House: 27.0.0.1
+[21:52:39] 入室任务开始
+Console input: gmx
+[21:54:36] 重设玩家任务
+[21:54:36] 剩余玩家在房间: 0
+[21:54:36] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:54:40] 
+[21:54:40] Server Plugins
+[21:54:40] --------------
+[21:54:40]  Loading plugin: streamer
+[21:54:40] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:54:40]   Loaded.
+[21:54:40]  Loading plugin: sscanf
+[21:54:40] 
+
+[21:54:40]  ===============================
+
+[21:54:40]       sscanf plugin loaded.     
+
+[21:54:40]    (c) 2009 Alex "Y_Less" Cole
+
+[21:54:40]    0.3d-R2 500 Players "dnee"
+
+[21:54:40]  ===============================
+
+[21:54:40]   Loaded.
+[21:54:40]  Loading plugin: ColAndreas
+[21:54:40] *********************
+[21:54:40] ** Created By:     **
+[21:54:40] ** [uL]Chris42O    **
+[21:54:40] ** [uL]Slice       **
+[21:54:40] ** [uL]Pottus      **
+[21:54:40] *********************
+[21:54:43] Loaded collision data.
+[21:54:43] *********************
+[21:54:43]   ColAndreas Loaded
+[21:54:43]    v1.3.0
+[21:54:43] *********************
+[21:54:43]   Loaded.
+[21:54:43]  Loaded 3 plugins.
+
+[21:54:43] 
+[21:54:43] Filterscripts
+[21:54:43] ---------------
+[21:54:43]   Loading filterscript 'debug.amx'...
+[21:54:43] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:54:43]   * By Simon Campbell *
+  *********************
+[21:54:43]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:54:43]   * -- 载入成功         *
+  *********************
+
+[21:54:43] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:54:43]   Loading filterscript 'test_teleport.amx'...
+[21:54:43]   Loaded 2 filterscripts.
+
+[21:54:43] [connection] 127.0.0.1:50607 requests connection cookie.
+[21:54:43] [模块]:世界NPC已经加载
+[21:54:43] Main Moudel Is Loaded.
+[21:54:43] Loaded 3 vehicles from: vehicles/trains.txt
+[21:54:43] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:54:43] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:54:43] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:54:43] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:54:43] [connection] 127.0.0.1:50608 requests connection cookie.
+[21:54:43] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:54:43] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:54:43] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:54:43] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:54:43] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:54:43] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:54:43] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:54:43] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:54:43] Loaded 168 vehicles from: vehicles/bone.txt
+[21:54:43] Loaded 61 vehicles from: vehicles/flint.txt
+[21:54:43] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:54:43] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:54:43] [世界交通工具]: 已经加载:1781个
+[21:54:43] Modul: SA Icons Loaded
+[21:54:43]  
+[21:54:43]  
+[21:54:43]  
+[21:54:43]  ======================================= 
+[21:54:43]  |                                     | 
+[21:54:43]  |        YSI version 3.09.0684        | 
+[21:54:43]  |        By Alex "Y_Less" Cole        | 
+[21:54:43]  |                                     | 
+[21:54:43]  ======================================= 
+[21:54:43] [connection] 127.0.0.1:50609 requests connection cookie.
+[21:54:43]  
+[21:54:43] Loading Map.
+[21:54:43] [connection] 127.0.0.1:50610 requests connection cookie.
+[21:54:43] [connection] 127.0.0.1:50611 requests connection cookie.
+[21:54:43] [connection] 127.0.0.1:50612 requests connection cookie.
+[21:54:44] Loaded Map.                             
+[21:54:44] ============================
+[21:54:44] SA Mission Library
+[21:54:44] By Liberty_Episodes
+[21:54:44] Loaded.
+[21:54:44] ============================
+[21:54:44] 
+---------------------------------------
+[21:54:44]  SA WORLD Main Frame Work
+
+[21:54:44]  By Liberty_Episodes
+
+[21:54:44] ---------------------------------------
+
+[21:54:44] Number of vehicle models: 173
+[21:54:44] [connection] incoming connection: 127.0.0.1:50607 id: 0
+[21:54:44] [connection] incoming connection: 127.0.0.1:50608 id: 1
+[21:54:44] [connection] incoming connection: 127.0.0.1:50609 id: 2
+[21:54:44] [connection] incoming connection: 127.0.0.1:50610 id: 3
+[21:54:44] [connection] incoming connection: 127.0.0.1:50611 id: 4
+[21:54:44] [connection] incoming connection: 127.0.0.1:50612 id: 5
+[21:54:44] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:54:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:54:44] NPC: Connection from 127.0.0.1 is allowed.
+[21:54:44] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[21:54:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:54:44] NPC: Connection from 127.0.0.1 is allowed.
+[21:54:44] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[21:54:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:54:44] NPC: Connection from 127.0.0.1 is allowed.
+[21:54:44] [npc:join] PilotLS has joined the server (4:127.0.0.1)
+[21:54:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:54:44] NPC: Connection from 127.0.0.1 is allowed.
+[21:54:44] [npc:join] PilotSF has joined the server (5:127.0.0.1)
+[21:54:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:54:44] NPC: Connection from 127.0.0.1 is allowed.
+[21:54:44] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[21:54:44] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:54:44] NPC: Connection from 127.0.0.1 is allowed.
+[21:54:54] [connection] 127.0.0.1:62131 requests connection cookie.
+[21:54:55] [connection] incoming connection: 127.0.0.1:62131 id: 6
+[21:54:55] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:54:55] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:55:21] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:55:21] Created Funiture 0 2648
+[21:55:21] Created Funiture 1 1839
+[21:55:21] Created Funiture 2 2028
+[21:55:21] Created Funiture 3 2149
+[21:55:21] Created Funiture 4 1786
+[21:55:21] Created Funiture 5 1840
+[21:55:21] Created Funiture 6 1841
+[21:55:21] 加入: 获得槽ID:0
+[21:55:21] House: Ganton
+[21:55:21] 入室任务开始
+Console input: gmx
+[21:56:50] 重设玩家任务
+[21:56:50] 剩余玩家在房间: 0
+[21:56:50] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:56:53] 
+[21:56:53] Server Plugins
+[21:56:53] --------------
+[21:56:53]  Loading plugin: streamer
+[21:56:53] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:56:53]   Loaded.
+[21:56:53]  Loading plugin: sscanf
+[21:56:53] 
+
+[21:56:53]  ===============================
+
+[21:56:53]       sscanf plugin loaded.     
+
+[21:56:53]    (c) 2009 Alex "Y_Less" Cole
+
+[21:56:53]    0.3d-R2 500 Players "dnee"
+
+[21:56:53]  ===============================
+
+[21:56:53]   Loaded.
+[21:56:53]  Loading plugin: ColAndreas
+[21:56:53] *********************
+[21:56:53] ** Created By:     **
+[21:56:53] ** [uL]Chris42O    **
+[21:56:53] ** [uL]Slice       **
+[21:56:53] ** [uL]Pottus      **
+[21:56:53] *********************
+[21:56:55] Loaded collision data.
+[21:56:55] *********************
+[21:56:55]   ColAndreas Loaded
+[21:56:55]    v1.3.0
+[21:56:55] *********************
+[21:56:55]   Loaded.
+[21:56:55]  Loaded 3 plugins.
+
+[21:56:55] 
+[21:56:55] Filterscripts
+[21:56:55] ---------------
+[21:56:55]   Loading filterscript 'debug.amx'...
+[21:56:55] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:56:55]   * By Simon Campbell *
+  *********************
+[21:56:55]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:56:55]   * -- 载入成功         *
+  *********************
+
+[21:56:55] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:56:55]   Loading filterscript 'test_teleport.amx'...
+[21:56:55]   Loaded 2 filterscripts.
+
+[21:56:55] [connection] 127.0.0.1:54175 requests connection cookie.
+[21:56:55] [模块]:世界NPC已经加载
+[21:56:55] Main Moudel Is Loaded.
+[21:56:55] Loaded 3 vehicles from: vehicles/trains.txt
+[21:56:55] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:56:55] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:56:55] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:56:55] [connection] 127.0.0.1:54176 requests connection cookie.
+[21:56:55] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:56:55] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:56:55] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:56:55] [connection] 127.0.0.1:54177 requests connection cookie.
+[21:56:55] [connection] 127.0.0.1:54178 requests connection cookie.
+[21:56:55] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:56:55] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:56:55] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:56:55] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:56:55] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:56:55] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:56:55] Loaded 168 vehicles from: vehicles/bone.txt
+[21:56:55] Loaded 61 vehicles from: vehicles/flint.txt
+[21:56:55] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:56:55] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:56:55] [世界交通工具]: 已经加载:1781个
+[21:56:55] Modul: SA Icons Loaded
+[21:56:55]  
+[21:56:55]  
+[21:56:55]  
+[21:56:55]  ======================================= 
+[21:56:55]  |                                     | 
+[21:56:55]  |        YSI version 3.09.0684        | 
+[21:56:55]  |        By Alex "Y_Less" Cole        | 
+[21:56:55]  |                                     | 
+[21:56:55]  ======================================= 
+[21:56:55]  
+[21:56:55] Loading Map.
+[21:56:55] [connection] 127.0.0.1:54179 requests connection cookie.
+[21:56:55] [connection] 127.0.0.1:63549 requests connection cookie.
+[21:56:56] Loaded Map.                             
+[21:56:56] ============================
+[21:56:56] SA Mission Library
+[21:56:56] By Liberty_Episodes
+[21:56:56] Loaded.
+[21:56:56] ============================
+[21:56:56] 
+---------------------------------------
+[21:56:56]  SA WORLD Main Frame Work
+
+[21:56:56]  By Liberty_Episodes
+
+[21:56:56] ---------------------------------------
+
+[21:56:56] Number of vehicle models: 173
+[21:56:56] [connection] incoming connection: 127.0.0.1:54175 id: 0
+[21:56:56] [connection] incoming connection: 127.0.0.1:54176 id: 1
+[21:56:56] [connection] incoming connection: 127.0.0.1:54177 id: 2
+[21:56:56] [connection] incoming connection: 127.0.0.1:54178 id: 3
+[21:56:56] [connection] incoming connection: 127.0.0.1:54179 id: 4
+[21:56:56] [connection] incoming connection: 127.0.0.1:63549 id: 5
+[21:56:56] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:56:56] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:56:56] NPC: Connection from 127.0.0.1 is allowed.
+[21:56:56] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[21:56:56] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:56:56] NPC: Connection from 127.0.0.1 is allowed.
+[21:56:56] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[21:56:56] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:56:56] NPC: Connection from 127.0.0.1 is allowed.
+[21:56:56] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[21:56:56] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:56:56] NPC: Connection from 127.0.0.1 is allowed.
+[21:56:57] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[21:56:57] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:56:57] NPC: Connection from 127.0.0.1 is allowed.
+[21:56:57] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[21:56:57] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:56:57] NPC: Connection from 127.0.0.1 is allowed.
+[21:57:05] [connection] 127.0.0.1:60605 requests connection cookie.
+[21:57:06] [connection] incoming connection: 127.0.0.1:60605 id: 6
+[21:57:06] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:57:06] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:57:13] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:57:13] Created Funiture 0 2648
+[21:57:13] Created Funiture 1 1839
+[21:57:13] Created Funiture 2 2028
+[21:57:13] Created Funiture 3 2149
+[21:57:13] Created Funiture 4 1786
+[21:57:13] Created Funiture 5 1840
+[21:57:13] Created Funiture 6 1841
+[21:57:13] 加入: 获得槽ID:0
+[21:57:13] House: Ganton
+[21:57:13] 入室任务开始
+Console input: gmx
+[21:58:27] 重设玩家任务
+[21:58:27] 剩余玩家在房间: 0
+[21:58:27] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:58:30] 
+[21:58:30] Server Plugins
+[21:58:30] --------------
+[21:58:30]  Loading plugin: streamer
+[21:58:30] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[21:58:30]   Loaded.
+[21:58:30]  Loading plugin: sscanf
+[21:58:30] 
+
+[21:58:30]  ===============================
+
+[21:58:30]       sscanf plugin loaded.     
+
+[21:58:30]    (c) 2009 Alex "Y_Less" Cole
+
+[21:58:30]    0.3d-R2 500 Players "dnee"
+
+[21:58:30]  ===============================
+
+[21:58:30]   Loaded.
+[21:58:30]  Loading plugin: ColAndreas
+[21:58:30] *********************
+[21:58:30] ** Created By:     **
+[21:58:30] ** [uL]Chris42O    **
+[21:58:30] ** [uL]Slice       **
+[21:58:30] ** [uL]Pottus      **
+[21:58:30] *********************
+[21:58:32] Loaded collision data.
+[21:58:32] *********************
+[21:58:32]   ColAndreas Loaded
+[21:58:32]    v1.3.0
+[21:58:32] *********************
+[21:58:32]   Loaded.
+[21:58:32]  Loaded 3 plugins.
+
+[21:58:32] 
+[21:58:32] Filterscripts
+[21:58:32] ---------------
+[21:58:32]   Loading filterscript 'debug.amx'...
+[21:58:32] 
+  *********************
+  * 电影制作辅助脚本   *
+[21:58:32]   * By Simon Campbell *
+  *********************
+[21:58:32]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[21:58:32]   * -- 载入成功         *
+  *********************
+
+[21:58:32] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:32]   Loading filterscript 'test_teleport.amx'...
+[21:58:32]   Loaded 2 filterscripts.
+
+[21:58:32] [connection] 127.0.0.1:60730 requests connection cookie.
+[21:58:32] [模块]:世界NPC已经加载
+[21:58:32] Main Moudel Is Loaded.
+[21:58:32] Loaded 3 vehicles from: vehicles/trains.txt
+[21:58:32] [connection] 127.0.0.1:60731 requests connection cookie.
+[21:58:32] Loaded 3 vehicles from: vehicles/pilots.txt
+[21:58:32] Loaded 15 vehicles from: vehicles/lv_law.txt
+[21:58:32] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[21:58:32] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[21:58:32] Loaded 38 vehicles from: vehicles/sf_law.txt
+[21:58:32] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[21:58:32] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[21:58:32] Loaded 24 vehicles from: vehicles/ls_law.txt
+[21:58:32] [connection] 127.0.0.1:60732 requests connection cookie.
+[21:58:32] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[21:58:32] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[21:58:32] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[21:58:32] Loaded 71 vehicles from: vehicles/whetstone.txt
+[21:58:32] Loaded 168 vehicles from: vehicles/bone.txt
+[21:58:32] Loaded 61 vehicles from: vehicles/flint.txt
+[21:58:32] Loaded 96 vehicles from: vehicles/tierra.txt
+[21:58:32] Loaded 96 vehicles from: vehicles/red_county.txt
+[21:58:32] [世界交通工具]: 已经加载:1781个
+[21:58:32] Modul: SA Icons Loaded
+[21:58:32]  
+[21:58:32]  
+[21:58:32]  
+[21:58:32]  ======================================= 
+[21:58:32]  |                                     | 
+[21:58:32]  |        YSI version 3.09.0684        | 
+[21:58:32]  |        By Alex "Y_Less" Cole        | 
+[21:58:32]  |                                     | 
+[21:58:32]  ======================================= 
+[21:58:32]  
+[21:58:32] Loading Map.
+[21:58:32] [connection] 127.0.0.1:60733 requests connection cookie.
+[21:58:32] [connection] 127.0.0.1:60734 requests connection cookie.
+[21:58:32] [connection] 127.0.0.1:60735 requests connection cookie.
+[21:58:32] Loaded Map.                             
+[21:58:32] ============================
+[21:58:32] SA Mission Library
+[21:58:32] By Liberty_Episodes
+[21:58:32] Loaded.
+[21:58:32] ============================
+[21:58:32] 
+---------------------------------------
+[21:58:32]  SA WORLD Main Frame Work
+
+[21:58:32]  By Liberty_Episodes
+
+[21:58:32] ---------------------------------------
+
+[21:58:32] Number of vehicle models: 173
+[21:58:33] [connection] incoming connection: 127.0.0.1:60730 id: 0
+[21:58:33] [connection] incoming connection: 127.0.0.1:60731 id: 1
+[21:58:33] [connection] incoming connection: 127.0.0.1:60732 id: 2
+[21:58:33] [connection] incoming connection: 127.0.0.1:60733 id: 3
+[21:58:33] [connection] incoming connection: 127.0.0.1:60734 id: 4
+[21:58:33] [connection] incoming connection: 127.0.0.1:60735 id: 5
+[21:58:34] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[21:58:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:58:34] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[21:58:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:58:34] [npc:join] TrainDriverSF has joined the server (2:127.0.0.1)
+[21:58:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:58:34] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[21:58:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:58:34] [npc:join] PilotLS has joined the server (4:127.0.0.1)
+[21:58:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:58:34] [npc:join] PilotSF has joined the server (5:127.0.0.1)
+[21:58:34] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:34] NPC: Connection from 127.0.0.1 is allowed.
+[21:58:44] [connection] 127.0.0.1:54134 requests connection cookie.
+[21:58:45] [connection] incoming connection: 127.0.0.1:54134 id: 6
+[21:58:45] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[21:58:45] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[21:58:56] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[21:58:56] Created Funiture 0 2648
+[21:58:56] Created Funiture 1 1839
+[21:58:56] Created Funiture 2 2028
+[21:58:56] Created Funiture 3 2149
+[21:58:56] Created Funiture 4 1786
+[21:58:56] Created Funiture 5 1840
+[21:58:56] Created Funiture 6 1841
+[21:58:56] 加入: 获得槽ID:0
+[21:58:56] House: Ganton
+[21:58:56] 入室任务开始
+Console input: gmx
+[22:00:14] 重设玩家任务
+[22:00:14] 剩余玩家在房间: 0
+[22:00:14] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:00:18] 
+[22:00:18] Server Plugins
+[22:00:18] --------------
+[22:00:18]  Loading plugin: streamer
+[22:00:18] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[22:00:18]   Loaded.
+[22:00:18]  Loading plugin: sscanf
+[22:00:18] 
+
+[22:00:18]  ===============================
+
+[22:00:18]       sscanf plugin loaded.     
+
+[22:00:18]    (c) 2009 Alex "Y_Less" Cole
+
+[22:00:18]    0.3d-R2 500 Players "dnee"
+
+[22:00:18]  ===============================
+
+[22:00:18]   Loaded.
+[22:00:18]  Loading plugin: ColAndreas
+[22:00:18] *********************
+[22:00:18] ** Created By:     **
+[22:00:18] ** [uL]Chris42O    **
+[22:00:18] ** [uL]Slice       **
+[22:00:18] ** [uL]Pottus      **
+[22:00:18] *********************
+[22:00:20] Loaded collision data.
+[22:00:20] *********************
+[22:00:20]   ColAndreas Loaded
+[22:00:20]    v1.3.0
+[22:00:20] *********************
+[22:00:20]   Loaded.
+[22:00:20]  Loaded 3 plugins.
+
+[22:00:21] 
+[22:00:21] Filterscripts
+[22:00:21] ---------------
+[22:00:21]   Loading filterscript 'debug.amx'...
+[22:00:21] 
+  *********************
+  * 电影制作辅助脚本   *
+[22:00:21]   * By Simon Campbell *
+  *********************
+[22:00:21]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[22:00:21]   * -- 载入成功         *
+  *********************
+
+[22:00:21] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:21]   Loading filterscript 'test_teleport.amx'...
+[22:00:21]   Loaded 2 filterscripts.
+
+[22:00:21] [connection] 127.0.0.1:56684 requests connection cookie.
+[22:00:21] [模块]:世界NPC已经加载
+[22:00:21] Main Moudel Is Loaded.
+[22:00:21] Loaded 3 vehicles from: vehicles/trains.txt
+[22:00:21] Loaded 3 vehicles from: vehicles/pilots.txt
+[22:00:21] [connection] 127.0.0.1:56685 requests connection cookie.
+[22:00:21] Loaded 15 vehicles from: vehicles/lv_law.txt
+[22:00:21] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[22:00:21] [connection] 127.0.0.1:56687 requests connection cookie.
+[22:00:21] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[22:00:21] [connection] 127.0.0.1:56686 requests connection cookie.
+[22:00:21] Loaded 38 vehicles from: vehicles/sf_law.txt
+[22:00:21] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[22:00:21] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[22:00:21] Loaded 24 vehicles from: vehicles/ls_law.txt
+[22:00:21] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[22:00:21] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[22:00:21] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[22:00:21] Loaded 71 vehicles from: vehicles/whetstone.txt
+[22:00:21] [connection] 127.0.0.1:56688 requests connection cookie.
+[22:00:21] Loaded 168 vehicles from: vehicles/bone.txt
+[22:00:21] Loaded 61 vehicles from: vehicles/flint.txt
+[22:00:21] Loaded 96 vehicles from: vehicles/tierra.txt
+[22:00:21] Loaded 96 vehicles from: vehicles/red_county.txt
+[22:00:21] [世界交通工具]: 已经加载:1781个
+[22:00:21] Modul: SA Icons Loaded
+[22:00:21]  
+[22:00:21] [connection] 127.0.0.1:56689 requests connection cookie.
+[22:00:21]  
+[22:00:21]  
+[22:00:21]  ======================================= 
+[22:00:21]  |                                     | 
+[22:00:21]  |        YSI version 3.09.0684        | 
+[22:00:21]  |        By Alex "Y_Less" Cole        | 
+[22:00:21]  |                                     | 
+[22:00:21]  ======================================= 
+[22:00:21]  
+[22:00:21] Loading Map.
+[22:00:21] Loaded Map.                             
+[22:00:21] ============================
+[22:00:21] SA Mission Library
+[22:00:21] By Liberty_Episodes
+[22:00:21] Loaded.
+[22:00:21] ============================
+[22:00:21] 
+---------------------------------------
+[22:00:21]  SA WORLD Main Frame Work
+
+[22:00:21]  By Liberty_Episodes
+
+[22:00:21] ---------------------------------------
+
+[22:00:21] Number of vehicle models: 173
+[22:00:22] [connection] incoming connection: 127.0.0.1:56684 id: 0
+[22:00:22] [connection] incoming connection: 127.0.0.1:56685 id: 1
+[22:00:22] [connection] incoming connection: 127.0.0.1:56686 id: 2
+[22:00:22] [connection] incoming connection: 127.0.0.1:56687 id: 3
+[22:00:22] [connection] incoming connection: 127.0.0.1:56688 id: 4
+[22:00:22] [connection] incoming connection: 127.0.0.1:56689 id: 5
+[22:00:22] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[22:00:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:22] NPC: Connection from 127.0.0.1 is allowed.
+[22:00:22] [npc:join] TrainDriverLS has joined the server (1:127.0.0.1)
+[22:00:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:22] NPC: Connection from 127.0.0.1 is allowed.
+[22:00:22] [npc:join] PilotLV has joined the server (2:127.0.0.1)
+[22:00:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:22] NPC: Connection from 127.0.0.1 is allowed.
+[22:00:22] [npc:join] TrainDriverSF has joined the server (3:127.0.0.1)
+[22:00:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:22] NPC: Connection from 127.0.0.1 is allowed.
+[22:00:22] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[22:00:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:22] NPC: Connection from 127.0.0.1 is allowed.
+[22:00:22] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[22:00:22] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:22] NPC: Connection from 127.0.0.1 is allowed.
+[22:00:28] [connection] 127.0.0.1:56691 requests connection cookie.
+[22:00:29] [connection] incoming connection: 127.0.0.1:56691 id: 6
+[22:00:29] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[22:00:29] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:00:36] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[22:00:36] Created Funiture 0 2648
+[22:00:36] Created Funiture 1 1839
+[22:00:36] Created Funiture 2 2028
+[22:00:36] Created Funiture 3 2149
+[22:00:36] Created Funiture 4 1786
+[22:00:36] Created Funiture 5 1840
+[22:00:36] Created Funiture 6 1841
+[22:00:36] 加入: 获得槽ID:0
+[22:00:36] House: Ganton
+[22:00:36] 入室任务开始
+Console input: gmx
+[22:01:53] 重设玩家任务
+[22:01:53] 剩余玩家在房间: 0
+[22:01:53] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:01:56] 
+[22:01:56] Server Plugins
+[22:01:56] --------------
+[22:01:56]  Loading plugin: streamer
+[22:01:56] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[22:01:56]   Loaded.
+[22:01:56]  Loading plugin: sscanf
+[22:01:56] 
+
+[22:01:56]  ===============================
+
+[22:01:56]       sscanf plugin loaded.     
+
+[22:01:56]    (c) 2009 Alex "Y_Less" Cole
+
+[22:01:56]    0.3d-R2 500 Players "dnee"
+
+[22:01:56]  ===============================
+
+[22:01:56]   Loaded.
+[22:01:56]  Loading plugin: ColAndreas
+[22:01:56] *********************
+[22:01:56] ** Created By:     **
+[22:01:56] ** [uL]Chris42O    **
+[22:01:56] ** [uL]Slice       **
+[22:01:56] ** [uL]Pottus      **
+[22:01:56] *********************
+[22:01:58] Loaded collision data.
+[22:01:58] *********************
+[22:01:58]   ColAndreas Loaded
+[22:01:58]    v1.3.0
+[22:01:58] *********************
+[22:01:58]   Loaded.
+[22:01:58]  Loaded 3 plugins.
+
+[22:01:58] 
+[22:01:58] Filterscripts
+[22:01:58] ---------------
+[22:01:58]   Loading filterscript 'debug.amx'...
+[22:01:58] 
+  *********************
+  * 电影制作辅助脚本   *
+[22:01:58]   * By Simon Campbell *
+  *********************
+[22:01:58]   * 修改: [Fly_CoOl]_luck      *
+  *********************
+[22:01:58]   * -- 载入成功         *
+  *********************
+
+[22:01:58] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:01:58]   Loading filterscript 'test_teleport.amx'...
+[22:01:58]   Loaded 2 filterscripts.
+
+[22:01:58] [模块]:世界NPC已经加载
+[22:01:58] Main Moudel Is Loaded.
+[22:01:58] Loaded 3 vehicles from: vehicles/trains.txt
+[22:01:58] Loaded 3 vehicles from: vehicles/pilots.txt
+[22:01:58] Loaded 15 vehicles from: vehicles/lv_law.txt
+[22:01:58] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[22:01:58] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[22:01:58] Loaded 38 vehicles from: vehicles/sf_law.txt
+[22:01:58] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[22:01:58] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[22:01:58] Loaded 24 vehicles from: vehicles/ls_law.txt
+[22:01:58] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[22:01:58] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[22:01:58] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[22:01:58] Loaded 71 vehicles from: vehicles/whetstone.txt
+[22:01:58] Loaded 168 vehicles from: vehicles/bone.txt
+[22:01:58] [connection] 127.0.0.1:55363 requests connection cookie.
+[22:01:58] Loaded 61 vehicles from: vehicles/flint.txt
+[22:01:58] [connection] 127.0.0.1:55364 requests connection cookie.
+[22:01:58] Loaded 96 vehicles from: vehicles/tierra.txt
+[22:01:58] Loaded 96 vehicles from: vehicles/red_county.txt
+[22:01:58] [世界交通工具]: 已经加载:1781个
+[22:01:58] Modul: SA Icons Loaded
+[22:01:58]  
+[22:01:58]  
+[22:01:58]  
+[22:01:58]  ======================================= 
+[22:01:58]  |                                     | 
+[22:01:58]  |        YSI version 3.09.0684        | 
+[22:01:58]  |        By Alex "Y_Less" Cole        | 
+[22:01:58]  |                                     | 
+[22:01:58]  ======================================= 
+[22:01:58]  
+[22:01:58] Loading Map.
+[22:01:58] [connection] 127.0.0.1:55365 requests connection cookie.
+[22:01:58] [connection] 127.0.0.1:55366 requests connection cookie.
+[22:01:58] [connection] 127.0.0.1:55367 requests connection cookie.
+[22:01:58] [connection] 127.0.0.1:55368 requests connection cookie.
+[22:01:58] Loaded Map.                             
+[22:01:58] ============================
+[22:01:58] SA Mission Library
+[22:01:58] By Liberty_Episodes
+[22:01:58] Loaded.
+[22:01:58] ============================
+[22:01:58] 
+---------------------------------------
+[22:01:58]  SA WORLD Main Frame Work
+
+[22:01:58]  By Liberty_Episodes
+
+[22:01:58] ---------------------------------------
+
+[22:01:58] Number of vehicle models: 173
+[22:01:59] [connection] incoming connection: 127.0.0.1:55363 id: 0
+[22:01:59] [connection] incoming connection: 127.0.0.1:55364 id: 1
+[22:01:59] [connection] incoming connection: 127.0.0.1:55365 id: 2
+[22:01:59] [connection] incoming connection: 127.0.0.1:55366 id: 3
+[22:01:59] [connection] incoming connection: 127.0.0.1:55367 id: 4
+[22:01:59] [connection] incoming connection: 127.0.0.1:55368 id: 5
+[22:01:59] [npc:join] TrainDriverLV has joined the server (0:127.0.0.1)
+[22:01:59] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:01:59] NPC: Connection from 127.0.0.1 is allowed.
+[22:01:59] [npc:join] TrainDriverSF has joined the server (1:127.0.0.1)
+[22:01:59] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:01:59] NPC: Connection from 127.0.0.1 is allowed.
+[22:01:59] [npc:join] PilotLV has joined the server (3:127.0.0.1)
+[22:01:59] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:01:59] NPC: Connection from 127.0.0.1 is allowed.
+[22:01:59] [npc:join] TrainDriverLS has joined the server (2:127.0.0.1)
+[22:01:59] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:01:59] NPC: Connection from 127.0.0.1 is allowed.
+[22:01:59] [npc:join] PilotSF has joined the server (4:127.0.0.1)
+[22:01:59] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:01:59] NPC: Connection from 127.0.0.1 is allowed.
+[22:01:59] [npc:join] PilotLS has joined the server (5:127.0.0.1)
+[22:01:59] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:01:59] NPC: Connection from 127.0.0.1 is allowed.
+[22:02:09] [connection] 127.0.0.1:55369 requests connection cookie.
+[22:02:10] [connection] incoming connection: 127.0.0.1:55369 id: 6
+[22:02:10] [join] HiyajoMaho has joined the server (6:127.0.0.1)
+[22:02:10] AllowPlayerTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:02:32] [入室盗窃] 家具创建 读取文件路径 Mission/Burglary/0.ini
+[22:02:32] Created Funiture 0 2648
+[22:02:32] Created Funiture 1 1839
+[22:02:32] Created Funiture 2 2028
+[22:02:32] Created Funiture 3 2149
+[22:02:32] Created Funiture 4 1786
+[22:02:32] Created Funiture 5 1840
+[22:02:32] Created Funiture 6 1841
+[22:02:32] 加入: 获得槽ID:0
+[22:02:32] 入室任务开始
+[23:40:52] 重设玩家任务
+[23:40:52] 剩余玩家在房间: 0
+[23:40:52] [Burglary]: 鎴块棿璧勬簮鍥炴敹! ID:0
+[23:40:52] [part] HiyajoMaho has left the server (6:1)

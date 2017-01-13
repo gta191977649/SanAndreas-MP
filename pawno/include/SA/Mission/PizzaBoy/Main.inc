@@ -216,50 +216,56 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	//your OnPlayerKeyStateChange code here
 	if(KEY_MISSION)
 	{
-		if(PIZZA_IsPlayerInMission(playerid)) return 1;
-		if(PIZZA_GetNearCity(playerid) == NULL)
+		if(!PIZZA_IsPlayerInMission(playerid))
 		{
-			SG_Sub(playerid,PIZZA_NOMISSION,5);
-			return 1;
-		}
-			//开始任务
-		if(PIZZA_IsInVaildVeh(playerid))
-		{
-			PIZZA_PLAYER_start(playerid);
+			if(PIZZA_GetNearCity(playerid) == NULL)
+			{
+				SG_Sub(playerid,PIZZA_NOMISSION,5);
+				return 1;
+			}
+				//开始任务
+			if(PIZZA_IsInVaildVeh(playerid))
+			{
+				PIZZA_PLAYER_start(playerid);
+			}
 		}
 	}
 	
 	//丢PIZZA
 	if (HOLDING( KEY_LOOK_LEFT))
 	{
-		if(!PIZZA_IsPlayerInMission(playerid)) return 1;
-		
-		//printf("KEY_LOOK_LEFT");
-		if (PRESSED( KEY_FIRE ))
+		if(PIZZA_IsPlayerInMission(playerid))
 		{
-			if(!PIZZA_IsInVaildVeh(playerid))
+			
+			//printf("KEY_LOOK_LEFT");
+			if (PRESSED( KEY_FIRE ))
 			{
-				SG_Sub(playerid,PIZZA_WRONGCAR,5);
-				return 1;
+				if(!PIZZA_IsInVaildVeh(playerid))
+				{
+					SG_Sub(playerid,PIZZA_WRONGCAR,5);
+					return 1;
+				}
+				PIZZA_LunchObject(playerid,VECTOR_LEFT);
+				//printf("KEY_ACTION");
 			}
-			PIZZA_LunchObject(playerid,VECTOR_LEFT);
-			//printf("KEY_ACTION");
+		
 		}
 	
 	}
 	if(HOLDING( KEY_LOOK_RIGHT))
 	{
-		if(!PIZZA_IsPlayerInMission(playerid)) return 1;
-		//printf("KEY_LOOK_RIGHT");
-		if (PRESSED( KEY_FIRE ))
-		{
-			if(!PIZZA_IsInVaildVeh(playerid))
+		if(!PIZZA_IsPlayerInMission(playerid))
+		{	//printf("KEY_LOOK_RIGHT");
+			if (PRESSED( KEY_FIRE ))
 			{
-				SG_Sub(playerid,PIZZA_WRONGCAR,5);
-				return 1;
+				if(!PIZZA_IsInVaildVeh(playerid))
+				{
+					SG_Sub(playerid,PIZZA_WRONGCAR,5);
+					return 1;
+				}
+				PIZZA_LunchObject(playerid,VECTOR_RIGHT);
+				//printf("KEY_ACTION");
 			}
-			PIZZA_LunchObject(playerid,VECTOR_RIGHT);
-			//printf("KEY_ACTION");
 		}
 	}
 	if (gPIZZA_HasCB[4])
@@ -287,7 +293,7 @@ public OnPlayerStateChange(playerid, newstate,  oldstate)
     {
 		if(PIZZA_IsInVaildVeh(playerid))
 		{
-			if(!PIZZA_IsPlayerInMission(playerid)) SG_Textbox(playerid,"Press 2 to start Pizza Boy Missions.",3000);
+			if(!PIZZA_IsPlayerInMission(playerid)) ShowInfoBox(playerid,INFO_BoxBG,5,PIZZA_TOGGLE);
 		}
     }
 	

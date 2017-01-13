@@ -102,9 +102,10 @@ public OnPlayerPickUpDynamicPickup(playerid, pickupid)
 			SetPlayerPosFront(playerid,BurlagryHoursesLS[HourseId][0],BurlagryHoursesLS[HourseId][1],BurlagryHoursesLS[HourseId][2],BurlagryHoursesLS[HourseId][3],2);
 			SetCameraBehindPlayer(playerid);
 			SG_Sub(playerid,BURGLARY_OBJ4,5);
+			
 			SetPlayerObjective(playerid,Burglary_GetVehicle(PlayerTeam),true);
 			if(Burglary_GetStealAmount(PlayerTeam) >= Burglary_GetMaxStealAmount(PlayerTeam)) SG_Sub(playerid,BURGLARY_OBJBACK,5);
-			else SG_Sub(playerid,BURGLARY_OBJ5,5);
+			else SG_Sub(playerid,BURGLARY_OBJ4,5);
 			
 		}
 	
@@ -206,12 +207,17 @@ public OnPlayerEnterDynamicCP(playerid,checkpointid)
 		new roomid = Burglary_PlayerRoomGet(playerid);
 		if(GetPlayerVehicleID(playerid) == Burglary_GetVehicle(roomid))
 		{
-			printf("Player Is in vaild veh");
+			//printf("Player Is in vaild veh");
+			//给钱
+			//Burglary_CountPlayer(roomid);
+			//结束房间
 			Burglary_EndRoom(roomid);
 		}
 		else
 		{
 			//.....
+			SG_Sub(playerid,BURGLARY_TEXTWRONGCAR,5);
+			
 		}
 		
 	}
@@ -262,39 +268,44 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 	if(KEY_MISSION)
 	{
-		if(Burglary_IsPlayerInMission(playerid)) return 1;
-		if(!BurglaryIsVaildVeh(playerid)) return 1;
-		//开始任务
-		new vehicleid = GetPlayerVehicleID(playerid);
-		new roomid = Burglary_GetVehicleRoom(vehicleid);
-		if(roomid != NULL) Burglary_PlayerJoin(roomid,playerid); //判断是否这类车在任何游戏中,如果是则加入任务
-		else Burglary_PlayerStart(playerid); //否则开始新任务
+		if(!Burglary_IsPlayerInMission(playerid))
+		{
+			if(!BurglaryIsVaildVeh(playerid)) return 1;
+			
+			//开始任务
+			new vehicleid = GetPlayerVehicleID(playerid);
+			new roomid = Burglary_GetVehicleRoom(vehicleid);
+			if(roomid != NULL) Burglary_PlayerJoin(roomid,playerid); //判断是否这类车在任何游戏中,如果是则加入任务
+			else Burglary_PlayerStart(playerid); //否则开始新任务
+		}
 	}
 	
 	if(KEY_ENTER)
 	{
-		if(!Burglary_IsPlayerInMission(playerid)) return 1;//无视玩家不在任务的
-		new PlayerTeam = Burglary_PlayerRoomGet(playerid);
-		new nearFuniture = BurglaryGetClostFuniture(playerid,PlayerTeam);
-		
-		if(!BurglaryPlayerGetHoldStatus(playerid)) //如果玩家没有拿起家具的话
+		if(Burglary_IsPlayerInMission(playerid)) //无视玩家不在任务的
 		{
-			if(nearFuniture != NULL)//如果附近有家具
+			new PlayerTeam = Burglary_PlayerRoomGet(playerid);
+			new nearFuniture = BurglaryGetClostFuniture(playerid,PlayerTeam);
+			
+			if(!BurglaryPlayerGetHoldStatus(playerid)) //如果玩家没有拿起家具的话
 			{
-				BurglaryPlayerLiftFuniture(playerid,nearFuniture);
+				if(nearFuniture != NULL)//如果附近有家具
+				{
+					BurglaryPlayerLiftFuniture(playerid,nearFuniture);
+				}
 			}
-		}
-		else
-		{
-			//放下家具
-			//获取在手上的家具ID
-			new OnHoldID = BurglaryPlayerGetHoldID(playerid);
-			if(OnHoldID != NULL)
+			else
 			{
-				if(BurglaryIsVaildLoadPos(playerid)) BurglaryPlayerLoadFuniture(playerid,OnHoldID); //卸载家具
-				else BurglaryPlayerFunitureOnFloor(playerid,OnHoldID);
+				//放下家具
+				//获取在手上的家具ID
+				new OnHoldID = BurglaryPlayerGetHoldID(playerid);
+				if(OnHoldID != NULL)
+				{
+					if(BurglaryIsVaildLoadPos(playerid)) BurglaryPlayerLoadFuniture(playerid,OnHoldID); //卸载家具
+					else BurglaryPlayerFunitureOnFloor(playerid,OnHoldID);
+				}
+				else printf("Burglary : 错误,获取到玩家在手上的家具ID为 NULL,因此无法放下");
 			}
-			else printf("Burglary : 错误,获取到玩家在手上的家具ID为 NULL,因此无法放下");
 		}
 			
 	}

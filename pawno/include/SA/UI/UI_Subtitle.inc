@@ -141,13 +141,6 @@ stock SG_TextMission(playerid,string[],time)
 	PlayerTextDrawShow(playerid,MISSIONTEXT[playerid]);
 	SetTimerEx("TextMissonDestoryTimer",time*1000, false, "d", playerid);
 }
-stock SG_Textbox(playerid,string[],time)
-{
-	PlayerTextDrawSetString(playerid,PCommon[playerid],string);
-	PlayerTextDrawShow(playerid,PCommon[playerid]);
-	SetTimerEx("TextboxDistoryTimer",time*1000, false, "d", playerid);
-
-}
 
 forward TextboxDistoryTimer(playerid);
 public TextboxDistoryTimer(playerid)

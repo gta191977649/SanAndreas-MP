@@ -5,3 +5,4 @@
 #define PIZZA_INFO "持有匹萨:       %d"
 #define PIZZA_WRONGCAR "你必要要在匹萨送货专用交通工具里才能进行次任务!"
 #define PIZZA_MORE "你没匹萨了！请回~r~店里~w~在拿一些。"
+#define PIZZA_TOGGLE "按下2键可以开始送匹萨任务。"

@@ -177,15 +177,17 @@ public OnPlayerEnterDynamicCP(playerid,checkpointid)
 	//判断是否完结在在任务
 	if(checkpointid == CarShopCP[0])
 	{
-		if(CarShop_IsPlayerInMission(playerid)) return 1;
-		if(!CarShop_ResAvaiable())
+		if(!CarShop_IsPlayerInMission(playerid))
 		{
-			SG_Sub(playerid,TEXT_MISSION_NOWORK,5);
-			return 1;
-		}
+			if(!CarShop_ResAvaiable())
+			{
+				SG_Sub(playerid,TEXT_MISSION_NOWORK,5);
+				return 1;
+			}
 
-		CarShop_PlayerStart(playerid);
-		SG_Sub(playerid,TEXT_MISSION_OBECTIVE,5);
+			CarShop_PlayerStart(playerid);
+			SG_Sub(playerid,TEXT_MISSION_OBECTIVE,5);
+		}
 	}	
 	if(checkpointid == CarShopCP[1])
 	{
